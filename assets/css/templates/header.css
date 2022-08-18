@@ -1,0 +1,276 @@
+.no-wrap {
+  flex-wrap: nowrap;
+}
+/*HEADER*/
+.header-with-search {
+  width: 100%;
+  /* height: 870px; */
+  /* background-image: linear-gradient(to top, rgb(254, 172, 94, 0.2), rgb(199, 121, 208, 0.4), rgb(75, 192, 200, 0.4)), url(../img/home_background.jpg); */
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.05)
+    ),
+    url(../../img/bg_backup.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 20px 50px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  width: 220px;
+  padding: 0 15px;
+}
+
+.header__logo-img {
+  position: relative;
+  display: block;
+  width: 160px;
+  top: -4px;
+  cursor: pointer;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  list-style: none;
+  flex: 1; /*chiếm hết phần còn lại*/
+}
+
+.header-nav__item {
+  position: relative;
+}
+
+.header-nav__item:hover .header-nav__item-link {
+  color: var(--saphire-color) !important;
+}
+
+.header-nav__item-link {
+  display: block;
+  color: var(--white-color);
+  padding: 25px 10px;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/*Search*/
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0 190px;
+}
+
+.search__title {
+  margin: 0;
+  font-size: 5rem;
+  line-height: 5rem;
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.search__title u {
+  text-decoration: underline rgb(166, 7, 197);
+}
+
+.search__text {
+  margin: 35px 0 40px;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: var(--white-color);
+  font-weight: normal;
+  letter-spacing: 4px;
+}
+
+.search-travel-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-travel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 113px;
+  margin: 0 15px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search-travel-item:hover .search-travel-item__text {
+  color: orange;
+}
+
+.search-travel-item__img {
+  display: block;
+  width: 40px;
+}
+
+.search-travel-item__text {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--white-color);
+}
+
+/* SEARCH  */
+.search__select-wrapper {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.radio-input {
+  display: none;
+}
+.radio-label {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background-color: #eee;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 1rem;
+  box-shadow: 0 0 0 4px #eee;
+  transition: all 0.25s linear;
+}
+.radio-input:checked + .radio-label {
+  box-shadow: 0 0 0 4px #fff, 0 0 0 6px var(--saphire-color);
+  background-color: var(--saphire-color);
+}
+.search__select--way {
+  padding: 15px 15px 0;
+}
+
+.search__options {
+  padding: 0 15px;
+}
+.search-way {
+  display: flex;
+}
+
+.search-oneway label,
+.search-return label {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.control-label {
+  font-size: 14px;
+  color: #fff;
+}
+
+ul.type-passenger {
+  float: left;
+  padding-left: 0px;
+  width: 100%;
+}
+ul.type-passenger li {
+  float: left;
+  width: 33.333333%;
+  padding-right: 1%;
+  list-style: none;
+}
+
+.search-submit {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.form-control {
+  padding: 10px;
+}
+
+
+/* Calender new */
+.picker,
+.picker__holder {
+  width: 100%;
+  position: absolute;
+}
+.picker {
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.2;
+  color: #000;
+  z-index: 10000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 0;
+}
+.picker__input {
+  cursor: default;
+}
+.picker__input.picker__input--active {
+  border-color: #0089ec;
+}
+.picker__holder {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background: #fff;
+  border: 1px solid #aaa;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+  min-width: 176px;
+  max-width: 466px;
+  max-height: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  opacity: 0;
+  transform: translateY(-1em) perspective(600px) rotateX(10deg);
+  transition: transform 0.15s ease-out, opacity 0.15s ease-out,
+    max-height 0s 0.15s, border-width 0s 0.15s;
+} /*!
+ * Classic picker styling for pickadate.js
+ * Demo: http://amsul.github.io/pickadate.js
+ */
+.picker__frame {
+  padding: 1px;
+}
+.picker__wrap {
+  margin: -1px;
+}
+.picker--opened .picker__holder {
+  max-height: 25em;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  transform: translateY(0) perspective(600px) rotateX(0);
+  transition: transform 0.15s ease-out, opacity 0.15s ease-out, max-height 0s,
+    border-width 0s;
+  box-shadow: 0 6px 18px 1px rgba(0, 0, 0, 0.12);
+}

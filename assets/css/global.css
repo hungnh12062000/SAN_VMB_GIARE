@@ -1,0 +1,225 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #9a9a9a;
+  --border-color: #dbdbdb;
+
+  --saphire-color: #14b9d5;
+  --green-color: #1bbc9b;
+  --red-color: #f76570;
+  --orange-color: #f3a46b;
+  --yellow-color: #ffd205;
+  --purple-color: #ba71da;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*AMINATION*/
+@keyframes fadeIn{
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}
+
+@keyframes growth {
+  from{
+      transform: scale(var(--growth-from));
+  }
+  to{
+      transform: scale(var(--growth-to));
+  }
+}
+
+
+/*Btn style*/
+.btn{
+  min-width: 124px;
+  /* height: 34px; */
+  text-decoration: none;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  padding: 15px 8px;
+  outline: none;
+  cursor: pointer;
+  color: var(--text-color);
+  /* background-color: var(--white-color); */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.6rem;
+  
+}
+
+
+/* row reverse */
+
+.flex-direction-column{
+  flex-direction: column !important;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* text color */
+.text-white {
+  color: var(--white-color);
+}
+
+.text-green {
+  color: var(--green-color) !important;
+}
+
+.text-orange {
+  color: var(--orange-color) !important;
+}
+
+.text-blue-sky {
+  color: #14b9d5 !important;
+}
+
+.text-default {
+  color: var(--text-color) !important;
+}
+
+.text-title {
+  color: #555555;
+}
+/* background color */
+
+.background-white {
+  background-color: var(--white-color);
+}
+
+.background-yellow {
+  background-color: #ffd205;
+}
+
+.background-pink {
+  background-color: #f76570;
+}
+
+.background-purple {
+  background-color: #ba71da;
+}
+
+.background-green {
+  background-color: #1bbc9b;
+}
+
+.background-blue-sky {
+  background-color: #14b9d5;
+}
+
+/* Btn color */
+.btn-yellow {
+  background-color: #ffd205;
+}
+
+.btn-pink {
+  background-color: #f76570;
+}
+
+.btn-purple {
+  background-color: #ba71da;
+}
+
+.btn-blue-sky {
+  background-color: #14b9d5;
+}
+
+.btn-orange {
+  background-color: #f3a46b;
+}
+
+.btn-white {
+  background-color: var(--white-color);
+}
+
+
+/* ------btn gradient----- */
+.btn-yellow-g {
+  background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+}
+
+.btn-purple-g {
+  background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+}
+
+.btn-pink-g {
+  background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+}
+
+.btn-green-g {
+  background: linear-gradient(to right, #1bbc9b 0%, #1bbc63 100%);
+}
+
+.btn-orange-g {
+  background: linear-gradient(to right, #f3a46b 0%, #f3c96b 100%);
+}
+
+.btn-blue-sky-g {
+  background: linear-gradient(to right, #14b9d5 0%, #14d5b1 100%)
+}
+
+/* btn hover */
+.btn-white:hover {
+  background: linear-gradient(to right, #edc3ff 0%, #ffd7db 100%);
+}
+
+.btn-yellow:hover {
+  background: linear-gradient(to left bottom, #ffd205 0%, #ff9b05 100%);
+}
+
+.btn-pink:hover {
+  background: linear-gradient(to left bottom, #f76570 0%, #f75c2d 100%);
+}
+
+.btn-purple:hover {
+  background: linear-gradient(to left bottom, #ba71da 0%, #da717b 100%);
+}
+
+.btn-blue-sky:hover {
+  background: linear-gradient(to left bottom, #14b9d5 0%, #14d5b1 100%);
+}
+
+.btn-orange:hover {
+  background: linear-gradient(to left bottom, #f3a46b 0%, #ff792c 100%);
+}
+
+/*Canh lề*/
+.mt-6{
+  margin-top: 6px;
+}
+
+.mb-6{
+  margin-bottom: 6px;
+}
+
+.mt-32{
+  margin-top: 32px;
+}
+
+.mb-32{
+  margin-bottom: 32px;
+}
