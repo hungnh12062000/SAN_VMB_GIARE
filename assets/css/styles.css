@@ -6,4 +6,6 @@
 @import url("./templates/main.css");
 @import url("./templates/footer.css");
 
+@import url("./category.css");
+
 @import url("./responsive.css");

@@ -49,6 +49,10 @@ a {
   }
 }
 
+.rotate-90{
+  transform: rotate(90deg);
+}
+
 
 /*Btn style*/
 .btn{
@@ -222,4 +226,8 @@ a {
 
 .mb-32{
   margin-bottom: 32px;
+}
+
+.pdr-32{
+  padding-right: 32px;
 }

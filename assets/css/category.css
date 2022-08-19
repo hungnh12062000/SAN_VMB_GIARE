@@ -1,0 +1,21 @@
+.header-category {
+  background-image: linear-gradient(
+      to top,
+      rgb(254, 172, 94, 0.2),
+      rgb(199, 121, 208, 0.4),
+      rgb(75, 192, 200, 0.4)
+    ),
+    url(../img/about_background.jpg);
+  background-position: center;
+}
+
+
+.category-content{
+     padding: 60px 0;
+ }
+ 
+ .category-content__heading{
+     font-size: 4.6rem;
+     color: var(--white-color);
+     font-weight: bold;
+ }

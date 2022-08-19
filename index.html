@@ -46,7 +46,7 @@
           </div>
           <ul class="header-nav">
             <li class="header-nav__item">
-              <a href="" class="header-nav__item-link">HOME</a>
+              <a href="./index.html" class="header-nav__item-link">HOME</a>
             </li>
             <li class="header-nav__item">
               <a href="" class="header-nav__item-link">VÉ MÁY BAY NỘI ĐỊA</a>
@@ -58,7 +58,9 @@
               <a href="" class="header-nav__item-link">VÉ RẺ THEO THÁNG</a>
             </li>
             <li class="header-nav__item">
-              <a href="" class="header-nav__item-link">TIN TỨC</a>
+              <a href="./category.html" class="header-nav__item-link"
+                >TIN TỨC</a
+              >
             </li>
             <li class="header-nav__item">
               <a href="" class="header-nav__item-link">LIÊN HỆ</a>
@@ -66,180 +68,79 @@
           </ul>
           <div class="header-phone">
             <ion-icon name="call-outline"></ion-icon>
-            <p class="phone-number"> 1900 636 063</p>
+            <p class="phone-number">1900 636 063</p>
           </div>
         </section>
 
         <div class="search">
           <h1 class="search__title">Search your next <u>Holiday</u></h1>
           <h6 class="search__text">CHECK OUR BEST DESTINATIONS</h6>
-          <div class="search__select-wrapper container">
-            <form
-              class="search-flight-form"
-              method="post"
-              action=""
-              id="frmFlightSearch"
-              name="frmFlightSearch"
-            >
-              <div class="row search__select--way">
-                <div class="col-4 search-way">
-                  <div class="search-oneway">
-                    <label>Một chiều</label>
-                    <input
-                      type="radio"
-                      id="male"
-                      class="radio-input"
-                      name="gender"
-                    />
-                    <label for="male" class="radio-label"></label>
-                  </div>
-                  <div class="search-return">
-                    <label>Khứ hồi</label>
-                    <input
-                      type="radio"
-                      id="fmale"
-                      class="radio-input"
-                      name="gender"
-                    />
-                    <label for="fmale" class="radio-label"></label>
-                  </div>
-                  <div class="col-8"></div>
-                </div>
-              </div>
-              <div class="row search__options">
-                <div class="col-4">
-                  <div class="row">
-                    <div class="location col-6">
-                      <i class="fa fa-map-marker input-icon"></i>
-                      <label class="control-label">Nơi đi</label>
-                      <input
-                        class="typeahead form-control hidden-xs"
-                        placeholder="Nơi đi"
-                        id="depinput"
-                        name="depinput"
-                        type="text"
-                        value="Hồ Chí Minh (SGN)"
-                        readonly
-                      />
-                    </div>
-                    <div class="location col-6">
-                      <i class="fa fa-map-marker input-icon"></i>
-                      <label class="control-label">Nơi đến</label>
-                      <input
-                        class="typeahead form-control hidden-xs"
-                        placeholder="Nơi Đến"
-                        id="desinput"
-                        name="desinput"
-                        type="text"
-                        value="Hà Nội (HAN)"
-                        readonly
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="row">
-                    <form action="#">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="control-label" for="input_from"
-                            >Ngày đi</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="input_from"
-                            placeholder="Ngày đi"
-                          />
+
+          <div class="search-section" id="booking">
+            <div class="container">
+              <div class="row">
+                <div class="booking-form">
+                  <form action="">
+                    <div class="row">
+                      <div class="col-md-5">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <span class="form-search-label">Nơi đi</span>
+                              <input class="form-control" type="text" placeholder="Country, ZIP, city...">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <span class="form-search-label">Nơi Đến</span>
+                              <input class="form-control" type="text" placeholder="Country, ZIP, city...">
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="control-label" for="input_to"
-                            >Ngày về</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="input_to"
-                            placeholder="Ngày về"
-                          />
+                      <div class="col-md-5">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <span class="form-search-label">Ngày đi</span>
+                              <input
+                                class="form-control"
+                                type="date"
+                                required
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <span class="form-search-label">Ngày về</span>
+                              <input
+                                class="form-control"
+                                type="date"
+                                required
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <span class="form-search-label">Số khách</span>
+                              <div class="count-passenger form-control">
+                                2
+                              </div>
+                              <span class="select-arrow"></span>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div
-                    class="row form-group form-group-lg form-group-icon-left form-group-select-plus"
-                  >
-                    <div class="col-md-12">
-                      <ul class="type-passenger">
-                        <li>
-                          <i class="fa fa-male input-icon hidden-xs"></i>
-                          <label for="adult" class="control-label"
-                            >Người lớn</label
-                          >
-                          <select name="adult" id="adult" class="form-control">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                          </select>
-                        </li>
-                        <li>
-                          <i class="fa fa-child input-icon hidden-xs"></i>
-                          <label for="child" class="control-label"
-                            >Trẻ em</label
-                          >
-                          <select name="child" id="child" class="form-control">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                          </select>
-                        </li>
-                        <li>
-                          <i class="fa fa-github-alt input-icon hidden-xs"></i>
-                          <label for="infant" class="control-label"
-                            >Em bé</label
-                          >
-                          <select
-                            name="infant"
-                            id="infant"
-                            class="form-control"
-                          >
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                          </select>
-                        </li>
-                      </ul>
+                      <div class="col-md-2">
+                        <div class="form-btn">
+                          <button class="submit-btn">Tìm chuyến bay</button>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
-              <div class="row search-button">
-                <div class="col-4"></div>
-                <div class="col-4">
-                  <a href="" class="search-submit btn btn-blue-sky text-white"
-                    >Tìm chuyến bay
-                    <ion-icon class="ms-3" name="search-outline"></ion-icon
-                  ></a>
-                </div>
-                <div class="col-4"></div>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
@@ -1015,7 +916,11 @@
                 <div class="destinations__image">
                   <div class="image-boder-50"></div>
                   <div class="image-wrap">
-                    <img src="./assets/img/phu-quoc.png" loading="lazy" alt="">
+                    <img
+                      src="./assets/img/phu-quoc.png"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
                 </div>
                 <p class="destinations-location">Phú Quốc</p>
@@ -1026,7 +931,11 @@
                 <div class="destinations__image">
                   <div class="image-boder-50"></div>
                   <div class="image-wrap">
-                    <img src="./assets/img/nha-trang.png" loading="lazy" alt="">
+                    <img
+                      src="./assets/img/nha-trang.png"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
                 </div>
                 <p class="destinations-location">Nha Trang</p>
@@ -1037,7 +946,11 @@
                 <div class="destinations__image">
                   <div class="image-boder-50"></div>
                   <div class="image-wrap">
-                    <img src="./assets/img/vung-tau.png" loading="lazy" alt="">
+                    <img
+                      src="./assets/img/vung-tau.png"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
                 </div>
                 <p class="destinations-location">Vũng Tàu</p>
@@ -1048,7 +961,7 @@
                 <div class="destinations__image">
                   <div class="image-boder-50"></div>
                   <div class="image-wrap">
-                    <img src="./assets/img/da-lat.png" loading="lazy" alt="">
+                    <img src="./assets/img/da-lat.png" loading="lazy" alt="" />
                   </div>
                 </div>
                 <p class="destinations-location">Đà Lạt</p>
@@ -1059,7 +972,7 @@
                 <div class="destinations__image">
                   <div class="image-boder-50"></div>
                   <div class="image-wrap">
-                    <img src="./assets/img/danang.png" loading="lazy" alt="">
+                    <img src="./assets/img/danang.png" loading="lazy" alt="" />
                   </div>
                 </div>
                 <p class="destinations-location">Đà Nẵng</p>
@@ -1070,7 +983,7 @@
                 <div class="destinations__image">
                   <div class="image-boder-50"></div>
                   <div class="image-wrap">
-                    <img src="./assets/img/sa-pa.png" loading="lazy" alt="">
+                    <img src="./assets/img/sa-pa.png" loading="lazy" alt="" />
                   </div>
                 </div>
                 <p class="destinations-location">Sa Pa</p>
@@ -1081,7 +994,11 @@
                 <div class="destinations__image">
                   <div class="image-boder-50"></div>
                   <div class="image-wrap">
-                    <img src="./assets/img/phan-thiet.png" loading="lazy" alt="">
+                    <img
+                      src="./assets/img/phan-thiet.png"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
                 </div>
                 <p class="destinations-location">Phan Thiết</p>
@@ -1092,7 +1009,7 @@
                 <div class="destinations__image">
                   <div class="image-boder-50"></div>
                   <div class="image-wrap">
-                    <img src="./assets/img/ha-long.jpg" loading="lazy" alt="">
+                    <img src="./assets/img/ha-long.jpg" loading="lazy" alt="" />
                   </div>
                 </div>
                 <p class="destinations-location">Hạ Long</p>
@@ -1103,7 +1020,11 @@
                 <div class="destinations__image">
                   <div class="image-boder-50"></div>
                   <div class="image-wrap">
-                    <img src="./assets/img/hochiminh.png" loading="lazy" alt="">
+                    <img
+                      src="./assets/img/hochiminh.png"
+                      loading="lazy"
+                      alt=""
+                    />
                   </div>
                 </div>
                 <p class="destinations-location">Hồ Chí Minh</p>
@@ -1114,7 +1035,7 @@
                 <div class="destinations__image">
                   <div class="image-boder-50"></div>
                   <div class="image-wrap">
-                    <img src="./assets/img/hoi-an.png" loading="lazy" alt="">
+                    <img src="./assets/img/hoi-an.png" loading="lazy" alt="" />
                   </div>
                 </div>
                 <p class="destinations-location">Hội An</p>
@@ -1125,7 +1046,7 @@
                 <div class="destinations__image">
                   <div class="image-boder-50"></div>
                   <div class="image-wrap">
-                    <img src="./assets/img/hanoi.png" loading="lazy" alt="">
+                    <img src="./assets/img/hanoi.png" loading="lazy" alt="" />
                   </div>
                 </div>
                 <p class="destinations-location">Hà Nội</p>
@@ -1136,7 +1057,7 @@
                 <div class="destinations__image">
                   <div class="image-boder-50"></div>
                   <div class="image-wrap">
-                    <img src="./assets/img/hp.jpg" loading="lazy" alt="">
+                    <img src="./assets/img/hp.jpg" loading="lazy" alt="" />
                   </div>
                 </div>
                 <p class="destinations-location">Hải Phòng</p>
