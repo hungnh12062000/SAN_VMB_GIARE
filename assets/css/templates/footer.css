@@ -104,7 +104,7 @@
 }
 
 .contact-menu__item h6 {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   font-size: 1.4rem;
   line-height: 1.4rem;
   letter-spacing: 2px;
@@ -113,7 +113,7 @@
 }
 
 .contact-menu__item ul {
-  padding-top: 4px;
+  padding: 0 4px;
   list-style: none;
 }
 
