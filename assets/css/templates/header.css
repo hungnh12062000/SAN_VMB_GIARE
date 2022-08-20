@@ -1,22 +1,27 @@
 .no-wrap {
   flex-wrap: nowrap;
 }
+
 /*HEADER*/
 .header-with-search {
   width: 100%;
-  /* height: 670px; */
+  height: 555px;
   /* background-image: linear-gradient(to top, rgb(254, 172, 94, 0.2), rgb(199, 121, 208, 0.4), rgb(75, 192, 200, 0.4)), url(../img/home_background.jpg); */
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.05)
-    ),
-    url(../../img/bg_backup.jpg);
+      rgba(255, 255, 255, 0.05)),
+    url(../../img/home_background.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
+  /* background: #fff;
+  color: #000; */
 
   /* height: 80vh; */
+  position: relative;
+}
+.video{
+  object-fit: none;
 }
 
 .header {
@@ -47,7 +52,8 @@
   align-items: center;
   padding: 0 15px;
   list-style: none;
-  flex: 1; /*chiếm hết phần còn lại*/
+  flex: 1;
+  /*chiếm hết phần còn lại*/
 }
 
 .header-nav__item {
@@ -70,7 +76,7 @@
   font-weight: 600;
 }
 
-.header-phone{
+.header-phone {
   color: #fff;
   display: flex;
   font-size: 18px;
@@ -78,22 +84,29 @@
   justify-content: center;
   align-items: center;
 }
-.phone-number{
+
+.phone-number {
   margin: 0 5px 0;
 }
 
-
-
 /*Search*/
-.search{
+.search {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 40px 0 120px;
 
-  position: relative;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  width: 100%;
 }
+
 .search__title {
   margin: 0;
   font-size: 5rem;
@@ -132,6 +145,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
 .search-travel-item:hover .search-travel-item__text {
   color: orange;
 }
@@ -148,28 +162,30 @@
   letter-spacing: 1px;
   color: var(--white-color);
 }
+
 /* 
 
 /* SEARCH  */
-.search__select-wrapper{
-    width: 100%;
-    padding: 8px 0;
-    border-bottom: none;
-    background-color: inherit;
-}
-.search-wrapper {
-    margin: 0 auto;
-    max-width: 1188px;
-    min-height: 150px;
-    border-radius: 8px;
-    background-color: #ffffff;
+.search__select-wrapper {
+  width: 100%;
+  padding: 8px 0;
+  border-bottom: none;
+  background-color: inherit;
 }
 
-.search__options{
+.search-wrapper {
+  margin: 0 auto;
+  max-width: 1188px;
+  min-height: 150px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.search__options {
   width: 100%;
 }
 
-.list-options{
+.list-options {
   width: 100%;
   display: flex;
   padding: 8px;
@@ -177,41 +193,40 @@
   align-items: center;
   border-radius: 8px;
   justify-content: space-between;
-
 }
 
-.line{
+.line {
   width: 100%;
-    height: 3px;
-    margin: auto;
-    margin-top: 12px;
-    margin-bottom: -17px;
-    /* background: var(--saphire-color); */
+  height: 3px;
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom: -17px;
+  /* background: var(--saphire-color); */
 }
 
 .option-depart,
-.option-destination{
+.option-destination {
   margin-left: 16px;
 }
 
 .depart-title,
 .destination-title,
 .date-title,
-.passenger-title{
-  color: #4A5568;
-    font-size: 14px;
-    text-align: left;
-    font-weight: 500;
-    line-height: 14px;
+.passenger-title {
+  color: #4a5568;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 14px;
 }
 
-.date-title{
+.date-title {
   display: block;
   margin-bottom: 5px;
 }
 
 .depart-input,
-.destination-input{
+.destination-input {
   color: #1a202c;
   width: 200px;
   z-index: 2;
@@ -225,29 +240,30 @@
   border-bottom-right-radius: 0;
 }
 
-.option-exchange{
+.option-exchange {
   font-size: 20px;
 }
 
-.option-date{
-  border-left: 1px solid #E2E8F0;
+.option-date {
+  border-left: 1px solid #e2e8f0;
 }
 
-.date-travel{
+.date-travel {
   display: flex;
-    align-items: center;
-    margin-left: 24px;
-    position: relative;
-    min-width: 275px;
+  align-items: center;
+  margin-left: 24px;
+  position: relative;
+  min-width: 275px;
 }
 
-.date-depart{
-  color: #4A5568;
-    font-size: 12px;
-    text-align: left;
-    font-weight: 400;
-    line-height: 14px;
+.date-depart {
+  color: #4a5568;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 400;
+  line-height: 14px;
 }
+
 .date-depart-content,
 .date-return-content,
 .passenger-content {
@@ -258,7 +274,7 @@
   padding-top: 6px;
 }
 
-.wrap-options{
+.wrap-options {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -281,7 +297,7 @@
   font-size: 20px;
 }
 
-.box-title-user{
+.box-title-user {
   color: #aaa;
   font-size: 14px;
   display: flex;
@@ -290,18 +306,17 @@
   position: relative;
 }
 
-.caret-down-outline{
+.caret-down-outline {
   position: absolute;
   top: 20%;
   right: 5px;
-
 }
 
-.remove-outline{
+.remove-outline {
   font-size: 20px;
 }
 
-.box-infor-passenger{
+.box-infor-passenger {
   background: #fff;
   padding: 8px;
   border-radius: 5px;
@@ -312,6 +327,7 @@ ul.type-passenger {
   padding-left: 0px;
   width: 100%;
 }
+
 ul.type-passenger li {
   float: left;
   width: 33.333333%;
@@ -319,126 +335,143 @@ ul.type-passenger li {
   list-style: none;
 }
 
-
 .form-control {
   padding: 10px;
 }
 
-/* ============== BEGIN SEARCH =============*/
-.search-section{
+
+/* ======== PASSENGER ======= */
+.group-passenger{
+  position: relative;
+}
+.dropdown-box-inner{
   position: absolute;
-  top: 100%;
-	left: 10%;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  background: #ccc;
+  width: 250%;
+  left: 0;
+  padding: 15px;
+  display: none;
+
+}
+/* ======== END PASSENGER ======= */
+
+/* ============== BEGIN SEARCH =============*/
+.search-section {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
   background: var(--white-color);
   width: 80%;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
-
 .booking-form .form-btn {
-	padding: 15px 5px;
+  padding: 15px 5px;
 }
 
 .booking-form .submit-btn {
-	background: var(--saphire-color);
-	border: none;
-	text-transform: capitalize;
-	display: block;
-	border-radius: 2px;
-	width: 100%;
-	height: 75px;
-	font-size: 18px;
-	font-weight: 600;
-	color: #fff;
+  background: var(--saphire-color);
+  border: none;
+  text-transform: capitalize;
+  display: block;
+  border-radius: 2px;
+  width: 100%;
+  height: 75px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
 }
 
 .booking-form .form-search-label {
-	color: var(--saphire-color);
-	display: block;
-	font-weight: 600;
-	height: 25px;
-	line-height: 25px;
-	font-size: 14px;
+  color: var(--saphire-color);
+  display: block;
+  font-weight: 600;
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
 }
 
 .booking-form .form-group {
-	position: relative;
-	padding: 15px;
-	margin-bottom: 0px;
+  position: relative;
+  padding: 15px;
+  margin-bottom: 0px;
 }
 
 .booking-form .form-control,
 .count-passenger {
-	background-color: transparent;
-	border-radius: 0px;
-	border: none;
-	height: 50px;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	font-size: 16px;
-	color: var(--black-color);
-	font-weight: 400;
-	padding: 0;
+  background-color: transparent;
+  border-radius: 0px;
+  border: none;
+  height: 50px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 16px;
+  color: var(--black-color);
+  font-weight: 400;
+  padding: 0;
 }
 
 .booking-form .form-group:after {
-	content: '';
-	background: rgba(129, 131, 144, 0.15);
-	position: absolute;
-	top: 15px;
-	bottom: 0;
-	right: 0px;
-	width: 2px;
-	height: 75px;
+  content: "";
+  background: rgba(129, 131, 144, 0.15);
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  right: 0px;
+  width: 2px;
+  height: 75px;
 }
 
-
 .booking-form .form-control::-webkit-input-placeholder {
-	color: #818390;
+  color: #818390;
 }
 
 .booking-form .form-control:-ms-input-placeholder {
-	color: #818390;
+  color: #818390;
 }
 
 .booking-form .form-control::placeholder {
-	color: #818390;
+  color: #818390;
 }
 
 .booking-form input[type="date"].form-control:invalid {
-	color: #818390;
+  color: #818390;
 }
 
 .booking-form div.form-control {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .booking-form div.form-control+.select-arrow {
-	position: absolute;
-	right: 0px;
-	bottom: -25px;
-	width: 32px;
-	line-height: 32px;
-	height: 32px;
-	text-align: center;
-	pointer-events: none;
-	color: #818390;
-	font-size: 14px;
+  position: absolute;
+  right: 0px;
+  bottom: -25px;
+  width: 32px;
+  line-height: 32px;
+  height: 32px;
+  text-align: center;
+  pointer-events: none;
+  color: #818390;
+  font-size: 14px;
 }
 
 .booking-form div.form-control+.select-arrow:after {
-	content: '\279C';
-	display: block;
-	-webkit-transform: rotate(90deg);
-	transform: rotate(90deg);
+  content: "\279C";
+  display: block;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
-.count-passenger{
+.count-passenger {
   position: absolute;
   top: 50px;
 }
@@ -451,6 +484,7 @@ ul.type-passenger li {
   width: 100%;
   position: absolute;
 }
+
 .picker {
   font-size: 16px;
   text-align: left;
@@ -463,12 +497,15 @@ ul.type-passenger li {
   user-select: none;
   outline: 0;
 }
+
 .picker__input {
   cursor: default;
 }
+
 .picker__input.picker__input--active {
   border-color: #0089ec;
 }
+
 .picker__holder {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -488,16 +525,20 @@ ul.type-passenger li {
   transform: translateY(-1em) perspective(600px) rotateX(10deg);
   transition: transform 0.15s ease-out, opacity 0.15s ease-out,
     max-height 0s 0.15s, border-width 0s 0.15s;
-} /*!
+}
+
+/*!
  * Classic picker styling for pickadate.js
  * Demo: http://amsul.github.io/pickadate.js
  */
 .picker__frame {
   padding: 1px;
 }
+
 .picker__wrap {
   margin: -1px;
 }
+
 .picker--opened .picker__holder {
   max-height: 25em;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
