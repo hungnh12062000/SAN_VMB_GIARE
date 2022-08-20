@@ -344,16 +344,75 @@ ul.type-passenger li {
 .group-passenger{
   position: relative;
 }
+
 .dropdown-box-inner{
   position: absolute;
-  top: 50%;
+  top: 105%;
   left: 0;
-  background: #ccc;
-  width: 250%;
+  background: #fff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  width: 300%;
   left: 0;
-  padding: 15px;
-  display: none;
+  padding: 5px 20px;
 
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+
+}
+
+.row-adult,
+.row-child,
+.row-infant{
+  align-items: center;
+  padding: 10px 0;
+
+  border-bottom: 1px solid #ccc;
+}
+
+.row-child{
+  padding: 12px 0;
+}
+
+.row-infant{
+  border-bottom: none;
+}
+
+.title-people{
+  color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+
+.btn-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-value{
+  color: #000;
+  font-weight: 600;
+
+    width: 24px;
+    display: flex;
+    font-size: 16px;
+    line-height: 19px;
+    justify-content: center;
+}
+
+button.type-minus,
+button.type-plus{
+  border-radius: 50%;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  color: var(--saphire-color);
+  border: 1px solid var(--saphire-color);
+  cursor: pointer;
+  background: #fff;
 }
 /* ======== END PASSENGER ======= */
 

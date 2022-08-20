@@ -57,6 +57,13 @@ $(document).ready(function () {
           //scroll and resize event
      }
 
+     // Show passgenger
+     $(".dropdown-box-inner").hide();
+     $(".group-passenger").on('click', function(){
+          $(".dropdown-box-inner").show();
+     });
+     
+
 });
 
 function loadImages(img) {
