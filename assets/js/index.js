@@ -34,39 +34,33 @@ $(document).ready(function () {
           ]
      });
 
-     //Calender
-     var from_$input = $('#input_from').pickadate(),
-          from_picker = from_$input.pickadate('picker')
+     //lazy loading section grid_destination
+     if ("IntersectionObserver" in window) {
+          //handle
+          let lazyImages = $("img[lazy-src]"); //get all element img have attribute lazy-loading
 
-     var to_$input = $('#input_to').pickadate(),
-          to_picker = to_$input.pickadate('picker')
+          //Creating an intersection observer
+          let observer = new IntersectionObserver((entries) => {
+               entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                         loadImages(entry.target); //<img />
+                    }
+               })
+          });
 
+          //Loop in JQUERY
+          $.each(lazyImages, function (index, img) {
+               observer.observe(img);
+          });
 
-     // Check if there’s a “from” or “to” date to start with.
-     if (from_picker.get('value')) {
-          to_picker.set('min', from_picker.get('select'))
+     } else {
+          //scroll and resize event
      }
-     if (to_picker.get('value')) {
-          from_picker.set('max', to_picker.get('select'))
-     }
-
-     // When something is selected, update the “from” and “to” limits.
-     from_picker.on('set', function (event) {
-          if (event.select) {
-               to_picker.set('min', from_picker.get('select'))
-          }
-          else if ('clear' in event) {
-               to_picker.set('min', false)
-          }
-     })
-     to_picker.on('set', function (event) {
-          if (event.select) {
-               from_picker.set('max', to_picker.get('select'))
-          }
-          else if ('clear' in event) {
-               from_picker.set('max', false)
-          }
-     })
-
 
 });
+
+function loadImages(img) {
+     // swap value lazy-src and src
+     const url = img.getAttribute('lazy-src');
+     img.setAttribute('src', url);
+}
