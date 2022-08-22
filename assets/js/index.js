@@ -58,9 +58,15 @@ $(document).ready(function () {
      }
 
      // Show passgenger
-     $(".dropdown-box-inner").hide();
-     $(".group-passenger").on('click', function(){
-          $(".dropdown-box-inner").show();
+     $(".count-passenger").on('click', function(){
+          let hasShow = $(".dropdown-box-inner").hasClass('hide'); // true
+          if(hasShow){
+               $(".dropdown-box-inner").show();
+               $("div.dropdown-box-inner").removeClass('hide');
+          } else {
+               $(".dropdown-box-inner").hide();
+               $("div.dropdown-box-inner").addClass('hide');
+          } 
      });
      
 

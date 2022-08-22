@@ -341,6 +341,14 @@ ul.type-passenger li {
 
 
 /* ======== PASSENGER ======= */
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
 .group-passenger{
   position: relative;
 }
