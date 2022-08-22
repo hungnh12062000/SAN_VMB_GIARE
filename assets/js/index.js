@@ -70,57 +70,57 @@ $(document).ready(function () {
      });
 
      //Increment Value on Click
-     $(".type-adult .type-plus").on('click', function(){
+     $(".type-adult .type-plus").on('click', function () {
           let value_adult = parseInt($(".btn-value-adult").text());
           let value_child = parseInt($(".btn-value-child").text());
           let value_infant = parseInt($(".btn-value-infant").text());
 
-          if(value_adult < 99) value_adult += 1;
+          if (value_adult < 99) value_adult += 1;
           $(".btn-value-adult").text(value_adult);
           $(".count-passenger").html(value_adult + value_child + value_infant);
           $("input[name=Adult]").val(value_adult);
      })
 
-     $(".type-adult .type-minus").on('click', function(){
+     $(".type-adult .type-minus").on('click', function () {
           let value_adult = parseInt($(".btn-value-adult").text());
           let value_child = parseInt($(".btn-value-child").text());
           let value_infant = parseInt($(".btn-value-infant").text());
-          if(value_adult > 1) value_adult -= 1;
+          if (value_adult > 1) value_adult -= 1;
 
           $(".btn-value-adult").html(value_adult);
           $(".count-passenger").html(value_adult + value_child + value_infant);
           $("input[name=Adult]").val(value_adult);
      })
 
-     $(".type-child .type-plus").on('click', function(){
+     $(".type-child .type-plus").on('click', function () {
           let value_adult = parseInt($(".btn-value-adult").text());
           let value_child = parseInt($(".btn-value-child").text());
           let value_infant = parseInt($(".btn-value-infant").text());
 
-          if(value_child < 99) value_child += 1;
+          if (value_child < 99) value_child += 1;
           $(".btn-value-child").text(value_child);
           $(".count-passenger").html(value_child + value_adult + value_infant);
           $("input[name=Child]").val(value_child);
      })
 
-     $(".type-child .type-minus").on('click', function(){
+     $(".type-child .type-minus").on('click', function () {
           let value_adult = parseInt($(".btn-value-adult").text());
           let value_child = parseInt($(".btn-value-child").text());
           let value_infant = parseInt($(".btn-value-infant").text());
 
-          if(value_child > 0) value_child -= 1;
+          if (value_child > 0) value_child -= 1;
 
           $(".btn-value-child").html(value_child);
           $(".count-passenger").html(value_child + value_adult + value_infant);
           $("input[name=Child]").val(value_child);
      })
 
-     $(".type-infant .type-plus").on('click', function(){
+     $(".type-infant .type-plus").on('click', function () {
           let value_adult = parseInt($(".btn-value-adult").text());
           let value_child = parseInt($(".btn-value-child").text());
           let value_infant = parseInt($(".btn-value-infant").text());
 
-          if(value_infant < value_adult  && value_infant < 10) {
+          if (value_infant < value_adult && value_infant < 10) {
                value_infant += 1;
           } else {
                $(".toast-passenger").addClass('active');
@@ -133,12 +133,12 @@ $(document).ready(function () {
           $("input[name=Infant]").val(value_infant);
      })
 
-     $(".type-infant .type-minus").on('click', function(){
+     $(".type-infant .type-minus").on('click', function () {
           let value_adult = parseInt($(".btn-value-adult").text());
           let value_child = parseInt($(".btn-value-child").text());
           let value_infant = parseInt($(".btn-value-infant").text());
 
-          if(value_infant > 0) value_infant -= 1;
+          if (value_infant > 0) value_infant -= 1;
 
           $(".btn-value-infant").html(value_infant);
           $(".count-passenger").html(value_child + value_adult + value_infant);
@@ -146,7 +146,7 @@ $(document).ready(function () {
      })
 
      // toast
-     $(".toast-close").on('click', function(){
+     $(".toast-close").on('click', function () {
           $(".toast-passenger").removeClass('active');
      })
 
@@ -195,7 +195,18 @@ $(document).ready(function () {
           }
      })
 
-     // 
+     // show listdep and listDes
+     $(document).on('click', ".input-departure", function(){
+          let hide_list_dep = $('#listDep').hasClass('hide');
+          if(hide_list_dep){
+               $('#listDep').removeClass('hide');
+               $('#listDep').addClass('show');
+          } else {
+               $('#listDep').addClass('hide');
+               $('#listDep').removeClass('show');
+          }
+     })
+
 
 });
 
@@ -204,3 +215,21 @@ function loadImages(img) {
      const url = img.getAttribute('lazy-src');
      img.setAttribute('src', url);
 }
+
+
+$(document).on("click", ".naccs .menu div", function() {
+	var numberIndex = $(this).index();
+
+	if (!$(this).is("active")) {
+		$(".naccs .menu div").removeClass("active");
+		$(".naccs ul li").removeClass("active");
+
+		$(this).addClass("active");
+		$(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+		var listItemHeight = $(".naccs ul")
+			.find("li:eq(" + numberIndex + ")")
+			.innerHeight();
+		$(".naccs ul").height(listItemHeight + "px");
+	}
+});
