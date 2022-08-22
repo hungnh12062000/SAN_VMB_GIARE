@@ -5,7 +5,9 @@
 }
 
 .picker__box {
-  padding: 0 1em
+  padding: 0 1em;
+  font-family: "Poppins", sans-serif;
+
 }
 
 .picker__header {
@@ -15,16 +17,17 @@
 
 .picker__month,
 .picker__year {
-  font-weight: 500;
+  font-weight: 600;
   display: inline-block;
   margin-left: .25em;
-  margin-right: .25em
+  margin-right: .25em;
+  font-size: 20px;
+  color: var(--saphire-color);
 }
 
 .picker__year {
-  color: #999;
-  font-size: .8em;
-  font-style: italic
+  color: #000;
+  /* font-size: 14px; */
 }
 
 .picker__select--month,
@@ -46,7 +49,7 @@
 
 .picker__select--month:focus,
 .picker__select--year:focus {
-  border-color: #f78b65
+  border-color: var(--saphire-color)
 }
 
 .picker__nav--next,
@@ -111,7 +114,7 @@
 .picker__nav--prev:hover {
   cursor: pointer;
   color: #000;
-  background: #f2d1c5
+  background: var(--saphire-color)
 }
 
 .picker__nav--disabled,
@@ -130,7 +133,8 @@
   table-layout: fixed;
   font-size: inherit;
   width: 100%;
-  margin-top: .75em;
+  /* margin-top: .75em; */
+  margin-top: 1em;
   margin-bottom: .5em
 }
 
@@ -147,9 +151,11 @@
 
 .picker__weekday {
   width: 14.285714286%;
-  font-size: .75em;
+  /* font-size: .75em; */
+  font-size: 14px;
   padding-bottom: .25em;
-  color: #999;
+  color: var(--saphire-color);
+  /* color: #999; */
   font-weight: 500
 }
 
@@ -160,7 +166,7 @@
 }
 
 .picker__day {
-  padding: .3125em 0;
+  padding: .5em 0;
   font-weight: 200;
   border: 1px solid transparent
 }
@@ -176,7 +182,7 @@
   right: 2px;
   width: 0;
   height: 0;
-  border-top: .5em solid #f78b65;
+  border-top: .5em solid var(--saphire-color);
   border-left: .5em solid transparent
 }
 
@@ -194,17 +200,17 @@
 .picker__day--outfocus:hover {
   cursor: pointer;
   color: #000;
-  background: #f2d1c5
+  background: var(--saphire-color)
 }
 
 .picker__day--highlighted {
-  border-color: #f78b65
+  border-color: var(--saphire-color)
 }
 
 .picker--focused .picker__day--selected,
 .picker__day--selected,
 .picker__day--selected:hover {
-  background: #f78b65;
+  background: var(--saphire-color);
   color: #fff
 }
 
@@ -240,15 +246,17 @@
 .picker__button--today:hover {
   cursor: pointer;
   color: #000;
-  background: #f2d1c5;
-  border-bottom-color: #f2d1c5
+  background: var(--saphire-color);
+  border-bottom-color: var(--saphire-color)
 }
+
+
 
 .picker__button--clear:focus,
 .picker__button--close:focus,
 .picker__button--today:focus {
-  background: #f2d1c5;
-  border-color: #f78b65;
+  background: var(--saphire-color);
+  border-color: var(--saphire-color);
   outline: 0
 }
 
@@ -269,14 +277,18 @@
 .picker__button--today:before {
   top: -.05em;
   width: 0;
-  border-top: .66em solid #f78b65;
+  border-top: .66em solid var(--saphire-color);
   border-left: .66em solid transparent
+}
+
+.picker__button--today:hover::before {
+  border-top: .66em solid var(--white-color);
 }
 
 .picker__button--clear:before {
   top: -.25em;
   width: .66em;
-  border-top: 3px solid #e20
+  border-top: 3px solid #ec2029;
 }
 
 .picker__button--close:before {
@@ -285,7 +297,8 @@
   vertical-align: top;
   font-size: 1.1em;
   margin-right: .35em;
-  color: #777
+  /* color: #777 */
+  color: var(--black-color);
 }
 
 .picker__button--today[disabled],
