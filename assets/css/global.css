@@ -49,6 +49,10 @@ a {
   }
 }
 
+.global-wrap{
+ overflow: hidden;
+}
+
 .rotate-90{
   transform: rotate(90deg);
 }

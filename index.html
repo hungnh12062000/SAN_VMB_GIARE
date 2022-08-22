@@ -36,7 +36,7 @@
       
       <section class="header">
         <div class="header__logo">
-          <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/logo.png" loading="lazy" alt="Travel" class="header__logo-img" />
+          <img src="./assets/img/logo.png" alt="Travel" class="header__logo-img" />
         </div>
         <ul class="header-nav">
           <li class="header-nav__item">
@@ -66,11 +66,14 @@
       <!-- <video class="video" width="100%" height="460px" type="video/mp4" autoplay="" muted="" loop="">
         <source src="https://storage.googleapis.com/tripi-assets/mytour/videos/video_bg_mytour.mov">Your browser does not support the video tag.
       </video> -->
-
       <div class="search">
         <h1 class="search__title">Search your next <u>Holiday</u></h1>
         <h6 class="search__text">CHECK OUR BEST DESTINATIONS</h6>
 
+        <div id="toast" class="toast-passenger">
+          <ion-icon name="alert-circle-outline"></ion-icon> Số lượng em bé nhỏ hơn hoặc bằng số lượng người lớn.
+          <div class="toast-close"><ion-icon name="close-outline"></ion-icon></div>
+        </div>
         <div class="search-section" id="booking">
           <div class="container">
             <div class="row">
@@ -94,22 +97,6 @@
                       </div>
                     </div>
                     <div class="col-md-4">
-
-                      <!-- <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <span class="form-search-label">Ngày đi</span>
-                            <input class="form-control" type="date" required />
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <span class="form-search-label">Ngày về</span>
-                            <input class="form-control" type="date" required />
-                          </div>
-                        </div>
-                      </div> -->
                       <div class="row">
                         <form action="#" class="row">
                           <div class="col-md-6">
@@ -134,7 +121,7 @@
                           <div class="form-group">
                             <span class="form-search-label">Số khách</span>
                             <div class="count-passenger form-control">
-                              3
+                              1
                             </div>
                             <span class="select-arrow"></span>
                           </div>
@@ -170,10 +157,10 @@
                               </div>
                               <div class="col-md-4">
                                 <div class="box-people type-child">
-                                  <input name="Child" id="count-child" class="form-control" value="1" type="hidden">
+                                  <input name="Child" id="count-child" class="form-control" value="0" type="hidden">
                                   <div class="btn-group" role="group">
                                       <button type="button" class="type-button type-minus"><ion-icon name="remove-outline"></ion-icon></button>
-                                      <span class="btn-value btn-value-child">1</span>
+                                      <span class="btn-value btn-value-child">0</span>
                                       <button type="button" class="type-button type-plus"><ion-icon name="add-outline"></ion-icon></button>
                                   </div>
                                 </div>
@@ -189,11 +176,11 @@
                                 </label>
                               </div>
                               <div class="col-md-4">
-                                <div class="box-people type-ifant">
-                                  <input name="Infant" id="count-infant" class="form-control" value="1" type="hidden">
+                                <div class="box-people type-infant">
+                                  <input name="Infant" id="count-infant" class="form-control" value="0" type="hidden">
                                   <div class="btn-group" role="group">
                                       <button type="button" class="type-button type-minus"><ion-icon name="remove-outline"></ion-icon></button>
-                                      <span class="btn-value btn-value-ifant">1</span>
+                                      <span class="btn-value btn-value-infant">0</span>
                                       <button type="button" class="type-button type-plus"><ion-icon name="add-outline"></ion-icon></button>
                                   </div>
                                 </div>
@@ -1086,7 +1073,7 @@
         <div class="footer-contact">
           <div class="row">
             <div class="contact-details col-4">
-              <img src="./assets/img/footer_logo.png" alt="" loading="lazy" class="footer-logo" />
+              <img src="./assets/img/footer_logo.png" alt="" class="footer-logo" />
               <ul>
                 <li>
                   <p>info@sanvemaybaygiare.net</p>

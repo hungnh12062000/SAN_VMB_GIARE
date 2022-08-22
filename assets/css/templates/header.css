@@ -7,9 +7,11 @@
   width: 100%;
   height: 555px;
   /* background-image: linear-gradient(to top, rgb(254, 172, 94, 0.2), rgb(199, 121, 208, 0.4), rgb(75, 192, 200, 0.4)), url(../img/home_background.jpg); */
-  background-image: linear-gradient(to top,
+  background-image: linear-gradient(
+      to top,
       rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.05)),
+      rgba(255, 255, 255, 0.05)
+    ),
     url(../../img/home_background.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -20,7 +22,7 @@
   /* height: 80vh; */
   position: relative;
 }
-.video{
+.video {
   object-fit: none;
 }
 
@@ -96,7 +98,6 @@
   align-items: center;
   justify-content: center;
   padding: 40px 0 120px;
-
 
   top: 50%;
   left: 50%;
@@ -339,7 +340,6 @@ ul.type-passenger li {
   padding: 10px;
 }
 
-
 /* ======== PASSENGER ======= */
 .hide {
   display: none !important;
@@ -349,16 +349,17 @@ ul.type-passenger li {
   display: block !important;
 }
 
-.group-passenger{
+.group-passenger {
   position: relative;
 }
 
-.dropdown-box-inner{
+.dropdown-box-inner {
   position: absolute;
   top: 105%;
   left: 0;
   background: #fff;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   width: 300%;
   left: 0;
   padding: 5px 20px;
@@ -366,53 +367,51 @@ ul.type-passenger li {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-
 }
 
 .row-adult,
 .row-child,
-.row-infant{
+.row-infant {
   align-items: center;
   padding: 10px 0;
 
   border-bottom: 1px solid #ccc;
 }
 
-.row-child{
+.row-child {
   padding: 12px 0;
 }
 
-.row-infant{
+.row-infant {
   border-bottom: none;
 }
 
-.title-people{
+.title-people {
   color: #000;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
-
-.btn-group{
+.btn-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.btn-value{
+.btn-value {
   color: #000;
   font-weight: 600;
 
-    width: 24px;
-    display: flex;
-    font-size: 16px;
-    line-height: 19px;
-    justify-content: center;
+  width: 24px;
+  display: flex;
+  font-size: 16px;
+  line-height: 19px;
+  justify-content: center;
 }
 
 button.type-minus,
-button.type-plus{
+button.type-plus {
   border-radius: 50%;
   padding: 5px;
   width: 30px;
@@ -423,6 +422,43 @@ button.type-plus{
   background: #fff;
 }
 /* ======== END PASSENGER ======= */
+
+/* ============== toast ========*/
+#toast {
+  min-width: 400px;
+  max-width: 500px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 20px 0;
+  z-index: 1;
+  font-size: 14px;
+  position: absolute;
+  top: 25px;
+  right: 32px;
+  display: flex;
+  align-items: center;
+  border-left: 4px solid var(--red-color);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  transition: all linear 0.3s;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.toast-passenger{
+  transform: translateX(115%);
+}
+
+.toast-passenger.active{
+  transform: translateX(0);
+}
+
+#toast ion-icon {
+  color: var(--red-color);
+  font-size: 24px;
+  margin: 0 10px;
+}
+/* =========== toast =============*/
 
 /* ============== BEGIN SEARCH =============*/
 .search-section {
@@ -518,7 +554,7 @@ button.type-plus{
   appearance: none;
 }
 
-.booking-form div.form-control+.select-arrow {
+.booking-form div.form-control + .select-arrow {
   position: absolute;
   right: 0px;
   bottom: -25px;
@@ -531,7 +567,7 @@ button.type-plus{
   font-size: 14px;
 }
 
-.booking-form div.form-control+.select-arrow:after {
+.booking-form div.form-control + .select-arrow:after {
   content: "\279C";
   display: block;
   -webkit-transform: rotate(90deg);
@@ -618,5 +654,6 @@ button.type-plus{
   transition: transform 0.15s ease-out, opacity 0.15s ease-out, max-height 0s,
     border-width 0s;
   box-shadow: 0 6px 18px 1px rgba(0, 0, 0, 0.12);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }

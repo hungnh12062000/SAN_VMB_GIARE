@@ -69,6 +69,88 @@ $(document).ready(function () {
           }
      });
 
+     //Increment Value on Click
+     $(".type-adult .type-plus").on('click', function(){
+          let value_adult = parseInt($(".btn-value-adult").text());
+          let value_child = parseInt($(".btn-value-child").text());
+          let value_infant = parseInt($(".btn-value-infant").text());
+
+          if(value_adult < 99) value_adult += 1;
+          $(".btn-value-adult").text(value_adult);
+          $(".count-passenger").html(value_adult + value_child + value_infant);
+          $("input[name=Adult]").val(value_adult);
+     })
+
+     $(".type-adult .type-minus").on('click', function(){
+          let value_adult = parseInt($(".btn-value-adult").text());
+          let value_child = parseInt($(".btn-value-child").text());
+          let value_infant = parseInt($(".btn-value-infant").text());
+          if(value_adult > 1) value_adult -= 1;
+
+          $(".btn-value-adult").html(value_adult);
+          $(".count-passenger").html(value_adult + value_child + value_infant);
+          $("input[name=Adult]").val(value_adult);
+     })
+
+     $(".type-child .type-plus").on('click', function(){
+          let value_adult = parseInt($(".btn-value-adult").text());
+          let value_child = parseInt($(".btn-value-child").text());
+          let value_infant = parseInt($(".btn-value-infant").text());
+
+          if(value_child < 99) value_child += 1;
+          $(".btn-value-child").text(value_child);
+          $(".count-passenger").html(value_child + value_adult + value_infant);
+          $("input[name=Child]").val(value_child);
+     })
+
+     $(".type-child .type-minus").on('click', function(){
+          let value_adult = parseInt($(".btn-value-adult").text());
+          let value_child = parseInt($(".btn-value-child").text());
+          let value_infant = parseInt($(".btn-value-infant").text());
+
+          if(value_child > 0) value_child -= 1;
+
+          $(".btn-value-child").html(value_child);
+          $(".count-passenger").html(value_child + value_adult + value_infant);
+          $("input[name=Child]").val(value_child);
+     })
+
+     $(".type-infant .type-plus").on('click', function(){
+          let value_adult = parseInt($(".btn-value-adult").text());
+          let value_child = parseInt($(".btn-value-child").text());
+          let value_infant = parseInt($(".btn-value-infant").text());
+
+          if(value_infant < value_adult  && value_infant < 10) {
+               value_infant += 1;
+          } else {
+               $(".toast-passenger").addClass('active');
+               setTimeout(function () {
+                    $(".toast-passenger").removeClass('active');
+               }, 4000);
+          }
+          $(".count-passenger").html(value_child + value_adult + value_infant);
+          $(".btn-value-infant").text(value_infant);
+          $("input[name=Infant]").val(value_infant);
+     })
+
+     $(".type-infant .type-minus").on('click', function(){
+          let value_adult = parseInt($(".btn-value-adult").text());
+          let value_child = parseInt($(".btn-value-child").text());
+          let value_infant = parseInt($(".btn-value-infant").text());
+
+          if(value_infant > 0) value_infant -= 1;
+
+          $(".btn-value-infant").html(value_infant);
+          $(".count-passenger").html(value_child + value_adult + value_infant);
+          $("input[name=Infant]").val(value_infant);
+     })
+
+     // toast
+     $(".toast-close").on('click', function(){
+          $(".toast-passenger").removeClass('active');
+     })
+
+
      // Calendar
      // https://amsul.ca/pickadate.js/date/
 
