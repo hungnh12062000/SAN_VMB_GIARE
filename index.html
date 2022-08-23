@@ -30,6 +30,14 @@
   </head>
 
   <body>
+    <div id="toast" class="toast-passenger">
+      <ion-icon name="alert-circle-outline"></ion-icon> Số lượng em bé nhỏ
+      hơn hoặc bằng số lượng người lớn.
+      <div class="toast-close">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+    </div>
+    
     <div class="global-wrap">
       <!-- HEADER -->
       <!--Begin Header with search-->
@@ -76,13 +84,7 @@
           <h1 class="search__title">Search your next <u>Holiday</u></h1>
           <h6 class="search__text">CHECK OUR BEST DESTINATIONS</h6>
 
-          <div id="toast" class="toast-passenger">
-            <ion-icon name="alert-circle-outline"></ion-icon> Số lượng em bé nhỏ
-            hơn hoặc bằng số lượng người lớn.
-            <div class="toast-close">
-              <ion-icon name="close-outline"></ion-icon>
-            </div>
-          </div>
+          
           <div class="search-section" id="booking">
             <div class="container">
               <div class="row">
@@ -101,12 +103,11 @@
                                 placeholder="Country, ZIP, city..."
                               />
                             </div>
-                            <div id="listDep" class="hide">
-                            <!-- <div id="listDep"> -->
-                              <div class="naccs">
+                            <div id="listDep" class="list-dep" style="display:none;">
+                              <div class="naccs-dep">
                                 <div class="grid">
                                    
-                                 <div class="gc gc--1-of-3">
+                                 <div class="gc gc--1-of-4">
                                   <div class="menu">
                                    <div class="active"><span class="light"></span><span>Việt Nam</span></div>
                                    <div><span class="light"></span><span>Đông Nam Á</span></div>
@@ -118,50 +119,493 @@
                                   </div>
                                  </div>
 
-                                 <div class="gc gc--2-of-3">
+                                 <div class="gc gc--3-of-4">
                                   <ul class="nacc">
                                    <li class="list-vn active">
-                                    <div class="list-vn-item">
-                                      <h4>Miền Bắc</h4>
-                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iste provident, voluptatem neque accusamus velit nobis maiores ratione laboriosam laborum. Autem, quod perspiciatis provident quas sunt blanditiis earum ratione adipisci.
-                                    </div>
-                                    <div class="list-vn-item">
-                                      <h4>Miền Bắc</h4>
-                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod accusamus repellat possimus iusto pariatur omnis fuga quis labore quibusdam provident eligendi, amet nulla dolore, maxime eaque! Corporis tempore ratione officiis?
-                                    </div>
-                                    <div class="list-vn-item">
-                                      <h4>Miền Bắc</h4>
-                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius deleniti accusamus temporibus saepe! Ut distinctio repudiandae, quod autem possimus quasi temporibus natus pariatur non ducimus sequi, reprehenderit, illo aut.
+                                    <div class="list-destination">
+                                      <div class="destination-item">
+                                        <img src="./assets/img/hochiminh.png" alt="da lat">
+                                        <p class="destination-title">TP.HCM</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/hanoi.png" alt="da lat">
+                                        <p class="destination-title">Hà Nội</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/danang.png" alt="da lat">
+                                        <p class="destination-title">Đà nẵng</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/can-tho.jpg" alt="da lat">
+                                        <p class="destination-title">cần thơ</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/hp.jpg" alt="da lat">
+                                        <p class="destination-title">Hải Phòng</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/van-don.jpg" alt="da lat">
+                                        <p class="destination-title">Vân Đồn</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/dien-bien.jpg" alt="da lat">
+                                        <p class="destination-title">Điện Biên</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/nha-trang.png" alt="da lat">
+                                        <p class="destination-title">Nha Trang</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/da-lat.png" alt="da lat">
+                                        <p class="destination-title">Đà Lạt</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/buon-me-thuoc.jpg" alt="da lat">
+                                        <p class="destination-title">Buôn Mê Thuộc</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/pleiku.jpeg" alt="da lat">
+                                        <p class="destination-title">Pleiku</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/qui-nhon.png" alt="da lat">
+                                        <p class="destination-title">Quy Nhơn</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/dong-hoi.jpg" alt="da lat">
+                                        <p class="destination-title">Đồng Hới</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/tuy-hoa.jpg" alt="da lat">
+                                        <p class="destination-title">Tuy Hòa</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/chu-lai.jpg" alt="da lat">
+                                        <p class="destination-title">Chu Lai</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/phu-quoc.png" alt="da lat">
+                                        <p class="destination-title">Phú Quốc</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/con-dao.jpg" alt="da lat">
+                                        <p class="destination-title">Côn Đảo</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/thanh-hoa.jpg" alt="da lat">
+                                        <p class="destination-title">Thanh Hóa</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/ca-mau.jpg" alt="da lat">
+                                        <p class="destination-title">Cà Mau</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/rach-gia.png" alt="da lat">
+                                        <p class="destination-title">Rạch giá</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/vinh.jpg" alt="da lat">
+                                        <p class="destination-title">Vinh</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/hue.jpg" alt="da lat">
+                                        <p class="destination-title">Huế</p>
+                                      </div>
                                     </div>
                                    </li>
-                                   <li>
-                                    <div class="list-dna">
-                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita necessitatibus eos aliquid ratione libero ipsam, at modi iure placeat! Culpa molestias accusamus aperiam omnis exercitationem eaque natus nisi soluta porro?
+                                   <li class="list-dna">
+                                    <div class="list-destination">
+                                      <div class="destination-item">
+                                        <img src="./assets/img/bangkok.jpg" alt="Bangkok">
+                                        <p class="destination-title">Bangkok</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/Chiang-Mai.jpg" alt="Chiang Mai">
+                                        <p class="destination-title">Chiang Mai</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/Jakarta.jpg" alt="Jakarta">
+                                        <p class="destination-title">Jakarta</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/kuala-lumpur.jpg" alt="Kuala Lumpur">
+                                        <p class="destination-title">Kuala Lumpur</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/Luang-Prabang.jpg" alt="Luang Prabang">
+                                        <p class="destination-title">Luang Prabang</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/Manila.jpg" alt="Manila">
+                                        <p class="destination-title">Manila</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/Phnom-Penh.jpg" alt="Phnom Penh">
+                                        <p class="destination-title">Phnom Penh</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/Phuket.jpg" alt="Phuket">
+                                        <p class="destination-title">Phuket</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/siem-reap.jpg" alt="Siem Reap">
+                                        <p class="destination-title">Siem Reap</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/Sihanoukville.jpg" alt="Sihanoukville">
+                                        <p class="destination-title">Sihanoukville</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/Singapore.jpeg" alt="Singapore">
+                                        <p class="destination-title">Singapore</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/Vientiane.jpg" alt="Vientiane">
+                                        <p class="destination-title">Vientiane</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/Yangon.jpg" alt="Yangon">
+                                        <p class="destination-title">Yangon</p>
+                                      </div>
                                     </div>
                                    </li>
-                                   <li>
-                                    <div class="list-dba">
-                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae earum provident tempora fuga nemo doloribus itaque. Sed, porro. Error cupiditate odio maiores ea quod, aspernatur exercitationem dolores atque temporibus nemo?
+                                   <li class="list-dba">
+                                      <div class="list-destination">
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Beijing.jpg" alt="Beijing">
+                                          <p class="destination-title">Beijing</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Busan.jpg" alt="Busan">
+                                          <p class="destination-title">Busan</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Chengdu.jpg" alt="Chengdu">
+                                          <p class="destination-title">Chengdu</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Fukuoka.jpg" alt="Fukuoka">
+                                          <p class="destination-title">Fukuoka</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Guangzhou.jpg" alt="Guangzhou">
+                                          <p class="destination-title">Guangzhou</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Hang-chau.jpg" alt="hang chau">
+                                          <p class="destination-title">Hàng Châu</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hongkong.jpg" alt="Hong Kong">
+                                          <p class="destination-title">Hong Kong</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Kaohsiung.jpg" alt="Kaohsiung">
+                                          <p class="destination-title">Kaohsiung</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Nagoya.jpg" alt="Nagoya">
+                                          <p class="destination-title">Nagoya</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Osaka.jpg" alt="Osaka">
+                                          <p class="destination-title">Osaka</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Seoul.jpg" alt="Seoul">
+                                          <p class="destination-title">Seoul</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Shanghai.jpg" alt="Shanghai">
+                                          <p class="destination-title">Shanghai</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Taipei.jpg" alt="Taipei">
+                                          <p class="destination-title">Taipei</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Tokyo-Haneda.jpg" alt="Tokyo Haneda">
+                                          <p class="destination-title">Tokyo Haneda</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Tokyo-Narita.jpeg" alt="Tokyo Narita">
+                                          <p class="destination-title">Tokyo Narita</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Shanghai-Pudong.jpg" alt="Shanghai Pudong">
+                                          <p class="destination-title">Shanghai Pudong</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/dubai.jpeg" alt="Dubai">
+                                          <p class="destination-title">Dubai</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Indira-Gandhi.jpg.crdownload" alt="Indira Gandhi">
+                                          <p class="destination-title">Indira Gandhi</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Xiamen-Gaoqi.png" alt="Xiamen Gaoqi">
+                                          <p class="destination-title">Xiamen Gaoqi</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Shenzhen-Baoan.jpg" alt="Shenzhen Bao\'an">
+                                          <p class="destination-title">Shenzhen Bao\'an</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Ngurah-Rai.jpg" alt="Ngurah Rai">
+                                          <p class="destination-title">Ngurah Rai</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Kunming-Changshui.jpg" alt="Kunming Changshui">
+                                          <p class="destination-title">Kunming Changshui</p>
+                                        </div>
+                                      </div>
+                                   </li>
+                                   <li class="list-euro">
+                                    <div class="list-destination">
+                                      <div class="destination-item">
+                                        <img src="./assets/img/hoi-an.png" alt="da lat">
+                                        <p class="destination-title">Amsterdam</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/hp.jpg" alt="da lat">
+                                        <p class="destination-title">Barcelona</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/nha-trang.png" alt="da lat">
+                                        <p class="destination-title">Frankfurt</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/phan-thiet.png" alt="da lat">
+                                        <p class="destination-title">Geneva</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/nha-trang.png" alt="da lat">
+                                        <p class="destination-title">London</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/destination-11.jpg" alt="da lat">
+                                        <p class="destination-title">Lyon</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/destination-5.jpg" alt="da lat">
+                                        <p class="destination-title">Madrid</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/home_background.jpg" alt="da lat">
+                                        <p class="destination-title">Marseille</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/berlin.jpg" alt="da lat">
+                                        <p class="destination-title">Montpellier</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/da-lat.png" alt="da lat">
+                                        <p class="destination-title">Moscow</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/vung-tau.png" alt="da lat">
+                                        <p class="destination-title">Nice</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/phu-quoc.png" alt="da lat">
+                                        <p class="destination-title">Paris</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/destination-9.jpg" alt="da lat">
+                                        <p class="destination-title">Prague</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/destination-8.jpg" alt="da lat">
+                                        <p class="destination-title">Rome</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/vung-tau.png" alt="da lat">
+                                        <p class="destination-title">Toulouse</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/phu-quoc.png" alt="da lat">
+                                        <p class="destination-title">Vienna</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/destination-9.jpg" alt="da lat">
+                                        <p class="destination-title">Zurich</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/destination-8.jpg" alt="da lat">
+                                        <p class="destination-title">Heathrow</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/vung-tau.png" alt="da lat">
+                                        <p class="destination-title">Copenhagen</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/phu-quoc.png" alt="da lat">
+                                        <p class="destination-title">Warsaw Chopin</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/destination-9.jpg" alt="da lat">
+                                        <p class="destination-title">Munich</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/destination-8.jpg" alt="da lat">
+                                        <p class="destination-title">Helsinki</p>
+                                      </div>
                                     </div>
+                                   </li>
+                                   <li class="list-america">
+                                      <div class="list-destination">
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hochiminh.png" alt="da lat">
+                                          <p class="destination-title">Atlanta Hartsfield</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hanoi.png" alt="da lat">
+                                          <p class="destination-title">Austin</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/danang.png" alt="da lat">
+                                          <p class="destination-title">Boston, Logan</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hoi-an.png" alt="da lat">
+                                          <p class="destination-title">Chicago IL</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hp.jpg" alt="da lat">
+                                          <p class="destination-title">Dallas Fort Worth</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hochiminh.png" alt="da lat">
+                                          <p class="destination-title">Denver</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hanoi.png" alt="da lat">
+                                          <p class="destination-title">Honolulu</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/danang.png" alt="da lat">
+                                          <p class="destination-title">Los Angeles</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hoi-an.png" alt="da lat">
+                                          <p class="destination-title">Miami</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hp.jpg" alt="da lat">
+                                          <p class="destination-title">Minneapolis St.Paul</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hoi-an.png" alt="da lat">
+                                          <p class="destination-title">New York</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hp.jpg" alt="da lat">
+                                          <p class="destination-title">Portland</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hochiminh.png" alt="da lat">
+                                          <p class="destination-title">Seattle, Tacoma</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hanoi.png" alt="da lat">
+                                          <p class="destination-title">St Louis, Lambert</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/danang.png" alt="da lat">
+                                          <p class="destination-title">Washington</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hoi-an.png" alt="da lat">
+                                          <p class="destination-title">George Bush</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hp.jpg" alt="da lat">
+                                          <p class="destination-title">Dulles</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hanoi.png" alt="da lat">
+                                          <p class="destination-title">Phoenix Sky Harbor</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/danang.png" alt="da lat">
+                                          <p class="destination-title">Philadelphia</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hoi-an.png" alt="da lat">
+                                          <p class="destination-title">Tampa</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hp.jpg" alt="da lat">
+                                          <p class="destination-title">San Diego</p>
+                                        </div>
+                                      </div>
+                                   </li>
+                                   <li class="list-australia">
+                                    <div class="list-destination">
+                                      <div class="destination-item">
+                                        <img src="./assets/img/hoi-an.png" alt="da lat">
+                                        <p class="destination-title">Sydney</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/hp.jpg" alt="da lat">
+                                        <p class="destination-title">Melbourne</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/nha-trang.png" alt="da lat">
+                                        <p class="destination-title">Brisbane</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/hoi-an.png" alt="da lat">
+                                        <p class="destination-title">Perth</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/hp.jpg" alt="da lat">
+                                        <p class="destination-title">Adelaide</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/nha-trang.png" alt="da lat">
+                                        <p class="destination-title">Darwin</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/hoi-an.png" alt="da lat">
+                                        <p class="destination-title">Cairns</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/hp.jpg" alt="da lat">
+                                        <p class="destination-title">Gold Coast</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/nha-trang.png" alt="da lat">
+                                        <p class="destination-title">Auckland</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/hoi-an.png" alt="da lat">
+                                        <p class="destination-title">Wellington</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/hp.jpg" alt="da lat">
+                                        <p class="destination-title">Christchurch</p>
+                                      </div>
+                                      <div class="destination-item">
+                                        <img src="./assets/img/nha-trang.png" alt="da lat">
+                                        <p class="destination-title">Palmerston North</p>
+                                      </div>
+                                    </div>
+                                   </li>
+                                   <li class="list-afica">
+                                      <div class="list-destination">
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hochiminh.png" alt="da lat">
+                                          <p class="destination-title">Johannesburg</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hanoi.png" alt="da lat">
+                                          <p class="destination-title">Murtala Muhammed</p>
+                                        </div>
+                                      </div>
                                    </li>
                                   </ul>
-                                  <!-- <ul class="nacc">
-                                   <li class="active">
-                                    <div class="list-vn">
-                                     
-                                    </div>
-                                   </li>
-                                   <li>
-                                    <div class="list-dna">
-                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita necessitatibus eos aliquid ratione libero ipsam, at modi iure placeat! Culpa molestias accusamus aperiam omnis exercitationem eaque natus nisi soluta porro?
-                                    </div>
-                                   </li>
-                                   <li>
-                                    <div class="list-dba">
-                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae earum provident tempora fuga nemo doloribus itaque. Sed, porro. Error cupiditate odio maiores ea quod, aspernatur exercitationem dolores atque temporibus nemo?
-                                    </div>
-                                   </li>
-                                  </ul> -->
                                  </div>
 
                                 </div>
@@ -172,10 +616,518 @@
                             <div class="form-group">
                               <span class="form-search-label">Nơi Đến</span>
                               <input
-                                class="form-control"
+                                class="form-control input-return"
                                 type="text"
                                 placeholder="Country, ZIP, city..."
                               />
+                            </div>
+                            <div id="listDes" class="list-ret" style="display:none;">
+                                <div class="naccs-ret">
+                                  <div class="grid">
+                                     
+                                   <div class="gc gc--1-of-4">
+                                    <div class="menu">
+                                     <div class="active"><span class="light"></span><span>Việt Nam</span></div>
+                                     <div><span class="light"></span><span>Đông Nam Á</span></div>
+                                     <div><span class="light"></span><span>Đông Bắc Á</span></div>
+                                     <div><span class="light"></span><span>Châu Âu</span></div>
+                                     <div><span class="light"></span><span>Châu Mỹ</span></div>
+                                     <div><span class="light"></span><span>Châu ÚC</span></div>
+                                     <div><span class="light"></span><span>Châu Phi</span></div>
+                                    </div>
+                                   </div>
+  
+                                   <div class="gc gc--3-of-4">
+                                    <ul class="nacc">
+                                     <li class="list-vn active">
+                                      <div class="list-destination">
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hochiminh.png" alt="da lat">
+                                          <p class="destination-title">TP.HCM</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hanoi.png" alt="da lat">
+                                          <p class="destination-title">Hà Nội</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/danang.png" alt="da lat">
+                                          <p class="destination-title">Đà nẵng</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/can-tho.jpg" alt="da lat">
+                                          <p class="destination-title">cần thơ</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hp.jpg" alt="da lat">
+                                          <p class="destination-title">Hải Phòng</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/van-don.jpg" alt="da lat">
+                                          <p class="destination-title">Vân Đồn</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/dien-bien.jpg" alt="da lat">
+                                          <p class="destination-title">Điện Biên</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/nha-trang.png" alt="da lat">
+                                          <p class="destination-title">Nha Trang</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/da-lat.png" alt="da lat">
+                                          <p class="destination-title">Đà Lạt</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/buon-me-thuoc.jpg" alt="da lat">
+                                          <p class="destination-title">Buôn Mê Thuộc</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/pleiku.jpeg" alt="da lat">
+                                          <p class="destination-title">Pleiku</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/qui-nhon.png" alt="da lat">
+                                          <p class="destination-title">Quy Nhơn</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/dong-hoi.jpg" alt="da lat">
+                                          <p class="destination-title">Đồng Hới</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/tuy-hoa.jpg" alt="da lat">
+                                          <p class="destination-title">Tuy Hòa</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/chu-lai.jpg" alt="da lat">
+                                          <p class="destination-title">Chu Lai</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/phu-quoc.png" alt="da lat">
+                                          <p class="destination-title">Phú Quốc</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/con-dao.jpg" alt="da lat">
+                                          <p class="destination-title">Côn Đảo</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/thanh-hoa.jpg" alt="da lat">
+                                          <p class="destination-title">Thanh Hóa</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/ca-mau.jpg" alt="da lat">
+                                          <p class="destination-title">Cà Mau</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/rach-gia.png" alt="da lat">
+                                          <p class="destination-title">Rạch giá</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/vinh.jpg" alt="da lat">
+                                          <p class="destination-title">Vinh</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hue.jpg" alt="da lat">
+                                          <p class="destination-title">Huế</p>
+                                        </div>
+                                      </div>
+                                     </li>
+                                     <li class="list-dna">
+                                      <div class="list-destination">
+                                        <div class="destination-item">
+                                          <img src="./assets/img/bangkok.jpg" alt="Bangkok">
+                                          <p class="destination-title">Bangkok</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Chiang-Mai.jpg" alt="Chiang Mai">
+                                          <p class="destination-title">Chiang Mai</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Jakarta.jpg" alt="Jakarta">
+                                          <p class="destination-title">Jakarta</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/kuala-lumpur.jpg" alt="Kuala Lumpur">
+                                          <p class="destination-title">Kuala Lumpur</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Luang-Prabang.jpg" alt="Luang Prabang">
+                                          <p class="destination-title">Luang Prabang</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Manila.jpg" alt="Manila">
+                                          <p class="destination-title">Manila</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Phnom-Penh.jpg" alt="Phnom Penh">
+                                          <p class="destination-title">Phnom Penh</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Phuket.jpg" alt="Phuket">
+                                          <p class="destination-title">Phuket</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/siem-reap.jpg" alt="Siem Reap">
+                                          <p class="destination-title">Siem Reap</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Sihanoukville.jpg" alt="Sihanoukville">
+                                          <p class="destination-title">Sihanoukville</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Singapore.jpeg" alt="Singapore">
+                                          <p class="destination-title">Singapore</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Vientiane.jpg" alt="Vientiane">
+                                          <p class="destination-title">Vientiane</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/Yangon.jpg" alt="Yangon">
+                                          <p class="destination-title">Yangon</p>
+                                        </div>
+                                      </div>
+                                     </li>
+                                     <li class="list-dba">
+                                        <div class="list-destination">
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Beijing.jpg" alt="Beijing">
+                                            <p class="destination-title">Beijing</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Busan.jpg" alt="Busan">
+                                            <p class="destination-title">Busan</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Chengdu.jpg" alt="Chengdu">
+                                            <p class="destination-title">Chengdu</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Fukuoka.jpg" alt="Fukuoka">
+                                            <p class="destination-title">Fukuoka</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Guangzhou.jpg" alt="Guangzhou">
+                                            <p class="destination-title">Guangzhou</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Hang-chau.jpg" alt="hang chau">
+                                            <p class="destination-title">Hàng Châu</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hongkong.jpg" alt="Hong Kong">
+                                            <p class="destination-title">Hong Kong</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Kaohsiung.jpg" alt="Kaohsiung">
+                                            <p class="destination-title">Kaohsiung</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Nagoya.jpg" alt="Nagoya">
+                                            <p class="destination-title">Nagoya</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Osaka.jpg" alt="Osaka">
+                                            <p class="destination-title">Osaka</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Seoul.jpg" alt="Seoul">
+                                            <p class="destination-title">Seoul</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Shanghai.jpg" alt="Shanghai">
+                                            <p class="destination-title">Shanghai</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Taipei.jpg" alt="Taipei">
+                                            <p class="destination-title">Taipei</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Tokyo-Haneda.jpg" alt="Tokyo Haneda">
+                                            <p class="destination-title">Tokyo Haneda</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Tokyo-Narita.jpeg" alt="Tokyo Narita">
+                                            <p class="destination-title">Tokyo Narita</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Shanghai-Pudong.jpg" alt="Shanghai Pudong">
+                                            <p class="destination-title">Shanghai Pudong</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/dubai.jpeg" alt="Dubai">
+                                            <p class="destination-title">Dubai</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Indira-Gandhi.jpg.crdownload" alt="Indira Gandhi">
+                                            <p class="destination-title">Indira Gandhi</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Xiamen-Gaoqi.png" alt="Xiamen Gaoqi">
+                                            <p class="destination-title">Xiamen Gaoqi</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Shenzhen-Baoan.jpg" alt="Shenzhen Bao\'an">
+                                            <p class="destination-title">Shenzhen Bao\'an</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Ngurah-Rai.jpg" alt="Ngurah Rai">
+                                            <p class="destination-title">Ngurah Rai</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/Kunming-Changshui.jpg" alt="Kunming Changshui">
+                                            <p class="destination-title">Kunming Changshui</p>
+                                          </div>
+                                        </div>
+                                     </li>
+                                     <li class="list-euro">
+                                      <div class="list-destination">
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hoi-an.png" alt="da lat">
+                                          <p class="destination-title">Amsterdam</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hp.jpg" alt="da lat">
+                                          <p class="destination-title">Barcelona</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/nha-trang.png" alt="da lat">
+                                          <p class="destination-title">Frankfurt</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/phan-thiet.png" alt="da lat">
+                                          <p class="destination-title">Geneva</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/nha-trang.png" alt="da lat">
+                                          <p class="destination-title">London</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/destination-11.jpg" alt="da lat">
+                                          <p class="destination-title">Lyon</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/destination-5.jpg" alt="da lat">
+                                          <p class="destination-title">Madrid</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/home_background.jpg" alt="da lat">
+                                          <p class="destination-title">Marseille</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/berlin.jpg" alt="da lat">
+                                          <p class="destination-title">Montpellier</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/da-lat.png" alt="da lat">
+                                          <p class="destination-title">Moscow</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/vung-tau.png" alt="da lat">
+                                          <p class="destination-title">Nice</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/phu-quoc.png" alt="da lat">
+                                          <p class="destination-title">Paris</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/destination-9.jpg" alt="da lat">
+                                          <p class="destination-title">Prague</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/destination-8.jpg" alt="da lat">
+                                          <p class="destination-title">Rome</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/vung-tau.png" alt="da lat">
+                                          <p class="destination-title">Toulouse</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/phu-quoc.png" alt="da lat">
+                                          <p class="destination-title">Vienna</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/destination-9.jpg" alt="da lat">
+                                          <p class="destination-title">Zurich</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/destination-8.jpg" alt="da lat">
+                                          <p class="destination-title">Heathrow</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/vung-tau.png" alt="da lat">
+                                          <p class="destination-title">Copenhagen</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/phu-quoc.png" alt="da lat">
+                                          <p class="destination-title">Warsaw Chopin</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/destination-9.jpg" alt="da lat">
+                                          <p class="destination-title">Munich</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/destination-8.jpg" alt="da lat">
+                                          <p class="destination-title">Helsinki</p>
+                                        </div>
+                                      </div>
+                                     </li>
+                                     <li class="list-america">
+                                        <div class="list-destination">
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hochiminh.png" alt="da lat">
+                                            <p class="destination-title">Atlanta Hartsfield</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hanoi.png" alt="da lat">
+                                            <p class="destination-title">Austin</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/danang.png" alt="da lat">
+                                            <p class="destination-title">Boston, Logan</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hoi-an.png" alt="da lat">
+                                            <p class="destination-title">Chicago IL</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hp.jpg" alt="da lat">
+                                            <p class="destination-title">Dallas Fort Worth</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hochiminh.png" alt="da lat">
+                                            <p class="destination-title">Denver</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hanoi.png" alt="da lat">
+                                            <p class="destination-title">Honolulu</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/danang.png" alt="da lat">
+                                            <p class="destination-title">Los Angeles</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hoi-an.png" alt="da lat">
+                                            <p class="destination-title">Miami</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hp.jpg" alt="da lat">
+                                            <p class="destination-title">Minneapolis St.Paul</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hoi-an.png" alt="da lat">
+                                            <p class="destination-title">New York</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hp.jpg" alt="da lat">
+                                            <p class="destination-title">Portland</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hochiminh.png" alt="da lat">
+                                            <p class="destination-title">Seattle, Tacoma</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hanoi.png" alt="da lat">
+                                            <p class="destination-title">St Louis, Lambert</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/danang.png" alt="da lat">
+                                            <p class="destination-title">Washington</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hoi-an.png" alt="da lat">
+                                            <p class="destination-title">George Bush</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hp.jpg" alt="da lat">
+                                            <p class="destination-title">Dulles</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hanoi.png" alt="da lat">
+                                            <p class="destination-title">Phoenix Sky Harbor</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/danang.png" alt="da lat">
+                                            <p class="destination-title">Philadelphia</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hoi-an.png" alt="da lat">
+                                            <p class="destination-title">Tampa</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hp.jpg" alt="da lat">
+                                            <p class="destination-title">San Diego</p>
+                                          </div>
+                                        </div>
+                                     </li>
+                                     <li class="list-australia">
+                                      <div class="list-destination">
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hoi-an.png" alt="da lat">
+                                          <p class="destination-title">Sydney</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hp.jpg" alt="da lat">
+                                          <p class="destination-title">Melbourne</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/nha-trang.png" alt="da lat">
+                                          <p class="destination-title">Brisbane</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hoi-an.png" alt="da lat">
+                                          <p class="destination-title">Perth</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hp.jpg" alt="da lat">
+                                          <p class="destination-title">Adelaide</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/nha-trang.png" alt="da lat">
+                                          <p class="destination-title">Darwin</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hoi-an.png" alt="da lat">
+                                          <p class="destination-title">Cairns</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hp.jpg" alt="da lat">
+                                          <p class="destination-title">Gold Coast</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/nha-trang.png" alt="da lat">
+                                          <p class="destination-title">Auckland</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hoi-an.png" alt="da lat">
+                                          <p class="destination-title">Wellington</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/hp.jpg" alt="da lat">
+                                          <p class="destination-title">Christchurch</p>
+                                        </div>
+                                        <div class="destination-item">
+                                          <img src="./assets/img/nha-trang.png" alt="da lat">
+                                          <p class="destination-title">Palmerston North</p>
+                                        </div>
+                                      </div>
+                                     </li>
+                                     <li class="list-afica">
+                                        <div class="list-destination">
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hochiminh.png" alt="da lat">
+                                            <p class="destination-title">Johannesburg</p>
+                                          </div>
+                                          <div class="destination-item">
+                                            <img src="./assets/img/hanoi.png" alt="da lat">
+                                            <p class="destination-title">Murtala Muhammed</p>
+                                          </div>
+                                        </div>
+                                     </li>
+                                    </ul>
+                                   </div>
+  
+                                  </div>
+                                 </div>
                             </div>
                           </div>
                         </div>
@@ -224,7 +1176,7 @@
                               <div class="count-passenger form-control">1</div>
                               <span class="select-arrow"></span>
                             </div>
-                            <div class="dropdown-box-inner hide">
+                            <div class="dropdown-box-inner" style="display: none;">
                               <div class="row row-adult">
                                 <div class="col-md-8">
                                   <label for="count-adult" class="title-people">

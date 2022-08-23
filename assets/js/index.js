@@ -57,16 +57,82 @@ $(document).ready(function () {
           //scroll and resize event
      }
 
-     // Show passgenger
-     $(".count-passenger").on('click', function () {
-          let hasShow = $(".dropdown-box-inner").hasClass('hide'); // true
-          if (hasShow) {
-               $(".dropdown-box-inner").show();
-               $("div.dropdown-box-inner").removeClass('hide');
-          } else {
-               $(".dropdown-box-inner").hide();
-               $("div.dropdown-box-inner").addClass('hide');
+     // show dropdown count passenger
+     $(".group-passenger").on('click', function (e) {
+          $(".dropdown-box-inner").show();
+     });
+
+      // show listDep and listDes
+      $(document).on('click', ".input-departure", function () {
+          $('.list-dep').show();
+
+          let listItemHeight = ($(".naccs-dep ul").find("li:eq(1)").innerHeight()) + 150;
+          console.log(listItemHeight);
+          $(".naccs-dep ul").height(listItemHeight + "px");
+     });
+     $(document).on('click', ".input-return", function () {
+          $('.list-ret').show();
+
+          let listItemHeight = ($(".naccs-ret ul").find("li:eq(1)").innerHeight()) + 150;
+          console.log(listItemHeight);
+          $(".naccs-ret ul").height(listItemHeight + "px");
+     });
+
+     $(document).on("click", ".naccs-dep .menu div", function () {
+          let numberIndex = $(this).index();
+     
+          if (!$(this).is("active")) {
+               $(".naccs-dep .menu div").removeClass("active");
+               $(".naccs-dep ul li").removeClass("active");
+     
+               $(this).addClass("active");
+               $(".naccs-dep ul").find("li:eq(" + numberIndex + ")").addClass("active");
+     
+               let listItemHeight = ($(".naccs-dep ul").find("li:eq(" + numberIndex + ")").innerHeight());
+               $(".naccs-dep ul").height(listItemHeight + "px");
+          } 
+     })
+     
+     $(document).on("click", ".naccs-ret .menu div", function () {
+          let numberIndex = $(this).index();
+     
+          if (!$(this).is("active")) {
+               $(".naccs-ret .menu div").removeClass("active");
+               $(".naccs-ret ul li").removeClass("active");
+     
+               $(this).addClass("active");
+               $(".naccs-ret ul").find("li:eq(" + numberIndex + ")").addClass("active");
+     
+               let listItemHeight = ($(".naccs-ret ul").find("li:eq(" + numberIndex + ")").innerHeight());
+               $(".naccs-ret ul").height(listItemHeight + "px");
+          } 
+     })
+
+     // when click outside to close modal 
+     $(document).mouseup(function(e) { //event nhả chuột
+
+          //modal count_passenger
+          let dropdown_passenger = $(".dropdown-box-inner");
+          // if the target of the click isn't the container nor a descendant of the container
+          if (!dropdown_passenger.is(e.target) && dropdown_passenger.has(e.target).length === 0) 
+          {
+               dropdown_passenger.hide();
           }
+
+          //modal depart and destination
+          let list_dep = $(".list-dep");
+          if (!list_dep.is(e.target) && list_dep.has(e.target).length === 0) 
+          {
+               list_dep.hide();
+
+          } 
+
+          let list_ret = $(".list-ret");
+          if (!list_ret.is(e.target) && list_ret.has(e.target).length === 0) 
+          {
+               list_ret.hide();
+
+          } 
      });
 
      //Increment Value on Click
@@ -195,19 +261,6 @@ $(document).ready(function () {
           }
      })
 
-     // show listdep and listDes
-     $(document).on('click', ".input-departure", function(){
-          let hide_list_dep = $('#listDep').hasClass('hide');
-          if(hide_list_dep){
-               $('#listDep').removeClass('hide');
-               $('#listDep').addClass('show');
-          } else {
-               $('#listDep').addClass('hide');
-               $('#listDep').removeClass('show');
-          }
-     })
-
-
 });
 
 function loadImages(img) {
@@ -216,20 +269,3 @@ function loadImages(img) {
      img.setAttribute('src', url);
 }
 
-
-$(document).on("click", ".naccs .menu div", function() {
-	var numberIndex = $(this).index();
-
-	if (!$(this).is("active")) {
-		$(".naccs .menu div").removeClass("active");
-		$(".naccs ul li").removeClass("active");
-
-		$(this).addClass("active");
-		$(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
-
-		var listItemHeight = $(".naccs ul")
-			.find("li:eq(" + numberIndex + ")")
-			.innerHeight();
-		$(".naccs ul").height(listItemHeight + "px");
-	}
-});
