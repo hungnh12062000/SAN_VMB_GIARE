@@ -603,7 +603,7 @@ button.type-plus {
   z-index: 101;
   font-size: 14px;
   position: fixed;
-  top: 25%;
+  top: 20%;
   right: 32px;
   display: flex;
   align-items: center;
@@ -749,8 +749,9 @@ button.type-plus {
 }
 
 /* ============== END SEARCH ==========*/
-input:focus, input:active {
-  border-bottom: 2px solid var(--saphire-color) !important;
+input.input-departure:focus, input.input-departure:active,
+input.input-return:focus, input.input-return:active {
+  border-bottom: 2px solid var(--saphire-color);
 } 
 /* Calender new */
 .picker,
