@@ -1,5 +1,50 @@
 $(document).ready(function () {
 
+     // Calendar
+     // https://amsul.ca/pickadate.js/date/
+
+     let from_$input = $('#input_from').pickadate({
+          formatSubmit: 'dd//mm//yyyy',
+          monthsFull: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+          weekdaysShort: ['CN', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7'],
+     })
+     let from_picker = from_$input.pickadate('picker')
+
+     let to_$input = $('#input_to').pickadate({
+          formatSubmit: 'dd//mm//yyyy',
+          monthsFull: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+          weekdaysShort: ['CN', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7'],
+     })
+     let to_picker = to_$input.pickadate('picker')
+
+
+     // Check if there’s a “from” or “to” date to start with.
+     if (from_picker.get('value')) {
+          to_picker.set('min', from_picker.get('select'))
+     }
+     if (to_picker.get('value')) {
+          from_picker.set('max', to_picker.get('select'))
+     }
+
+     // When something is selected, update the “from” and “to” limits.
+     from_picker.on('set', function (event) {
+          if (event.select) {
+               to_picker.set('min', from_picker.get('select'))
+          }
+          else if ('clear' in event) {
+               to_picker.set('min', false)
+          }
+     })
+     to_picker.on('set', function (event) {
+          if (event.select) {
+               from_picker.set('max', to_picker.get('select'))
+          }
+          else if ('clear' in event) {
+               from_picker.set('max', false)
+          }
+     })
+
+
      // Slider
      $('.image-slider').slick({
           dots: true,
@@ -62,8 +107,8 @@ $(document).ready(function () {
           $(".dropdown-box-inner").show();
      });
 
-      // show listDep and listDes
-      $(document).on('click', ".input-departure", function () {
+     // show listDep and listDes
+     $(document).on('click', ".input-departure", function () {
           $('.list-dep').show();
 
           let listItemHeight = ($(".naccs-dep ul").find("li:eq(1)").innerHeight()) + 150;
@@ -80,59 +125,56 @@ $(document).ready(function () {
 
      $(document).on("click", ".naccs-dep .menu div", function () {
           let numberIndex = $(this).index();
-     
+
           if (!$(this).is("active")) {
                $(".naccs-dep .menu div").removeClass("active");
                $(".naccs-dep ul li").removeClass("active");
-     
+
                $(this).addClass("active");
                $(".naccs-dep ul").find("li:eq(" + numberIndex + ")").addClass("active");
-     
+
                let listItemHeight = ($(".naccs-dep ul").find("li:eq(" + numberIndex + ")").innerHeight());
                $(".naccs-dep ul").height(listItemHeight + "px");
-          } 
+          }
      })
-     
+
      $(document).on("click", ".naccs-ret .menu div", function () {
           let numberIndex = $(this).index();
-     
+
           if (!$(this).is("active")) {
                $(".naccs-ret .menu div").removeClass("active");
                $(".naccs-ret ul li").removeClass("active");
-     
+
                $(this).addClass("active");
                $(".naccs-ret ul").find("li:eq(" + numberIndex + ")").addClass("active");
-     
+
                let listItemHeight = ($(".naccs-ret ul").find("li:eq(" + numberIndex + ")").innerHeight());
                $(".naccs-ret ul").height(listItemHeight + "px");
-          } 
+          }
      })
 
      // when click outside to close modal 
-     $(document).mouseup(function(e) { //event nhả chuột
+     $(document).mouseup(function (e) { //event nhả chuột
 
           //modal count_passenger
           let dropdown_passenger = $(".dropdown-box-inner");
           // if the target of the click isn't the container nor a descendant of the container
-          if (!dropdown_passenger.is(e.target) && dropdown_passenger.has(e.target).length === 0) 
-          {
+          if (!dropdown_passenger.is(e.target) && dropdown_passenger.has(e.target).length === 0) {
                dropdown_passenger.hide();
           }
 
           //modal depart and destination
           let list_dep = $(".list-dep");
-          if (!list_dep.is(e.target) && list_dep.has(e.target).length === 0) 
-          {
+          if (!list_dep.is(e.target) && list_dep.has(e.target).length === 0) {
                list_dep.hide();
 
-          } 
+          }
 
           let list_ret = $(".list-ret");
-          if (!list_ret.is(e.target) && list_ret.has(e.target).length === 0) 
-          {
+          if (!list_ret.is(e.target) && list_ret.has(e.target).length === 0) {
                list_ret.hide();
 
-          } 
+          }
      });
 
      //Increment Value on Click
@@ -216,50 +258,22 @@ $(document).ready(function () {
           $(".toast-passenger").removeClass('active');
      })
 
-
-     // Calendar
-     // https://amsul.ca/pickadate.js/date/
-
-     let from_$input = $('#input_from').pickadate({
-          formatSubmit: 'dd//mm//yyyy',
-          monthsFull: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
-          weekdaysShort: ['CN', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7'],
-     })
-     let from_picker = from_$input.pickadate('picker')
-
-     let to_$input = $('#input_to').pickadate({
-          formatSubmit: 'dd//mm//yyyy',
-          monthsFull: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
-          weekdaysShort: ['CN', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7'],
-     })
-     let to_picker = to_$input.pickadate('picker')
-
-
-     // Check if there’s a “from” or “to” date to start with.
-     if (from_picker.get('value')) {
-          to_picker.set('min', from_picker.get('select'))
-     }
-     if (to_picker.get('value')) {
-          from_picker.set('max', to_picker.get('select'))
-     }
-
-     // When something is selected, update the “from” and “to” limits.
-     from_picker.on('set', function (event) {
-          if (event.select) {
-               to_picker.set('min', from_picker.get('select'))
+     // ===== Scroll to Top ==== 
+     $(window).scroll(function () {
+          if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 50px
+               $('.scroll-to-top').fadeIn(200);    // Fade in the arrow
+               $('.scroll-to-top').css('display', 'block');    // Fade in the arrow
+          } else {
+               $('.scroll-to-top').fadeOut(200);   // Else fade out the arrow
           }
-          else if ('clear' in event) {
-               to_picker.set('min', false)
-          }
-     })
-     to_picker.on('set', function (event) {
-          if (event.select) {
-               from_picker.set('max', to_picker.get('select'))
-          }
-          else if ('clear' in event) {
-               from_picker.set('max', false)
-          }
-     })
+     });
+     $('.scroll-to-top').click(function () {      // When arrow is clicked
+          // $('body,html').animate({
+          //      scrollTop: 0
+          // }, "slow");
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+     });
+
 
 });
 
@@ -268,4 +282,3 @@ function loadImages(img) {
      const url = img.getAttribute('lazy-src');
      img.setAttribute('src', url);
 }
-

@@ -22,7 +22,8 @@ html {
   font-size: 62.5%;
   line-height: 1.6rem;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -235,3 +236,78 @@ a {
 .pdr-32{
   padding-right: 32px;
 }
+
+/* =========== scroll to top ========= */
+.scroll-to-top{
+  position: fixed;
+  right: 40px;
+  bottom: 70px;
+  border: 5px solid var(--saphire-color);
+  width: 50px;
+  height: 50px;   
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#return-to-top{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-to-top ion-icon{
+  position: absolute;
+  color: var(--saphire-color);
+  font-size: 22px;
+  font-weight: 700;
+  transition: transform .5s ease-in;
+}
+
+.scroll-to-top:hover ion-icon{
+	transform: rotate(360deg);
+}
+
+/* =========== scroll to top ========= */
+
+/* ============== toast ========*/
+#toast {
+  min-width: 400px;
+  max-width: 500px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 20px 0;
+  z-index: 101;
+  font-size: 14px;
+  position: fixed;
+  top: 20%;
+  right: 32px;
+  display: flex;
+  align-items: center;
+  border-left: 4px solid var(--red-color);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  transition: all linear 0.3s;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.toast-passenger{
+  transform: translateX(115%);
+}
+
+.toast-passenger.active{
+  transform: translateX(0);
+}
+
+#toast ion-icon {
+  color: var(--red-color);
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+/* =============== toast =================*/

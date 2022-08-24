@@ -592,44 +592,6 @@ button.type-plus {
 }
 /* ======== END PASSENGER ======= */
 
-/* ============== toast ========*/
-#toast {
-  min-width: 400px;
-  max-width: 500px;
-  background-color: #fff;
-  color: #000;
-  text-align: center;
-  padding: 20px 0;
-  z-index: 101;
-  font-size: 14px;
-  position: fixed;
-  top: 20%;
-  right: 32px;
-  display: flex;
-  align-items: center;
-  border-left: 4px solid var(--red-color);
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-  transition: all linear 0.3s;
-  font-family: "Poppins", sans-serif;
-
-}
-
-.toast-passenger{
-  transform: translateX(115%);
-}
-
-.toast-passenger.active{
-  transform: translateX(0);
-}
-
-#toast ion-icon {
-  color: var(--red-color);
-  font-size: 24px;
-  margin: 0 10px;
-  cursor: pointer;
-}
-/* =============== toast =================*/
-
 /* ============== BEGIN SEARCH =============*/
 .search-section {
   position: absolute;
