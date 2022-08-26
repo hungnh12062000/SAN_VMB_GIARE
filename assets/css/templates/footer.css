@@ -1,6 +1,6 @@
 /* ======= FOOTER ======= */
 .footer {
-  background: #F7FAFC;
+  background: var(--bgsection-color);
   margin-top: 50px;
   font-family: 'Mt', sans-serif;
 
