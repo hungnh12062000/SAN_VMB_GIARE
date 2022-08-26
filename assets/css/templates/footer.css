@@ -1,8 +1,9 @@
-
 /* ======= FOOTER ======= */
 .footer {
-  background: #fbfbfd;
+  background: #F7FAFC;
   margin-top: 50px;
+  font-family: 'Mt', sans-serif;
+
 }
 
 .new_footer_top {
@@ -16,7 +17,7 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
-  color: #7f88a6;
+  color: #1a202c;
   padding: 40px 0 0;
 }
 
@@ -91,15 +92,12 @@
   color: var(--saphire-color);
   font-weight: bold;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
-
   
 }
 
 .contact-menu__item ul {
   padding: 0 4px;
   list-style: none;
-  font-family: 'Poppins', sans-serif;
 
 }
 
@@ -131,7 +129,7 @@
   line-height: 2.7rem;
   letter-spacing: 1px;
   color: var(--text-color);
-  font-family: 'Poppins', sans-serif;
+
   margin-bottom: 1rem;
 }
 
@@ -139,8 +137,6 @@
 .footer-copyright {
   display: flex;
   justify-content: space-between;
-  /* background: #ddd; */
-  font-family: 'Poppins', sans-serif;
   border-top: 1px solid #ccc;
 
 }

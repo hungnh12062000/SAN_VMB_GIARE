@@ -18,6 +18,8 @@
   background-size: cover;
 
   position: relative;
+  font-family: 'Mt', sans-serif;
+
 }
 
 .video {
@@ -228,7 +230,7 @@
   width: 200px;
   z-index: 2;
   font-size: 16px;
-  font-family: Mt;
+  font-family: 'Mt';
   font-weight: 600;
   line-height: 20px;
   border-radius: 8px;

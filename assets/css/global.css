@@ -1,8 +1,10 @@
 :root {
   --white-color: #fff;
   --black-color: #000;
-  --text-color: #9a9a9a;
+  --text-color: #1a202c;
   --border-color: #dbdbdb;
+  --title-color: #1a202c;
+  --subheading-color: #4a5568;
 
   --saphire-color: #14b9d5;
   --green-color: #1bbc9b;
@@ -10,6 +12,22 @@
   --orange-color: #f3a46b;
   --yellow-color: #ffd205;
   --purple-color: #ba71da;
+}
+
+@font-face {
+  font-family: Mt;
+  src: url(/assets/fonts/Mt-Regular.otf);
+  font-display: swap;
+}
+@font-face {
+  font-family: Mt-SemiBold;
+  src: url(/assets/fonts/Mt-SemiBold.otf);
+  font-display: swap;
+}
+@font-face {
+  font-family: Mt-Bold;
+  src: url(/assets/fonts/Mt-Bold.otf);
+  font-display: swap;
 }
 
 * {
@@ -22,8 +40,13 @@ html {
   font-size: 62.5%;
   line-height: 1.6rem;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif !important;
+  /* font-family: "Poppins", sans-serif !important; */
   scroll-behavior: smooth;
+}
+
+body{
+  font-family: Mt,-apple-system,BlinkMacSystemFont,sans-serif !important;
+
 }
 
 a {
