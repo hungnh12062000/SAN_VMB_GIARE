@@ -478,7 +478,7 @@ ul{
   z-index: 0;
 }
 
-/*underline*/
+/*========= underline =========*/
 .proposal-title u {
   position: relative;
   text-decoration: none;
