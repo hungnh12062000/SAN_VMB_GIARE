@@ -17,14 +17,7 @@
   <link rel="stylesheet" href="./assets/libs/datepicker/classic.css" />
   <link rel="stylesheet" href="./assets/libs/datepicker/classic.date.css" />
 
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-
   <!-- font - family -->
-  <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    /> -->
   <link rel="stylesheet" href="./assets/fonts/Mt-Bold.otf">
   <link rel="stylesheet" href="./assets/fonts/Mt-Regular.otf">
   <link rel="stylesheet" href="./assets/fonts/Mt-SemiBold.otf">
@@ -52,12 +45,11 @@
 
   <div class="global-wrap">
     <!-- HEADER -->
-    <!--Begin Header with search-->
-    <div class="header-with-search">
       <section class="header">
         <div class="header__logo">
-          <a href="">
-            <img src="./assets/img/logo.png" alt="Travel" class="header__logo-img" />
+          <a class="header__logo-link" href="">
+            <!-- <img src="./assets/img/logo.png" alt="Travel" class="header__logo-img" /> -->
+            LOGO
           </a>
         </div>
         <ul class="header-nav">
@@ -85,19 +77,18 @@
           <p class="phone-number">1900 636 063</p>
         </div>
       </section>
-      <!-- <video class="video" width="100%" height="460px" type="video/mp4" autoplay="" muted="" loop="">
-        <source src="https://storage.googleapis.com/tripi-assets/mytour/videos/video_bg_mytour.mov">Your browser does not support the video tag.
-      </video> -->
+      
       <div class="search">
+        <!-- <video class="video" width="100%" height="460px" type="video/mp4" autoplay="" muted="" loop="">
+          <source src="https://storage.googleapis.com/tripi-assets/mytour/videos/video_bg_mytour.mov">Your browser does not support the video tag.
+        </video> -->
         <h1 class="search__title">Search your next <u>Holiday</u></h1>
         <h6 class="search__text">CHECK OUR BEST DESTINATIONS</h6>
-
-
         <div class="search-section" id="booking">
           <div class="container">
             <div class="row">
               <div class="booking-form">
-                <form action="">
+                <form class="search-flight-form" method="get" action="./select.html" id="frmFlightSearch" name="frmFlightSearch" class="location-search">
                   <div class="row">
                     <!-- Location -->
                     <div class="col-md-4">
@@ -126,7 +117,7 @@
 
                                 <div class="gc gc--3-of-4">
                                   <ul class="nacc">
-                                    <li class="list-vn active">
+                                    <li class="list-area list-vn active">
                                       <div class="list-destination">
                                         <div class="destination-item">
                                           <img src="./assets/img/hochiminh.png" alt="da lat">
@@ -218,7 +209,7 @@
                                         </div>
                                       </div>
                                     </li>
-                                    <li class="list-dna">
+                                    <li class="list-area list-dna">
                                       <div class="list-destination">
                                         <div class="destination-item">
                                           <img src="./assets/img/bangkok.jpg" alt="Bangkok">
@@ -274,7 +265,7 @@
                                         </div>
                                       </div>
                                     </li>
-                                    <li class="list-dba">
+                                    <li class="list-area list-dba">
                                       <div class="list-destination">
                                         <div class="destination-item">
                                           <img src="./assets/img/Beijing.jpg" alt="Beijing">
@@ -366,7 +357,7 @@
                                         </div>
                                       </div>
                                     </li>
-                                    <li class="list-euro">
+                                    <li class="list-area list-euro">
                                       <div class="list-destination">
                                         <div class="destination-item">
                                           <img src="./assets/img/hoi-an.png" alt="da lat">
@@ -458,7 +449,7 @@
                                         </div>
                                       </div>
                                     </li>
-                                    <li class="list-america">
+                                    <li class="list-area list-america">
                                       <div class="list-destination">
                                         <div class="destination-item">
                                           <img src="./assets/img/hochiminh.png" alt="da lat">
@@ -546,7 +537,7 @@
                                         </div>
                                       </div>
                                     </li>
-                                    <li class="list-australia">
+                                    <li class="list-area list-australia">
                                       <div class="list-destination">
                                         <div class="destination-item">
                                           <img src="./assets/img/hoi-an.png" alt="da lat">
@@ -598,7 +589,7 @@
                                         </div>
                                       </div>
                                     </li>
-                                    <li class="list-afica">
+                                    <li class="list-area list-afica">
                                       <div class="list-destination">
                                         <div class="destination-item">
                                           <img src="./assets/img/hochiminh.png" alt="da lat">
@@ -640,7 +631,7 @@
 
                                 <div class="gc gc--3-of-4">
                                   <ul class="nacc">
-                                    <li class="list-vn active">
+                                    <li class="list-area list-vn active">
                                       <div class="list-destination">
                                         <div class="destination-item">
                                           <img src="./assets/img/hochiminh.png" alt="da lat">
@@ -732,7 +723,7 @@
                                         </div>
                                       </div>
                                     </li>
-                                    <li class="list-dna">
+                                    <li class="list-area list-dna">
                                       <div class="list-destination">
                                         <div class="destination-item">
                                           <img src="./assets/img/bangkok.jpg" alt="Bangkok">
@@ -788,7 +779,7 @@
                                         </div>
                                       </div>
                                     </li>
-                                    <li class="list-dba">
+                                    <li class="list-area list-dba">
                                       <div class="list-destination">
                                         <div class="destination-item">
                                           <img src="./assets/img/Beijing.jpg" alt="Beijing">
@@ -880,7 +871,7 @@
                                         </div>
                                       </div>
                                     </li>
-                                    <li class="list-euro">
+                                    <li class="list-area list-euro">
                                       <div class="list-destination">
                                         <div class="destination-item">
                                           <img src="./assets/img/hoi-an.png" alt="da lat">
@@ -972,7 +963,7 @@
                                         </div>
                                       </div>
                                     </li>
-                                    <li class="list-america">
+                                    <li class="list-area list-america">
                                       <div class="list-destination">
                                         <div class="destination-item">
                                           <img src="./assets/img/hochiminh.png" alt="da lat">
@@ -1060,7 +1051,7 @@
                                         </div>
                                       </div>
                                     </li>
-                                    <li class="list-australia">
+                                    <li class="list-area list-australia">
                                       <div class="list-destination">
                                         <div class="destination-item">
                                           <img src="./assets/img/hoi-an.png" alt="da lat">
@@ -1112,7 +1103,7 @@
                                         </div>
                                       </div>
                                     </li>
-                                    <li class="list-afica">
+                                    <li class="list-area list-afica">
                                       <div class="list-destination">
                                         <div class="destination-item">
                                           <img src="./assets/img/hochiminh.png" alt="da lat">
@@ -1238,7 +1229,9 @@
                         </div>
                         <div class="col-md-8">
                           <div class="form-btn">
-                            <button class="submit-btn">Tìm chuyến bay</button>
+                            <a class="submit-btn" href="./select.html">
+                              <button type="submit" class="submit-btn">Tìm chuyến bay</button>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -1250,8 +1243,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <!--End header-with-search-->
 
     <!-- Begin slider banner -->
     <div class="image-slider container">

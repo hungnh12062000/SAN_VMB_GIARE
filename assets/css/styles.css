@@ -1,11 +1,13 @@
-@import url('./reset.css');
-@import url('./bootstrap.min.css');
+@import url('./general/reset.css');
+@import url('../libs/bootstrap/bootstrap.min.css');
 
-@import url("./global.css");
+@import url("./general/global.css");
 @import url("./templates/header.css");
 @import url("./templates/main.css");
+@import url("./templates/sidebar.css");
 @import url("./templates/footer.css");
 
-@import url("./category.css");
+@import url("./pages/category.css");
+@import url("./pages/choose_journey.css");
 
-@import url("./responsive.css");
+@import url("./general/responsive.css");
