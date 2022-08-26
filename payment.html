@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>SĂN VÉ MÁY BAY GIÁ RẺ</title>
+
+     <!-- slider -->
+     <link rel="stylesheet" href="./assets/libs/slick/slick.css" />
+
+     <!-- datepicker -->
+     <!-- <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css" /> -->
+     <link rel="stylesheet" href="./assets/libs/datepicker/icomoon/style.css" />
+     <link rel="stylesheet" href="./assets/libs/datepicker/classic.css" />
+     <link rel="stylesheet" href="./assets/libs/datepicker/classic.date.css" />
+
+     <!-- font - family -->
+     <link rel="stylesheet" href="./assets/fonts/Mt-Bold.otf" />
+     <link rel="stylesheet" href="./assets/fonts/Mt-Regular.otf" />
+     <link rel="stylesheet" href="./assets/fonts/Mt-SemiBold.otf" />
+
+     <!-- Main css -->
+     <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+     <!-- toast -->
+     <div id="toast" class="toast-passenger">
+          <ion-icon name="alert-circle-outline"></ion-icon> Số lượng em bé nhỏ hơn
+          hoặc bằng số lượng người lớn.
+          <div class="toast-close">
+               <ion-icon name="close-outline"></ion-icon>
+          </div>
+     </div>
+
+     <!-- scroll -->
+     <div class="scroll-to-top">
+          <a href="javascript:" id="return-to-top">
+               <ion-icon name="chevron-up-outline"></ion-icon>
+          </a>
+     </div>
+
+     <div class="global-wrap">
+          <!-- HEADER -->
+          <section class="header">
+               <div class="header__logo">
+                    <a class="header__logo-link" href="">
+                         <!-- <img src="./assets/img/logo.png" alt="Travel" class="header__logo-img" /> -->
+                         LOGO
+                    </a>
+               </div>
+               <ul class="header-nav">
+                    <li class="header-nav__item">
+                         <a href="./index.html" class="header-nav__item-link">HOME</a>
+                    </li>
+                    <li class="header-nav__item">
+                         <a href="./category.html" class="header-nav__item-link">VÉ MÁY BAY NỘI ĐỊA</a>
+                    </li>
+                    <li class="header-nav__item">
+                         <a href="" class="header-nav__item-link">VÉ MÁY BAY QUỐC TẾ</a>
+                    </li>
+                    <li class="header-nav__item">
+                         <a href="" class="header-nav__item-link">VÉ RẺ THEO THÁNG</a>
+                    </li>
+                    <li class="header-nav__item">
+                         <a href="./category.html" class="header-nav__item-link">TIN TỨC</a>
+                    </li>
+                    <li class="header-nav__item">
+                         <a href="" class="header-nav__item-link">LIÊN HỆ</a>
+                    </li>
+               </ul>
+               <div class="header-phone">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <p class="phone-number">1900 636 063</p>
+               </div>
+          </section>
+          <!-- END HEADER -->
+
+          <div class="container section-payment">
+               <div class="row g-0">
+                    <div class="col-md-8">
+                         <section class="section__payment-method">
+                              <!-- <div class="method-transfer">
+                                   <input id="method_transfer" name="radio" type="radio" class="open" checked>
+                                        <label for="method_transfer" class="overlay">
+                                             <div class="circle"></div>
+                                             <span class="text">Chuyển khoản qua ngân hàng</span>
+                                        </label>
+                                        <div id="content_transfer" class="panel">
+                                             <p class="inner-text">
+                                                  Đây là hình thức thanh toán tối ưu nhất và không mất phí. Quý khách có thể chọn lựa tài khoản ngân hàng chuyển đến cùng hệ thống với cái đang sử dụng nhằm đảm bảo tiền được chuyển sang nhanh. Xem danh sách tài khoản ngân hàng tại đây .
+                                             </p>
+                                             <p class="inner-text">Khi thực hiện chuyển khoản xin vui lòng ghi rõ mã đơn hàng, tên người liên hệ đặt vé. Sau khi hoàn tất việc CK vui lòng nhắn tin báo có đến số này : 0909 58 8080
+                                                  Vd : JS3213154, Nguyen Tuan Anh, HCM Hanoi
+                                                  Mã đơn hàng JS3213154, người liên hệ đặt vé là Nguyen Tuan Anh, hành trình Sài Gòn - Hà Nội.</p>
+                                             <p class="inner-text">Việc thông báo CK chậm trễ hoặc quên thông báo sẽ dẫn đến hủy đặt chỗ booking làm tăng giá vé. Xin quý khách vui lòng lưu ý việc này. Các tranh cãi về sau sẽ không được hãng giải quyết. Hãy gọi tổng đài để xác nhận số tiền chuyển khoản : 0947 954 666 - 0947 954 666 - 0947 954 666</p>
+                                        </div>
+                                   </input>
+                              </div>
+                              <div class="method-office">
+                                   <input id="method-office" name="radio" type="radio" class="open">
+                                        <label for="method-office">
+                                             <div class="circle"></div>
+                                             <span class="text">Đến văn phòng thanh toán</span>
+                                        </label>
+                                        <div id="content_office" class="panel">
+                                             <p class="inner-text">Quý khách ghé qua địa chỉ 336 Cao Thắng, Phường. 12, Quận. 10, TP.HCM</p>
+                                        </div>
+                                   </input>
+                              </div>
+                              <div class="method-home">
+                                   <input id="method-home" name="radio" type="radio" class="open">
+                                        <label for="method-home">
+                                             <div class="circle"> </div>
+                                             <span class="text">Thanh toán tại nhà (Phí 50,000 VND)</span>
+                                        </label>
+                                        <div id="content_home" class="panel">
+                                             <span class="inner-text">Chúng tôi sẽ tiến hành in mặt vé, đi cùng phiếu thu số tiền phải trả của Quý khách. Đội giao vé nhanh sẽ liên hệ quý khách trong thời gian sớm nhất.</span> 
+                                             <span class="inner-text">Thanh toán tại nhà chỉ áp dụng cho các quận huyện trong TP.HCM.</span> 
+                                        </div>
+                                   </input>
+                              </div> -->
+
+                              <!-- TEST -->
+                              <div class="option">
+                                   <input type="radio" name="card" id="silver" value="silver">
+                                   <label for="silver" aria-label="Silver">
+                                        <span></span>
+                                        Chuyển khoản qua ngân hàng
+                                        <div class="card card--white card--sm">
+                                        <div class="card__chip"></div>
+                                        <div class="card__content">
+                                             <div class="card__text">
+                                                  <div class="text__row">
+                                                       <div class="text__loader"></div>
+                                                       <div class="text__loader"></div>
+                                                  </div>
+                                                  <div class="text__row">
+                                                       <div class="text__loader"></div>
+                                                       <div class="text__loader"></div>
+                                                  </div>
+                                             </div>
+                                             <div class="card__symbol">
+                                                  <span></span>
+                                                  <span></span>
+                                             </div>
+                                        </div>
+                                        </div>
+                                   </label>
+                              </div>
+                              <div class="option">
+                              <input type="radio" name="card" id="royal" value="royal">
+                              <label for="royal" aria-label="Royal blue">
+                                   <span></span>
+                                   
+                                   Royal blue
+                                   
+                                   <div class="card card--blue card--sm">
+                                   <div class="card__chip"></div>
+                                   <div class="card__content">
+                                        <div class="card__text">
+                                        <div class="text__row">
+                                        <div class="text__loader"></div>
+                                        <div class="text__loader"></div>
+                                        </div>
+                                        <div class="text__row">
+                                        <div class="text__loader"></div>
+                                        <div class="text__loader"></div>
+                                        </div>
+                                        </div>
+                                        <div class="card__symbol">
+                                        <span></span>
+                                        <span></span>
+                                        </div>
+                                   </div>
+                                   </div>
+                              </label>
+                              </div>
+                              <div class="option">
+                              <input type="radio" name="card" id="dark" value="dark">
+                              <label for="dark" aria-label="Dark grey">
+                                   <span></span>
+                                   
+                                   Dark grey
+                                   
+                                   <div class="card card--dark card--sm">
+                                   <div class="card__chip"></div>
+                                   <div class="card__content">
+                                        <div class="card__text">
+                                        <div class="text__row">
+                                        <div class="text__loader"></div>
+                                        <div class="text__loader"></div>
+                                        </div>
+                                        <div class="text__row">
+                                        <div class="text__loader"></div>
+                                        <div class="text__loader"></div>
+                                        </div>
+                                        </div>
+                                        <div class="card__symbol">
+                                        <span></span>
+                                        <span></span>
+                                        </div>
+                                   </div>
+                                   </div>
+                              </label>
+                              </div>
+                         </section>
+
+                    </div>
+                    <div class="col-md-4">
+                         <div class="sidebar">
+                              <h2 class="sidebar__title">This is siderbar</h2>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!--Begin Footer-->
+          <footer class="footer">
+               <div class="new_footer_top">
+                    <div class="container">
+                         <div class="row g-0 ps-5">
+                              <div class="col-md-4">
+                                   <div class="about_company">
+                                        <h6 class="">Săn vé máy bay giá rẻ</h6>
+                                        <ul class="list_about_company">
+                                             <li>Email : info@travelpass.vn</li>
+                                             <li>Call Center: 1900 63 6060</li>
+                                             <li>48 Nguyễn Cửu Vân, Q.Bình Thạnh</li>
+                                             <li>MST : 0317103646</li>
+                                        </ul>
+                                   </div>
+                              </div>
+                              <div class="col-md-8">
+                                   <div class="row g-0">
+                                        <div class="contact-menu__item col-md-4">
+                                             <h6>VÉ MÁY BAY NỘI ĐỊA</h6>
+                                             <ul class="">
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay đi Hà Nội</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay đi Sài Gòn</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay đi Đà Nẵng</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay đi Nha Trang</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay đi Phú Yên</p>
+                                                  </li>
+                                             </ul>
+                                        </div>
+                                        <div class="contact-menu__item col-md-4">
+                                             <h6>VÉ MÁY BAY TẾT</h6>
+                                             <ul>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay Tết đi Hà Nội</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay Tết đi Hải Phòng</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay Tết đi Vinh</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay Tết đi Cần Thơ</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay Tết đi Thanh Hóa</p>
+                                                  </li>
+                                             </ul>
+                                        </div>
+                                        <div class="contact-menu__item col-md-4">
+                                             <h6>VÉ RẺ THEO THÁNG</h6>
+                                             <ul>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Săn vé máy bay giá rẻ tháng 8</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Săn vé máy bay giá rẻ tháng 9</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Săn vé máy bay giá rẻ tháng 10</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Săn vé máy bay giá rẻ tháng 11</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Săn vé máy bay giá rẻ tháng 12</p>
+                                                  </li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="footer_bg">
+                         <div class="footer_bg_one"></div>
+                         <div class="footer_bg_two"></div>
+                    </div>
+               </div>
+               <div class="footer_bottom">
+                    <div class="container">
+                         <div class="row align-items-center">
+                              <div class="footer-copyright">
+                                   <h6>Copyright © 2022 Công ty TNHH SVMBGR</h6>
+                                   <div class="footer-helps">
+                                        <a href="#" class="helps__terms">Điều khoản sử dụng</a>
+                                        -
+                                        <a href="#" class="helps__security">Chính sách bảo mật</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </footer>
+          <!--End Footer-->
+     </div>
+
+     <!-- jquery -->
+     <script src="./assets/libs/jquery/jquery-3.6.0.min.js"></script>
+     <!-- <script src="./assets/libs/jquery/jquery-3.3.1.min.js"></script> -->
+     <script src="./assets/libs/jquery/jquery-migrate-3.4.0.min.js"></script>
+
+     <!-- boostrap datepicker -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js">
+     </script>
+     <script src="./assets/libs/datepicker/popper.min.js"></script>
+     <script src="./assets/libs/datepicker/picker.js"></script>
+     <script src="./assets/libs/datepicker/picker.date.js"></script>
+
+     <!-- slider -->
+     <script src="./assets/libs/slick/slick.min.js"></script>
+
+     <!-- icon -->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+     <!-- Calendar -->
+     <script src="./assets/libs/datepicker/popper.min.js"></script>
+     <script src="./assets/libs/bootstrap/bootstrap.min.js"></script>
+     <script src="./assets/libs/datepicker/picker.js"></script>
+     <script src="./assets/libs/datepicker/picker.date.js"></script>
+
+     <!-- main js -->
+     <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
