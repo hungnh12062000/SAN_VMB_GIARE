@@ -1,3 +1,204 @@
-.section-choose-flight{
-     margin-top: 96px;
+.section-choose-flight {
+  margin-top: 96px;
+  background: var(--bgsection-color);
+  padding-bottom: 30px;
+}
+
+#progressbar {
+  overflow: hidden;
+  margin-top: 20px;
+  overflow: hidden;
+  counter-reset: step;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  padding: 20px;
+  border-radius: 8px;
+  background: var(--white-color);
+}
+
+#progressbar li {
+  list-style-type: none;
+  color: #000;
+  float: left;
+  position: relative;
+  text-align: center;
+  width: 25%;
+  font-size: 14px;
+}
+
+#progressbar li::before {
+  content: counter(step);
+  counter-increment: step;
+  width: 20px;
+  line-height: 20px;
+  display: block;
+  font-size: 12px;
+  color: #333;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 3px;
+  text-align: center;
+  margin: auto;
+}
+
+#progressbar li::after {
+  content: "";
+  width: 71%;
+  height: 2px;
+  background: #dbdbdb;
+  position: absolute;
+  right: 65%;
+  top: 9px;
+}
+
+#progressbar li.current:before,
+#progressbar li.current:after,
+#progressbar li.pass:before,
+#progressbar li.pass:after {
+  background: var(--green-color);
+  color: #fff;
+  z-index: 1;
+}
+
+#progressbar li:first-child:after {
+  content: none;
+}
+
+#progressbar li.pass a {
+  color: var(--green-color);
+}
+
+/* ========== LIST FLIGHT ========= */
+.result-flight{
+     margin: 25px 25px 0 0;
+    border-radius: 8px;
+
+}
+.flight-item{
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 5%);
+    box-sizing: border-box;
+    border-radius: 8px;
+     background: var(--white-color);
+     padding: 16px 16px 10px;
+     margin-bottom: 16px;
+
+}
+
+.flight-item:hover{
+     border: 1px solid var(--saphire-color);
+}
+
+.flight-infor{
+     display: flex;
+     align-items: center;
+     border-bottom: 2px solid var(--border-color);
+}
+
+.flight-infor-item{
+     display: flex;
+     width: 30%;
+}
+
+.infor-plane-wrap{
+     width: 35%;
+}
+
+.infor-plane{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.infor-brand{
+     display: flex;
+     align-items: center;
+     margin-right: 8px;
+}
+
+.infor-plane__name{
+    display: flex;
+    overflow: hidden;
+    margin-left: 8px;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: Mt;
+    line-height: 20px;
+    color: var(--text-color);
+}
+
+.brand-fly{
+     font-weight: 600;
+}
+.code-fly{
+     font-weight: 400;
+}
+
+.time__depart,
+.time__destination{
+     color: var(--title-color);
+     display: flex;
+     font-size: 18px;
+     line-height: 22px;
+     font-weight: 600;
+     font-family: Mt;
+}
+
+.location__depart,
+.location__destination{
+     font-size: 14px;
+    font-family: Mt;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--text-color);
+}
+
+.flight-details{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    margin-top: 10px;
+
+}
+
+.flight-details-item{
+     width: 33,33%;
+}
+
+.flight-details .details{
+     font-size: 14px;
+    font-family: Mt;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.flight-details button{
+    border-radius: 8px;
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.flight-item .infor-brand img{
+     width: 50px;
+    height: 50px;
+    object-fit: contain;
+
+}
+
+.infor-duration{
+     display: flex;
+     flex-direction: column;
+}
+
+.time__duration{
+     font-size: 14px;
+    font-family: Mt;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.transit{
+     font-size: 14px;
+     font-family: Mt;
+     font-weight: 400;
+     line-height: 22px;
 }
