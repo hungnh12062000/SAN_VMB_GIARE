@@ -47,6 +47,7 @@ html {
 
 body{
   font-family: Mt,-apple-system,BlinkMacSystemFont,sans-serif !important;
+  overflow-x: hidden;
 
 }
 
