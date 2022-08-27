@@ -44,7 +44,6 @@ $(document).ready(function () {
           }
      })
 
-
      // Slider
      $('.image-slider').slick({
           dots: true,
@@ -272,6 +271,13 @@ $(document).ready(function () {
           //      scrollTop: 0
           // }, "slow");
           window.scrollTo({ top: 0, behavior: 'smooth' });
+     });
+
+     // Radio page payment
+     $('.methods-header input[type="radio"]').click(function(){
+          $('.methods-content').stop().css({visibility: 'visible', display: 'block'}).slideUp('400');
+          $(this).parent('div').next('.methods-content').css({visibility: 'visible', display: 'none'}).slideDown('400');
+               
      });
 
 

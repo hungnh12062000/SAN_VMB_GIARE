@@ -5,8 +5,8 @@
   --border-color: #dbdbdb;
   --title-color: #1a202c;
   --subheading-color: #4a5568;
-  --bgsection-color: #f7fafc;
-
+  --bgsection-color: rgb(237, 242, 247);
+  --bgsection-footer: #F7FAFC;
   --saphire-color: #14b9d5;
   --green-color: #1bbc9b;
   --red-color: #f76570;
@@ -110,7 +110,6 @@ a {
 /*Btn style*/
 .btn{
   min-width: 124px;
-  /* height: 34px; */
   text-decoration: none;
   border: none;
   border-radius: 2px;
@@ -119,7 +118,6 @@ a {
   outline: none;
   cursor: pointer;
   color: var(--text-color);
-  /* background-color: var(--white-color); */
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -359,3 +357,105 @@ a {
   cursor: pointer;
 }
 /* =============== toast =================*/
+
+/* ======== button tìm chuyến bay ========== */
+.button-gradient {
+  display: block;
+  width: 320px;
+  max-width: 100%;
+  margin-bottom: 0;
+  overflow: hidden;
+  position: relative;
+  transform: translatez(0);
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 22px;
+  font-weight: normal;
+  border: none;
+}
+
+.button-gradient.continue {
+  width: 250px;
+}
+
+.button-gradient.sidebar-continue,
+.button-gradient.home {
+  width: 100%;
+  /* margin-top: 10px; */
+  font-size: 20px;
+}
+
+.button-gradient.book {
+  width: 270px;
+  margin: auto 0 auto auto;
+}
+
+.instagram {
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px;
+  color: var(--white-color);
+  background: var(--saphire-color);
+  transition: all 0.2s ease-out 0s;
+  font-weight: bold;
+}
+
+.instagram.book{
+  padding: 12px;
+}
+
+a.instagram:hover {
+  color: #000;
+}
+
+.gradient {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  bottom: auto;
+  margin: auto;
+  z-index: -1;
+  background: radial-gradient(
+    90px circle at top center,
+    rgba(25, 57, 178, 0.8) 30%,
+    rgba(255, 255, 255, 0)
+  );
+  transition: all 0s ease-out 0s;
+  transform: translatex(-140px);
+  animation: 18s linear 0s infinite move;
+}
+
+@keyframes move {
+  0% {
+    transform: translatex(-140px);
+  }
+  25% {
+    transform: translatex(140px);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translatex(140px);
+    opacity: 1;
+    background: radial-gradient(
+      90px circle at bottom center,
+      rgba(25, 57, 178, 0.5) 30%,
+      rgba(255, 255, 255, 0)
+    );
+  }
+  75% {
+    transform: translatex(-140px);
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(-140px);
+    background: radial-gradient(
+      90px circle at top center,
+      rgba(25, 57, 178, 0.5) 30%,
+      rgba(255, 255, 255, 0)
+    );
+  }
+}

@@ -1,7 +1,6 @@
 /* ======= FOOTER ======= */
 .footer {
-  background: var(--bgsection-color);
-  margin-top: 50px;
+  background: var(--bgsection-footer);
   font-family: 'Mt', sans-serif;
 
 }

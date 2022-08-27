@@ -1,7 +1,6 @@
-.method-payment-wrap{
+.method-payment-wrap {
   width: 100%;
-  /* background: var(--bgsection-color); */
-  background: #ccc;
+  background: var(--bgsection-color);
   padding-bottom: 30px;
 }
 
@@ -10,13 +9,13 @@
 }
 
 .section__payment-method {
-  margin: 0 20px;
+  margin: 24px 20px 0;
   background: var(--white-color);
   border-radius: 8px;
   padding: 20px;
 }
 
- .section__payment-method [type="radio"] {
+.section__payment-method [type="radio"] {
   z-index: -1;
   position: absolute;
   opacity: 0;
@@ -37,7 +36,7 @@
   animation: sparkles 700ms ease-in-out;
 }
 .section__payment-method [type="radio"]:checked ~ label > span {
-  will-change: transform; 
+  will-change: transform;
   border: 0;
   background-image: linear-gradient(to top right, #6e89ff, #4363ee);
   -webkit-animation: radio 400ms cubic-bezier(0.17, 0.89, 0.32, 1.49);
@@ -125,7 +124,11 @@
   height: 20px;
   border-radius: 20px;
   border: 2px solid var(--border-color);
-  background-image: linear-gradient(to bottom, var(--white-color), var(--border-color));
+  background-image: linear-gradient(
+    to bottom,
+    var(--white-color),
+    var(--border-color)
+  );
 }
 
 .section__payment-method .card {
@@ -137,8 +140,6 @@
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.25);
 
   background-image: linear-gradient(45deg, #748dfb, #3859e8);
-
-
 
   overflow: hidden;
 }
@@ -160,11 +161,7 @@
 .section__payment-method .card--blue {
   background-image: linear-gradient(45deg, #748dfb, #3859e8);
 }
-.section__payment-method .card--dark {
-  background-image: linear-gradient(45deg, #748dfb, #3859e8);
 
-
-}
 .section__payment-method .card--sm {
   position: absolute;
   right: -76px;
@@ -187,13 +184,13 @@
 }
 
 .section__payment-method .card__content-home,
-.section__payment-method .card__content-office{
+.section__payment-method .card__content-office {
   margin: 0;
   justify-content: center;
   align-items: center;
 }
 
-.section__payment-method .card__content .card__content-icon{
+.section__payment-method .card__content .card__content-icon {
   width: 50%;
   height: 50%;
 
@@ -203,7 +200,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .section__payment-method .card__symbol {
@@ -369,69 +365,59 @@
       -1.61955rem -0.87617rem 0 0rem #ff8080;
   }
 }
- 
 
-/* ======= infor passenger ====== */
-.section__infor-passengers{
-  background: var(--white-color);
-  border-radius: 8px;
-  margin: 20px;
-  padding: 20px;
-
-}
-
-.infor__passengers{
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-.infor__title{
-  font-size: 20px;
+.method__title {
+  font-size: 18px;
   font-weight: 600;
   color: var(--title-color);
   line-height: 22px;
 }
-.infor__adult, .infor__child, .infor__infant{
-  display: flex;
-  width: 50%;
-  margin: 8px 0;
-  align-items: center;
-  padding: 10px;
+
+.method__decs {
+  color: var(--text-color);
+  padding: 15px;
+  border-bottom: 1px solid rgb(237, 242, 247);
+  margin: 15px 0;
+  font-size: 14px;
+  background-color: rgb(229, 248, 254);
   border-radius: 8px;
 }
 
-.infor__details{
-  display: flex;
-  flex-direction: column;
-}
-
-.infor__detail--item{
-  font-size: 14px;
-    font-family: Mt;
-    font-weight: 400;
-    line-height: 22px;
-    color: var(--text-color);
-
-}
-
-.infor__details strong{
+.method__decs strong {
   color: var(--saphire-color);
 }
 
-.caption-type{
-  color: var(--title-color);
+.methods-content {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 22px;
+  display: none;
+}
+
+.methods-content span {
+  color: var(--saphire-color);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.methods__confirm{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.methods__confirm button {
+  margin-bottom: 15px;
+}
+
+.methods__confirm span {
+  color: var(--saphire-color);
   font-weight: 600;
 }
-
-.icon__adult, .icon__child, .icon__infant{
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  margin-right: 8px;
-  border-radius: 100px;
-  justify-content: center;
-  background-color: #EDF2F7;
-
+.confirm__term{
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--text-color);
 }
-
