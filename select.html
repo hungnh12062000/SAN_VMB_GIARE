@@ -18,9 +18,9 @@
   <link rel="stylesheet" href="./assets/libs/datepicker/classic.date.css" />
 
   <!-- font - family -->
-  <link rel="stylesheet" href="./assets/fonts/Mt-Bold.otf">
-  <link rel="stylesheet" href="./assets/fonts/Mt-Regular.otf">
-  <link rel="stylesheet" href="./assets/fonts/Mt-SemiBold.otf">
+  <link rel="stylesheet" href="./assets/fonts/Mt-Bold.otf" />
+  <link rel="stylesheet" href="./assets/fonts/Mt-Regular.otf"/>
+  <link rel="stylesheet" href="./assets/fonts/Mt-SemiBold.otf" />
 
   <!-- Main css -->
   <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -29,8 +29,8 @@
 <body>
   <!-- toast -->
   <div id="toast" class="toast-passenger">
-    <ion-icon name="alert-circle-outline"></ion-icon> Số lượng em bé nhỏ
-    hơn hoặc bằng số lượng người lớn.
+    <ion-icon name="alert-circle-outline"></ion-icon> Số lượng em bé nhỏ hơn
+    hoặc bằng số lượng người lớn.
     <div class="toast-close">
       <ion-icon name="close-outline"></ion-icon>
     </div>
@@ -48,8 +48,7 @@
     <section class="header">
       <div class="header__logo">
         <a class="header__logo-link" href="">
-          <!-- <img src="./assets/img/logo.png" alt="Travel" class="header__logo-img" /> -->
-          LOGO
+          <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo-img" />
         </a>
       </div>
       <ul class="header-nav">
@@ -80,7 +79,7 @@
     <!-- END HEADER -->
 
     <div class="section-choose-flight">
-      <div class="container ">
+      <div class="container">
         <div class="row g-0">
           <ul id="progressbar" class="hidden-xs">
             <li class="current">
@@ -98,19 +97,19 @@
         <div class="row g-0">
           <div class="col-md-8">
             <div class="result-flight">
-
               <!-- List flight -->
               <div class="flight-list">
+                <!-- BAY THẲNG -->
                 <div class="flight-item">
+
                   <div class="flight-infor">
                     <div class="flight-infor-item infor-plane-wrap">
                       <div class="infor-plane">
                         <div class="infor-brand">
-                          <img src="./assets/img/Images-brand/vj.png" alt="VJ" class="infor-brand__link">
+                          <img src="./assets/img/Images-brand/vj.png" alt="VJ" class="infor-brand__link" />
                         </div>
                         <div class="infor-plane__name">
-                          <span class="brand-fly">Vietjet Air</span>
-                          <span class="code-fly">VJ166/ Airbus A321</span>
+                          <span class="brand-fly">Vietjet Air - VJ166</span>
                         </div>
                       </div>
                     </div>
@@ -119,7 +118,17 @@
                         <span class="time__depart">05:00</span>
                         <span class="location__depart">SGN</span>
                       </div>
-                      <svg class="mx-3" width="40" height="20" fill="none" class="jss10423"><g clip-path="url(#icon_arrow_flight_long_svg__clip0)" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M33.5 8.5L36 11M4 11h32"></path></g><defs><clipPath id="icon_arrow_flight_long_svg__clip0"><path fill="#fff" d="M0 0h40v20H0z"></path></clipPath></defs></svg>
+                      <svg class="mx-3" width="40" height="20" fill="none" class="jss10423">
+                        <g clip-path="url(#icon_arrow_flight_long_svg__clip0)" stroke="#718096" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M33.5 8.5L36 11M4 11h32"></path>
+                        </g>
+                        <defs>
+                          <clipPath id="icon_arrow_flight_long_svg__clip0">
+                            <path fill="#fff" d="M0 0h40v20H0z"></path>
+                          </clipPath>
+                        </defs>
+                      </svg>
                       <div class="infor-time__destination">
                         <span class="time__destination">07:10</span>
                         <span class="location__destination">HAN</span>
@@ -130,22 +139,160 @@
                       <span class="transit">Bay thẳng</span>
                     </div>
                   </div>
+
                   <div class="flight-details">
                     <div class="flight-details-item empty"></div>
-                    <div class="flight-details-item details">Chi tiết</div>
-                    <button class="flight-details-item btn btn-blue-sky-g">Chọn</button>
+                    <div class="flight-details-item details">
+                      <ion-icon name="add-outline"></ion-icon> Chi tiết
+                    </div>
+                    <a href="./payment.html">
+                      <button type="submit" class="flight-details-item btn btn-blue-sky-g">
+                        Chọn
+                      </button>
+                    </a>
                   </div>
+
+                  <!-- details -->
+                  <div class="flight-infor-details">
+                    <div class="infor-details-journey">
+                      <div class="infor-journey">
+                        <h6 class="infor-journey-title">
+                          Thông tin chuyến bay
+                        </h6>
+                        <div class="infor-journey-wrap">
+                          <div class="journey-datetime">
+                            <div class="datetime-depart">
+                              <h6 class="time-depart"><span>17:45</span></h6>
+                              <span class="journey-date-depart">14/09/2022</span>
+                            </div>
+                            <div class="datetime-duration">
+                              <span class="">2h 10m</span>
+                            </div>
+                            <div class="datetime-arrive">
+                              <h6 class="time-arrive">
+                                <span>19:55</span>
+                              </h6>
+                              <span class="journey-date-arrive">14/09/2022</span>
+                            </div>
+                          </div>
+
+                          <div class="journey-timeline">
+                            <svg width="16" height="16" fill="none" class="svg-plane">
+                              <path
+                                d="M9.333 10.667v2.666a1.333 1.333 0 01-2.666 0v-2.666L2 8V6l4.667 1.333V4.667L5.333 3.333v-2L8 2.667l2.667-1.334v2L9.333 4.667v2.666L14 6v2l-4.667 2.667z"
+                                fill="#14b9d5"></path>
+                            </svg>
+                            <div class="journey-line"></div>
+                            <svg width="17" height="18" class="svg-location">
+                              <defs>
+                                <path id="icon_location_svg__a" d="M0 0h16v16H0z"></path>
+                              </defs>
+                              <g transform="translate(.5 1)" fill="none" fill-rule="evenodd">
+                                <mask id="icon_location_svg__b" fill="#fff">
+                                  <use xlink:href="#icon_location_svg__a"></use>
+                                </mask>
+                                <path fill="#14b9d5" fill-rule="nonzero"
+                                  d="M7.538 13.758C4.132 8.82 3.5 8.314 3.5 6.5a4.5 4.5 0 019 0c0 1.814-.632 2.321-4.038 7.258a.562.562 0 01-.924 0zM8 8.375a1.875 1.875 0 100-3.75 1.875 1.875 0 000 3.75z"
+                                  mask="url(#icon_location_svg__b)"></path>
+                              </g>
+                            </svg>
+                          </div>
+
+                          <div class="journey-citypair">
+                            <div class="citypair-depart">
+                              <h6>Thành phố Hồ Chí Minh (SGN)</h6>
+                              <span>Tân Sơn Nhất</span>
+                            </div>
+                            <div class="journey-flight-infor">
+                              <div class="journey-infor-plane">
+                                <div class="infor-brand">
+                                  <img src="./assets/img/Images-brand/vj.png" alt="VJ" class="infor-brand__link" />
+                                </div>
+                                <div class="infor-plane__name">
+                                  <h6 class="">Vietjet Air</h6>
+                                  <span class="">VJ166</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="citypair-arrive">
+                              <h6>Hà Nội (HAN)</h6>
+                              <span>Nội Bài</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="infor-details-price">
+                      <h6 class="infor-ticket-title">Thông tin vé</h6>
+                      <div class="infor-price">
+                        <table>
+                          <thead class="infor-price__header">
+                            <tr>
+                              <th></th>
+                              <th>Giá vé</th>
+                              <th>Thuế phí</th>
+                              <th>Tổng</th>
+                            </tr>
+                          </thead>
+                          <tbody class="infor-price__body">
+                            <tr>
+                              <td class="infor-price__title">
+                                Người lớn x 1
+                              </td>
+                              <td>369.000đ</td>
+                              <td>369.000đ</td>
+                              <td>738.000đ</td>
+                            </tr>
+                            <tr>
+                              <td class="infor-price__title">Trẻ em x 2</td>
+                              <td>369.000đ</td>
+                              <td>369.000đ</td>
+                              <td>738.000đ</td>
+                            </tr>
+                            <tr>
+                              <td class="infor-price__title">Em bé x 1</td>
+                              <td>1.369.000đ</td>
+                              <td>1.369.000đ</td>
+                              <td>1.738.000đ</td>
+                            </tr>
+                            <tr>
+                              <td class="infor-price__title">
+                                <strong>Tổng Cộng</strong>
+                              </td>
+                              <td></td>
+                              <td></td>
+                              <td class="total_amount">100.738.000đ</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end details -->
                 </div>
-                <div class="flight-item">
+
+                <!-- TRANSIT 1 CHẶNG -->
+                <div class="flight-item flight-transit-1">
                   <div class="flight-infor">
                     <div class="flight-infor-item infor-plane-wrap">
                       <div class="infor-plane">
                         <div class="infor-brand">
-                          <img src="./assets/img/Images-brand/ph.png" alt="VJ" class="infor-brand__link">
+                          <svg width="32" height="32" fill="none">
+                            <g clip-path="url(#icon_flight_transit_svg__clip0_17228_194793)" fill="#14b9d5">
+                              <path
+                                d="M26.748 16.453a1.543 1.543 0 00-2.205.023l-3.277 3.415-8-2.647-1.678 1.68 6.667 4.104-3.374 3.516-2.163-.355-1.518 1.517 3.18 1.114 1.115 3.181 1.518-1.518-.356-2.163 3.516-3.374 4.105 6.667 1.679-1.679-2.647-7.998 3.415-3.278a1.543 1.543 0 00.023-2.205zM20.348.452a1.543 1.543 0 00-2.205.023L14.865 3.89 6.866 1.243l-1.679 1.68 6.668 4.104-3.374 3.516-2.164-.355L4.8 11.705l3.18 1.114L9.094 16l1.518-1.518-.355-2.163 3.515-3.374 4.106 6.668 1.679-1.68-2.647-7.998 3.415-3.278a1.543 1.543 0 00.023-2.205z">
+                              </path>
+                            </g>
+                            <defs>
+                              <clipPath id="icon_flight_transit_svg__clip0_17228_194793">
+                                <path fill="#fff" d="M0 0h32v32H0z"></path>
+                              </clipPath>
+                            </defs>
+                          </svg>
                         </div>
                         <div class="infor-plane__name">
-                          <span class="brand-fly">Vietjet Air</span>
-                          <span class="code-fly">VJ166/ Airbus A321</span>
+                          <span class="brand-fly">Vietjet Air - VJ166</span>
+                          <span class="brand-fly">Bamboo Airline - PH164</span>
                         </div>
                       </div>
                     </div>
@@ -154,7 +301,17 @@
                         <span class="time__depart">05:00</span>
                         <span class="location__depart">SGN</span>
                       </div>
-                      <svg class="mx-3" width="40" height="20" fill="none" class="jss10423"><g clip-path="url(#icon_arrow_flight_long_svg__clip0)" stroke="#718096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M33.5 8.5L36 11M4 11h32"></path></g><defs><clipPath id="icon_arrow_flight_long_svg__clip0"><path fill="#fff" d="M0 0h40v20H0z"></path></clipPath></defs></svg>
+                      <svg class="mx-3" width="40" height="20" fill="none" class="jss10423">
+                        <g clip-path="url(#icon_arrow_flight_long_svg__clip0)" stroke="#718096" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M33.5 8.5L36 11M4 11h32"></path>
+                        </g>
+                        <defs>
+                          <clipPath id="icon_arrow_flight_long_svg__clip0">
+                            <path fill="#fff" d="M0 0h40v20H0z"></path>
+                          </clipPath>
+                        </defs>
+                      </svg>
                       <div class="infor-time__destination">
                         <span class="time__destination">07:10</span>
                         <span class="location__destination">HAN</span>
@@ -162,14 +319,496 @@
                     </div>
                     <div class="flight-infor-item infor-duration">
                       <span class="time__duration">2h10'</span>
-                      <span class="transit">Bay thẳng</span>
+                      <span class="transit">1 điểm dừng</span>
                     </div>
                   </div>
                   <div class="flight-details">
                     <div class="flight-details-item empty"></div>
-                    <div class="flight-details-item details">Chi tiết</div>
-                    <button class="flight-details-item btn btn-blue-sky-g">Chọn</button>
+                    <div class="flight-details-item details">
+                      <ion-icon name="add-outline"></ion-icon> Chi tiết
+                    </div>
+                    <button class="flight-details-item btn btn-blue-sky-g">
+                      Chọn
+                    </button>
                   </div>
+
+                  <!-- details -->
+                  <div class="flight-infor-details">
+                    <div class="infor-details-journey">
+                      <div class="infor-journey">
+                        <h6 class="infor-journey-title">
+                          Thông tin chuyến bay
+                        </h6>
+                        <div class="infor-journey-wrap">
+                          <div class="infor-journey__transit">
+                            <div class="journey-datetime journey-datetime__transit journey-datetime__transit-1">
+                              <div class="datetime-depart">
+                                <h6 class="time-depart">
+                                  <span>17:45</span>
+                                </h6>
+                                <span class="journey-date-depart">14/09/2022</span>
+                              </div>
+                              <div class="datetime-duration">
+                                <span class="">2h 10m</span>
+                              </div>
+                              <div class="datetime-arrive">
+                                <h6 class="time-arrive">
+                                  <span>19:55</span>
+                                </h6>
+                                <span class="journey-date-arrive">14/09/2022</span>
+                              </div>
+                            </div>
+
+                            <div class="journey-datetime journey-datetime__transit journey-datetime__transit-2">
+                              <div class="datetime-depart">
+                                <h6 class="time-depart">
+                                  <span>17:45</span>
+                                </h6>
+                                <span class="journey-date-depart">14/09/2022</span>
+                              </div>
+                              <div class="datetime-duration">
+                                <span class="">2h 10m</span>
+                              </div>
+                              <div class="datetime-arrive">
+                                <h6 class="time-arrive">
+                                  <span>19:55</span>
+                                </h6>
+                                <span class="journey-date-arrive">14/09/2022</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="journey-timeline">
+                            <svg width="16" height="16" fill="none" class="svg-plane">
+                              <path
+                                d="M9.333 10.667v2.666a1.333 1.333 0 01-2.666 0v-2.666L2 8V6l4.667 1.333V4.667L5.333 3.333v-2L8 2.667l2.667-1.334v2L9.333 4.667v2.666L14 6v2l-4.667 2.667z"
+                                fill="#14b9d5"></path>
+                            </svg>
+                            <div class="journey-line"></div>
+                            <svg width="16" height="16" fill="none" style="width: 16px">
+                              <rect x="2" y="2" width="12" height="12" rx="6" fill="#00B6F3"></rect>
+                              <rect x="6" y="6" width="4" height="4" rx="2" fill="#fff"></rect>
+                            </svg>
+                            <div class="journey-line"></div>
+                            <svg width="16" height="16" fill="none" class="svg-plane">
+                              <path
+                                d="M9.333 10.667v2.666a1.333 1.333 0 01-2.666 0v-2.666L2 8V6l4.667 1.333V4.667L5.333 3.333v-2L8 2.667l2.667-1.334v2L9.333 4.667v2.666L14 6v2l-4.667 2.667z"
+                                fill="#14b9d5"></path>
+                            </svg>
+                            <div class="journey-line"></div>
+
+                            <svg width="17" height="18" class="svg-location">
+                              <defs>
+                                <path id="icon_location_svg__a" d="M0 0h16v16H0z"></path>
+                              </defs>
+                              <g transform="translate(.5 1)" fill="none" fill-rule="evenodd">
+                                <mask id="icon_location_svg__b" fill="#fff">
+                                  <use xlink:href="#icon_location_svg__a"></use>
+                                </mask>
+                                <path fill="#14b9d5" fill-rule="nonzero"
+                                  d="M7.538 13.758C4.132 8.82 3.5 8.314 3.5 6.5a4.5 4.5 0 019 0c0 1.814-.632 2.321-4.038 7.258a.562.562 0 01-.924 0zM8 8.375a1.875 1.875 0 100-3.75 1.875 1.875 0 000 3.75z"
+                                  mask="url(#icon_location_svg__b)"></path>
+                              </g>
+                            </svg>
+                          </div>
+
+                          <div class="infor-citypair__transit">
+                            <div class="journey-citypair journey-citypair__transit journey-citypair__transit-1">
+                              <div class="citypair-depart">
+                                <h6>Thành phố Hồ Chí Minh (SGN)</h6>
+                                <span>Tân Sơn Nhất</span>
+                              </div>
+                              <div class="journey-flight-infor">
+                                <div class="journey-infor-plane">
+                                  <div class="infor-brand">
+                                    <img src="./assets/img/Images-brand/vj.png" alt="VJ" class="infor-brand__link" />
+                                  </div>
+                                  <div class="infor-plane__name">
+                                    <h6 class="">Vietjet Air</h6>
+                                    <span class="">VJ166</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="citypair-arrive">
+                                <h6>Đà Nẵng (DAD)</h6>
+                                <span>Đà Nẵng</span>
+                              </div>
+                            </div>
+
+                            <div class="location__transit">
+                              <h6>Quá cảnh 1h 45m tại Đà Nẵng</h6>
+                            </div>
+
+                            <div class="journey-citypair journey-citypair__transit journey-citypair__transit-2">
+                              <div class="citypair-depart">
+                                <h6>Đà Nẵng (DAD)</h6>
+                                <span>Đà Nẵng</span>
+                              </div>
+                              <div class="journey-flight-infor">
+                                <div class="journey-infor-plane">
+                                  <div class="infor-brand">
+                                    <img src="./assets/img/Images-brand/ph.png" alt="VJ" class="infor-brand__link" />
+                                  </div>
+                                  <div class="infor-plane__name">
+                                    <h6 class="">Bamboo Airline</h6>
+                                    <span class="">PH164</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="citypair-arrive">
+                                <h6>Hà Nội (HAN)</h6>
+                                <span>Nội Bài</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="infor-details-price">
+                      <h6 class="infor-ticket-title">Thông tin vé</h6>
+                      <div class="infor-price">
+                        <table>
+                          <thead class="infor-price__header">
+                            <tr>
+                              <th></th>
+                              <th>Giá vé</th>
+                              <th>Thuế phí</th>
+                              <th>Tổng</th>
+                            </tr>
+                          </thead>
+                          <tbody class="infor-price__body">
+                            <tr>
+                              <td class="infor-price__title">
+                                Người lớn x 1
+                              </td>
+                              <td>369.000đ</td>
+                              <td>369.000đ</td>
+                              <td>738.000đ</td>
+                            </tr>
+                            <tr>
+                              <td class="infor-price__title">Trẻ em x 2</td>
+                              <td>369.000đ</td>
+                              <td>369.000đ</td>
+                              <td>738.000đ</td>
+                            </tr>
+                            <tr>
+                              <td class="infor-price__title">Em bé x 1</td>
+                              <td>1.369.000đ</td>
+                              <td>1.369.000đ</td>
+                              <td>1.738.000đ</td>
+                            </tr>
+                            <tr>
+                              <td class="infor-price__title">
+                                <strong>Tổng Cộng</strong>
+                              </td>
+                              <td></td>
+                              <td></td>
+                              <td class="total_amount">100.738.000đ</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end details -->
+                </div>
+
+                <!-- TRANSIT 2 CHẶNG -->
+                <div class="flight-item flight-transit-2">
+                  <div class="flight-infor">
+                    <div class="flight-infor-item infor-plane-wrap">
+                      <div class="infor-plane">
+                        <div class="infor-brand">
+                          <svg width="32" height="32" fill="none">
+                            <g clip-path="url(#icon_flight_transit_svg__clip0_17228_194793)" fill="#14b9d5">
+                              <path
+                                d="M26.748 16.453a1.543 1.543 0 00-2.205.023l-3.277 3.415-8-2.647-1.678 1.68 6.667 4.104-3.374 3.516-2.163-.355-1.518 1.517 3.18 1.114 1.115 3.181 1.518-1.518-.356-2.163 3.516-3.374 4.105 6.667 1.679-1.679-2.647-7.998 3.415-3.278a1.543 1.543 0 00.023-2.205zM20.348.452a1.543 1.543 0 00-2.205.023L14.865 3.89 6.866 1.243l-1.679 1.68 6.668 4.104-3.374 3.516-2.164-.355L4.8 11.705l3.18 1.114L9.094 16l1.518-1.518-.355-2.163 3.515-3.374 4.106 6.668 1.679-1.68-2.647-7.998 3.415-3.278a1.543 1.543 0 00.023-2.205z">
+                              </path>
+                            </g>
+                            <defs>
+                              <clipPath id="icon_flight_transit_svg__clip0_17228_194793">
+                                <path fill="#fff" d="M0 0h32v32H0z"></path>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div class="infor-plane__name">
+                          <span class="brand-fly">Vietjet Air - VJ166</span>
+                          <span class="brand-fly">Bamboo Airline - PH164</span>
+                          <span class="brand-fly">Vietnam Airline - VN184</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flight-infor-item infor-time">
+                      <div class="infor-time__depart">
+                        <span class="time__depart">05:00</span>
+                        <span class="location__depart">SGN</span>
+                      </div>
+                      <svg class="mx-3" width="40" height="20" fill="none" class="jss10423">
+                        <g clip-path="url(#icon_arrow_flight_long_svg__clip0)" stroke="#718096" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M33.5 8.5L36 11M4 11h32"></path>
+                        </g>
+                        <defs>
+                          <clipPath id="icon_arrow_flight_long_svg__clip0">
+                            <path fill="#fff" d="M0 0h40v20H0z"></path>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <div class="infor-time__destination">
+                        <span class="time__destination">07:10</span>
+                        <span class="location__destination">HAN</span>
+                      </div>
+                    </div>
+                    <div class="flight-infor-item infor-duration">
+                      <span class="time__duration">05h10'</span>
+                      <span class="transit">2 điểm dừng</span>
+                    </div>
+                  </div>
+                  <div class="flight-details">
+                    <div class="flight-details-item empty"></div>
+                    <div class="flight-details-item details">
+                      <ion-icon name="add-outline"></ion-icon> Chi tiết
+                    </div>
+                    <button class="flight-details-item btn btn-blue-sky-g">
+                      Chọn
+                    </button>
+                  </div>
+
+                  <!-- details -->
+                  <div class="flight-infor-details">
+                    <div class="infor-details-journey">
+                      <div class="infor-journey">
+                        <h6 class="infor-journey-title">
+                          Thông tin chuyến bay
+                        </h6>
+                        <div class="infor-journey-wrap">
+                          <div class="infor-journey__transit">
+                            <div class="journey-datetime journey-datetime__transit journey-datetime__transit-1">
+                              <div class="datetime-depart">
+                                <h6 class="time-depart">
+                                  <span>17:45</span>
+                                </h6>
+                                <span class="journey-date-depart">14/09/2022</span>
+                              </div>
+                              <div class="datetime-duration">
+                                <span class="">2h 10m</span>
+                              </div>
+                              <div class="datetime-arrive">
+                                <h6 class="time-arrive">
+                                  <span>19:55</span>
+                                </h6>
+                                <span class="journey-date-arrive">14/09/2022</span>
+                              </div>
+                            </div>
+
+                            <div class="journey-datetime journey-datetime__transit journey-datetime__transit-2">
+                              <div class="datetime-depart">
+                                <h6 class="time-depart">
+                                  <span>17:45</span>
+                                </h6>
+                                <span class="journey-date-depart">14/09/2022</span>
+                              </div>
+                              <div class="datetime-duration">
+                                <span class="">2h 10m</span>
+                              </div>
+                              <div class="datetime-arrive">
+                                <h6 class="time-arrive">
+                                  <span>19:55</span>
+                                </h6>
+                                <span class="journey-date-arrive">14/09/2022</span>
+                              </div>
+                            </div>
+
+                            <div class="journey-datetime journey-datetime__transit journey-datetime__transit-3">
+                              <div class="datetime-depart">
+                                <h6 class="time-depart">
+                                  <span>17:45</span>
+                                </h6>
+                                <span class="journey-date-depart">14/09/2022</span>
+                              </div>
+                              <div class="datetime-duration">
+                                <span class="">2h 10m</span>
+                              </div>
+                              <div class="datetime-arrive">
+                                <h6 class="time-arrive">
+                                  <span>19:55</span>
+                                </h6>
+                                <span class="journey-date-arrive">14/09/2022</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="journey-timeline">
+                            <svg width="16" height="16" fill="none" class="svg-plane">
+                              <path
+                                d="M9.333 10.667v2.666a1.333 1.333 0 01-2.666 0v-2.666L2 8V6l4.667 1.333V4.667L5.333 3.333v-2L8 2.667l2.667-1.334v2L9.333 4.667v2.666L14 6v2l-4.667 2.667z"
+                                fill="#14b9d5"></path>
+                            </svg>
+                            <div class="journey-line"></div>
+                            <svg width="16" height="16" fill="none" style="width: 16px">
+                              <rect x="2" y="2" width="12" height="12" rx="6" fill="#00B6F3"></rect>
+                              <rect x="6" y="6" width="4" height="4" rx="2" fill="#fff"></rect>
+                            </svg>
+                            <div class="journey-line"></div>
+                            <svg width="16" height="16" fill="none" class="svg-plane">
+                              <path
+                                d="M9.333 10.667v2.666a1.333 1.333 0 01-2.666 0v-2.666L2 8V6l4.667 1.333V4.667L5.333 3.333v-2L8 2.667l2.667-1.334v2L9.333 4.667v2.666L14 6v2l-4.667 2.667z"
+                                fill="#14b9d5"></path>
+                            </svg>
+                            <div class="journey-line"></div>
+                            <svg width="16" height="16" fill="none" style="width: 16px">
+                              <rect x="2" y="2" width="12" height="12" rx="6" fill="#00B6F3"></rect>
+                              <rect x="6" y="6" width="4" height="4" rx="2" fill="#fff"></rect>
+                            </svg>
+                            <div class="journey-line"></div>
+                            <svg width="16" height="16" fill="none" class="svg-plane">
+                              <path
+                                d="M9.333 10.667v2.666a1.333 1.333 0 01-2.666 0v-2.666L2 8V6l4.667 1.333V4.667L5.333 3.333v-2L8 2.667l2.667-1.334v2L9.333 4.667v2.666L14 6v2l-4.667 2.667z"
+                                fill="#14b9d5"></path>
+                            </svg>
+                            <div class="journey-line"></div>
+
+                            <svg width="17" height="18" class="svg-location">
+                              <defs>
+                                <path id="icon_location_svg__a" d="M0 0h16v16H0z"></path>
+                              </defs>
+                              <g transform="translate(.5 1)" fill="none" fill-rule="evenodd">
+                                <mask id="icon_location_svg__b" fill="#fff">
+                                  <use xlink:href="#icon_location_svg__a"></use>
+                                </mask>
+                                <path fill="#14b9d5" fill-rule="nonzero"
+                                  d="M7.538 13.758C4.132 8.82 3.5 8.314 3.5 6.5a4.5 4.5 0 019 0c0 1.814-.632 2.321-4.038 7.258a.562.562 0 01-.924 0zM8 8.375a1.875 1.875 0 100-3.75 1.875 1.875 0 000 3.75z"
+                                  mask="url(#icon_location_svg__b)"></path>
+                              </g>
+                            </svg>
+                          </div>
+
+                          <div class="infor-citypair__transit">
+                            <div class="journey-citypair journey-citypair__transit journey-citypair__transit-1">
+                              <div class="citypair-depart">
+                                <h6>Thành phố Hồ Chí Minh (SGN)</h6>
+                                <span>Tân Sơn Nhất</span>
+                              </div>
+                              <div class="journey-flight-infor">
+                                <div class="journey-infor-plane">
+                                  <div class="infor-brand">
+                                    <img src="./assets/img/Images-brand/vj.png" alt="VJ" class="infor-brand__link" />
+                                  </div>
+                                  <div class="infor-plane__name">
+                                    <h6 class="">Vietjet Air</h6>
+                                    <span class="">VJ166</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="citypair-arrive">
+                                <h6>Đà Nẵng (DAD)</h6>
+                                <span>Đà Nẵng</span>
+                              </div>
+                            </div>
+
+                            <div class="location__transit">
+                              <h6>Quá cảnh 1h 45m tại Đà Nẵng</h6>
+                            </div>
+
+                            <div class="journey-citypair journey-citypair__transit journey-citypair__transit-2">
+                              <div class="citypair-depart">
+                                <h6>Đà Nẵng (DAD)</h6>
+                                <span>Đà Nẵng</span>
+                              </div>
+                              <div class="journey-flight-infor">
+                                <div class="journey-infor-plane">
+                                  <div class="infor-brand">
+                                    <img src="./assets/img/Images-brand/ph.png" alt="VJ" class="infor-brand__link" />
+                                  </div>
+                                  <div class="infor-plane__name">
+                                    <h6 class="">Bamboo Airline</h6>
+                                    <span class="">PH164</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="citypair-arrive">
+                                <h6>Tuy Hòa (TBB)</h6>
+                                <span>Đông Tác</span>
+                              </div>
+                            </div>
+
+                            <div class="location__transit">
+                              <h6>Quá cảnh 1h 45m tại Tuy Hòa</h6>
+                            </div>
+
+                            <div class="journey-citypair journey-citypair__transit journey-citypair__transit-3">
+                              <div class="citypair-depart">
+                                <h6>Tuy Hòa (TBB)</h6>
+                                <span>Đông Tác</span>
+                              </div>
+                              <div class="journey-flight-infor">
+                                <div class="journey-infor-plane">
+                                  <div class="infor-brand">
+                                    <img src="./assets/img/Images-brand/vna.png" alt="VJ" class="infor-brand__link" />
+                                  </div>
+                                  <div class="infor-plane__name">
+                                    <h6 class="">Vietnam Airline</h6>
+                                    <span class="">VN184</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="citypair-arrive">
+                                <h6>Hà Nội (HAN)</h6>
+                                <span>Nội Bài</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="infor-details-price">
+                      <h6 class="infor-ticket-title">Thông tin vé</h6>
+                      <div class="infor-price">
+                        <table>
+                          <thead class="infor-price__header">
+                            <tr>
+                              <th></th>
+                              <th>Giá vé</th>
+                              <th>Thuế phí</th>
+                              <th>Tổng</th>
+                            </tr>
+                          </thead>
+                          <tbody class="infor-price__body">
+                            <tr>
+                              <td class="infor-price__title">
+                                Người lớn x 1
+                              </td>
+                              <td>369.000đ</td>
+                              <td>369.000đ</td>
+                              <td>738.000đ</td>
+                            </tr>
+                            <tr>
+                              <td class="infor-price__title">Trẻ em x 2</td>
+                              <td>369.000đ</td>
+                              <td>369.000đ</td>
+                              <td>738.000đ</td>
+                            </tr>
+                            <tr>
+                              <td class="infor-price__title">Em bé x 1</td>
+                              <td>1.369.000đ</td>
+                              <td>1.369.000đ</td>
+                              <td>1.738.000đ</td>
+                            </tr>
+                            <tr>
+                              <td class="infor-price__title">
+                                <strong>Tổng Cộng</strong>
+                              </td>
+                              <td></td>
+                              <td></td>
+                              <td class="total_amount">100.738.000đ</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end details -->
                 </div>
               </div>
             </div>
@@ -327,9 +966,7 @@
   <script src="./assets/libs/datepicker/picker.date.js"></script>
 
   <!-- main js -->
-  <script src="./assets/js/index.js"></script>
-
-
+  <script src="./assets/js/select.js"></script>
 </body>
 
 </html>

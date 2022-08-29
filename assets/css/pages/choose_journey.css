@@ -68,137 +68,401 @@
 }
 
 /* ========== LIST FLIGHT ========= */
-.result-flight{
-     margin: 25px 25px 0 0;
-    border-radius: 8px;
-
+.result-flight {
+  margin: 25px 25px 0 0;
+  border-radius: 8px;
 }
-.flight-item{
-    box-shadow: 0px 1px 1px rgb(0 0 0 / 5%);
-    box-sizing: border-box;
-    border-radius: 8px;
-     background: var(--white-color);
-     padding: 16px 16px 10px;
-     margin-bottom: 16px;
-
+.flight-item {
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 5%);
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: var(--white-color);
+  padding: 16px 16px 10px;
+  margin-bottom: 16px;
 }
 
-.flight-item:hover{
-     border: 1px solid var(--saphire-color);
+.flight-item:hover {
+  border: 1px solid var(--saphire-color);
 }
 
-.flight-infor{
-     display: flex;
-     align-items: center;
-     border-bottom: 2px solid var(--border-color);
+.flight-infor {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--border-color);
 }
 
-.flight-infor-item{
-     display: flex;
-     width: 30%;
+.flight-infor-item {
+  display: flex;
+  width: 30%;
 }
 
-.infor-plane-wrap{
-     width: 35%;
+.infor-plane-wrap {
+  width: 35%;
 }
 
-.infor-plane{
-     display: flex;
-     justify-content: center;
-     align-items: center;
+.infor-plane {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.infor-brand{
-     display: flex;
-     align-items: center;
-     margin-right: 8px;
+.infor-brand {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
 }
 
-.infor-plane__name{
-    display: flex;
-    overflow: hidden;
-    margin-left: 8px;
-    flex-direction: column;
-    font-size: 14px;
-    font-family: Mt;
-    line-height: 20px;
-    color: var(--text-color);
+.flight-transit-1 .infor-brand{
+     margin-right: 0;
 }
 
-.brand-fly{
-     font-weight: 600;
+.infor-plane__name {
+  display: flex;
+  overflow: hidden;
+  margin-left: 8px;
+  flex-direction: column;
+  font-size: 14px;
+  font-family: "Mt", sans-serif;
+  line-height: 20px;
+  color: var(--text-color);
 }
-.code-fly{
-     font-weight: 400;
+
+.brand-fly {
+  font-weight: 600;
 }
 
 .time__depart,
-.time__destination{
-     color: var(--title-color);
-     display: flex;
-     font-size: 18px;
-     line-height: 22px;
-     font-weight: 600;
-     font-family: Mt;
+.time__destination {
+  color: var(--title-color);
+  display: flex;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  font-family: "Mt", sans-serif;
 }
 
 .location__depart,
-.location__destination{
-     font-size: 14px;
-    font-family: Mt;
-    font-weight: 400;
-    line-height: 22px;
-    color: var(--text-color);
+.location__destination {
+  font-size: 14px;
+  font-family: "Mt", sans-serif;
+
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--text-color);
 }
 
-.flight-details{
+.flight-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.flight-details-item {
+  width: 33,33%;
+}
+
+.flight-details .details {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  background: var(--bgsection-color);
+  border-radius: 20px;
+  padding: 5px 10px;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.flight-details .details:focus {
+}
+
+.flight-details .details:active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.flight-details .details ion-icon {
+  margin-right: 5px;
+}
+
+.flight-details button {
+  border-radius: 8px;
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.flight-details:hover button{
+  color: var(--white-color);
+
+}
+
+.flight-item .infor-brand img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.infor-duration {
+  display: flex;
+  flex-direction: column;
+}
+
+.time__duration {
+  font-size: 14px;
+
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.transit {
+  font-size: 14px;
+
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/* ============== Xem chi tiết từng chuyến bay ========== */
+.flight-infor-details {
+  display: flex;
+  margin-top: 10px;
+  padding: 15px;
+  background: var(--bgsection-color);
+  border-radius: 8px;
+  height: auto;
+  min-width: 0px;
+  
+}
+
+
+.infor-details-journey,
+.infor-details-price {
+  flex: 1;
+}
+
+.infor-details-journey {
+}
+
+.infor-details-price {
+}
+
+.infor-journey-title,
+.infor-ticket-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--title-color);
+  margin-bottom: 12px;
+  line-height: 20px;
+}
+
+.infor-journey-wrap {
+  display: flex;
+  flex: 1.5 1 0%;
+  min-height: 200px;
+}
+
+.flight-transit-1 .infor-journey-wrap {
+  display: flex;
+  flex: 1.5 1 0%;
+  min-height: 400px;
+}
+
+.journey-datetime {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.journey-datetime .datetime-depart,
+.journey-datetime .datetime-arrive {
+  display: flex;
+  flex-direction: column;
+  min-width: 80px;
+  margin-right: 8px;
+  text-align: end;
+}
+
+.time-depart,
+.time-arrive {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.journey-date-depart,
+.journey-date-arrive {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--text-color);
+}
+
+.datetime-duration {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: right;
+  color: var(--text-color);
+}
+
+.journey-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 100%; */
+  justify-content: space-between;
+  padding-bottom: 28px;
+}
+
+.svg-plane {
+  height: 16px;
+  width: 16px;
+  fill: var(--saphire-color);
+  margin-bottom: 4px;
+}
+
+.journey-line {
+  border-left: 1px solid var(--saphire-color);
+  height: 132px;
+  padding-bottom: 24px;
+  width: 1px;
+  padding-top: 4px;
+}
+
+.svg-location{
+     height: 32px;
+     width: 16px;
+     fill: var(--saphire-color);
+     display: block;
+}
+
+.journey-citypair{
      display: flex;
+     flex-direction: column;
+     /* height: 100%; */
      justify-content: space-between;
-     align-items: center;
-    margin-top: 10px;
-
+     margin-left: 8px;
 }
 
-.flight-details-item{
-     width: 33,33%;
-}
-
-.flight-details .details{
+.citypair-depart h6,
+.citypair-arrive h6{
      font-size: 14px;
-    font-family: Mt;
-    font-weight: 400;
-    line-height: 22px;
+     font-weight: 600;
+     line-height: 16px;
+}
+.citypair-arrive h6{
+     margin-top: 16px;
 }
 
-.flight-details button{
-    border-radius: 8px;
-    color: var(--white-color);
-    font-weight: 600;
-    font-size: 16px;
-}
-
-.flight-item .infor-brand img{
-     width: 50px;
-    height: 50px;
-    object-fit: contain;
+.citypair-depart span,
+.citypair-arrive span{
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 22px;
+  color: var(--text-color);
 
 }
 
-.infor-duration{
+.journey-infor-plane{
      display: flex;
+     align-items: center;
+}
+
+.journey-infor-plane .infor-plane__name h6{
+     font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+
+}
+.journey-infor-plane .infor-plane__name span{
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 22px;
+     color: var(--text-color);
+
+}
+
+.infor-price__header{
+     
+     font-size: 14px;
+     font-weight: 600;
+     line-height: 16px;
+}
+
+.infor-price__body{
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 22px;
+     color: var(--text-color);
+
+}
+
+.infor-price th,td{
+     padding: 7px;
+}
+
+.infor-price td,th{
+     text-align: right;
+}
+
+.infor-price td.infor-price__title{
+     text-align: left;
+}
+
+.infor-price__title strong{
+     color: var(--black-color);
+}
+
+td.total_amount{
+     color: #ec2029;
+     font-weight: 600;
+}
+
+.infor-journey__transit,
+.infor-citypair__transit{
+     display: flex;
+     /* height: 100%; */
+     justify-content: space-between;
      flex-direction: column;
 }
 
-.time__duration{
-     font-size: 14px;
-    font-family: Mt;
-    font-weight: 600;
-    line-height: 16px;
+.journey-datetime__transit-1,
+.journey-citypair__transit-1
+{
+     height: 185px;
 }
 
-.transit{
-     font-size: 14px;
-     font-family: Mt;
-     font-weight: 400;
-     line-height: 22px;
+.journey-datetime__transit-2,
+.journey-citypair__transit-2{
+     height: 215px;
 }
+
+.journey-datetime__transit-3,
+.journey-citypair__transit-3{
+     height: 215px;
+}
+
+.location__transit h6{
+     margin-left: 8px;
+     font-size: 14px;
+     color: var(--saphire-color);
+     font-weight: 600;
+     line-height: 20px;
+}
+
+.location__transit{
+     position: relative;
+}
+
+.location__transit::before{
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: -80px;
+     width: 140%;
+     height: 1px;
+     background: var(--saphire-color);
+}
+

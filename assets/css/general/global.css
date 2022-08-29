@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: Mt;
-  src: url(/assets/fonts/Mt-Regular.otf);
+  src: url(../../fonts/Mt-Regular.otf);
   font-display: swap;
 }
 @font-face {
@@ -106,7 +106,6 @@ a {
   transform: rotate(90deg);
 }
 
-
 /*Btn style*/
 .btn{
   min-width: 124px;
@@ -124,7 +123,6 @@ a {
   line-height: 1.6rem;
   
 }
-
 
 /* row reverse */
 
