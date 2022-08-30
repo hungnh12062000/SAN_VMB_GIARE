@@ -15,8 +15,43 @@ $(document).ready(function () {
 
      // show details
      $(".flight-infor-details").hide();
-     $('.details').on('click', function(){
+     $('.details').on('click', function () {
           $(this).parent().next().slideToggle(300);
      })
-    
+
+     // FILTER FLIGHT TRANSIT
+     $("#filter-options__transit :checkbox").click(function () {
+          // this = element input 
+          $(".flight-list .flight-item").hide(); //hide all flight item
+          $("#filter-options__transit :checkbox:checked").each(function () {
+               //value of checkbox checked
+               $("." + $(this).val()).fadeIn();
+          });
+
+          if ($('#filter-options__transit :checkbox').filter(':checked').length < 1) {
+               $(".flight-list .flight-item").fadeIn();
+          }
+     })
+
+     //FILTER FLIGHT - BRAND
+     $("#filter-options__airline :checkbox").click(function(){
+          // this = element input 
+          $(".flight-list .flight-item").hide(); //hide all flight item
+          $("#filter-options__airline :checkbox:checked").each(function () {
+               //value of checkbox checked
+               $("." + $(this).val()).show();
+          });
+
+          if ($('#filter-options__airline :checkbox').filter(':checked').length < 1) {
+               // Không check cái nào thì show all
+               $(".flight-list .flight-item").show();
+          }
+     })
+
+     // reset filter
+     $('.sidebar__reset').click(function(){
+          $('input:checkbox').removeAttr('checked');
+          $(".flight-list .flight-item").show();
+     })
+
 });

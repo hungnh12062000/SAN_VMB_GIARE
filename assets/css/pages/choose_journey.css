@@ -88,7 +88,7 @@
 .flight-infor {
   display: flex;
   align-items: center;
-  border-bottom: 2px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .flight-infor-item {
@@ -430,6 +430,7 @@
 td.total_amount{
      color: #ec2029;
      font-weight: 600;
+     font-size: 16px;
 }
 
 .infor-journey__transit,

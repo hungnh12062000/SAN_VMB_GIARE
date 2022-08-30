@@ -1,16 +1,122 @@
-.sidebar{
-     width: 100%;
-     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-     border-radius: 8px;
-     background: var(--white-color);
-     margin-top: 24px;
-     padding: 20px;
+.sidebar-filters {
+  width: 100%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 8px;
+  background: var(--white-color);
+  margin-top: 24px;
+  padding: 20px;
 }
 
-.sidebar__title{
-     text-align: center;
-     font-size: 20px;
+
+.sidebar-filters-wrap{
+     display: flex;
+     justify-content: space-between;
+     border-bottom: 1px solid var(--border-color);
+     margin-bottom: 20px;
+
+}
+
+.sidebar__title,
+.sidebar__reset {
+     font-size: 16px;
      font-weight: 600;
      color: var(--text-color);
-     border-bottom: 1px solid #ccc;
+     padding: 10px 0;
+}
+
+.sidebar__reset{
+     color: var(--saphire-color);
+     cursor: pointer;
+}
+
+/* ========= PAGE TÌM CHUYẾN BAY ========= */
+.options__airline--item {
+  display: flex;
+  align-items: center;
+}
+
+.options__airline--item span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--text-color);
+  margin-left: 10px;
+}
+
+#filter-options__airline li img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-left: 4px;
+}
+
+.filter-flight__title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+/*====== Checkboxes styles ======*/
+.filter-flight__transit{
+     margin-top: 20px;
+     border-top: 1px solid var(--border-color);
+     padding-top: 20px;
+}
+
+.options__transit--item,
+.options__airline--item{
+     margin-bottom: 8px;
+}
+
+.options__transit--item:last-child,
+.options__airline--item:last-child{
+     margin-bottom: 0px;
+}
+.sidebar-filters input[type="checkbox"] {
+  display: none;
+}
+
+.sidebar-filters input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--saphire-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+  -webkit-transition: all 0.12s, border-color 0.08s;
+  transition: all 0.12s, border-color 0.08s;
+}
+
+.sidebar-filters input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
