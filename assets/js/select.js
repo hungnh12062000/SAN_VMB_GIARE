@@ -34,7 +34,7 @@ $(document).ready(function () {
      })
 
      //FILTER FLIGHT - BRAND
-     $("#filter-options__airline :checkbox").click(function(){
+     $("#filter-options__airline :checkbox").click(function () {
           // this = element input 
           $(".flight-list .flight-item").hide(); //hide all flight item
           $("#filter-options__airline :checkbox:checked").each(function () {
@@ -49,9 +49,10 @@ $(document).ready(function () {
      })
 
      // reset filter
-     $('.sidebar__reset').click(function(){
+     $('.sidebar__reset').click(function () {
           $('input:checkbox').removeAttr('checked');
           $(".flight-list .flight-item").show();
      })
 
 });
+

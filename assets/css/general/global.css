@@ -106,6 +106,10 @@ a {
   transform: rotate(90deg);
 }
 
+.pass{
+  color: var(--green-color);
+}
+
 /*Btn style*/
 .btn{
   min-width: 124px;

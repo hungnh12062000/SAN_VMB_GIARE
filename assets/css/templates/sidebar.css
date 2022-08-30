@@ -8,26 +8,24 @@
   padding: 20px;
 }
 
-
-.sidebar-filters-wrap{
-     display: flex;
-     justify-content: space-between;
-     border-bottom: 1px solid var(--border-color);
-     margin-bottom: 20px;
-
+.sidebar-filters-wrap {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
 }
 
 .sidebar__title,
 .sidebar__reset {
-     font-size: 16px;
-     font-weight: 600;
-     color: var(--text-color);
-     padding: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+  padding: 10px 0;
 }
 
-.sidebar__reset{
-     color: var(--saphire-color);
-     cursor: pointer;
+.sidebar__reset {
+  color: var(--saphire-color);
+  cursor: pointer;
 }
 
 /* ========= PAGE TÌM CHUYẾN BAY ========= */
@@ -60,20 +58,20 @@
 }
 
 /*====== Checkboxes styles ======*/
-.filter-flight__transit{
-     margin-top: 20px;
-     border-top: 1px solid var(--border-color);
-     padding-top: 20px;
+.filter-flight__transit {
+  margin-top: 20px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
 }
 
 .options__transit--item,
-.options__airline--item{
-     margin-bottom: 8px;
+.options__airline--item {
+  margin-bottom: 8px;
 }
 
 .options__transit--item:last-child,
-.options__airline--item:last-child{
-     margin-bottom: 0px;
+.options__airline--item:last-child {
+  margin-bottom: 0px;
 }
 .sidebar-filters input[type="checkbox"] {
   display: none;
@@ -119,4 +117,112 @@ input[type="checkbox"] + label:before {
   border-left-color: transparent;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+/* =========== SIDEBAR INFOR JOURNEY ========= */
+.sidebar-journey,
+.sidebar-table__prices {
+  width: 100%;
+  border-radius: 8px;
+  background: var(--white-color);
+  margin-top: 24px;
+  padding: 20px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.journey-infor__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.journey-infor__title label {
+  background-color: var(--saphire-color);
+  color: var(--white-color);
+  width: 80px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-weight: 600;
+  line-height: 15px;
+  font-size: 12px;
+}
+
+.journey-infor__title span {
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.journey-infor__datetime {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 12px;
+}
+
+.journey-details .journey-line {
+  height: 120px;
+}
+
+.hr-line-1{
+  margin-top: 12px;
+  height: 1px;
+  color: var(--saphire-color);
+}
+
+.journey-rep-wrap{
+  margin-top: 20px;
+}
+
+/* ======== BẢNG GIÁ ========= */
+.sidebar-table__prices table{
+  width: 100%;
+}
+
+.table__price--return{
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.price--line{
+  height: 5px;
+  background: var(--border-color);
+}
+
+.total_amount--depart,
+.total_amount--return{
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.total__price-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+
+.total__price-title h6{
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 22px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.total__price-title p{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.total__price{
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 22px;
+  font-weight: 600;
+  color: #ec2029;
+
 }

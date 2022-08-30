@@ -27,15 +27,6 @@
 </head>
 
 <body>
-  <!-- toast -->
-  <div id="toast" class="toast-passenger">
-    <ion-icon name="alert-circle-outline"></ion-icon> Số lượng em bé nhỏ hơn
-    hoặc bằng số lượng người lớn.
-    <div class="toast-close">
-      <ion-icon name="close-outline"></ion-icon>
-    </div>
-  </div>
-
   <!-- scroll -->
   <div class="scroll-to-top">
     <a href="javascript:" id="return-to-top">
@@ -145,7 +136,7 @@
                     <div class="flight-details-item details">
                       <ion-icon name="add-outline"></ion-icon> Chi tiết
                     </div>
-                    <a href="./payment.html">
+                    <a href="./infor_passengers.html">
                       <button type="submit" class="flight-details-item btn btn-blue-sky-g">
                         Chọn
                       </button>
@@ -239,7 +230,7 @@
                               <td class="infor-price__title">
                                 Người lớn x 1
                               </td>
-                              <td>369.000đ</td>
+                              <td class="base-price" data-price="369000">369.000đ</td>
                               <td>369.000đ</td>
                               <td>738.000đ</td>
                             </tr>
@@ -251,7 +242,7 @@
                             </tr>
                             <tr>
                               <td class="infor-price__title">Em bé x 1</td>
-                              <td>1.369.000đ</td>
+                              <td class="infor-price__free">miễn phí</td>
                               <td>1.369.000đ</td>
                               <td>1.738.000đ</td>
                             </tr>
@@ -315,7 +306,7 @@
                     <div class="flight-details-item details">
                       <ion-icon name="add-outline"></ion-icon> Chi tiết
                     </div>
-                    <a href="./payment.html">
+                    <a href="./infor_passengers.html">
                       <button type="submit" class="flight-details-item btn btn-blue-sky-g">
                         Chọn
                       </button>
@@ -409,7 +400,7 @@
                               <td class="infor-price__title">
                                 Người lớn x 1
                               </td>
-                              <td>369.000đ</td>
+                              <td class="base-price" data-price="269000">269.000đ</td>
                               <td>369.000đ</td>
                               <td>738.000đ</td>
                             </tr>
@@ -421,7 +412,7 @@
                             </tr>
                             <tr>
                               <td class="infor-price__title">Em bé x 1</td>
-                              <td>1.369.000đ</td>
+                              <td class="infor-price__free">1.369.000đ</td>
                               <td>1.369.000đ</td>
                               <td>1.738.000đ</td>
                             </tr>
@@ -651,7 +642,7 @@
                             </tr>
                             <tr>
                               <td class="infor-price__title">Em bé x 1</td>
-                              <td>1.369.000đ</td>
+                              <td class="infor-price__free">MIỄN PHÍ</td>
                               <td>1.369.000đ</td>
                               <td>1.738.000đ</td>
                             </tr>
@@ -940,7 +931,7 @@
                             </tr>
                             <tr>
                               <td class="infor-price__title">Em bé x 1</td>
-                              <td>1.369.000đ</td>
+                              <td class="infor-price__free">MIẾN PHÍ</td>
                               <td>1.369.000đ</td>
                               <td>1.738.000đ</td>
                             </tr>
@@ -973,7 +964,7 @@
                 <h2 class="sidebar__reset">Xóa lọc</h2>
               </div>
 
-              <!-- brand airline -->
+              <!-- Lọc theo brand airline -->
               <div class="filter-flight__airline">
                 <h6 class="filter-flight__title">Hãng Bay</h6>
 
@@ -1015,7 +1006,7 @@
                 </ul>
               </div>
 
-              <!-- Điểm dừng -->
+              <!-- Lọc theo Điểm dừng -->
               <div class="filter-flight__transit">
                 <h6 class="filter-flight__title">Điểm dừng</h6>
 
@@ -1034,6 +1025,7 @@
                   </li>
                 </ul>
               </div>
+
             </div>
           </div>
         </div>
@@ -1164,6 +1156,11 @@
   <!-- <script src="./assets/libs/jquery/jquery-3.3.1.min.js"></script> -->
   <script src="./assets/libs/jquery/jquery-migrate-3.4.0.min.js"></script>
 
+  <!-- range price -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script>
+
   <!-- boostrap datepicker -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
   <script src="./assets/libs/datepicker/popper.min.js"></script>
@@ -1185,6 +1182,7 @@
 
   <!-- main js -->
   <script src="./assets/js/select.js"></script>
+
 </body>
 
 </html>
