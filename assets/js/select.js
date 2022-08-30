@@ -13,4 +13,10 @@ $(document).ready(function () {
           window.scrollTo({ top: 0, behavior: 'smooth' });
      });
 
+     // show details
+     $(".flight-infor-details").hide();
+     $('.details').on('click', function(){
+          $(this).parent().next().slideToggle(300);
+     })
+    
 });

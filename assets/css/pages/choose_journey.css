@@ -226,14 +226,22 @@
 
 /* ============== Xem chi tiết từng chuyến bay ========== */
 .flight-infor-details {
-  display: flex;
   margin-top: 10px;
   padding: 15px;
   background: var(--bgsection-color);
   border-radius: 8px;
   height: auto;
   min-width: 0px;
+  display: flex;
   
+}
+
+
+.flight-infor-details.is-visible {
+  display: flex;
+  height: auto;
+  padding: 15px;
+  margin-top: 10px;
 }
 
 
@@ -399,6 +407,10 @@
 
 }
 
+.infor-price__body tr:last-child{
+  border-top: 1px solid var(--border-color);
+}
+
 .infor-price th,td{
      padding: 7px;
 }
@@ -465,4 +477,16 @@ td.total_amount{
      height: 1px;
      background: var(--saphire-color);
 }
+
+.infor-promotion{
+  margin-top: 20px;
+}
+
+.infor-promotion img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 
