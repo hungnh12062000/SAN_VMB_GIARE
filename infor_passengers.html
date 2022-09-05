@@ -86,9 +86,18 @@
                     <div class="row g-0">
                          <div class="col-md-8">
                               <form action="">
-                                   <section class="section__infor-passengers">
-                                        <div class="infor-passengers__title">Thông tin hành khách</div>
-                                        <div class="infor-passengers__decs">
+                                   <!-- THÔNG TIN HÀNH KHÁCH -->
+                                   <section class="section-box-passengers section__infor-passengers">
+                                        <div class="section__title">
+                                             <lord-icon
+                                                  src="https://cdn.lordicon.com/puvaffet.json"
+                                                  trigger="loop"
+                                                  delay="2000"
+                                                  style="width:50px;height:50px">
+                                             </lord-icon>
+                                             Thông tin hành khách
+                                        </div>
+                                        <div class="section__decs">
                                              <span>Nhập tiếng Việt không dấu, không có ký tự đặc biệt. <br>
                                                   Nhập họ tên trùng khớp trên giấy tờ tùy thân.</span>
                                         </div>
@@ -98,33 +107,27 @@
                                              <div class="adult-passenger">
                                                   <div class="adult-wrap">
                                                        <div class="adult-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="19"
-                                                                 height="19" fill="#000000" viewBox="0 0 256 256">
-                                                                 <rect width="256" height="256" fill="none"></rect>
-                                                                 <circle cx="127.9" cy="44" r="28" fill="none"
-                                                                      stroke="#000000" stroke-linecap="round"
-                                                                      stroke-linejoin="round" stroke-width="16">
-                                                                 </circle>
-                                                                 <path d="M153.9,134.7l34.8,27a12,12,0,0,0,16.9-16.9L166,93.9A19.9,19.9,0,0,0,151.9,88h-48a20.3,20.3,0,0,0-14.2,5.9L50.1,144.8a12,12,0,0,0,17,16.9l34.8-27L74.1,222.3a12,12,0,0,0,21.8,10.2l32-50.4h0l32,50.4a12,12,0,1,0,21.7-10.2Z"
-                                                                      fill="none" stroke="#000000"
-                                                                      stroke-linecap="round" stroke-linejoin="round"
-                                                                      stroke-width="16"></path>
-                                                            </svg>
+                                                            <lord-icon
+                                                            src="https://cdn.lordicon.com/eszyyflr.json"
+                                                            trigger="loop"
+                                                            delay="2000"
+                                                            style="width:35px;height:35px">
+                                                            </lord-icon>
                                                        </div>
                                                        <div class="adult-passenger__title">Người lớn 1</div>
                                                   </div>
 
                                                   <div class="adult-input">
                                                        <div class="adult-input__gender">
-                                                            <span for="">Giới tính</span>
-                                                            <select name="" id="">
+                                                            <span class="title-input" for="">Giới tính</span>
+                                                            <select class="box-select" name="" id="">
                                                                  <option value="">Nam</option>
                                                                  <option value="">Nữ</option>
                                                             </select>
                                                        </div>
                                                        <div class="adult-input__name">
-                                                            <label for="">Họ và Tên <span>*</span></label>
-                                                            <input type="text" class="input-name"
+                                                            <label class="title-input" for="">Họ và Tên <span class="asterisk">*</span></label>
+                                                            <input type="text" class="input-name box-input"
                                                                  placeholder="Ví dụ: NGUYEN HAI HUNG">
                                                        </div>
                                                   </div>
@@ -133,49 +136,153 @@
                                              <div class="child-passenger">
                                                   <div class="child-wrap">
                                                        <div class="child-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="19"
-                                                                 height="19" fill="#000000" viewBox="0 0 256 256">
-                                                                 <rect width="256" height="256" fill="none"></rect>
-                                                                 <circle cx="127.9" cy="44" r="28" fill="none"
-                                                                      stroke="#000000" stroke-linecap="round"
-                                                                      stroke-linejoin="round" stroke-width="16">
-                                                                 </circle>
-                                                                 <path d="M153.9,134.7l34.8,27a12,12,0,0,0,16.9-16.9L166,93.9A19.9,19.9,0,0,0,151.9,88h-48a20.3,20.3,0,0,0-14.2,5.9L50.1,144.8a12,12,0,0,0,17,16.9l34.8-27L74.1,222.3a12,12,0,0,0,21.8,10.2l32-50.4h0l32,50.4a12,12,0,1,0,21.7-10.2Z"
-                                                                      fill="none" stroke="#000000"
-                                                                      stroke-linecap="round" stroke-linejoin="round"
-                                                                      stroke-width="16"></path>
-                                                            </svg>
+                                                            <lord-icon
+                                                            src="https://cdn.lordicon.com/ssdupzsv.json"
+                                                            trigger="loop"
+                                                            delay="2000"
+                                                            style="width:35px;height:35px">
+                                                            </lord-icon>
                                                        </div>
-                                                       <div class="child-passenger__title">Người lớn 1</div>
+                                                       <div class="child-passenger__title">Trẻ em 1</div>
                                                   </div>
 
                                                   <div class="child-input">
                                                        <div class="child-input__gender">
-                                                            <span for="">Giới tính</span>
-                                                            <select name="" id="">
+                                                            <span class="title-select" for="">Giới tính</span>
+                                                            <select name="" id="" class="box-select">
                                                                  <option value="">Nam</option>
                                                                  <option value="">Nữ</option>
                                                             </select>
                                                        </div>
                                                        <div class="child-input__name">
-                                                            <label for="">Họ và Tên <span>*</span></label>
-                                                            <input type="text" class="input-name"
+                                                            <label class="title-input" for="">Họ và Tên <span class="asterisk">*</span></label>
+                                                            <input type="text" class="input-name box-input"
                                                                  placeholder="Ví dụ: NGUYEN HAI HUNG">
                                                        </div>
                                                        <div class="child-input__birthday">
-                                                            <label for="">Ngày sinh <span>*</span></label>
-                                                            <input type="text" class="input-birthday"
+                                                            <label class="title-input" for="">Ngày sinh <span class="asterisk">*</span></label>
+                                                            <input type="text" class="input-birthday box-input"
                                                                  placeholder="11/11/2022">
                                                        </div>
                                                   </div>
                                              </div>
 
                                              <!-- Em bé -->
+                                             <div class="infant-passenger">
+                                                  <div class="infant-wrap">
+                                                       <div class="infant-icon">
+                                                            <lord-icon
+                                                                 src="https://cdn.lordicon.com/cuvapfqt.json"
+                                                                 trigger="loop"
+                                                                 delay="2000"
+                                                                 style="width:35px;height:35px">
+                                                            </lord-icon>
+                                                       </div>
+                                                       <div class="infant-passenger__title">Em bé 1</div>
+                                                  </div>
+
+                                                  <div class="infant-input">
+                                                       <div class="infant-input__gender">
+                                                            <span class="title-select" for="">Giới tính</span>
+                                                            <select name="" id="" class="box-select">
+                                                                 <option value="">Nam</option>
+                                                                 <option value="">Nữ</option>
+                                                            </select>
+                                                       </div>
+                                                       <div class="infant-input__name">
+                                                            <label class="title-input" for="">Họ và Tên <span class="asterisk">*</span></label>
+                                                            <input type="text" class="input-name box-input"
+                                                                 placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                       </div>
+                                                       <div class="infant-input__birthday">
+                                                            <label class="title-input" for="">Ngày sinh <span class="asterisk">*</span></label>
+                                                            <input type="text" class="input-birthday box-input"
+                                                                 placeholder="11/11/2022">
+                                                       </div>
+                                                  </div>
+                                             </div>
 
                                         </div>
                                    </section>
 
+                                   <!-- THÔNG TIN LIÊN HỆ -->
+                                   <section class="section-box-passengers section__contact-passengers">
+                                        <div class="section__title">
+                                             <lord-icon
+                                                  src="https://cdn.lordicon.com/zpxybbhl.json"
+                                                  trigger="loop"
+                                                  style="width:50px;height:50px">
+                                             </lord-icon>
+                                             Thông tin liên hệ
+                                        </div>
+                                        <div class="section__decs">
+                                             <span>(*) Vui lòng cung cấp đầy đủ thông tin chi tiết liên hệ của bạn bên dưới để chúng tôi có thể nhanh chóng liên hệ với bạn khi cần thiết.</span>
+                                        </div>
+
+                                        <div class="contact-passenger-wrap">
+                                             <div class="contact__input">
+                                                  <div class="contact__input--required">
+                                                       <!-- title -->
+                                                       <div class="input__contact--title">
+                                                            <span class="title-select" for="">Qúy danh</span>
+                                                            <select name="" id="" class="box-select">
+                                                                 <option value="0">Ông</option>
+                                                                 <option value="1">Bà</option>
+                                                                 <option value="0">Anh</option>
+                                                                 <option value="1">Chị</option>
+                                                            </select>
+                                                       </div>
+
+                                                       <!-- name -->
+                                                       <div class="input__contact--name">
+                                                            <label class="title-input" for="">Họ và Tên <span class="asterisk">*</span></label>
+                                                            <input type="text" class="contact-name box-input"
+                                                                 placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                       </div>
+
+                                                       <!-- phone -->
+                                                       <div class="input__contact--phone">
+                                                            <label class="title-input" for="">Điện thoại di động <span class="asterisk">*</span></label>
+                                                            <input type="text" class="contact-phone box-input">
+                                                       </div>
+                                                  </div>
+                                                  <div class="contact__input--optional">
+                                                       <!-- email -->
+                                                       <div class="input__contact--email">
+                                                            <label class="title-input" for="">Email</label>
+                                                            <input type="text" class="contact-email box-input">
+                                                       </div>
+                                                       <!-- address -->
+                                                       <div class="input__contact--address">
+                                                            <label class="title-input" for="">Địa chỉ</label>
+                                                            <input type="text" class="contact-address box-input">
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </section>
+
+                                   <!-- YÊU CẦU ĐẶC BIỆT -->
+                                   <section class="section-box-passengers section__special-request">
+                                        <div class="section__title"> 
+                                             <lord-icon
+                                                  src="https://cdn.lordicon.com/uukerzzv.json"
+                                                  trigger="loop"
+                                                  delay="2000"
+                                                  style="width:50px;height:50px">
+                                             </lord-icon>
+                                             Yêu cầu đặc biệt
+                                             </div>
+                                        <div class="section__decs">
+                                             <span>Khi bạn có thêm yêu cầu, hãy viết vào ô bên dưới.</span>
+                                        </div>
+
+                                        <div class="special-request-wrap">
+                                             <textarea name="special-request" class="special-request__textarea"></textarea>
+                                        </div>
+                                   </section>
                               </form>
+
                               <div class="infor-passengers__submit">
                                    <a href="./payment.html">
                                         <button type="submit" class="button-gradient instagram continue"><span
@@ -222,26 +329,18 @@
                                                   </div>
 
                                                   <div class="journey-timeline">
-                                                       <svg width="16" height="16" fill="none" class="svg-plane">
-                                                            <path d="M9.333 10.667v2.666a1.333 1.333 0 01-2.666 0v-2.666L2 8V6l4.667 1.333V4.667L5.333 3.333v-2L8 2.667l2.667-1.334v2L9.333 4.667v2.666L14 6v2l-4.667 2.667z"
-                                                                 fill="#14b9d5"></path>
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#14b9d5" viewBox="0 0 256 256" class="svg-plane">
+                                                            <rect width="256" height="256" fill="none"></rect>
+                                                            <path d="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
                                                        </svg>
+
                                                        <div class="journey-line"></div>
-                                                       <svg width="17" height="18" class="svg-location">
-                                                            <defs>
-                                                                 <path id="icon_location_svg__a" d="M0 0h16v16H0z">
-                                                                 </path>
-                                                            </defs>
-                                                            <g transform="translate(.5 1)" fill="none"
-                                                                 fill-rule="evenodd">
-                                                                 <mask id="icon_location_svg__b" fill="#fff">
-                                                                      <use xlink:href="#icon_location_svg__a"></use>
-                                                                 </mask>
-                                                                 <path fill="#14b9d5" fill-rule="nonzero"
-                                                                      d="M7.538 13.758C4.132 8.82 3.5 8.314 3.5 6.5a4.5 4.5 0 019 0c0 1.814-.632 2.321-4.038 7.258a.562.562 0 01-.924 0zM8 8.375a1.875 1.875 0 100-3.75 1.875 1.875 0 000 3.75z"
-                                                                      mask="url(#icon_location_svg__b)"></path>
-                                                            </g>
-                                                       </svg>
+                                                       <lord-icon
+                                                            src="https://cdn.lordicon.com/elzslyvl.json"
+                                                            trigger="loop"
+                                                            delay="1000"
+                                                            style="width:32px;height:32px">
+                                                       </lord-icon>   
                                                   </div>
 
                                                   <div class="journey-citypair">
@@ -303,26 +402,17 @@
                                                   </div>
 
                                                   <div class="journey-timeline">
-                                                       <svg width="16" height="16" fill="none" class="svg-plane">
-                                                            <path d="M9.333 10.667v2.666a1.333 1.333 0 01-2.666 0v-2.666L2 8V6l4.667 1.333V4.667L5.333 3.333v-2L8 2.667l2.667-1.334v2L9.333 4.667v2.666L14 6v2l-4.667 2.667z"
-                                                                 fill="#14b9d5"></path>
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#14b9d5" viewBox="0 0 256 256" class="svg-plane">
+                                                            <rect width="256" height="256" fill="none"></rect>
+                                                            <path d="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
                                                        </svg>
                                                        <div class="journey-line"></div>
-                                                       <svg width="17" height="18" class="svg-location">
-                                                            <defs>
-                                                                 <path id="icon_location_svg__a" d="M0 0h16v16H0z">
-                                                                 </path>
-                                                            </defs>
-                                                            <g transform="translate(.5 1)" fill="none"
-                                                                 fill-rule="evenodd">
-                                                                 <mask id="icon_location_svg__b" fill="#fff">
-                                                                      <use xlink:href="#icon_location_svg__a"></use>
-                                                                 </mask>
-                                                                 <path fill="#14b9d5" fill-rule="nonzero"
-                                                                      d="M7.538 13.758C4.132 8.82 3.5 8.314 3.5 6.5a4.5 4.5 0 019 0c0 1.814-.632 2.321-4.038 7.258a.562.562 0 01-.924 0zM8 8.375a1.875 1.875 0 100-3.75 1.875 1.875 0 000 3.75z"
-                                                                      mask="url(#icon_location_svg__b)"></path>
-                                                            </g>
-                                                       </svg>
+                                                       <lord-icon
+                                                            src="https://cdn.lordicon.com/elzslyvl.json"
+                                                            trigger="loop"
+                                                            delay="1000"
+                                                            style="width:32px;height:32px">
+                                                       </lord-icon>
                                                   </div>
 
                                                   <div class="journey-citypair">
@@ -598,6 +688,9 @@
      <!-- icon -->
      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+     <!-- lord icon -->
+     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
 
      <!-- Calendar -->
      <script src="./assets/libs/datepicker/popper.min.js"></script>

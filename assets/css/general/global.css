@@ -2,7 +2,7 @@
   --white-color: #fff;
   --black-color: #000;
   --text-color: #4a5568;
-  --border-color: #ccc;
+  --border-color: rgb(203, 213, 224);
   --title-color: #1a202c;
   --subheading-color: #4a5568;
   --bgsection-color: rgb(237, 242, 247);
@@ -460,4 +460,20 @@ a.instagram:hover {
       rgba(255, 255, 255, 0)
     );
   }
+}
+
+/* icon */
+
+.svg-plane {
+  fill: var(--saphire-color);
+  margin-bottom: 4px;
+  transform: rotate(180deg);
+}
+
+.journey-line {
+  border-left: 1px solid var(--saphire-color);
+  height: 132px;
+  padding-bottom: 24px;
+  width: 1px;
+  padding-top: 4px;
 }

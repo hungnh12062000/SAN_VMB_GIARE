@@ -315,28 +315,6 @@
   padding-bottom: 28px;
 }
 
-.svg-plane {
-  height: 16px;
-  width: 16px;
-  fill: var(--saphire-color);
-  margin-bottom: 4px;
-}
-
-.journey-line {
-  border-left: 1px solid var(--saphire-color);
-  height: 132px;
-  padding-bottom: 24px;
-  width: 1px;
-  padding-top: 4px;
-}
-
-.svg-location{
-     height: 32px;
-     width: 16px;
-     fill: var(--saphire-color);
-     display: block;
-}
-
 .journey-citypair{
      display: flex;
      flex-direction: column;
