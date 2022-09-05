@@ -28,9 +28,9 @@
      <!-- scroll -->
      <div class="scroll-to-top">
           <a href="javascript:" id="return-to-top">
-               <ion-icon name="chevron-up-outline"></ion-icon>
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#14b9d5" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="48 160 128 80 208 160" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
           </a>
-     </div>
+        </div>
 
      <div class="global-wrap">
           <!-- HEADER -->
@@ -61,7 +61,7 @@
                     </li>
                </ul>
                <div class="header-phone">
-                    <ion-icon name="call-outline"></ion-icon>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
                     <p class="phone-number">1900 636 063</p>
                </div>
           </section>
@@ -305,8 +305,7 @@
                                                                  stroke-linecap="round" stroke-linejoin="round"></path>
                                                        </svg> Hà Nội (HAN)</span>
                                              </div>
-                                             <div class="journey-infor__datetime">Thứ 4, 14 tháng 09 <ion-icon
-                                                       name="remove-outline"></ion-icon> 5 khách</div>
+                                             <div class="journey-infor__datetime">Thứ 4, 14 tháng 09 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg> 5 khách</div>
 
                                         </div>
                                         <hr class="hr-line-1">
@@ -378,8 +377,7 @@
                                                                  stroke-linecap="round" stroke-linejoin="round"></path>
                                                        </svg> Hồ CHí Minh (SGN)</span>
                                              </div>
-                                             <div class="journey-infor__datetime">Thứ 4, 14 tháng 09 <ion-icon
-                                                       name="remove-outline"></ion-icon> 5 khách</div>
+                                             <div class="journey-infor__datetime">Thứ 4, 14 tháng 09 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg> 5 khách</div>
 
                                         </div>
                                         <hr class="hr-line-1">
@@ -445,7 +443,10 @@
                               <!-- PRICES -->
                               <div class="sidebar-table__prices">
                                    <div class="table__price--depart">
-                                        <h6 class="infor-ticket-title">Chi tiết giá chiều đi</h6>
+                                        <div class="infor-ticket-title">
+                                             <label for="">Chiều đi</label>
+                                             <span>Chi tiết giá chiều đi</span> 
+                                        </div>
                                         <div class="infor-price">
                                              <table>
                                                   <thead class="infor-price__header">
@@ -468,7 +469,7 @@
                                                        </tr>
                                                        <tr>
                                                             <td class="infor-price__title">Em bé x 1</td>
-                                                            <td class="infor-price__free">MIỄN PHÍ</td>
+                                                            <td class="infor-price__free">0đ</td>
                                                             <td>1.738.000đ</td>
                                                        </tr>
                                                        <tr>
@@ -486,7 +487,10 @@
                                         </div>
                                    </div>
                                    <div class="table__price--return">
-                                        <h6 class="infor-ticket-title">Chi tiết giá chiều về</h6>
+                                        <div class="infor-ticket-title">
+                                             <label for="">Chiều đi</label>
+                                             <span>Chi tiết giá chiều về</span>
+                                        </div>
                                         <div class="infor-price">
                                              <table>
                                                   <thead class="infor-price__header">
@@ -509,7 +513,7 @@
                                                        </tr>
                                                        <tr>
                                                             <td class="infor-price__title">Em bé x 1</td>
-                                                            <td class="infor-price__free">MIỄN PHÍ</td>
+                                                            <td class="infor-price__free">0đ</td>
                                                             <td>1.738.000đ</td>
                                                        </tr>
                                                        <tr>
@@ -526,7 +530,6 @@
                                              </table>
                                         </div>
                                    </div>
-                                   <hr class="price--line">
                                    <div class="total__price-wrap">
                                         <div class="total__price-title">
                                              <h6>Tổng giá vé</h6>

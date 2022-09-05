@@ -50,7 +50,7 @@ $(document).ready(function () {
           infinite: true,
           slidesToShow: 4,
           slidesToScroll: 1,
-          autoplay: true,
+          // autoplay: true,
           autoplaySpeed: 2000,
           prevArrow: `<button type='button' class='slick-prev slick-arrow'><ion-icon name="arrow-back-outline"></ion-icon></button>`,
           nextArrow: `<button type='button' class='slick-next slick-arrow'><ion-icon name="arrow-forward-outline"></ion-icon></button>`,
@@ -111,14 +111,12 @@ $(document).ready(function () {
           $('.list-dep').show();
 
           let listItemHeight = ($(".naccs-dep ul").find("li:eq(1)").innerHeight()) + 150;
-          console.log(listItemHeight);
           $(".naccs-dep ul").height(listItemHeight + "px");
      });
      $(document).on('click', ".input-return", function () {
           $('.list-ret').show();
 
           let listItemHeight = ($(".naccs-ret ul").find("li:eq(1)").innerHeight()) + 150;
-          console.log(listItemHeight);
           $(".naccs-ret ul").height(listItemHeight + "px");
      });
 
@@ -252,9 +250,62 @@ $(document).ready(function () {
           $("input[name=Infant]").val(value_infant);
      })
 
+     // Check toggle 2 chiều
+     $(".toggle-direction").click(function() {
+          let check = $('#cbx').is(":checked"); //off => true
+          if(check){
+               $("#input_to").attr("disabled", "disabled");
+          } else {
+               $("#input_to").removeAttr("disabled");
+          }
+          
+      });
+
+     // LOCATION VALUE WHEN CLICK
+     $("#listDep .destination-item").on('click', function(e){
+          let code_city = $(this).attr("data-city");
+          $("#depinput").val( '(' + code_city + ')' + " " + $(this).text().trim());
+
+          $("#dep").val($(this).attr("data-city"));
+          if ($("#dep").val() == $("#des").val()) {
+               $("#desinput").val("");
+               $("#des").val("");
+           }
+          $('.list-ret').show();
+
+          $(".list-dep").fadeOut("fast");
+          $(".list-ret").fadeIn("fast");
+
+          $("#desinput").select();
+          return false;
+          
+     })
+
+     $("#listDes .destination-item").on('click', function(e){
+          let code_city = $(this).attr("data-city");
+
+          if (code_city == $("#dep").val()) {
+               $('.toast-location').addClass('active');
+               setTimeout(function () {
+                    $(".toast-location").removeClass('active');
+               }, 4000);
+
+           } else {
+               $("#desinput").val( '(' + code_city + ')' + " " + $(this).text().trim());
+
+               $("#des").val(code_city);
+               $("#listDes").fadeOut("fast");
+               $('#input_from_root').addClass('picker--opened picker--focused');     
+           }
+          
+          return false;
+          
+     })
+
      // toast
      $(".toast-close").on('click', function () {
           $(".toast-passenger").removeClass('active');
+          $(".toast-location").removeClass('active');
      })
 
      // ===== Scroll to Top ==== 
@@ -274,12 +325,11 @@ $(document).ready(function () {
      });
 
      // Radio page payment
-     $('.methods-header input[type="radio"]').click(function(){
-          $('.methods-content').stop().css({visibility: 'visible', display: 'block'}).slideUp('400');
-          $(this).parent('div').next('.methods-content').css({visibility: 'visible', display: 'none'}).slideDown('400');
-               
-     });
+     $('.methods-header input[type="radio"]').click(function () {
+          $('.methods-content').stop().css({ visibility: 'visible', display: 'block' }).slideUp('400');
+          $(this).parent('div').next('.methods-content').css({ visibility: 'visible', display: 'none' }).slideDown('400');
 
+     });
 
 });
 

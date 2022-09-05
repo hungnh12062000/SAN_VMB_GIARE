@@ -6,6 +6,7 @@
   --title-color: #1a202c;
   --subheading-color: #4a5568;
   --bgsection-color: rgb(237, 242, 247);
+  --bgdecs-color: rgb(229, 248, 254);
   --bgsection-footer: #F7FAFC;
   --saphire-color: #14b9d5;
   --green-color: #1bbc9b;
@@ -285,14 +286,87 @@ a {
   padding-right: 32px;
 }
 
+/* =========== TOGGLE SWICHES ======== */
+.toggle-switches{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-direction {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.toggle-direction:before {
+  content: "";
+  position: relative;
+  top: 3px;
+  left: 3px;
+  width: 34px;
+  height: 14px;
+  display: block;
+  background: #9A9999;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.toggle-direction span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(154, 153, 153, 0.5);
+  transition: all 0.2s ease;
+}
+
+.toggle-direction span:before {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: -18px;
+  width: 56px;
+  height: 56px;
+  background: var(--bgdecs-color);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 1;
+  pointer-events: none;
+}
+
+
+#cbx:checked + .toggle-direction:before {
+  background: rgb(20, 185, 213, 0.35);
+}
+#cbx:checked + .toggle-direction span {
+  background: var(--saphire-color);
+  transform: translateX(20px);
+  transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease;
+  box-shadow: 0 3px 8px rgba(79, 46, 220, 0.2);
+}
+#cbx:checked + .toggle-direction span:before {
+  transform: scale(1);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
 /* =========== scroll to top ========= */
 .scroll-to-top{
   position: fixed;
   right: 40px;
   bottom: 70px;
   border: 5px solid var(--saphire-color);
-  width: 50px;
-  height: 50px;   
+  width: 40px;
+  height: 40px;   
   border-radius: 50%;
   transition: all 0.3s ease;
   display: none;
@@ -308,7 +382,7 @@ a {
   align-items: center;
 }
 
-.scroll-to-top ion-icon{
+.scroll-to-top svg{
   position: absolute;
   color: var(--saphire-color);
   font-size: 22px;
@@ -316,7 +390,7 @@ a {
   transition: transform .5s ease-in;
 }
 
-.scroll-to-top:hover ion-icon{
+.scroll-to-top:hover svg{
 	transform: rotate(360deg);
 }
 
@@ -348,11 +422,24 @@ a {
   transform: translateX(115%);
 }
 
+.toast-location{
+  transform: translateX(115%);
+}
+
+.toast-location span{
+  flex: 1;
+  text-align: left;
+}
+
 .toast-passenger.active{
   transform: translateX(0);
 }
 
-#toast ion-icon {
+.toast-location.active{
+  transform: translateX(0);
+}
+
+#toast svg {
   color: var(--red-color);
   font-size: 24px;
   margin: 0 10px;

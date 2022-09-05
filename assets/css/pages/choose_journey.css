@@ -180,7 +180,7 @@
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-.flight-details .details ion-icon {
+.flight-details .details svg {
   margin-right: 5px;
 }
 
@@ -394,11 +394,6 @@
 
 .infor-price__title strong{
      color: var(--black-color);
-}
-
-.infor-price__free{
-  color: var(--green-color);
-  text-transform: uppercase;
 }
 
 td.total_amount{

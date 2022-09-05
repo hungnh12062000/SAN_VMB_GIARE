@@ -614,18 +614,6 @@ ul.nacc li.active {
   justify-content: center;
 }
 
-button.type-minus,
-button.type-plus {
-  border-radius: 50%;
-  padding: 5px;
-  width: 30px;
-  height: 30px;
-  color: var(--saphire-color);
-  border: 1px solid var(--saphire-color);
-  cursor: pointer;
-  background: #fff;
-}
-
 /* ======== END PASSENGER ======= */
 
 /* ============== BEGIN SEARCH =============*/
@@ -684,7 +672,7 @@ button.type-plus {
   -webkit-box-shadow: none;
   box-shadow: none;
   font-size: 16px;
-  color: var(--black-color);
+  color: var(--text-color);
   font-weight: 400;
   padding: 0;
 }
@@ -714,6 +702,11 @@ button.type-plus {
 
 .booking-form input[type="date"].form-control:invalid {
   color: #818390;
+}
+
+#input_from,
+#input_to{
+  cursor: pointer;
 }
 
 .booking-form div.form-control {

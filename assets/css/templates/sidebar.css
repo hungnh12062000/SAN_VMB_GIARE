@@ -93,7 +93,7 @@
   -ms-user-select: none;
 }
 
-input[type="checkbox"] + label:before {
+.sidebar-filters input[type="checkbox"] + label:before {
   content: "";
   display: block;
   width: 20px;
@@ -136,7 +136,8 @@ input[type="checkbox"] + label:before {
   margin-bottom: 8px;
 }
 
-.journey-infor__title label {
+.journey-infor__title label,
+.infor-ticket-title label {
   background-color: var(--saphire-color);
   color: var(--white-color);
   width: 80px;
@@ -149,7 +150,8 @@ input[type="checkbox"] + label:before {
   font-size: 12px;
 }
 
-.journey-infor__title span {
+.journey-infor__title span,
+.infor-ticket-title span {
   font-weight: 600;
   line-height: 20px;
   font-size: 16px;
@@ -184,12 +186,7 @@ input[type="checkbox"] + label:before {
 
 .table__price--return{
   padding-top: 20px;
-  margin-top: 20px;
-}
-
-.price--line{
-  height: 5px;
-  background: var(--border-color);
+  margin-top: 10px;
 }
 
 .total_amount--depart,
@@ -202,6 +199,10 @@ input[type="checkbox"] + label:before {
 .total__price-wrap{
   display: flex;
   justify-content: space-between;
+  background-color: var(--bgdecs-color);
+  padding: 20px;
+  color: var(--saphire-color);
+  margin-top: 10px;
 }
 
 .total__price-title h6{
@@ -209,18 +210,18 @@ input[type="checkbox"] + label:before {
   text-transform: uppercase;
   line-height: 22px;
   font-weight: 600;
-  color: var(--text-color);
+  color: var(--title-color);
 }
 
 .total__price-title p{
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  margin: 0;
 }
 
 .total__price{
   font-size: 20px;
-  text-transform: uppercase;
   line-height: 22px;
   font-weight: 600;
   color: #ec2029;
