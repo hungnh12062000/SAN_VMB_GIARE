@@ -240,6 +240,10 @@ a {
   background: linear-gradient(to right, #14b9d5 0%, #14d5b1 100%)
 }
 
+.btn-blue-g{
+  background: linear-gradient(to right, #4facfe 0%, #14b9d5 100%);
+}
+
 /* btn hover */
 .btn-white:hover {
   background: linear-gradient(to right, #edc3ff 0%, #ffd7db 100%);
