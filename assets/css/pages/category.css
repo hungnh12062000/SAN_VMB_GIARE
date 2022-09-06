@@ -4,6 +4,39 @@
   background: var(--bgsection-color);
 }
 
+/* ========= TITLE LIST POST ======== */
+.category-wrap{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../img/bg_backup.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .category__title{
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+.category__desc{
+  font-size: 16px;
+  color: var(--bgdecs-color);
+
+}
+
+.category__breadscrumb{
+  font-size: 14px;
+  color: var(--bgdecs-color);
+
+
+}
+
 /* ============== LIST POST ========== */
 .list-card{
   margin: 25px 25px 0px 0;
@@ -12,7 +45,7 @@
 .blog-card {
   display: flex;
   flex-direction: row;
-  background: #fff;
+  background: var(--white-color);
   border-radius: 5px;
   overflow: hidden;
   z-index: 0;
@@ -34,7 +67,7 @@
 /* .list-card .blog-card:nth-child(even) .description:before {
   transform: skewX(-3deg);
   content: "";
-  background: #fff;
+  background: var(--white-color);
   width: 30px;
   position: absolute;
   left: 530px;
@@ -78,7 +111,7 @@
 
 .blog-card .description {
   padding: 2rem;
-  background: #fff;
+  background: var(--white-color);
   position: relative;
   z-index: 1;
 
@@ -88,7 +121,7 @@
 /* .blog-card .description:before {
   transform: skewX(-3deg);
   content: "";
-  background: #fff;
+  background: var(--white-color);
   width: 30px;
   position: absolute;
   left: -10px;
@@ -107,7 +140,7 @@
 .blog-card .description h2 {
   font-size: 12px;
   font-weight: 500;
-  color: #000000;
+  color: var(--black-color);
   margin-top: 5px;
 }
 
@@ -139,7 +172,7 @@
   outline: none;
   overflow: hidden;
   position: relative;
-  color: #fff;
+  color: var(--white-color);
   font-weight: 600;
   font-size: 14px;
   background-color: var(--bgheading-color);
@@ -173,3 +206,58 @@
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
+/* ========= pagination ========== */
+.post-panigation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+}
+
+.pagination-number{
+  display: flex;
+
+  font-size: 18px;
+}
+
+li.pagination-number__item{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-number__link{
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 3.2rem;
+    display: inline-block;
+    padding: 0.2rem 1.3rem;
+    height: 3.6rem;
+    margin: 0.2rem 0.7rem;
+    color: var(--black-color);
+    transition: all, 0.3s, ease-in-out;
+}
+
+.pagination-number__link:hover{
+  background: #d3d3d3;
+  color: var(--black-color);
+}
+
+.pagination-number .current,
+.pagination-number .current:hover{
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.panigation-left,
+.panigation-right{
+  padding: 10px;
+}
+
+.panigation-left:hover,
+.panigation-right:hover{
+  background: #d3d3d3;
+  cursor: pointer;
+
+}
