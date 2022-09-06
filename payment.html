@@ -27,38 +27,36 @@
 </head>
 
 <body>
-
      <div class="global-wrap">
           <!-- HEADER -->
           <section class="header">
-               <div class="header__logo">
-                    <a class="header__logo-link" href="">
-                         <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo-img" />
-                    </a>
-               </div>
-               <ul class="header-nav">
-                    <li class="header-nav__item">
-                         <a href="./index.html" class="header-nav__item-link">HOME</a>
-                    </li>
-                    <li class="header-nav__item">
-                         <a href="./category.html" class="header-nav__item-link">VÉ MÁY BAY NỘI ĐỊA</a>
-                    </li>
-                    <li class="header-nav__item">
-                         <a href="" class="header-nav__item-link">VÉ MÁY BAY QUỐC TẾ</a>
-                    </li>
-                    <li class="header-nav__item">
-                         <a href="" class="header-nav__item-link">VÉ RẺ THEO THÁNG</a>
-                    </li>
-                    <li class="header-nav__item">
-                         <a href="./category.html" class="header-nav__item-link">TIN TỨC</a>
-                    </li>
-                    <li class="header-nav__item">
-                         <a href="" class="header-nav__item-link">LIÊN HỆ</a>
-                    </li>
-               </ul>
+               <div class="container header-wrap">
+                    <div class="header__logo">
+                      <a class="header__logo--link" href="./index.html">
+                        <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo--img" />
+                      </a>
+                    </div>
+                    <ul class="header-nav">
+                         <li class="nav__item">
+                           <a href="./category.html" class="nav__item--link">VÉ MÁY BAY NỘI ĐỊA</a>
+                         </li>
+                         <li class="nav__item">
+                           <a href="./category.html" class="nav__item--link">VÉ MÁY BAY QUỐC TẾ</a>
+                         </li>
+                         <li class="nav__item">
+                           <a href="./category.html" class="nav__item--link">VÉ RẺ THEO THÁNG</a>
+                         </li>
+                         <li class="nav__item">
+                           <a href="./category.html" class="nav__item--link">TIN TỨC</a>
+                         </li>
+                         <li class="nav__item">
+                           <a href="" class="nav__item--link">LIÊN HỆ</a>
+                         </li>
+                       </ul>
                <div class="header-phone">
                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
                     <p class="phone-number">1900 636 063</p>
+               </div>
                </div>
           </section>
           <!-- END HEADER -->
@@ -187,7 +185,9 @@
                                         </div>
 
                                         <div class="methods__confirm">
-                                             <button type="submit" class="button-gradient instagram continue"><span class="gradient"></span>Tiếp tục</button>
+                                             <a href="./complete.html">
+                                                  <button type="submit" class="button-gradient instagram continue"><span class="gradient"></span>Tiếp tục</button>
+                                             </a>
                                              <p class="confirm__term">Bằng cách nhấn vào nút này, bạn công nhận mình đã đọc và đồng ý với
                                              </p>
                                              <p class="confirm__term"> <span>Điều kiện và Điều khoản</span> của chúng tôi</p>
@@ -339,10 +339,6 @@
 
      <!-- slider -->
      <script src="./assets/libs/slick/slick.min.js"></script>
-
-     <!-- icon -->
-     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
      <!-- Lord icon -->
      <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>

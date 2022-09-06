@@ -1,0 +1,32 @@
+.section__infor--passengers {
+     background: var(--white-color);
+     border-radius: 8px;
+     margin: 25px 25px 0 0;
+     padding: 20px;
+}
+
+.infor__passengers {
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: 10px;
+}
+
+.infor__adult,
+.infor__child,
+.infor__infant {
+     display: flex;
+     width: 50%;
+     margin: 8px 0;
+     align-items: center;
+     padding: 10px;
+     border-radius: 8px;
+}
+
+.infor__details {
+     display: flex;
+     flex-direction: column;
+}
+
+.infor__details strong {
+     color: var(--saphire-color);
+}

@@ -28,41 +28,51 @@
      <!-- scroll -->
      <div class="scroll-to-top">
           <a href="javascript:" id="return-to-top">
-            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#14b9d5" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="48 160 128 80 208 160" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#14b9d5" viewBox="0 0 256 256">
+                    <rect width="256" height="256" fill="none"></rect>
+                    <polyline points="48 160 128 80 208 160" fill="none" stroke="#14b9d5" stroke-linecap="round"
+                         stroke-linejoin="round" stroke-width="16"></polyline>
+               </svg>
           </a>
-        </div>
+     </div>
 
      <div class="global-wrap">
           <!-- HEADER -->
           <section class="header">
-               <div class="header__logo">
-                    <a class="header__logo-link" href="">
-                         <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo-img" />
-                    </a>
-               </div>
-               <ul class="header-nav">
-                    <li class="header-nav__item">
-                         <a href="./index.html" class="header-nav__item-link">HOME</a>
-                    </li>
-                    <li class="header-nav__item">
-                         <a href="./category.html" class="header-nav__item-link">VÉ MÁY BAY NỘI ĐỊA</a>
-                    </li>
-                    <li class="header-nav__item">
-                         <a href="" class="header-nav__item-link">VÉ MÁY BAY QUỐC TẾ</a>
-                    </li>
-                    <li class="header-nav__item">
-                         <a href="" class="header-nav__item-link">VÉ RẺ THEO THÁNG</a>
-                    </li>
-                    <li class="header-nav__item">
-                         <a href="./category.html" class="header-nav__item-link">TIN TỨC</a>
-                    </li>
-                    <li class="header-nav__item">
-                         <a href="" class="header-nav__item-link">LIÊN HỆ</a>
-                    </li>
-               </ul>
-               <div class="header-phone">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
-                    <p class="phone-number">1900 636 063</p>
+               <div class="container header-wrap">
+
+                    <div class="header__logo">
+                         <a class="header__logo--link" href="./index.html">
+                              <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo--img" />
+                         </a>
+                    </div>
+                    <ul class="header-nav">
+                         <li class="nav__item">
+                           <a href="./category.html" class="nav__item--link">VÉ MÁY BAY NỘI ĐỊA</a>
+                         </li>
+                         <li class="nav__item">
+                           <a href="./category.html" class="nav__item--link">VÉ MÁY BAY QUỐC TẾ</a>
+                         </li>
+                         <li class="nav__item">
+                           <a href="./category.html" class="nav__item--link">VÉ RẺ THEO THÁNG</a>
+                         </li>
+                         <li class="nav__item">
+                           <a href="./category.html" class="nav__item--link">TIN TỨC</a>
+                         </li>
+                         <li class="nav__item">
+                           <a href="" class="nav__item--link">LIÊN HỆ</a>
+                         </li>
+                       </ul>
+                    <div class="header-phone">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000"
+                              viewBox="0 0 256 256">
+                              <rect width="256" height="256" fill="none"></rect>
+                              <path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z"
+                                   fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                                   stroke-width="16"></path>
+                         </svg>
+                         <p class="phone-number">1900 636 063</p>
+                    </div>
                </div>
           </section>
           <!-- END HEADER -->
@@ -89,11 +99,8 @@
                                    <!-- THÔNG TIN HÀNH KHÁCH -->
                                    <section class="section-box-passengers section__infor-passengers">
                                         <div class="section__title">
-                                             <lord-icon
-                                                  src="https://cdn.lordicon.com/puvaffet.json"
-                                                  trigger="loop"
-                                                  delay="2000"
-                                                  style="width:50px;height:50px">
+                                             <lord-icon src="https://cdn.lordicon.com/puvaffet.json" trigger="loop"
+                                                  delay="2000" style="width:50px;height:50px">
                                              </lord-icon>
                                              Thông tin hành khách
                                         </div>
@@ -107,11 +114,9 @@
                                              <div class="adult-passenger">
                                                   <div class="adult-wrap">
                                                        <div class="adult-icon">
-                                                            <lord-icon
-                                                            src="https://cdn.lordicon.com/eszyyflr.json"
-                                                            trigger="loop"
-                                                            delay="2000"
-                                                            style="width:35px;height:35px">
+                                                            <lord-icon src="https://cdn.lordicon.com/eszyyflr.json"
+                                                                 trigger="loop" delay="2000"
+                                                                 style="width:35px;height:35px">
                                                             </lord-icon>
                                                        </div>
                                                        <div class="adult-passenger__title">Người lớn 1</div>
@@ -126,7 +131,8 @@
                                                             </select>
                                                        </div>
                                                        <div class="adult-input__name">
-                                                            <label class="title-input" for="">Họ và Tên <span class="asterisk">*</span></label>
+                                                            <label class="title-input" for="">Họ và Tên <span
+                                                                      class="asterisk">*</span></label>
                                                             <input type="text" class="input-name box-input"
                                                                  placeholder="Ví dụ: NGUYEN HAI HUNG">
                                                        </div>
@@ -136,11 +142,9 @@
                                              <div class="child-passenger">
                                                   <div class="child-wrap">
                                                        <div class="child-icon">
-                                                            <lord-icon
-                                                            src="https://cdn.lordicon.com/ssdupzsv.json"
-                                                            trigger="loop"
-                                                            delay="2000"
-                                                            style="width:35px;height:35px">
+                                                            <lord-icon src="https://cdn.lordicon.com/ssdupzsv.json"
+                                                                 trigger="loop" delay="2000"
+                                                                 style="width:35px;height:35px">
                                                             </lord-icon>
                                                        </div>
                                                        <div class="child-passenger__title">Trẻ em 1</div>
@@ -155,12 +159,14 @@
                                                             </select>
                                                        </div>
                                                        <div class="child-input__name">
-                                                            <label class="title-input" for="">Họ và Tên <span class="asterisk">*</span></label>
+                                                            <label class="title-input" for="">Họ và Tên <span
+                                                                      class="asterisk">*</span></label>
                                                             <input type="text" class="input-name box-input"
                                                                  placeholder="Ví dụ: NGUYEN HAI HUNG">
                                                        </div>
                                                        <div class="child-input__birthday">
-                                                            <label class="title-input" for="">Ngày sinh <span class="asterisk">*</span></label>
+                                                            <label class="title-input" for="">Ngày sinh <span
+                                                                      class="asterisk">*</span></label>
                                                             <input type="text" class="input-birthday box-input"
                                                                  placeholder="11/11/2022">
                                                        </div>
@@ -171,10 +177,8 @@
                                              <div class="infant-passenger">
                                                   <div class="infant-wrap">
                                                        <div class="infant-icon">
-                                                            <lord-icon
-                                                                 src="https://cdn.lordicon.com/cuvapfqt.json"
-                                                                 trigger="loop"
-                                                                 delay="2000"
+                                                            <lord-icon src="https://cdn.lordicon.com/cuvapfqt.json"
+                                                                 trigger="loop" delay="2000"
                                                                  style="width:35px;height:35px">
                                                             </lord-icon>
                                                        </div>
@@ -190,12 +194,14 @@
                                                             </select>
                                                        </div>
                                                        <div class="infant-input__name">
-                                                            <label class="title-input" for="">Họ và Tên <span class="asterisk">*</span></label>
+                                                            <label class="title-input" for="">Họ và Tên <span
+                                                                      class="asterisk">*</span></label>
                                                             <input type="text" class="input-name box-input"
                                                                  placeholder="Ví dụ: NGUYEN HAI HUNG">
                                                        </div>
                                                        <div class="infant-input__birthday">
-                                                            <label class="title-input" for="">Ngày sinh <span class="asterisk">*</span></label>
+                                                            <label class="title-input" for="">Ngày sinh <span
+                                                                      class="asterisk">*</span></label>
                                                             <input type="text" class="input-birthday box-input"
                                                                  placeholder="11/11/2022">
                                                        </div>
@@ -208,15 +214,15 @@
                                    <!-- THÔNG TIN LIÊN HỆ -->
                                    <section class="section-box-passengers section__contact-passengers">
                                         <div class="section__title">
-                                             <lord-icon
-                                                  src="https://cdn.lordicon.com/zpxybbhl.json"
-                                                  trigger="loop"
+                                             <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="loop"
                                                   style="width:50px;height:50px">
                                              </lord-icon>
                                              Thông tin liên hệ
                                         </div>
                                         <div class="section__decs">
-                                             <span>(*) Vui lòng cung cấp đầy đủ thông tin chi tiết liên hệ của bạn bên dưới để chúng tôi có thể nhanh chóng liên hệ với bạn khi cần thiết.</span>
+                                             <span>(*) Vui lòng cung cấp đầy đủ thông tin chi tiết liên hệ của bạn bên
+                                                  dưới để chúng tôi có thể nhanh chóng liên hệ với bạn khi cần
+                                                  thiết.</span>
                                         </div>
 
                                         <div class="contact-passenger-wrap">
@@ -235,14 +241,16 @@
 
                                                        <!-- name -->
                                                        <div class="input__contact--name">
-                                                            <label class="title-input" for="">Họ và Tên <span class="asterisk">*</span></label>
+                                                            <label class="title-input" for="">Họ và Tên <span
+                                                                      class="asterisk">*</span></label>
                                                             <input type="text" class="contact-name box-input"
                                                                  placeholder="Ví dụ: NGUYEN HAI HUNG">
                                                        </div>
 
                                                        <!-- phone -->
                                                        <div class="input__contact--phone">
-                                                            <label class="title-input" for="">Điện thoại di động <span class="asterisk">*</span></label>
+                                                            <label class="title-input" for="">Điện thoại di động <span
+                                                                      class="asterisk">*</span></label>
                                                             <input type="text" class="contact-phone box-input">
                                                        </div>
                                                   </div>
@@ -264,21 +272,19 @@
 
                                    <!-- YÊU CẦU ĐẶC BIỆT -->
                                    <section class="section-box-passengers section__special-request">
-                                        <div class="section__title"> 
-                                             <lord-icon
-                                                  src="https://cdn.lordicon.com/uukerzzv.json"
-                                                  trigger="loop"
-                                                  delay="2000"
-                                                  style="width:50px;height:50px">
+                                        <div class="section__title">
+                                             <lord-icon src="https://cdn.lordicon.com/uukerzzv.json" trigger="loop"
+                                                  delay="2000" style="width:50px;height:50px">
                                              </lord-icon>
                                              Yêu cầu đặc biệt
-                                             </div>
+                                        </div>
                                         <div class="section__decs">
                                              <span>Khi bạn có thêm yêu cầu, hãy viết vào ô bên dưới.</span>
                                         </div>
 
                                         <div class="special-request-wrap">
-                                             <textarea name="special-request" class="special-request__textarea"></textarea>
+                                             <textarea name="special-request"
+                                                  class="special-request__textarea"></textarea>
                                         </div>
                                    </section>
                               </form>
@@ -305,7 +311,14 @@
                                                                  stroke-linecap="round" stroke-linejoin="round"></path>
                                                        </svg> Hà Nội (HAN)</span>
                                              </div>
-                                             <div class="journey-infor__datetime">Thứ 4, 14 tháng 09 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg> 5 khách</div>
+                                             <div class="journey-infor__datetime">Thứ 4, 14 tháng 09 <svg
+                                                       xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                                       fill="#000000" viewBox="0 0 256 256">
+                                                       <rect width="256" height="256" fill="none"></rect>
+                                                       <line x1="40" y1="128" x2="216" y2="128" fill="none"
+                                                            stroke="#000000" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-width="16"></line>
+                                                  </svg> 5 khách</div>
 
                                         </div>
                                         <hr class="hr-line-1">
@@ -328,18 +341,18 @@
                                                   </div>
 
                                                   <div class="journey-timeline">
-                                                       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#14b9d5" viewBox="0 0 256 256" class="svg-plane">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                                                            fill="#14b9d5" viewBox="0 0 256 256" class="svg-plane">
                                                             <rect width="256" height="256" fill="none"></rect>
-                                                            <path d="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                                                            <path d="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z"
+                                                                 fill="none" stroke="#14b9d5" stroke-linecap="round"
+                                                                 stroke-linejoin="round" stroke-width="16"></path>
                                                        </svg>
 
                                                        <div class="journey-line"></div>
-                                                       <lord-icon
-                                                            src="https://cdn.lordicon.com/elzslyvl.json"
-                                                            trigger="loop"
-                                                            delay="1000"
-                                                            style="width:32px;height:32px">
-                                                       </lord-icon>   
+                                                       <lord-icon src="https://cdn.lordicon.com/elzslyvl.json"
+                                                            trigger="loop" delay="1000" style="width:32px;height:32px">
+                                                       </lord-icon>
                                                   </div>
 
                                                   <div class="journey-citypair">
@@ -377,7 +390,14 @@
                                                                  stroke-linecap="round" stroke-linejoin="round"></path>
                                                        </svg> Hồ CHí Minh (SGN)</span>
                                              </div>
-                                             <div class="journey-infor__datetime">Thứ 4, 14 tháng 09 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg> 5 khách</div>
+                                             <div class="journey-infor__datetime">Thứ 4, 14 tháng 09 <svg
+                                                       xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                                       fill="#000000" viewBox="0 0 256 256">
+                                                       <rect width="256" height="256" fill="none"></rect>
+                                                       <line x1="40" y1="128" x2="216" y2="128" fill="none"
+                                                            stroke="#000000" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-width="16"></line>
+                                                  </svg> 5 khách</div>
 
                                         </div>
                                         <hr class="hr-line-1">
@@ -400,16 +420,16 @@
                                                   </div>
 
                                                   <div class="journey-timeline">
-                                                       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#14b9d5" viewBox="0 0 256 256" class="svg-plane">
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                                                            fill="#14b9d5" viewBox="0 0 256 256" class="svg-plane">
                                                             <rect width="256" height="256" fill="none"></rect>
-                                                            <path d="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+                                                            <path d="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z"
+                                                                 fill="none" stroke="#14b9d5" stroke-linecap="round"
+                                                                 stroke-linejoin="round" stroke-width="16"></path>
                                                        </svg>
                                                        <div class="journey-line"></div>
-                                                       <lord-icon
-                                                            src="https://cdn.lordicon.com/elzslyvl.json"
-                                                            trigger="loop"
-                                                            delay="1000"
-                                                            style="width:32px;height:32px">
+                                                       <lord-icon src="https://cdn.lordicon.com/elzslyvl.json"
+                                                            trigger="loop" delay="1000" style="width:32px;height:32px">
                                                        </lord-icon>
                                                   </div>
 
@@ -445,7 +465,7 @@
                                    <div class="table__price--depart">
                                         <div class="infor-ticket-title">
                                              <label for="">Chiều đi</label>
-                                             <span>Chi tiết giá chiều đi</span> 
+                                             <span>Chi tiết giá chiều đi</span>
                                         </div>
                                         <div class="infor-price">
                                              <table>
@@ -478,7 +498,8 @@
                                                             <td>1.738.000đ</td>
                                                        </tr>
                                                        <tr>
-                                                            <td class="infor-price__title"><strong>Tổng cộng lượt đi</strong></td>
+                                                            <td class="infor-price__title"><strong>Tổng cộng lượt
+                                                                      đi</strong></td>
                                                             <td></td>
                                                             <td class="total_amount--depart">100.738.000đ</td>
                                                        </tr>
@@ -522,7 +543,8 @@
                                                             <td>1.738.000đ</td>
                                                        </tr>
                                                        <tr>
-                                                            <td class="infor-price__title"><strong>Tổng cộng lượt về</strong></td>
+                                                            <td class="infor-price__title"><strong>Tổng cộng lượt
+                                                                      về</strong></td>
                                                             <td></td>
                                                             <td class="total_amount--return">100.738.000đ</td>
                                                        </tr>
@@ -687,10 +709,6 @@
 
      <!-- slider -->
      <script src="./assets/libs/slick/slick.min.js"></script>
-
-     <!-- icon -->
-     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
      <!-- lord icon -->
      <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>

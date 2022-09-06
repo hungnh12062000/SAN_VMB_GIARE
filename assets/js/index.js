@@ -112,12 +112,18 @@ $(document).ready(function () {
 
           let listItemHeight = ($(".naccs-dep ul").find("li:eq(1)").innerHeight()) + 150;
           $(".naccs-dep ul").height(listItemHeight + "px");
+
+          $('#input_from_root').removeClass('picker--opened picker--focused');     
+
      });
      $(document).on('click', ".input-return", function () {
           $('.list-ret').show();
 
           let listItemHeight = ($(".naccs-ret ul").find("li:eq(1)").innerHeight()) + 150;
           $(".naccs-ret ul").height(listItemHeight + "px");
+
+          $('#input_from_root').removeClass('picker--opened picker--focused');     
+
      });
 
      $(document).on("click", ".naccs-dep .menu div", function () {

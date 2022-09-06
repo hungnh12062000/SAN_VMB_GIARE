@@ -53,12 +53,12 @@
 
 .adult-passenger__title,
 .child-passenger__title,
-.infant-passenger__title {
+.infant-passenger__title,
+.type__title {
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
-  color: var(--text-color);
-  margin-left: 8px;
+  color: var(--title-color);
 }
 
 .adult-icon,
@@ -70,6 +70,7 @@
   align-items: center;
   border-radius: 100px;
   justify-content: center;
+  margin-right: 8px;
   background-color: var(--bgsection-color);
 }
 
@@ -95,13 +96,21 @@
 }
 
 .title-input,
-.title-select{
+.title-select,
+.caption-details,
+.caption-birthday{
      color: var(--title-color);
      font-size: 14px;
      line-height: 17px;
      font-weight: 400;
      margin-bottom: 4px;
 }
+
+.caption-details,
+.caption-birthday{
+  color: var(--text-color);
+}
+
 
 .asterisk{
   color: #ec2029;
@@ -110,7 +119,7 @@
 
 .box-input,
 .box-select{
-width: 100%;
+  width: 100%;
   padding: 10px 15px;
   position: relative;
   font-size: 14px;

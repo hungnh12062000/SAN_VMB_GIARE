@@ -11,8 +11,6 @@
   <link rel="stylesheet" href="./assets/libs/slick/slick.css" />
 
   <!-- datepicker -->
-  <!-- <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css" /> -->
   <link rel="stylesheet" href="./assets/libs/datepicker/icomoon/style.css" />
   <link rel="stylesheet" href="./assets/libs/datepicker/classic.css" />
   <link rel="stylesheet" href="./assets/libs/datepicker/classic.date.css" />
@@ -37,34 +35,33 @@
   <div class="global-wrap">
     <!-- HEADER -->
     <section class="header">
-      <div class="header__logo">
-        <a class="header__logo-link" href="">
-          <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo-img" />
-        </a>
-      </div>
-      <ul class="header-nav">
-        <li class="header-nav__item">
-          <a href="./index.html" class="header-nav__item-link">HOME</a>
-        </li>
-        <li class="header-nav__item">
-          <a href="./category.html" class="header-nav__item-link">VÉ MÁY BAY NỘI ĐỊA</a>
-        </li>
-        <li class="header-nav__item">
-          <a href="" class="header-nav__item-link">VÉ MÁY BAY QUỐC TẾ</a>
-        </li>
-        <li class="header-nav__item">
-          <a href="" class="header-nav__item-link">VÉ RẺ THEO THÁNG</a>
-        </li>
-        <li class="header-nav__item">
-          <a href="./category.html" class="header-nav__item-link">TIN TỨC</a>
-        </li>
-        <li class="header-nav__item">
-          <a href="" class="header-nav__item-link">LIÊN HỆ</a>
-        </li>
-      </ul>
-      <div class="header-phone">
-        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
-        <p class="phone-number">1900 636 063</p>
+      <div class="container header-wrap">
+        <div class="header__logo">
+          <a class="header__logo--link" href="./index.html">
+            <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo--img" />
+          </a>
+        </div>
+        <ul class="header-nav">
+          <li class="nav__item">
+            <a href="./category.html" class="nav__item--link">VÉ MÁY BAY NỘI ĐỊA</a>
+          </li>
+          <li class="nav__item">
+            <a href="./category.html" class="nav__item--link">VÉ MÁY BAY QUỐC TẾ</a>
+          </li>
+          <li class="nav__item">
+            <a href="./category.html" class="nav__item--link">VÉ RẺ THEO THÁNG</a>
+          </li>
+          <li class="nav__item">
+            <a href="./category.html" class="nav__item--link">TIN TỨC</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__item--link">LIÊN HỆ</a>
+          </li>
+        </ul>
+        <div class="header-phone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+          <p class="phone-number">1900 636 063</p>
+        </div>
       </div>
     </section>
     <!-- END HEADER -->
@@ -147,7 +144,7 @@
                   <div class="flight-infor-details">
                     <div class="infor-details-journey">
                       <div class="infor-journey">
-                        <h6 class="infor-journey-title">
+                        <h6 class="box__title">
                           Thông tin chuyến bay
                         </h6>
                         <div class="infor-journey-wrap">
@@ -205,50 +202,70 @@
                         </div>
                       </div>
                     </div>
-                    <div class="infor-details-price">
-                      <h6 class="infor-ticket-title">Thông tin vé</h6>
-                      <div class="infor-price">
-                        <table>
-                          <thead class="infor-price__header">
-                            <tr>
-                              <th></th>
-                              <th>Giá vé</th>
-                              <th>Thuế phí</th>
-                              <th>Tổng</th>
-                            </tr>
-                          </thead>
-                          <tbody class="infor-price__body">
-                            <tr>
-                              <td class="infor-price__title">
-                                Người lớn x 1
-                              </td>
-                              <td class="base-price" data-price="369000">369.000đ</td>
-                              <td>369.000đ</td>
-                              <td>738.000đ</td>
-                            </tr>
-                            <tr>
-                              <td class="infor-price__title">Trẻ em x 2</td>
-                              <td>369.000đ</td>
-                              <td>369.000đ</td>
-                              <td>738.000đ</td>
-                            </tr>
-                            <tr>
-                              <td class="infor-price__title">Em bé x 1</td>
-                              <td>0đ</td>
-                              <td>1.369.000đ</td>
-                              <td>1.738.000đ</td>
-                            </tr>
-                            <tr>
-                              <td class="infor-price__title">
-                                <strong>Tổng Cộng</strong>
-                              </td>
-                              <td></td>
-                              <td></td>
-                              <td class="total_amount">100.738.000đ</td>
-                            </tr>
-                          </tbody>
-                        </table>
+
+                    <div class="infor-details">
+                      <div class="infor-details-price">
+                        <h6 class="box__title">Thông tin vé</h6>
+                        <div class="infor-price">
+                          <table>
+                            <thead class="infor-price__header">
+                              <tr>
+                                <th></th>
+                                <th>Giá vé</th>
+                                <th>Thuế phí</th>
+                                <th>Tổng</th>
+                              </tr>
+                            </thead>
+                            <tbody class="infor-price__body">
+                              <tr>
+                                <td class="infor-price__title">
+                                  Người lớn x 1
+                                </td>
+                                <td class="base-price" data-price="369000">369.000đ</td>
+                                <td>369.000đ</td>
+                                <td>738.000đ</td>
+                              </tr>
+                              <tr>
+                                <td class="infor-price__title">Trẻ em x 2</td>
+                                <td>369.000đ</td>
+                                <td>369.000đ</td>
+                                <td>738.000đ</td>
+                              </tr>
+                              <tr>
+                                <td class="infor-price__title">Em bé x 1</td>
+                                <td>0đ</td>
+                                <td>1.369.000đ</td>
+                                <td>1.738.000đ</td>
+                              </tr>
+                              <tr>
+                                <td class="infor-price__title">
+                                  <strong>Tổng Cộng</strong>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td class="total_amount">100.738.000đ</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
+
+                      <ul class="infor-other">
+                        <h6 class="box__title">Thông tin khác</h6>
+                        <li>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                          <span>Liên hệ với CSKH qua số điện thoại 1900 636 063 để biết thêm thông tin chi tiết.</span>
+                        </li>
+                        <li>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="96" y1="56" x2="96" y2="200" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><path d="M24,167.2a7.9,7.9,0,0,1,6.4-7.8,32.1,32.1,0,0,0,0-62.8A7.9,7.9,0,0,1,24,88.8V64a8,8,0,0,1,8-8H224a8,8,0,0,1,8,8V88.8a7.9,7.9,0,0,1-6.4,7.8,32.1,32.1,0,0,0,0,62.8,7.9,7.9,0,0,1,6.4,7.8V192a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                          <span>Vui lòng kiểm tra thông tin vé với bộ phận CSKH trước khi thanh toán.</span> 
+                        </li>
+                        <li>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="16"></circle><line x1="128" y1="80" x2="128" y2="136" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><circle cx="128" cy="172" r="12"></circle></svg>
+                          <span>Quý khách vui lòng tự đảm bảo giấy tờ bay hợp lệ.</span> 
+                        </li>
+                      </ul>
+
                     </div>
                   </div>
                   <!-- end details -->
@@ -309,7 +326,7 @@
                   <div class="flight-infor-details">
                     <div class="infor-details-journey">
                       <div class="infor-journey">
-                        <h6 class="infor-journey-title">
+                        <h6 class="box__title">
                           Thông tin chuyến bay
                         </h6>
                         <div class="infor-journey-wrap">
@@ -367,50 +384,69 @@
                         </div>
                       </div>
                     </div>
-                    <div class="infor-details-price">
-                      <h6 class="infor-ticket-title">Thông tin vé</h6>
-                      <div class="infor-price">
-                        <table>
-                          <thead class="infor-price__header">
-                            <tr>
-                              <th></th>
-                              <th>Giá vé</th>
-                              <th>Thuế phí</th>
-                              <th>Tổng</th>
-                            </tr>
-                          </thead>
-                          <tbody class="infor-price__body">
-                            <tr>
-                              <td class="infor-price__title">
-                                Người lớn x 1
-                              </td>
-                              <td class="base-price" data-price="269000">269.000đ</td>
-                              <td>369.000đ</td>
-                              <td>738.000đ</td>
-                            </tr>
-                            <tr>
-                              <td class="infor-price__title">Trẻ em x 2</td>
-                              <td>369.000đ</td>
-                              <td>369.000đ</td>
-                              <td>738.000đ</td>
-                            </tr>
-                            <tr>
-                              <td class="infor-price__title">Em bé x 1</td>
-                              <td>0đ</td>
-                              <td>1.369.000đ</td>
-                              <td>1.738.000đ</td>
-                            </tr>
-                            <tr>
-                              <td class="infor-price__title">
-                                <strong>Tổng Cộng</strong>
-                              </td>
-                              <td></td>
-                              <td></td>
-                              <td class="total_amount">100.738.000đ</td>
-                            </tr>
-                          </tbody>
-                        </table>
+
+                    <div class="infor-details">
+                      <div class="infor-details-price">
+                        <h6 class="box__title">Thông tin vé</h6>
+                        <div class="infor-price">
+                          <table>
+                            <thead class="infor-price__header">
+                              <tr>
+                                <th></th>
+                                <th>Giá vé</th>
+                                <th>Thuế phí</th>
+                                <th>Tổng</th>
+                              </tr>
+                            </thead>
+                            <tbody class="infor-price__body">
+                              <tr>
+                                <td class="infor-price__title">
+                                  Người lớn x 1
+                                </td>
+                                <td class="base-price" data-price="269000">269.000đ</td>
+                                <td>369.000đ</td>
+                                <td>738.000đ</td>
+                              </tr>
+                              <tr>
+                                <td class="infor-price__title">Trẻ em x 2</td>
+                                <td>369.000đ</td>
+                                <td>369.000đ</td>
+                                <td>738.000đ</td>
+                              </tr>
+                              <tr>
+                                <td class="infor-price__title">Em bé x 1</td>
+                                <td>0đ</td>
+                                <td>1.369.000đ</td>
+                                <td>1.738.000đ</td>
+                              </tr>
+                              <tr>
+                                <td class="infor-price__title">
+                                  <strong>Tổng Cộng</strong>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td class="total_amount">100.738.000đ</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
+
+                      <ul class="infor-other">
+                        <h6 class="box__title">Thông tin khác</h6>
+                        <li>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                          <span>Liên hệ với CSKH qua số điện thoại 1900 636 063 để biết thêm thông tin chi tiết.</span>
+                        </li>
+                        <li>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="96" y1="56" x2="96" y2="200" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><path d="M24,167.2a7.9,7.9,0,0,1,6.4-7.8,32.1,32.1,0,0,0,0-62.8A7.9,7.9,0,0,1,24,88.8V64a8,8,0,0,1,8-8H224a8,8,0,0,1,8,8V88.8a7.9,7.9,0,0,1-6.4,7.8,32.1,32.1,0,0,0,0,62.8,7.9,7.9,0,0,1,6.4,7.8V192a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                          <span>Vui lòng kiểm tra thông tin vé với bộ phận CSKH trước khi thanh toán.</span> 
+                        </li>
+                        <li>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="16"></circle><line x1="128" y1="80" x2="128" y2="136" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><circle cx="128" cy="172" r="12"></circle></svg>
+                          <span>Quý khách vui lòng tự đảm bảo giấy tờ bay hợp lệ.</span> 
+                        </li>
+                      </ul>
                     </div>
                   </div>
                   <!-- end details -->
@@ -469,7 +505,7 @@
                   <div class="flight-infor-details">
                     <div class="infor-details-journey">
                       <div class="infor-journey">
-                        <h6 class="infor-journey-title">
+                        <h6 class="box__title">
                           Thông tin chuyến bay
                         </h6>
                         <div class="infor-journey-wrap">
@@ -587,50 +623,69 @@
                         </div>
                       </div>
                     </div>
-                    <div class="infor-details-price">
-                      <h6 class="infor-ticket-title">Thông tin vé</h6>
-                      <div class="infor-price">
-                        <table>
-                          <thead class="infor-price__header">
-                            <tr>
-                              <th></th>
-                              <th>Giá vé</th>
-                              <th>Thuế phí</th>
-                              <th>Tổng</th>
-                            </tr>
-                          </thead>
-                          <tbody class="infor-price__body">
-                            <tr>
-                              <td class="infor-price__title">
-                                Người lớn x 1
-                              </td>
-                              <td>369.000đ</td>
-                              <td>369.000đ</td>
-                              <td>738.000đ</td>
-                            </tr>
-                            <tr>
-                              <td class="infor-price__title">Trẻ em x 2</td>
-                              <td>369.000đ</td>
-                              <td>369.000đ</td>
-                              <td>738.000đ</td>
-                            </tr>
-                            <tr>
-                              <td class="infor-price__title">Em bé x 1</td>
-                              <td>0đ</td>
-                              <td>1.369.000đ</td>
-                              <td>1.738.000đ</td>
-                            </tr>
-                            <tr>
-                              <td class="infor-price__title">
-                                <strong>Tổng Cộng</strong>
-                              </td>
-                              <td></td>
-                              <td></td>
-                              <td class="total_amount">100.738.000đ</td>
-                            </tr>
-                          </tbody>
-                        </table>
+
+                    <div class="infor-details">
+                      <div class="infor-details-price">
+                        <h6 class="box__title">Thông tin vé</h6>
+                        <div class="infor-price">
+                          <table>
+                            <thead class="infor-price__header">
+                              <tr>
+                                <th></th>
+                                <th>Giá vé</th>
+                                <th>Thuế phí</th>
+                                <th>Tổng</th>
+                              </tr>
+                            </thead>
+                            <tbody class="infor-price__body">
+                              <tr>
+                                <td class="infor-price__title">
+                                  Người lớn x 1
+                                </td>
+                                <td>369.000đ</td>
+                                <td>369.000đ</td>
+                                <td>738.000đ</td>
+                              </tr>
+                              <tr>
+                                <td class="infor-price__title">Trẻ em x 2</td>
+                                <td>369.000đ</td>
+                                <td>369.000đ</td>
+                                <td>738.000đ</td>
+                              </tr>
+                              <tr>
+                                <td class="infor-price__title">Em bé x 1</td>
+                                <td>0đ</td>
+                                <td>1.369.000đ</td>
+                                <td>1.738.000đ</td>
+                              </tr>
+                              <tr>
+                                <td class="infor-price__title">
+                                  <strong>Tổng Cộng</strong>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td class="total_amount">100.738.000đ</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
+
+                      <ul class="infor-other">
+                        <h6 class="box__title">Thông tin khác</h6>
+                        <li>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                          <span>Liên hệ với CSKH qua số điện thoại 1900 636 063 để biết thêm thông tin chi tiết.</span>
+                        </li>
+                        <li>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="96" y1="56" x2="96" y2="200" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><path d="M24,167.2a7.9,7.9,0,0,1,6.4-7.8,32.1,32.1,0,0,0,0-62.8A7.9,7.9,0,0,1,24,88.8V64a8,8,0,0,1,8-8H224a8,8,0,0,1,8,8V88.8a7.9,7.9,0,0,1-6.4,7.8,32.1,32.1,0,0,0,0,62.8,7.9,7.9,0,0,1,6.4,7.8V192a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                          <span>Vui lòng kiểm tra thông tin vé với bộ phận CSKH trước khi thanh toán.</span> 
+                        </li>
+                        <li>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="16"></circle><line x1="128" y1="80" x2="128" y2="136" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><circle cx="128" cy="172" r="12"></circle></svg>
+                          <span>Quý khách vui lòng tự đảm bảo giấy tờ bay hợp lệ.</span> 
+                        </li>
+                      </ul>
                     </div>
                   </div>
                   <!-- end details -->
@@ -692,7 +747,7 @@
 
                     <div class="infor-details-journey">
                       <div class="infor-journey">
-                        <h6 class="infor-journey-title">
+                        <h6 class="box__title">
                           Thông tin chuyến bay
                         </h6>
                         <div class="infor-journey-wrap">
@@ -865,54 +920,70 @@
                       </div>
                     </div>
 
-                    <div class="infor-details-price">
-                      <h6 class="infor-ticket-title">Thông tin vé</h6>
-                      <div class="infor-price">
-                        <table>
-                          <thead class="infor-price__header">
-                            <tr>
-                              <th></th>
-                              <th>Giá vé</th>
-                              <th>Thuế phí</th>
-                              <th>Tổng</th>
-                            </tr>
-                          </thead>
-                          <tbody class="infor-price__body">
-                            <tr>
-                              <td class="infor-price__title">
-                                Người lớn x 1
-                              </td>
-                              <td>369.000đ</td>
-                              <td>369.000đ</td>
-                              <td>738.000đ</td>
-                            </tr>
-                            <tr>
-                              <td class="infor-price__title">Trẻ em x 2</td>
-                              <td>369.000đ</td>
-                              <td>369.000đ</td>
-                              <td>738.000đ</td>
-                            </tr>
-                            <tr>
-                              <td class="infor-price__title">Em bé x 1</td>
-                              <td>0đ</td>
-                              <td>1.369.000đ</td>
-                              <td>1.738.000đ</td>
-                            </tr>
-                            <tr>
-                              <td class="infor-price__title">
-                                <strong>Tổng Cộng</strong>
-                              </td>
-                              <td></td>
-                              <td></td>
-                              <td class="total_amount">100.738.000đ</td>
-                            </tr>
-                          </tbody>
-                        </table>
+                    <div class="infor-details">
+                      <div class="infor-details-price">
+                        <h6 class="box__title">Thông tin vé</h6>
+                        <div class="infor-price">
+                          <table>
+                            <thead class="infor-price__header">
+                              <tr>
+                                <th></th>
+                                <th>Giá vé</th>
+                                <th>Thuế phí</th>
+                                <th>Tổng</th>
+                              </tr>
+                            </thead>
+                            <tbody class="infor-price__body">
+                              <tr>
+                                <td class="infor-price__title">
+                                  Người lớn x 1
+                                </td>
+                                <td>369.000đ</td>
+                                <td>369.000đ</td>
+                                <td>738.000đ</td>
+                              </tr>
+                              <tr>
+                                <td class="infor-price__title">Trẻ em x 2</td>
+                                <td>369.000đ</td>
+                                <td>369.000đ</td>
+                                <td>738.000đ</td>
+                              </tr>
+                              <tr>
+                                <td class="infor-price__title">Em bé x 1</td>
+                                <td>0đ</td>
+                                <td>1.369.000đ</td>
+                                <td>1.738.000đ</td>
+                              </tr>
+                              <tr>
+                                <td class="infor-price__title">
+                                  <strong>Tổng Cộng</strong>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td class="total_amount">100.738.000đ</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+  
                       </div>
 
-                      <div class="infor-promotion">
-                        <img src="./assets/img/promotion_1.png" alt="">
-                      </div>
+                      <ul class="infor-other">
+                        <h6 class="box__title">Thông tin khác</h6>
+                        <li>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                          <span>Liên hệ với CSKH qua số điện thoại 1900 636 063 để biết thêm thông tin chi tiết.</span>
+                        </li>
+                        <li>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="96" y1="56" x2="96" y2="200" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><path d="M24,167.2a7.9,7.9,0,0,1,6.4-7.8,32.1,32.1,0,0,0,0-62.8A7.9,7.9,0,0,1,24,88.8V64a8,8,0,0,1,8-8H224a8,8,0,0,1,8,8V88.8a7.9,7.9,0,0,1-6.4,7.8,32.1,32.1,0,0,0,0,62.8,7.9,7.9,0,0,1,6.4,7.8V192a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                          <span>Vui lòng kiểm tra thông tin vé với bộ phận CSKH trước khi thanh toán.</span> 
+                        </li>
+                        <li>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="16"></circle><line x1="128" y1="80" x2="128" y2="136" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><circle cx="128" cy="172" r="12"></circle></svg>
+                          <span>Quý khách vui lòng tự đảm bảo giấy tờ bay hợp lệ.</span> 
+                        </li>
+                      </ul>
+
                     </div>
                   </div>
                   <!-- end details -->
@@ -1132,10 +1203,6 @@
 
   <!-- slider -->
   <script src="./assets/libs/slick/slick.min.js"></script>
-
-  <!-- icon -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <!-- lord icon -->
   <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>

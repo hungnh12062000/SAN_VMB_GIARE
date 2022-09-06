@@ -26,7 +26,7 @@
 
 <body>
   <!-- toast -->
-  <div id="toast" class="toast-passenger">
+  <div class="toast-warning toast-passenger">
     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#ec2029" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#ec2029" stroke-miterlimit="10" stroke-width="16"></circle><line x1="128" y1="80" x2="128" y2="136" fill="none" stroke="#ec2029" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><circle cx="128" cy="172" r="12"></circle></svg> Số lượng em bé nhỏ
     hơn hoặc bằng số lượng người lớn.
     <div class="toast-close">
@@ -34,7 +34,7 @@
     </div>
   </div>
 
-  <div id="toast" class="toast-location">
+  <div class="toast-warning toast-location">
     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#ec2029" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#ec2029" stroke-miterlimit="10" stroke-width="16"></circle><line x1="128" y1="80" x2="128" y2="136" fill="none" stroke="#ec2029" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><circle cx="128" cy="172" r="12"></circle></svg> 
     <span>Điểm đi và điểm đến không được trùng.</span> 
     <div class="toast-close">
@@ -52,43 +52,40 @@
 
   <div class="global-wrap">
     <!-- HEADER -->
-      <section class="header">
+    <section class="header">
+      <div class="container header-wrap">
         <div class="header__logo">
-          <a class="header__logo-link" href="">
-            <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo-img" />
-            <!-- LOGO -->
+          <a class="header__logo--link" href="./index.html">
+            <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo--img" />
           </a>
         </div>
         <ul class="header-nav">
-          <li class="header-nav__item">
-            <a href="./index.html" class="header-nav__item-link">HOME</a>
+          <li class="nav__item">
+            <a href="./category.html" class="nav__item--link">VÉ MÁY BAY NỘI ĐỊA</a>
           </li>
-          <li class="header-nav__item">
-            <a href="./category.html" class="header-nav__item-link">VÉ MÁY BAY NỘI ĐỊA</a>
+          <li class="nav__item">
+            <a href="./category.html" class="nav__item--link">VÉ MÁY BAY QUỐC TẾ</a>
           </li>
-          <li class="header-nav__item">
-            <a href="./category.html" class="header-nav__item-link">VÉ MÁY BAY QUỐC TẾ</a>
+          <li class="nav__item">
+            <a href="./category.html" class="nav__item--link">VÉ RẺ THEO THÁNG</a>
           </li>
-          <li class="header-nav__item">
-            <a href="./category.html" class="header-nav__item-link">VÉ RẺ THEO THÁNG</a>
+          <li class="nav__item">
+            <a href="./category.html" class="nav__item--link">TIN TỨC</a>
           </li>
-          <li class="header-nav__item">
-            <a href="./category.html" class="header-nav__item-link">TIN TỨC</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="" class="header-nav__item-link">LIÊN HỆ</a>
+          <li class="nav__item">
+            <a href="" class="nav__item--link">LIÊN HỆ</a>
           </li>
         </ul>
         <div class="header-phone">
           <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
           <p class="phone-number">1900 636 063</p>
         </div>
-      </section>
+      </div>
+    </section>
       
-      <div class="search">
-        <h1 class="search__title">Search your next <u>Holiday</u></h1>
-        <h6 class="search__text">CHECK OUR BEST DESTINATIONS</h6>
-        <div class="search-section" id="booking">
+    <div class="search__section">
+        <h1 class="search__title">Search your next holiday</h1>
+        <div class="section__search-wrap" id="booking">
           <div class="container">
             <div class="row">
               <div class="booking-form">
@@ -1284,7 +1281,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
 
     <!-- Begin slider banner -->
     <div class="image-slider container">
@@ -1340,8 +1337,7 @@
     <!-- End slider banner -->
 
     <!-- Tab destination -->
-    <div class="travel-inter-domestic">
-      <h3 class="travel-heading section-heading">DU LỊCH</h3>
+    <!-- <div class="travel-inter-domestic">
       <h2 class="travel-title section-title">
         <u>TRONG NƯỚC </u> VÀ <u>NGOÀI NƯỚC</u>
       </h2>
@@ -1386,7 +1382,6 @@
           <label for="tab-item-2">VÉ MÁY BAY NỘI ĐỊA</label>
           <input id="tab-item-2" name="tabs-two" type="radio" />
           <div class="tabs__content">
-            <!--Begin Promotion Section -->
             <div class="promotion container">
               <div class="promotion-list row">
                 <div class="promotion-item col-md-3">
@@ -1668,16 +1663,14 @@
                 </div>
               </div>
             </div>
-            <!--End Promotion Section-->
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Tab destination -->
 
     <!--Begin proposal-->
     <!-- <div class="proposal container">
-      <h3 class="proposal-heading section-heading">OUR PROPOSALS</h3>
       <h2 class="proposal-title section-title">OUR <u>DESTINATIONS</u></h2>
 
       <ul class="proposal-list row">
@@ -1791,72 +1784,74 @@
 
     <!-- begin Grid mytour -->
     <div class="grid-destination-wrap">
-      <h3 class="destinations-heading section-heading">
-        OUR GRID DESTINATIONS
-      </h3>
       <h2 class="destinations-title section-title">
-        OUR <u>DESTINATIONS</u>
+        OUR DESTINATIONS
       </h2>
       <div class="grid__destination container">
-        <div class="grid__destination-item">
-          <div class="grid__destination-title">Amsterdam</div>
+        <div class="grid__destination--item">
+          <div class="grid__destination--title">Amsterdam</div>
           <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/destination-10.jpg" alt=""
             class="grid__destination-img" />
           <div class="grid__destination--hover">
-            <h3 class="grid__hover-heading">Packages</h3>
-            <p class="grid__hover-detail">Berlin</p>
-            <p class="grid__hover-detail">Amsterdam</p>
-            <p class="grid__hover-detail">Tuscany</p>
+            <h3 class="grid__hover--heading">Packages</h3>
+            <p class="grid__hover--detail">Berlin</p>
+            <p class="grid__hover--detail">Amsterdam</p>
+            <p class="grid__hover--detail">Tuscany</p>
           </div>
         </div>
-        <div class="grid__destination-item">
+        <div class="grid__destination--item">
+          <div class="grid__destination--title">Amsterdam</div>
           <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/destination-11.jpg" alt=""
             class="grid__destination-img" />
           <div class="grid__destination--hover">
-            <h3 class="grid__hover-heading">Packages</h3>
-            <p class="grid__hover-detail">Berlin</p>
-            <p class="grid__hover-detail">Amsterdam</p>
-            <p class="grid__hover-detail">Tuscany</p>
+            <h3 class="grid__hover--heading">Packages</h3>
+            <p class="grid__hover--detail">Berlin</p>
+            <p class="grid__hover--detail">Amsterdam</p>
+            <p class="grid__hover--detail">Tuscany</p>
           </div>
         </div>
-        <div class="grid__destination-item">
+        <div class="grid__destination--item">
+          <div class="grid__destination--title">Amsterdam</div>
           <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/destination-5.jpg" alt=""
             class="grid__destination-img" />
           <div class="grid__destination--hover">
-            <h3 class="grid__hover-heading">Packages</h3>
-            <p class="grid__hover-detail">Berlin</p>
-            <p class="grid__hover-detail">Amsterdam</p>
-            <p class="grid__hover-detail">Tuscany</p>
+            <h3 class="grid__hover--heading">Packages</h3>
+            <p class="grid__hover--detail">Berlin</p>
+            <p class="grid__hover--detail">Amsterdam</p>
+            <p class="grid__hover--detail">Tuscany</p>
           </div>
         </div>
-        <div class="grid__destination-item">
+        <div class="grid__destination--item">
+          <div class="grid__destination--title">Amsterdam</div>
           <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/destination-8.jpg" alt=""
             class="grid__destination-img" />
           <div class="grid__destination--hover">
-            <h3 class="grid__hover-heading">Packages</h3>
-            <p class="grid__hover-detail">Berlin</p>
-            <p class="grid__hover-detail">Amsterdam</p>
-            <p class="grid__hover-detail">Tuscany</p>
+            <h3 class="grid__hover--heading">Packages</h3>
+            <p class="grid__hover--detail">Berlin</p>
+            <p class="grid__hover--detail">Amsterdam</p>
+            <p class="grid__hover--detail">Tuscany</p>
           </div>
         </div>
-        <div class="grid__destination-item">
+        <div class="grid__destination--item">
+          <div class="grid__destination--title">Amsterdam</div>
           <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/destination-9.jpg" alt=""
             class="grid__destination-img" />
           <div class="grid__destination--hover">
-            <h3 class="grid__hover-heading">Packages</h3>
-            <p class="grid__hover-detail">Berlin</p>
-            <p class="grid__hover-detail">Amsterdam</p>
-            <p class="grid__hover-detail">Tuscany</p>
+            <h3 class="grid__hover--heading">Packages</h3>
+            <p class="grid__hover--detail">Berlin</p>
+            <p class="grid__hover--detail">Amsterdam</p>
+            <p class="grid__hover--detail">Tuscany</p>
           </div>
         </div>
-        <div class="grid__destination-item">
+        <div class="grid__destination--item">
+          <div class="grid__destination--title">Amsterdam</div>
           <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/destination-1.jpg" alt=""
             class="grid__destination-img" />
           <div class="grid__destination--hover">
-            <h3 class="grid__hover-heading">Packages</h3>
-            <p class="grid__hover-detail">Berlin</p>
-            <p class="grid__hover-detail">Amsterdam</p>
-            <p class="grid__hover-detail">Tuscany</p>
+            <h3 class="grid__hover--heading">Packages</h3>
+            <p class="grid__hover--detail">Berlin</p>
+            <p class="grid__hover--detail">Amsterdam</p>
+            <p class="grid__hover--detail">Tuscany</p>
           </div>
         </div>
       </div>
@@ -1866,15 +1861,12 @@
     <!-- Begin destinations favorite -->
     <div class="destinations-favorite">
       <div class="container">
-        <h3 class="favorite-heading section-heading">
-          YOUR DESTINATIONS FAVORITES
-        </h3>
         <h2 class="favorite-title section-title">
-          OUR DESTINATIONS <u>RECOMMEND</u>
+          OUR DESTINATIONS RECOMMEND
         </h2>
         <div class="list-destinations">
-          <div class="destinations-item">
-            <a class="destinations__item-link" href="">
+          <div class="destinations__item">
+            <a class="destinations__item--link" href="">
               <div class="destinations__image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
@@ -1884,8 +1876,8 @@
               <p class="destinations-location">Phú Quốc</p>
             </a>
           </div>
-          <div class="destinations-item">
-            <a class="destinations__item-link" href="">
+          <div class="destinations__item">
+            <a class="destinations__item--link" href="">
               <div class="destinations__image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
@@ -1896,8 +1888,8 @@
               <p class="destinations-location">Nha Trang</p>
             </a>
           </div>
-          <div class="destinations-item">
-            <a class="destinations__item-link" href="">
+          <div class="destinations__item">
+            <a class="destinations__item--link" href="">
               <div class="destinations__image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
@@ -1907,8 +1899,8 @@
               <p class="destinations-location">Vũng Tàu</p>
             </a>
           </div>
-          <div class="destinations-item">
-            <a class="destinations__item-link" href="">
+          <div class="destinations__item">
+            <a class="destinations__item--link" href="">
               <div class="destinations__image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
@@ -1918,8 +1910,8 @@
               <p class="destinations-location">Đà Lạt</p>
             </a>
           </div>
-          <div class="destinations-item">
-            <a class="destinations__item-link" href="">
+          <div class="destinations__item">
+            <a class="destinations__item--link" href="">
               <div class="destinations__image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
@@ -1930,8 +1922,8 @@
               <p class="destinations-location">Hồ Chí Minh</p>
             </a>
           </div>
-          <div class="destinations-item">
-            <a class="destinations__item-link" href="">
+          <div class="destinations__item">
+            <a class="destinations__item--link" href="">
               <div class="destinations__image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
@@ -1941,8 +1933,8 @@
               <p class="destinations-location">Sa Pa</p>
             </a>
           </div>
-          <div class="destinations-item">
-            <a class="destinations__item-link" href="">
+          <div class="destinations__item">
+            <a class="destinations__item--link" href="">
               <div class="destinations__image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
@@ -1952,8 +1944,8 @@
               <p class="destinations-location">Phú Yên</p>
             </a>
           </div>
-          <div class="destinations-item">
-            <a class="destinations__item-link" href="">
+          <div class="destinations__item">
+            <a class="destinations__item--link" href="">
               <div class="destinations__image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
@@ -1963,8 +1955,8 @@
               <p class="destinations-location">Hạ Long</p>
             </a>
           </div>
-          <div class="destinations-item">
-            <a class="destinations__item-link" href="">
+          <div class="destinations__item">
+            <a class="destinations__item--link" href="">
               <div class="destinations__image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
@@ -1974,8 +1966,8 @@
               <p class="destinations-location">Đà Nẵng</p>
             </a>
           </div>
-          <div class="destinations-item">
-            <a class="destinations__item-link" href="">
+          <div class="destinations__item">
+            <a class="destinations__item--link" href="">
               <div class="destinations__image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
@@ -1985,8 +1977,8 @@
               <p class="destinations-location">Hội An</p>
             </a>
           </div>
-          <div class="destinations-item">
-            <a class="destinations__item-link" href="">
+          <div class="destinations__item">
+            <a class="destinations__item--link" href="">
               <div class="destinations__image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
@@ -1996,8 +1988,8 @@
               <p class="destinations-location">Hà Nội</p>
             </a>
           </div>
-          <div class="destinations-item">
-            <a class="destinations__item-link" href="">
+          <div class="destinations__item">
+            <a class="destinations__item--link" href="">
               <div class="destinations__image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
@@ -2015,12 +2007,9 @@
 
     <!--  begin Testimonials -->
     <div class="testimonials-choice-us">
-      <div class="container-fluid mx-auto mt-5 mb-5 col-12">
-        <h3 class="testimonials-heading section-heading">
-          Why People Believe in Us
-        </h3>
+      <div class="container mx-auto mt-5 mb-5 col-12">
         <h2 class="testimonials-title section-title">
-          VÌ SAO CHỌN <u>SANVEMAYBAYGIARE.NET</u>
+          VÌ SAO CHỌN SANVEMAYBAYGIARE.NET
         </h2>
         <div class="row testimonial-card">
           <div class="card-item col-md-3 col-12 ml-2">

@@ -401,14 +401,13 @@ a {
 /* =========== scroll to top ========= */
 
 /* ============== toast ========*/
-#toast {
+.toast-warning {
   min-width: 400px;
   max-width: 500px;
   background-color: #fff;
   color: #000;
-  text-align: center;
   padding: 20px 0;
-  z-index: 101;
+  z-index: 1010;
   font-size: 14px;
   position: fixed;
   top: 20%;
@@ -418,8 +417,6 @@ a {
   border-left: 4px solid var(--red-color);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   transition: all linear 0.3s;
-  font-family: "Poppins", sans-serif;
-
 }
 
 .toast-passenger{
@@ -443,13 +440,13 @@ a {
   transform: translateX(0);
 }
 
-#toast svg {
+.toast-warning svg {
   color: var(--red-color);
   font-size: 24px;
   margin: 0 10px;
   cursor: pointer;
 }
-/* =============== toast =================*/
+/* =============== end toast =================*/
 
 /* ======== button tìm chuyến bay ========== */
 .button-gradient {
@@ -567,4 +564,18 @@ a.instagram:hover {
   padding-bottom: 24px;
   width: 1px;
   padding-top: 4px;
+}
+
+/* ========== TITLE ========== */
+.section-title {
+  margin-bottom: 35px;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--title-color);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+
+  position: relative;
+  z-index: 0;
 }
