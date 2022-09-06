@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="./assets/libs/slick/slick.css" />
 
     <!-- datepicker -->
-    <!-- <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css" /> -->
     <link rel="stylesheet" href="./assets/libs/datepicker/icomoon/style.css" />
     <link rel="stylesheet" href="./assets/libs/datepicker/classic.css" />
     <link rel="stylesheet" href="./assets/libs/datepicker/classic.date.css" />
@@ -26,221 +24,366 @@
   </head>
 
   <body>
-    <!-- scroll -->
-    <div class="scroll-to-top">
-      <a href="javascript:" id="return-to-top"
-        >
-        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#14b9d5" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="48 160 128 80 208 160" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
-      
-      </a>
-    </div>
+   <!-- scroll -->
+  <div class="scroll-to-top">
+    <a href="javascript:" id="return-to-top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#14b9d5" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="48 160 128 80 208 160" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
+
+    </a>
+  </div>
 
     <div class="global-wrap">
       <!-- HEADER -->
       <section class="header">
-        <div class="header__logo">
-          <a class="header__logo-link" href="">
-            <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo-img" />
-          </a>
-        </div>
-        <ul class="header-nav">
-          <li class="nav__item">
-            <a href="./category.html" class="nav__item--link">VÉ MÁY BAY NỘI ĐỊA</a>
-          </li>
-          <li class="nav__item">
-            <a href="./category.html" class="nav__item--link">VÉ MÁY BAY QUỐC TẾ</a>
-          </li>
-          <li class="nav__item">
-            <a href="./category.html" class="nav__item--link">VÉ RẺ THEO THÁNG</a>
-          </li>
-          <li class="nav__item">
-            <a href="./category.html" class="nav__item--link">TIN TỨC</a>
-          </li>
-          <li class="nav__item">
-            <a href="" class="nav__item--link">LIÊN HỆ</a>
-          </li>
-        </ul>
-        <div class="header-phone">
-          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
-          <p class="phone-number">1900 636 063</p>
+        <div class="container header-wrap">
+          <div class="header__logo">
+            <a class="header__logo--link" href="./index.html">
+              <img
+                src="./assets/img/logo_1.png"
+                alt="Travel"
+                class="header__logo--img"
+              />
+            </a>
+          </div>
+          <ul class="header-nav">
+            <li class="nav__item">
+              <a href="./category.html" class="nav__item--link"
+                >VÉ MÁY BAY NỘI ĐỊA</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="./category.html" class="nav__item--link"
+                >VÉ MÁY BAY QUỐC TẾ</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="./category.html" class="nav__item--link"
+                >VÉ RẺ THEO THÁNG</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="./category.html" class="nav__item--link">TIN TỨC</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__item--link">LIÊN HỆ</a>
+            </li>
+          </ul>
+          <div class="header-phone">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="23"
+              height="23"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <path
+                d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z"
+                fill="none"
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></path>
+            </svg>
+            <p class="phone-number">1900 636 063</p>
+          </div>
         </div>
       </section>
 
-      <div class="container section-category">
-        <div class="row g-0">
-          <div class="col-md-8">
-            <div class="list-card">
-              <div class="blog-card">
-                <div class="meta">
-                  <div
-                    class="photo"
-                    style="background-image: url('./assets/img/tuy-hoa.jpg')"
-                  ></div>
-                </div>
-                <div class="description">
-                  <h1>
-                    <a class="cate_title" href="" title="Ve may bay di phu yen"
-                      >Vé máy bay đi Tuy Hòa</a
+      <section class="section__category">
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="list-card">
+                <div class="blog-card">
+                  <div class="meta">
+                    <div
+                      class="photo"
+                      style="background-image: url('./assets/img/tuy-hoa.jpg')"
+                    ></div>
+                  </div>
+                  <div class="description">
+                    <h1>
+                      <a
+                        class="cate_title"
+                        href=""
+                        title="Ve may bay di phu yen"
+                        >Vé máy bay đi Tuy Hòa</a
+                      >
+                    </h1>
+
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aliquid explicabo provident recusandae magni blanditiis
+                      quasi possimus nobis numquam ullam commodi voluptas
+                      pariatur esse tenetur et hic, doloribus, voluptatem
+                      mollitia est.
+                    </p>
+                    <a href=""
+                      ><button class="button_cat name noselect">
+                        <span>Xem thêm</span>
+                      </button></a
                     >
-                  </h1>
-                  <h2>01/02/2022</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid explicabo provident recusandae magni blanditiis
-                    quasi possimus nobis numquam ullam commodi voluptas pariatur
-                    esse tenetur et hic, doloribus, voluptatem mollitia est.
-                  </p>
-                  <a href=""
-                    ><button class="button_cat name noselect">
-                      <span>Xem thêm</span>
-                    </button></a
-                  >
+                  </div>
                 </div>
-              </div>
-              <div class="blog-card">
-                <div class="meta">
-                  <div
-                    class="photo"
-                    style="background-image: url('./assets/img/tuy-hoa.jpg')"
-                  ></div>
-                </div>
-                <div class="description">
-                  <h1>
-                    <a class="cate_title" href="" title="Ve may bay di phu yen"
-                      >Vé máy bay đi Tuy Hòa</a
+                <div class="blog-card">
+                  <div class="meta">
+                    <div
+                      class="photo"
+                      style="background-image: url('./assets/img/tuy-hoa.jpg')"
+                    ></div>
+                  </div>
+                  <div class="description">
+                    <h1>
+                      <a
+                        class="cate_title"
+                        href=""
+                        title="Ve may bay di phu yen"
+                        >Vé máy bay đi Tuy Hòa</a
+                      >
+                    </h1>
+
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aliquid explicabo provident recusandae magni blanditiis
+                      quasi possimus nobis numquam ullam commodi voluptas
+                      pariatur esse tenetur et hic, doloribus, voluptatem
+                      mollitia est.
+                    </p>
+                    <a href=""
+                      ><button class="button_cat name noselect">
+                        <span>Xem thêm</span>
+                      </button></a
                     >
-                  </h1>
-                  <h2>01/02/2022</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid explicabo provident recusandae magni blanditiis
-                    quasi possimus nobis numquam ullam commodi voluptas pariatur
-                    esse tenetur et hic, doloribus, voluptatem mollitia est.
-                  </p>
-                  <a href=""
-                    ><button class="button_cat name noselect">
-                      <span>Xem thêm</span>
-                    </button></a
-                  >
+                  </div>
                 </div>
-              </div>
-              <div class="blog-card">
-                <div class="meta">
-                  <div
-                    class="photo"
-                    style="background-image: url('./assets/img/tuy-hoa.jpg')"
-                  ></div>
-                </div>
-                <div class="description">
-                  <h1>
-                    <a class="cate_title" href="" title="Ve may bay di phu yen"
-                      >Vé máy bay đi Tuy Hòa</a
+                <div class="blog-card">
+                  <div class="meta">
+                    <div
+                      class="photo"
+                      style="background-image: url('./assets/img/tuy-hoa.jpg')"
+                    ></div>
+                  </div>
+                  <div class="description">
+                    <h1>
+                      <a
+                        class="cate_title"
+                        href=""
+                        title="Ve may bay di phu yen"
+                        >Vé máy bay đi Tuy Hòa</a
+                      >
+                    </h1>
+
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aliquid explicabo provident recusandae magni blanditiis
+                      quasi possimus nobis numquam ullam commodi voluptas
+                      pariatur esse tenetur et hic, doloribus, voluptatem
+                      mollitia est.
+                    </p>
+                    <a href=""
+                      ><button class="button_cat name noselect">
+                        <span>Xem thêm</span>
+                      </button></a
                     >
-                  </h1>
-                  <h2>01/02/2022</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid explicabo provident recusandae magni blanditiis
-                    quasi possimus nobis numquam ullam commodi voluptas pariatur
-                    esse tenetur et hic, doloribus, voluptatem mollitia est.
-                  </p>
-                  <a href=""
-                    ><button class="button_cat name noselect">
-                      <span>Xem thêm</span>
-                    </button></a
-                  >
+                  </div>
                 </div>
-              </div>
-              <div class="blog-card">
-                <div class="meta">
-                  <div
-                    class="photo"
-                    style="background-image: url('./assets/img/tuy-hoa.jpg')"
-                  ></div>
-                </div>
-                <div class="description">
-                  <h1>
-                    <a class="cate_title" href="" title="Ve may bay di phu yen"
-                      >Vé máy bay đi Tuy Hòa</a
+                <div class="blog-card">
+                  <div class="meta">
+                    <div
+                      class="photo"
+                      style="background-image: url('./assets/img/tuy-hoa.jpg')"
+                    ></div>
+                  </div>
+                  <div class="description">
+                    <h1>
+                      <a
+                        class="cate_title"
+                        href=""
+                        title="Ve may bay di phu yen"
+                        >Vé máy bay đi Tuy Hòa</a
+                      >
+                    </h1>
+
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aliquid explicabo provident recusandae magni blanditiis
+                      quasi possimus nobis numquam ullam commodi voluptas
+                      pariatur esse tenetur et hic, doloribus, voluptatem
+                      mollitia est.
+                    </p>
+                    <a href=""
+                      ><button class="button_cat name noselect">
+                        <span>Xem thêm</span>
+                      </button></a
                     >
-                  </h1>
-                  <h2>01/02/2022</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid explicabo provident recusandae magni blanditiis
-                    quasi possimus nobis numquam ullam commodi voluptas pariatur
-                    esse tenetur et hic, doloribus, voluptatem mollitia est.
-                  </p>
-                  <a href=""
-                    ><button class="button_cat name noselect">
-                      <span>Xem thêm</span>
-                    </button></a
-                  >
+                  </div>
                 </div>
-              </div>
-              <div class="blog-card">
-                <div class="meta">
-                  <div
-                    class="photo"
-                    style="background-image: url('./assets/img/tuy-hoa.jpg')"
-                  ></div>
-                </div>
-                <div class="description">
-                  <h1>
-                    <a class="cate_title" href="" title="Ve may bay di phu yen"
-                      >Vé máy bay đi Tuy Hòa</a
+                <div class="blog-card">
+                  <div class="meta">
+                    <div
+                      class="photo"
+                      style="background-image: url('./assets/img/tuy-hoa.jpg')"
+                    ></div>
+                  </div>
+                  <div class="description">
+                    <h1>
+                      <a
+                        class="cate_title"
+                        href=""
+                        title="Ve may bay di phu yen"
+                        >Vé máy bay đi Tuy Hòa</a
+                      >
+                    </h1>
+
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aliquid explicabo provident recusandae magni blanditiis
+                      quasi possimus nobis numquam ullam commodi voluptas
+                      pariatur esse tenetur et hic, doloribus, voluptatem
+                      mollitia est.
+                    </p>
+                    <a href=""
+                      ><button class="button_cat name noselect">
+                        <span>Xem thêm</span>
+                      </button></a
                     >
-                  </h1>
-                  <h2>01/02/2022</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid explicabo provident recusandae magni blanditiis
-                    quasi possimus nobis numquam ullam commodi voluptas pariatur
-                    esse tenetur et hic, doloribus, voluptatem mollitia est.
-                  </p>
-                  <a href=""
-                    ><button class="button_cat name noselect">
-                      <span>Xem thêm</span>
-                    </button></a
-                  >
+                  </div>
                 </div>
-              </div>
-              <div class="blog-card">
-                <div class="meta">
-                  <div
-                    class="photo"
-                    style="background-image: url('./assets/img/tuy-hoa.jpg')"
-                  ></div>
-                </div>
-                <div class="description">
-                  <h1>
-                    <a class="cate_title" href="" title="Ve may bay di phu yen"
-                      >Vé máy bay đi Tuy Hòa</a
+                <div class="blog-card">
+                  <div class="meta">
+                    <div
+                      class="photo"
+                      style="background-image: url('./assets/img/tuy-hoa.jpg')"
+                    ></div>
+                  </div>
+                  <div class="description">
+                    <h1>
+                      <a
+                        class="cate_title"
+                        href=""
+                        title="Ve may bay di phu yen"
+                        >Vé máy bay đi Tuy Hòa</a
+                      >
+                    </h1>
+
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aliquid explicabo provident recusandae magni blanditiis
+                      quasi possimus nobis numquam ullam commodi voluptas
+                      pariatur esse tenetur et hic, doloribus, voluptatem
+                      mollitia est.
+                    </p>
+                    <a href=""
+                      ><button class="button_cat name noselect">
+                        <span>Xem thêm</span>
+                      </button></a
                     >
-                  </h1>
-                  <h2>01/02/2022</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquid explicabo provident recusandae magni blanditiis
-                    quasi possimus nobis numquam ullam commodi voluptas pariatur
-                    esse tenetur et hic, doloribus, voluptatem mollitia est.
-                  </p>
-                  <a href=""
-                    ><button class="button_cat name noselect">
-                      <span>Xem thêm</span>
-                    </button></a
-                  >
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="sidebar">
-              <h2 class="sidebar__title">This is siderbar</h2>
+            <div class="col-md-4">
+              <div class="sidebar-widget">
+                <h4>Bài viết xem nhiều</h4>
+                <ul class="card-list">
+                  <li class="card-post">
+                    <div class="image-data">
+                      <a href=""> <img src="./assets/img/bangkok.jpg" /></a>
+                    </div>
+                    <div class="post-data">
+                      <h5 class="post-data__title">
+                        <a href="" title="">Vé máy bay đi Thái Lan</a>
+                      </h5>
+                      <p class="post-data__desciption">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quaerat eaque autem totam, quibusdam blanditiis adipisci
+                        nesciunt?
+                      </p>
+                      <div class="cta">
+                        <a href="#">Đọc thêm &rarr;</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="card-post">
+                    <div class="image-data">
+                      <a href=""> <img src="./assets/img/phu-quoc.png" /></a>
+                    </div>
+                    <div class="post-data">
+                      <h5 class="post-data__title">
+                        <a href="" title="">Vé máy bay đi Phú Quốc</a>
+                      </h5>
+                      <p class="post-data__desciption">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quaerat eaque autem totam, quibusdam blanditiis adipisci
+                        nesciunt?
+                      </p>
+                      <div class="cta">
+                        <a href="#">Đọc thêm &rarr;</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="card-post">
+                    <div class="image-data">
+                      <a href=""> <img src="./assets/img/vung-tau.png" /></a>
+                    </div>
+                    <div class="post-data">
+                      <h5 class="post-data__title">
+                        <a href="" title="">Vé máy bay đi Vũng Tàu</a>
+                      </h5>
+                      <p class="post-data__desciption">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quaerat eaque autem totam, quibusdam blanditiis adipisci
+                        nesciunt?
+                      </p>
+                      <div class="cta">
+                        <a href="#">Đọc thêm &rarr;</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="card-post">
+                    <div class="image-data">
+                      <a href=""> <img src="./assets/img/ha-long.jpg" /></a>
+                    </div>
+                    <div class="post-data">
+                      <h5 class="post-data__title">
+                        <a href="" title="">Vé máy bay đi Hạ Long</a>
+                      </h5>
+                      <p class="post-data__desciption">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quaerat eaque autem totam, quibusdam blanditiis adipisci
+                        nesciunt?
+                      </p>
+                      <div class="cta">
+                        <a href="#">Đọc thêm &rarr;</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="card-post">
+                    <div class="image-data">
+                      <a href=""> <img src="./assets/img/danang.png" /></a>
+                    </div>
+                    <div class="post-data">
+                      <h5 class="post-data__title">
+                        <a href="" title="">Vé máy bay đi Đà Nẵng</a>
+                      </h5>
+                      <p class="post-data__desciption">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quaerat eaque autem totam, quibusdam blanditiis adipisci
+                        nesciunt?
+                      </p>
+                      <div class="cta">
+                        <a href="#">Đọc thêm &rarr;</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!--Begin Footer-->
       <footer class="footer">
