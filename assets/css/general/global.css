@@ -620,3 +620,37 @@ a.instagram:hover {
   position: relative;
   z-index: 0;
 }
+
+/* ======== BREADCRUMB ======== */
+.breadcrumb__list{ 
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+li.breadcrumb__item{
+  margin-right: 10px;
+
+  position: relative;
+}
+
+li.breadcrumb__item:hover a{
+  color: var(--saphire-color);
+}
+
+li.breadcrumb__item a{
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 10px;
+  color: var(--title-color);
+}
+
+li.breadcrumb__item span{
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+li.breadcrumb__item.current a{
+  color: var(--saphire-color);
+}

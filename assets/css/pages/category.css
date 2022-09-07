@@ -16,6 +16,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 0 20%;
   }
   
   .category__title{
@@ -27,13 +28,6 @@
 .category__desc{
   font-size: 16px;
   color: var(--bgdecs-color);
-
-}
-
-.category__breadscrumb{
-  font-size: 14px;
-  color: var(--bgdecs-color);
-
 
 }
 
