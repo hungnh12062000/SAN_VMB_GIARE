@@ -140,16 +140,6 @@ li.post__social--item img {
   text-align: center;
 }
 
-.section-title {
-  margin-bottom: 35px;
-  font-size: 3.6rem;
-  line-height: 3.6rem;
-  color: #555555;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-}
-
 /*underline*/
 .proposal-title u {
   position: relative;

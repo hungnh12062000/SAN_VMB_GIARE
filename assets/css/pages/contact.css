@@ -1,0 +1,117 @@
+.section__contact {
+  margin-top: 96px;
+}
+
+.section__contact--wrap {
+  padding: 50px 0;
+}
+
+.inner_page_container {
+  display: flex;
+}
+
+.section__get-in-touch,
+.section__send-message {
+  flex: 1;
+}
+
+.section__get-in-touch {
+  margin-right: 30px;
+}
+
+.contact__info--title {
+  position: relative;
+  font-weight: 500;
+}
+
+.contact__info--title::before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 15px;
+  background-color: #000;
+  transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+  left: 0;
+  bottom: -10px;
+}
+
+.contact__info--title::after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 90px;
+  background-color: #000;
+  transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+  left: 30px;
+  bottom: -10px;
+}
+
+.section__infor--company {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.section__infor--company h6 {
+  margin-left: 15px;
+}
+
+.section__infor--company .box-infor__contact {
+  margin-bottom: 20px;
+}
+
+.form__row {
+  padding: 0;
+  margin: 0 0 10px 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.form__row input {
+  width: 49%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.form__row input[type="text"],
+.form__row input[type="email"],
+textarea {
+  padding: 15px 20px;
+  border: 2px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.5);
+  outline: 0;
+}
+
+.form__row input::placeholder{
+     font-size: 14px;
+}
+
+.section__form--wrap form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  min-height: 150px;
+}
+
+.btn__send {
+  color: var(--white-color);
+  background-color: var(--saphire-color);
+  text-transform: uppercase;
+  padding: 15px 40px;
+  border: none;
+}
+
+.section__map {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 1/13;
+  margin-bottom: 30px;
+}
+
+.section__map iframe {
+  grid-column: 1/13;
+   min-height: 500px;
+}

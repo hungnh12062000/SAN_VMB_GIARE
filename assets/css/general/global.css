@@ -614,7 +614,7 @@ a.instagram:hover {
   line-height: 30px;
   color: var(--title-color);
   font-weight: bold;
-  text-align: center;
+  /* text-align: center; */
   text-decoration: none;
 
   position: relative;
