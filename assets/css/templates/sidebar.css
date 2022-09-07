@@ -204,6 +204,7 @@
   padding: 20px;
   color: var(--saphire-color);
   margin-top: 10px;
+  align-items: center;
 }
 
 .total__price-title h6 {
