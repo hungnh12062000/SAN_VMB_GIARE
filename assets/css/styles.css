@@ -7,10 +7,11 @@
 @import url("./templates/sidebar.css");
 @import url("./templates/footer.css");
 
-@import url("./pages/category.css");
 @import url("./pages/choose_journey.css");
 @import url("./pages/infor_passengers.css");
 @import url("./pages/payment.css");
 @import url("./pages/complete.css");
+@import url("./pages/category.css");
+@import url("./pages/single.css");
 
 @import url("./general/responsive.css");
