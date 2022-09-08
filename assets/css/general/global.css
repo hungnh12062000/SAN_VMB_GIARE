@@ -654,13 +654,25 @@ a.instagram:hover {
 }
 
 .box-heading-h6,
-.thead-title {
+.thead-title,
+.name__passenger--title,
+.luggage__title {
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
   color: var(--title-color);
   margin-bottom: 0;
+}
 
+.title-input,
+.title-select,
+.caption-details,
+.caption-birthday{
+     color: var(--title-color);
+     font-size: 14px;
+     line-height: 17px;
+     font-weight: 400;
+     margin-bottom: 4px;
 }
 
 .box-subheading-span,

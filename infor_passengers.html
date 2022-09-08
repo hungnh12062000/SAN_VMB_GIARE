@@ -48,21 +48,21 @@
                     </div>
                     <ul class="header-nav">
                          <li class="nav__item">
-                           <a href="./category.html" class="nav__item--link">VÉ MÁY BAY NỘI ĐỊA</a>
+                              <a href="./category.html" class="nav__item--link">VÉ MÁY BAY NỘI ĐỊA</a>
                          </li>
                          <li class="nav__item">
-                           <a href="./category.html" class="nav__item--link">VÉ MÁY BAY QUỐC TẾ</a>
+                              <a href="./category.html" class="nav__item--link">VÉ MÁY BAY QUỐC TẾ</a>
                          </li>
                          <li class="nav__item">
-                           <a href="./category.html" class="nav__item--link">VÉ RẺ THEO THÁNG</a>
+                              <a href="./category.html" class="nav__item--link">VÉ RẺ THEO THÁNG</a>
                          </li>
                          <li class="nav__item">
-                           <a href="./category.html" class="nav__item--link">TIN TỨC</a>
+                              <a href="./category.html" class="nav__item--link">TIN TỨC</a>
                          </li>
                          <li class="nav__item">
-                           <a href="" class="nav__item--link">LIÊN HỆ</a>
+                              <a href="" class="nav__item--link">LIÊN HỆ</a>
                          </li>
-                       </ul>
+                    </ul>
                     <div class="header-phone">
                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000"
                               viewBox="0 0 256 256">
@@ -109,106 +109,269 @@
                                                   Nhập họ tên trùng khớp trên giấy tờ tùy thân.</span>
                                         </div>
 
-                                        <div class="infor-passenger-wrap">
+                                        <ul class="infor-passenger-wrap">
+
                                              <!-- Người lớn -->
-                                             <div class="adult-passenger">
-                                                  <div class="adult-wrap">
-                                                       <div class="adult-icon">
-                                                            <lord-icon src="https://cdn.lordicon.com/eszyyflr.json"
-                                                                 trigger="loop" delay="2000"
-                                                                 style="width:35px;height:35px">
-                                                            </lord-icon>
+                                             <li>
+                                                  <div class="adult-passenger">
+                                                       <div class="adult-wrap">
+                                                            <div class="adult-icon">
+                                                                 <lord-icon src="https://cdn.lordicon.com/eszyyflr.json"
+                                                                      trigger="loop" delay="2000"
+                                                                      style="width:35px;height:35px">
+                                                                 </lord-icon>
+                                                            </div>
+                                                            <div class="name__passenger--title">Người lớn 1</div>
                                                        </div>
-                                                       <div class="adult-passenger__title">Người lớn 1</div>
-                                                  </div>
-
-                                                  <div class="adult-input">
-                                                       <div class="adult-input__gender">
-                                                            <span class="title-input" for="">Giới tính</span>
-                                                            <select class="box-select" name="" id="">
-                                                                 <option value="">Nam</option>
-                                                                 <option value="">Nữ</option>
-                                                            </select>
-                                                       </div>
-                                                       <div class="adult-input__name">
-                                                            <label class="title-input" for="">Họ và Tên <span
+     
+                                                       <div class="adult-input">
+                                                            <div class="adult-input__gender">
+                                                                 <label class="title-input" for="">Giới tính <span
                                                                       class="asterisk">*</span></label>
-                                                            <input type="text" class="input-name box-input"
-                                                                 placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                                 <select class="box-select" name="" id="">
+                                                                      <option value="">Nam</option>
+                                                                      <option value="">Nữ</option>
+                                                                 </select>
+                                                            </div>
+                                                            <div class="adult-input__name">
+                                                                 <label class="title-input" for="">Họ và Tên <span
+                                                                           class="asterisk">*</span></label>
+                                                                 <input type="text" class="input-name box-input"
+                                                                      placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                            </div>
+                                                       </div>
+     
+                                                       <div class="adult-baggage">
+                                                            <div class="baggage__dep-wrap">
+                                                                 <h6 class="luggage__title">Hành lý lượt đi</h6>
+                                                                 <!-- Xách tay -->
+                                                                 <div class="luggage-wrap">
+                                                                      <h6 class="title-input">Xách tay</h6>
+                                                                      <span class="content__luggage">Mỗi người tối đa 7 Kg.</span>
+                                                                 </div>
+          
+                                                                 <!-- Ký gửi -->
+                                                                 <div class="signed-luggage-wrap">
+                                                                      <h6 class="title-input">Ký gửi</h6>
+                                                                      <!-- <span class="content__luggage">Mỗi người tối đa 7 Kg.</span> -->
+                                                                      <div class="signed-luggage">
+                                                                           <select name="dep_addbaggage[]" class="dep_addbaggage">
+                                                                                <option value="0">Không mang hành lý ký gửi</option>
+                                                                                <option value="180000">15kg hành lý quá khổ (180.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="210000">20kg hành lý (210.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="270000">25kg hành lý (270.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="380000">30kg hành lý (380.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="450000">35kg hành lý (450.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="500000">40kg hành lý (500.000đ/Khách)
+                                                                                </option>
+                                                                           </select>
+                                                                           <div class="select-styled"></div>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="baggage__ret-wrap">
+                                                                 <h6 class="luggage__title">Hành lý lượt về</h6>
+                                                                 <!-- Xách tay -->
+                                                                 <div class="luggage-wrap">
+                                                                      <h6 class="title-input">Xách tay</h6>
+                                                                      <span class="content__luggage">Mỗi người tối đa 7 Kg.</span>
+                                                                 </div>
+          
+                                                                 <!-- Ký gửi -->
+                                                                 <div class="signed-luggage-wrap">
+                                                                      <h6 class="title-input">Ký gửi</h6>
+                                                                      <!-- <span class="content__luggage">Mỗi người tối đa 7 Kg.</span> -->
+                                                                      <div class="signed-luggage">
+                                                                           <select name="dep_addbaggage[]" class="dep_addbaggage">
+                                                                                <option value="0">Không mang hành lý ký gửi</option>
+                                                                                <option value="180000">15kg hành lý quá khổ (180.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="210000">20kg hành lý (210.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="270000">25kg hành lý (270.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="380000">30kg hành lý (380.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="450000">35kg hành lý (450.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="500000">40kg hành lý (500.000đ/Khách)
+                                                                                </option>
+                                                                           </select>
+                                                                           <div class="select-styled"></div>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
                                                        </div>
                                                   </div>
-                                             </div>
+                                             </li>
                                              <!-- Trẻ em -->
-                                             <div class="child-passenger">
-                                                  <div class="child-wrap">
-                                                       <div class="child-icon">
-                                                            <lord-icon src="https://cdn.lordicon.com/ssdupzsv.json"
-                                                                 trigger="loop" delay="2000"
-                                                                 style="width:35px;height:35px">
-                                                            </lord-icon>
+                                             <li>
+                                                  <div class="child-passenger">
+                                                       <div class="child-wrap">
+                                                            <div class="child-icon">
+                                                                 <lord-icon src="https://cdn.lordicon.com/ssdupzsv.json"
+                                                                      trigger="loop" delay="2000"
+                                                                      style="width:35px;height:35px">
+                                                                 </lord-icon>
+                                                            </div>
+                                                            <div class="name__passenger--title">Trẻ em 1</div>
                                                        </div>
-                                                       <div class="child-passenger__title">Trẻ em 1</div>
-                                                  </div>
+     
+                                                       <div class="child-input">
+                                                            <div class="child-input__gender">
+                                                                 <label class="title-select" for="">Giới tính <span
+                                                                      class="asterisk">*</span></label>
+                                                                 <select name="" id="" class="box-select">
+                                                                      <option value="">Nam</option>
+                                                                      <option value="">Nữ</option>
+                                                                 </select>
+                                                            </div>
+                                                            <div class="child-input__name">
+                                                                 <label class="title-input" for="">Họ và Tên <span
+                                                                           class="asterisk">*</span></label>
+                                                                 <input type="text" class="input-name box-input"
+                                                                      placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                            </div>
+                                                            <div class="child-input__birthday">
+                                                                 <label class="title-input" for="">Ngày sinh <span
+                                                                           class="asterisk">*</span></label>
+                                                                 <input type="text" class="input-birthday box-input"
+                                                                      placeholder="11/11/2022">
+                                                            </div>
+                                                       </div>
 
-                                                  <div class="child-input">
-                                                       <div class="child-input__gender">
-                                                            <span class="title-select" for="">Giới tính</span>
-                                                            <select name="" id="" class="box-select">
-                                                                 <option value="">Nam</option>
-                                                                 <option value="">Nữ</option>
-                                                            </select>
-                                                       </div>
-                                                       <div class="child-input__name">
-                                                            <label class="title-input" for="">Họ và Tên <span
-                                                                      class="asterisk">*</span></label>
-                                                            <input type="text" class="input-name box-input"
-                                                                 placeholder="Ví dụ: NGUYEN HAI HUNG">
-                                                       </div>
-                                                       <div class="child-input__birthday">
-                                                            <label class="title-input" for="">Ngày sinh <span
-                                                                      class="asterisk">*</span></label>
-                                                            <input type="text" class="input-birthday box-input"
-                                                                 placeholder="11/11/2022">
+                                                       <div class="child-baggage">
+                                                            <div class="baggage__dep-wrap">
+                                                                 <h6 class="luggage__title">Hành lý lượt đi</h6>
+                                                                 <!-- Xách tay -->
+                                                                 <div class="luggage-wrap">
+                                                                      <h6 class="title-input">Xách tay</h6>
+                                                                      <span class="content__luggage">Mỗi người tối đa 7 Kg.</span>
+                                                                 </div>
+          
+                                                                 <!-- Ký gửi -->
+                                                                 <div class="signed-luggage-wrap">
+                                                                      <h6 class="title-input">Ký gửi</h6>
+                                                                      <!-- <span class="content__luggage">Mỗi người tối đa 7 Kg.</span> -->
+                                                                      <div class="signed-luggage">
+                                                                           <select name="dep_addbaggage[]" class="dep_addbaggage">
+                                                                                <option value="0">Không mang hành lý ký gửi</option>
+                                                                                <option value="180000">15kg hành lý quá khổ (180.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="210000">20kg hành lý (210.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="270000">25kg hành lý (270.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="380000">30kg hành lý (380.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="450000">35kg hành lý (450.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="500000">40kg hành lý (500.000đ/Khách)
+                                                                                </option>
+                                                                           </select>
+                                                                           <div class="select-styled"></div>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="baggage__ret-wrap">
+                                                                 <h6 class="luggage__title">Hành lý lượt về</h6>
+                                                                 <!-- Xách tay -->
+                                                                 <div class="luggage-wrap">
+                                                                      <h6 class="title-input">Xách tay</h6>
+                                                                      <span class="content__luggage">Mỗi người tối đa 7 Kg.</span>
+                                                                 </div>
+          
+                                                                 <!-- Ký gửi -->
+                                                                 <div class="signed-luggage-wrap">
+                                                                      <h6 class="title-input">Ký gửi</h6>
+                                                                      <!-- <span class="content__luggage">Mỗi người tối đa 7 Kg.</span> -->
+                                                                      <div class="signed-luggage">
+                                                                           <select name="dep_addbaggage[]" class="dep_addbaggage">
+                                                                                <option value="0">Không mang hành lý ký gửi</option>
+                                                                                <option value="180000">15kg hành lý quá khổ (180.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="210000">20kg hành lý (210.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="270000">25kg hành lý (270.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="380000">30kg hành lý (380.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="450000">35kg hành lý (450.000đ/Khách)
+                                                                                </option>
+                                                                                <option value="500000">40kg hành lý (500.000đ/Khách)
+                                                                                </option>
+                                                                           </select>
+                                                                           <div class="select-styled"></div>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
                                                        </div>
                                                   </div>
-                                             </div>
+                                             </li>
 
                                              <!-- Em bé -->
-                                             <div class="infant-passenger">
-                                                  <div class="infant-wrap">
-                                                       <div class="infant-icon">
-                                                            <lord-icon src="https://cdn.lordicon.com/cuvapfqt.json"
-                                                                 trigger="loop" delay="2000"
-                                                                 style="width:35px;height:35px">
-                                                            </lord-icon>
+                                             <li>
+                                                  <div class="infant-passenger">
+                                                       <div class="infant-wrap">
+                                                            <div class="infant-icon">
+                                                                 <lord-icon src="https://cdn.lordicon.com/cuvapfqt.json"
+                                                                      trigger="loop" delay="2000"
+                                                                      style="width:35px;height:35px">
+                                                                 </lord-icon>
+                                                            </div>
+                                                            <div class="name__passenger--title">Em bé 1</div>
                                                        </div>
-                                                       <div class="infant-passenger__title">Em bé 1</div>
-                                                  </div>
-
-                                                  <div class="infant-input">
-                                                       <div class="infant-input__gender">
-                                                            <span class="title-select" for="">Giới tính</span>
-                                                            <select name="" id="" class="box-select">
-                                                                 <option value="">Nam</option>
-                                                                 <option value="">Nữ</option>
-                                                            </select>
-                                                       </div>
-                                                       <div class="infant-input__name">
-                                                            <label class="title-input" for="">Họ và Tên <span
+     
+                                                       <div class="infant-input">
+                                                            <div class="infant-input__gender">
+                                                                 <label class="title-select" for="">Giới tính <span
                                                                       class="asterisk">*</span></label>
-                                                            <input type="text" class="input-name box-input"
-                                                                 placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                                 <select name="" id="" class="box-select">
+                                                                      <option value="">Nam</option>
+                                                                      <option value="">Nữ</option>
+                                                                 </select>
+                                                            </div>
+                                                            <div class="infant-input__name">
+                                                                 <label class="title-input" for="">Họ và Tên <span
+                                                                           class="asterisk">*</span></label>
+                                                                 <input type="text" class="input-name box-input"
+                                                                      placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                            </div>
+                                                            <div class="infant-input__birthday">
+                                                                 <label class="title-input" for="">Ngày sinh <span
+                                                                           class="asterisk">*</span></label>
+                                                                 <input type="text" class="input-birthday box-input"
+                                                                      placeholder="11/11/2022">
+                                                            </div>
                                                        </div>
-                                                       <div class="infant-input__birthday">
-                                                            <label class="title-input" for="">Ngày sinh <span
-                                                                      class="asterisk">*</span></label>
-                                                            <input type="text" class="input-birthday box-input"
-                                                                 placeholder="11/11/2022">
+
+                                                       <div class="infant-baggage">
+                                                            <div class="baggage__dep-wrap">
+                                                                 <h6 class="luggage__title">Hành lý lượt đi</h6>
+                                                                 <!-- Ký gửi -->
+                                                                 <div class="signed-luggage-wrap">
+                                                                      <h6 class="title-input">Ký gửi</h6>
+                                                                      <span class="content__luggage">Mỗi người tối đa 7 Kg.</span>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="baggage__ret-wrap">
+                                                                 <h6 class="luggage__title">Hành lý lượt về</h6>
+                                                                 <!-- Ký gửi -->
+                                                                 <div class="signed-luggage-wrap">
+                                                                      <h6 class="title-input">Ký gửi</h6>
+                                                                      <span class="content__luggage">Mỗi người tối đa 7 Kg.</span>
+                                                                 </div>
+                                                            </div>
                                                        </div>
                                                   </div>
-                                             </div>
+                                             </li>
 
-                                        </div>
+                                        </ul>
                                    </section>
 
                                    <!-- THÔNG TIN LIÊN HỆ -->
@@ -325,57 +488,60 @@
                                         <div class="journey-details">
                                              <div class="infor-journey-wrap">
                                                   <div class="journey-datetime">
-                                                    <div class="datetime-depart">
-                                                      <h6 class="box-heading-h6 time-depart">17:45</h6>
-                                                      <span class="box-subheading-span journey-date-depart">14/09/2022</span>
-                                                    </div>
-                                                    <div class="datetime-duration">
-                                                      <span class="box-subheading-span">2h 10m</span>
-                                                    </div>
-                                                    <div class="datetime-arrive">
-                                                      <h6 class="box-heading-h6 time-arrive">
-                                                       19:55
-                                                      </h6>
-                                                      <span class="box-subheading-span journey-date-arrive">14/09/2022</span>
-                                                    </div>
+                                                       <div class="datetime-depart">
+                                                            <h6 class="box-heading-h6 time-depart">17:45</h6>
+                                                            <span
+                                                                 class="box-subheading-span journey-date-depart">14/09/2022</span>
+                                                       </div>
+                                                       <div class="datetime-duration">
+                                                            <span class="box-subheading-span">2h 10m</span>
+                                                       </div>
+                                                       <div class="datetime-arrive">
+                                                            <h6 class="box-heading-h6 time-arrive">
+                                                                 19:55
+                                                            </h6>
+                                                            <span
+                                                                 class="box-subheading-span journey-date-arrive">14/09/2022</span>
+                                                       </div>
                                                   </div>
-                        
+
                                                   <div class="journey-timeline">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#14b9d5" viewBox="0 0 256 256" class="svg-plane">
-                                                      <rect width="256" height="256" fill="none"></rect>
-                                                      <path d="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-                                                 </svg>
-                                                    <div class="journey-line"></div>
-                                                    <lord-icon
-                                                      src="https://cdn.lordicon.com/elzslyvl.json"
-                                                      trigger="loop"
-                                                      delay="1000"
-                                                      style="width:32px;height:32px">
-                                                  </lord-icon>
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                                                            fill="#14b9d5" viewBox="0 0 256 256" class="svg-plane">
+                                                            <rect width="256" height="256" fill="none"></rect>
+                                                            <path d="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z"
+                                                                 fill="none" stroke="#14b9d5" stroke-linecap="round"
+                                                                 stroke-linejoin="round" stroke-width="16"></path>
+                                                       </svg>
+                                                       <div class="journey-line"></div>
+                                                       <lord-icon src="https://cdn.lordicon.com/elzslyvl.json"
+                                                            trigger="loop" delay="1000" style="width:32px;height:32px">
+                                                       </lord-icon>
                                                   </div>
-                        
+
                                                   <div class="journey-citypair">
-                                                    <div class="citypair-depart">
-                                                      <h6 class="box-heading-h6">Thành phố Hồ Chí Minh (SGN)</h6>
-                                                      <span class="box-subheading-span">Tân Sơn Nhất</span>
-                                                    </div>
-                                                    <div class="journey-flight-infor">
-                                                      <div class="journey-infor-plane">
-                                                        <div class="infor-brand">
-                                                          <img src="./assets/img/Images-brand/vj.png" alt="VJ" class="infor-brand__link" />
-                                                        </div>
-                                                        <div class="infor-plane__name">
-                                                          <h6 class="box-heading-h6">Vietjet Air</h6>
-                                                          <span class="box-subheading-span">VJ166</span>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    <div class="citypair-arrive">
-                                                      <h6 class="box-heading-h6">Hà Nội (HAN)</h6>
-                                                      <span class="box-subheading-span">Nội Bài</span>
-                                                    </div>
+                                                       <div class="citypair-depart">
+                                                            <h6 class="box-heading-h6">Thành phố Hồ Chí Minh (SGN)</h6>
+                                                            <span class="box-subheading-span">Tân Sơn Nhất</span>
+                                                       </div>
+                                                       <div class="journey-flight-infor">
+                                                            <div class="journey-infor-plane">
+                                                                 <div class="infor-brand">
+                                                                      <img src="./assets/img/Images-brand/vj.png"
+                                                                           alt="VJ" class="infor-brand__link" />
+                                                                 </div>
+                                                                 <div class="infor-plane__name">
+                                                                      <h6 class="box-heading-h6">Vietjet Air</h6>
+                                                                      <span class="box-subheading-span">VJ166</span>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="citypair-arrive">
+                                                            <h6 class="box-heading-h6">Hà Nội (HAN)</h6>
+                                                            <span class="box-subheading-span">Nội Bài</span>
+                                                       </div>
                                                   </div>
-                                                </div>
+                                             </div>
                                         </div>
                                    </div>
                                    <div class="journey-ret-wrap">
@@ -402,57 +568,60 @@
                                         <div class="journey-details">
                                              <div class="infor-journey-wrap">
                                                   <div class="journey-datetime">
-                                                    <div class="datetime-depart">
-                                                      <h6 class="box-heading-h6 time-depart">17:45</h6>
-                                                      <span class="box-subheading-span journey-date-depart">14/09/2022</span>
-                                                    </div>
-                                                    <div class="datetime-duration">
-                                                      <span class="box-subheading-span">2h 10m</span>
-                                                    </div>
-                                                    <div class="datetime-arrive">
-                                                      <h6 class="box-heading-h6 time-arrive">
-                                                       19:55
-                                                      </h6>
-                                                      <span class="box-subheading-span journey-date-arrive">14/09/2022</span>
-                                                    </div>
+                                                       <div class="datetime-depart">
+                                                            <h6 class="box-heading-h6 time-depart">17:45</h6>
+                                                            <span
+                                                                 class="box-subheading-span journey-date-depart">14/09/2022</span>
+                                                       </div>
+                                                       <div class="datetime-duration">
+                                                            <span class="box-subheading-span">2h 10m</span>
+                                                       </div>
+                                                       <div class="datetime-arrive">
+                                                            <h6 class="box-heading-h6 time-arrive">
+                                                                 19:55
+                                                            </h6>
+                                                            <span
+                                                                 class="box-subheading-span journey-date-arrive">14/09/2022</span>
+                                                       </div>
                                                   </div>
-                        
+
                                                   <div class="journey-timeline">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#14b9d5" viewBox="0 0 256 256" class="svg-plane">
-                                                      <rect width="256" height="256" fill="none"></rect>
-                                                      <path d="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-                                                 </svg>
-                                                    <div class="journey-line"></div>
-                                                    <lord-icon
-                                                      src="https://cdn.lordicon.com/elzslyvl.json"
-                                                      trigger="loop"
-                                                      delay="1000"
-                                                      style="width:32px;height:32px">
-                                                  </lord-icon>
+                                                       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                                                            fill="#14b9d5" viewBox="0 0 256 256" class="svg-plane">
+                                                            <rect width="256" height="256" fill="none"></rect>
+                                                            <path d="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z"
+                                                                 fill="none" stroke="#14b9d5" stroke-linecap="round"
+                                                                 stroke-linejoin="round" stroke-width="16"></path>
+                                                       </svg>
+                                                       <div class="journey-line"></div>
+                                                       <lord-icon src="https://cdn.lordicon.com/elzslyvl.json"
+                                                            trigger="loop" delay="1000" style="width:32px;height:32px">
+                                                       </lord-icon>
                                                   </div>
-                        
+
                                                   <div class="journey-citypair">
-                                                    <div class="citypair-depart">
-                                                      <h6 class="box-heading-h6">Thành phố Hồ Chí Minh (SGN)</h6>
-                                                      <span class="box-subheading-span">Tân Sơn Nhất</span>
-                                                    </div>
-                                                    <div class="journey-flight-infor">
-                                                      <div class="journey-infor-plane">
-                                                        <div class="infor-brand">
-                                                          <img src="./assets/img/Images-brand/vj.png" alt="VJ" class="infor-brand__link" />
-                                                        </div>
-                                                        <div class="infor-plane__name">
-                                                          <h6 class="box-heading-h6">Vietjet Air</h6>
-                                                          <span class="box-subheading-span">VJ166</span>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    <div class="citypair-arrive">
-                                                      <h6 class="box-heading-h6">Hà Nội (HAN)</h6>
-                                                      <span class="box-subheading-span">Nội Bài</span>
-                                                    </div>
+                                                       <div class="citypair-depart">
+                                                            <h6 class="box-heading-h6">Thành phố Hồ Chí Minh (SGN)</h6>
+                                                            <span class="box-subheading-span">Tân Sơn Nhất</span>
+                                                       </div>
+                                                       <div class="journey-flight-infor">
+                                                            <div class="journey-infor-plane">
+                                                                 <div class="infor-brand">
+                                                                      <img src="./assets/img/Images-brand/vj.png"
+                                                                           alt="VJ" class="infor-brand__link" />
+                                                                 </div>
+                                                                 <div class="infor-plane__name">
+                                                                      <h6 class="box-heading-h6">Vietjet Air</h6>
+                                                                      <span class="box-subheading-span">VJ166</span>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="citypair-arrive">
+                                                            <h6 class="box-heading-h6">Hà Nội (HAN)</h6>
+                                                            <span class="box-subheading-span">Nội Bài</span>
+                                                       </div>
                                                   </div>
-                                                </div>
+                                             </div>
                                         </div>
                                    </div>
                               </div>
@@ -466,45 +635,45 @@
                                         </div>
                                         <div class="infor-price">
                                              <table>
-                                               <thead class="thead-title">
-                                                 <tr>
-                                                   <th></th>
-                                                   <th>Giá vé</th>
-                                                   <th>Tổng</th>
-                                                 </tr>
-                                               </thead>
-                                               <tbody class="tbody-title infor-price__body">
-                                                 <tr>
-                                                   <td>
-                                                     Người lớn x 1
-                                                   </td>
-                                                   <td class="base-price" data-price="369000">369.000đ</td>
-                                                   <td>738.000đ</td>
-                                                 </tr>
-                                                 <tr>
-                                                   <td>Trẻ em x 2</td>
-                                                   <td>369.000đ</td>
-                                                   <td>738.000đ</td>
-                                                 </tr>
-                                                 <tr>
-                                                   <td>Em bé x 1</td>
-                                                   <td>0đ</td>
-                                                   <td>1.738.000đ</td>
-                                                 </tr>
-                                                 <tr>
-                                                   <td>Thuế và phí</td>
-                                                   <td>1.534.540đ</td>
-                                                   <td>1.738.000đ</td>
-                                                 </tr>
-                                                 <tr>
-                                                  <td class="infor-price__title"><strong>Tổng cộng lượt
-                                                            </strong></td>
-                                                  <td></td>
-                                                  <td class="total_amount--return">100.738.000đ</td>
-                                                  </tr>
-                                               </tbody>
+                                                  <thead class="thead-title">
+                                                       <tr>
+                                                            <th></th>
+                                                            <th>Giá vé</th>
+                                                            <th>Tổng</th>
+                                                       </tr>
+                                                  </thead>
+                                                  <tbody class="tbody-title infor-price__body">
+                                                       <tr>
+                                                            <td>
+                                                                 Người lớn x 1
+                                                            </td>
+                                                            <td class="base-price" data-price="369000">369.000đ</td>
+                                                            <td>738.000đ</td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>Trẻ em x 2</td>
+                                                            <td>369.000đ</td>
+                                                            <td>738.000đ</td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>Em bé x 1</td>
+                                                            <td>0đ</td>
+                                                            <td>1.738.000đ</td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>Thuế và phí</td>
+                                                            <td>1.534.540đ</td>
+                                                            <td>1.738.000đ</td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td class="infor-price__title"><strong>Tổng cộng lượt
+                                                                 </strong></td>
+                                                            <td></td>
+                                                            <td class="total_amount--return">100.738.000đ</td>
+                                                       </tr>
+                                                  </tbody>
                                              </table>
-                                           </div>
+                                        </div>
                                    </div>
                                    <div class="table__price--return">
                                         <div class="infor-ticket-title">
@@ -513,45 +682,45 @@
                                         </div>
                                         <div class="infor-price">
                                              <table>
-                                               <thead class="thead-title">
-                                                 <tr>
-                                                   <th></th>
-                                                   <th>Giá vé</th>
-                                                   <th>Tổng</th>
-                                                 </tr>
-                                               </thead>
-                                               <tbody class="tbody-title infor-price__body">
-                                                 <tr>
-                                                   <td>
-                                                     Người lớn x 1
-                                                   </td>
-                                                   <td class="base-price" data-price="369000">369.000đ</td>
-                                                   <td>738.000đ</td>
-                                                 </tr>
-                                                 <tr>
-                                                   <td>Trẻ em x 2</td>
-                                                   <td>369.000đ</td>
-                                                   <td>738.000đ</td>
-                                                 </tr>
-                                                 <tr>
-                                                   <td>Em bé x 1</td>
-                                                   <td>0đ</td>
-                                                   <td>1.738.000đ</td>
-                                                 </tr>
-                                                 <tr>
-                                                   <td>Thuế và phí</td>
-                                                   <td>1.534.540đ</td>
-                                                   <td>1.738.000đ</td>
-                                                 </tr>
-                                                 <tr>
-                                                  <td class="infor-price__title"><strong>Tổng cộng lượt
-                                                            về</strong></td>
-                                                  <td></td>
-                                                  <td class="total_amount--return">100.738.000đ</td>
-                                                  </tr>
-                                               </tbody>
+                                                  <thead class="thead-title">
+                                                       <tr>
+                                                            <th></th>
+                                                            <th>Giá vé</th>
+                                                            <th>Tổng</th>
+                                                       </tr>
+                                                  </thead>
+                                                  <tbody class="tbody-title infor-price__body">
+                                                       <tr>
+                                                            <td>
+                                                                 Người lớn x 1
+                                                            </td>
+                                                            <td class="base-price" data-price="369000">369.000đ</td>
+                                                            <td>738.000đ</td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>Trẻ em x 2</td>
+                                                            <td>369.000đ</td>
+                                                            <td>738.000đ</td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>Em bé x 1</td>
+                                                            <td>0đ</td>
+                                                            <td>1.738.000đ</td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>Thuế và phí</td>
+                                                            <td>1.534.540đ</td>
+                                                            <td>1.738.000đ</td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td class="infor-price__title"><strong>Tổng cộng lượt
+                                                                      về</strong></td>
+                                                            <td></td>
+                                                            <td class="total_amount--return">100.738.000đ</td>
+                                                       </tr>
+                                                  </tbody>
                                              </table>
-                                           </div>
+                                        </div>
                                    </div>
                                    <div class="total__price-wrap">
                                         <div class="total__price-title">
@@ -571,125 +740,130 @@
      </div>
      </div>
 
-   
+
      <!--begin Footer-->
      <footer class="footer">
           <div class="footer__top">
-            <div class="container">
-              <div class="row g-0 ps-5">
-                <div class="col-md-4">
-                  <div class="footer__about--company">
-                    <h6 class="">Săn vé máy bay giá rẻ</h6>
-                    <ul class="list__about--company">
-                      <li>Tên công ty: Công ty TNHH SVMBGR</li>
-                      <li>Email: info@sanvemaybaygiare.net</li>
-                      <li>Call Center: 1900 636 063</li>
-                      <li>75 Nguyễn Xí, Q. Bình Thạnh, TP.HCM</li>
-                      <li>MST: 0317103646</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div class="row g-0">
-                    <div class="contact-menu__item col-md-4">
-                      <h6>VÉ MÁY BAY NỘI ĐỊA</h6>
-                      <ul class="">
-                        <li>
-                          <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                          <p>Vé máy bay đi Hà Nội</p>
-                        </li>
-                        <li>
-                          <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                          <p>Vé máy bay đi Sài Gòn</p>
-                        </li>
-                        <li>
-                          <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                          <p>Vé máy bay đi Đà Nẵng</p>
-                        </li>
-                        <li>
-                          <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                          <p>Vé máy bay đi Nha Trang</p>
-                        </li>
-                        <li>
-                          <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                          <p>Vé máy bay đi Phú Yên</p>
-                        </li>
-                      </ul>
+               <div class="container">
+                    <div class="row g-0 ps-5">
+                         <div class="col-md-4">
+                              <div class="footer__about--company">
+                                   <h6 class="">Săn vé máy bay giá rẻ</h6>
+                                   <ul class="list__about--company">
+                                        <li>Tên công ty: Công ty TNHH SVMBGR</li>
+                                        <li>Email: info@sanvemaybaygiare.net</li>
+                                        <li>Call Center: 1900 636 063</li>
+                                        <li>75 Nguyễn Xí, Q. Bình Thạnh, TP.HCM</li>
+                                        <li>MST: 0317103646</li>
+                                   </ul>
+                              </div>
+                         </div>
+                         <div class="col-md-8">
+                              <div class="row g-0">
+                                   <div class="contact-menu__item col-md-4">
+                                        <h6>VÉ MÁY BAY NỘI ĐỊA</h6>
+                                        <ul class="">
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay đi Hà Nội</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay đi Sài Gòn</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay đi Đà Nẵng</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay đi Nha Trang</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay đi Phú Yên</p>
+                                             </li>
+                                        </ul>
+                                   </div>
+                                   <div class="contact-menu__item col-md-4">
+                                        <h6>VÉ MÁY BAY TẾT</h6>
+                                        <ul>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay Tết đi Hà Nội</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay Tết đi Hải Phòng</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay Tết đi Vinh</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay Tết đi Cần Thơ</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay Tết đi Thanh Hóa</p>
+                                             </li>
+                                        </ul>
+                                   </div>
+                                   <div class="contact-menu__item col-md-4">
+                                        <h6>VÉ RẺ THEO THÁNG</h6>
+                                        <ul>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Săn vé máy bay giá rẻ tháng 8</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Săn vé máy bay giá rẻ tháng 9</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Săn vé máy bay giá rẻ tháng 10</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Săn vé máy bay giá rẻ tháng 11</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Săn vé máy bay giá rẻ tháng 12</p>
+                                             </li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
                     </div>
-                    <div class="contact-menu__item col-md-4">
-                      <h6>VÉ MÁY BAY TẾT</h6>
-                      <ul>
-                        <li>
-                          <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                          <p>Vé máy bay Tết đi Hà Nội</p>
-                        </li>
-                        <li>
-                          <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                          <p>Vé máy bay Tết đi Hải Phòng</p>
-                        </li>
-                        <li>
-                          <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                          <p>Vé máy bay Tết đi Vinh</p>
-                        </li>
-                        <li>
-                          <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                          <p>Vé máy bay Tết đi Cần Thơ</p>
-                        </li>
-                        <li>
-                          <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                          <p>Vé máy bay Tết đi Thanh Hóa</p>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="contact-menu__item col-md-4">
-                      <h6>VÉ RẺ THEO THÁNG</h6>
-                      <ul>
-                        <li>
-                          <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                          <p>Săn vé máy bay giá rẻ tháng 8</p>
-                        </li>
-                        <li>
-                          <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                          <p>Săn vé máy bay giá rẻ tháng 9</p>
-                        </li>
-                        <li>
-                          <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                          <p>Săn vé máy bay giá rẻ tháng 10</p>
-                        </li>
-                        <li>
-                          <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                          <p>Săn vé máy bay giá rẻ tháng 11</p>
-                        </li>
-                        <li>
-                          <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                          <p>Săn vé máy bay giá rẻ tháng 12</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="footer__bg">
-              <div class="footer__bg--one"></div>
-              <div class="footer__bg--two"></div>
-            </div>
+               </div>
+               <div class="footer__bg">
+                    <div class="footer__bg--one"></div>
+                    <div class="footer__bg--two"></div>
+               </div>
           </div>
           <div class="footer__bottom">
-            <div class="container">
-              <div class="row align-items-center">
-                <div class="footer-copyright">
-                  <h6>Copyright © 2022 Công ty TNHH SVMBGR</h6>
-                  <div class="footer-helps">
-                    <a href="#" class="helps__terms">Điều khoản sử dụng</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
-                    <a href="#" class="helps__security">Chính sách bảo mật</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+               <div class="container">
+                    <div class="row align-items-center">
+                         <div class="footer-copyright">
+                              <h6>Copyright © 2022 Công ty TNHH SVMBGR</h6>
+                              <div class="footer-helps">
+                                   <a href="#" class="helps__terms">Điều khoản sử dụng</a>
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000"
+                                        viewBox="0 0 256 256">
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#000000"
+                                             stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                                   </svg>
+                                   <a href="#" class="helps__security">Chính sách bảo mật</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
           </div>
-        </footer>
+     </footer>
      <!--End Footer-->
      </div>
 
@@ -717,7 +891,7 @@
      <script src="./assets/libs/datepicker/picker.date.js"></script>
 
      <!-- main js -->
-
+     <script src="./assets/js/pax_infor.js"></script>
 </body>
 
 </html>
