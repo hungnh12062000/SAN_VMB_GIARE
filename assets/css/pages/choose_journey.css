@@ -121,34 +121,12 @@
   overflow: hidden;
   margin-left: 8px;
   flex-direction: column;
-  font-size: 14px;
-  font-family: "Mt", sans-serif;
-  line-height: 20px;
-  color: var(--title-color);
-}
-
-.brand-fly {
-  font-weight: 600;
 }
 
 .time__depart,
 .time__destination {
-  color: var(--title-color);
   display: flex;
   font-size: 18px;
-  line-height: 22px;
-  font-weight: 600;
-  font-family: "Mt", sans-serif;
-}
-
-.location__depart,
-.location__destination {
-  font-size: 14px;
-  font-family: "Mt", sans-serif;
-
-  font-weight: 400;
-  line-height: 22px;
-  color: var(--text-color);
 }
 
 .flight-details {
@@ -163,9 +141,6 @@
 }
 
 .flight-details .details {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
   background: var(--bgsection-color);
   border-radius: 20px;
   padding: 5px 10px;
@@ -207,20 +182,6 @@
   flex-direction: column;
 }
 
-.time__duration {
-  font-size: 14px;
-
-  font-weight: 600;
-  line-height: 16px;
-}
-
-.transit {
-  font-size: 14px;
-
-  font-weight: 400;
-  line-height: 22px;
-}
-
 /* ============== Xem chi tiết từng chuyến bay ========== */
 .flight-infor-details {
   margin-top: 10px;
@@ -242,7 +203,7 @@
 }
 
 
-.infor-details{
+.infor-details__wrap{
   width: 50%;
 }
 
@@ -262,20 +223,7 @@
 
 .infor-other li span{
   margin-left: 10px;
-  font-size: 14px;
-  color: var(--text-color);
-  font-weight: 400;
-  line-height: 20px;
   text-align: justify;
-}
-
-.box__title{
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 600;
-  color: var(--title-color);
-  margin-bottom: 12px;
-  line-height: 20px;
 }
 
 .infor-journey-wrap {
@@ -305,26 +253,8 @@
   text-align: end;
 }
 
-.time-depart,
-.time-arrive {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 16px;
-}
-.journey-date-depart,
-.journey-date-arrive {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  color: var(--text-color);
-}
-
 .datetime-duration {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
   text-align: right;
-  color: var(--text-color);
 }
 
 .journey-timeline {
@@ -343,23 +273,8 @@
      margin-left: 8px;
 }
 
-.citypair-depart h6,
-.citypair-arrive h6{
-     font-size: 14px;
-     font-weight: 600;
-     line-height: 16px;
-}
 .citypair-arrive h6{
      margin-top: 16px;
-}
-
-.citypair-depart span,
-.citypair-arrive span{
-     font-size: 14px;
-     font-weight: 400;
-     line-height: 22px;
-  color: var(--text-color);
-
 }
 
 .journey-infor-plane{
@@ -367,33 +282,6 @@
      align-items: center;
 }
 
-.journey-infor-plane .infor-plane__name h6{
-     font-size: 14px;
-    font-weight: 600;
-    line-height: 16px;
-    color: var(--title-color);
-}
-.journey-infor-plane .infor-plane__name span{
-     font-size: 14px;
-     font-weight: 400;
-     line-height: 22px;
-     color: var(--text-color);
-}
-
-.infor-price__header{
-     
-     font-size: 14px;
-     font-weight: 600;
-     line-height: 16px;
-}
-
-.infor-price__body{
-     font-size: 14px;
-     font-weight: 400;
-     line-height: 22px;
-     color: var(--text-color);
-
-}
 
 .infor-price__body tr:last-child{
   border-top: 1px solid var(--border-color);
@@ -407,11 +295,11 @@
      text-align: right;
 }
 
-.infor-price td.infor-price__title{
-     text-align: left;
+.infor-price tr td:first-child{
+  text-align: left;
 }
 
-.infor-price__title strong{
+.infor-price strong{
      color: var(--black-color);
 }
 
@@ -447,10 +335,7 @@ td.total_amount{
 
 .location__transit h6{
      margin-left: 8px;
-     font-size: 14px;
      color: var(--saphire-color);
-     font-weight: 600;
-     line-height: 20px;
 }
 
 .location__transit{

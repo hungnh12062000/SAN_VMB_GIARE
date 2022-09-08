@@ -23,7 +23,7 @@
   flex-wrap: wrap;
   margin-top: 10px;
 }
-
+z
 .infor__adult,
 .infor__child,
 .infor__infant {
@@ -218,13 +218,6 @@ ul.section__decs li p {
 
 }
 
-.box-infor h6 {
-  font-size: 14px;
-  line-height: 16px;
-  color: var(--title-color);
-
-  font-weight: 600;
-}
 
 .infor__order h2 {
   font-size: 16px;

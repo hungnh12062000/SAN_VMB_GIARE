@@ -73,7 +73,7 @@
             <a href="./category.html" class="nav__item--link">TIN TỨC</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__item--link">LIÊN HỆ</a>
+            <a href="./contact.html" class="nav__item--link">LIÊN HỆ</a>
           </li>
         </ul>
         <div class="header-phone">
@@ -82,14 +82,16 @@
         </div>
       </div>
     </section>
+    <!-- END HEADER -->
       
+    <!-- SEARCH -->
     <div class="search__section">
         <h1 class="search__title">Search your next holiday</h1>
-        <div class="section__search-wrap" id="booking">
+        <div class="section__search--wrap" id="booking">
           <div class="container">
             <div class="row">
               <div class="booking-form">
-                <form class="search-flight-form" method="get" action="./select.html" id="frmFlightSearch" name="frmFlightSearch" class="location-search">
+                <form class="search-flight-form" method="" action="./select.html" id="frmFlightSearch" name="frmFlightSearch" class="location-search">
                   <div class="row">
                     <!-- Location -->
                     <div class="col-md-4">
@@ -101,7 +103,7 @@
                               placeholder="Hồ Chí Minh (SGN)" />
                           </div>
                           <div id="listDep" class="list-dep" style="display:none;">
-                            <div class="naccs-dep">
+                            <div class="list__dep--wrap">
                               <div class="grid">
 
                                 <div class="gc gc--1-of-4">
@@ -615,7 +617,7 @@
                             <input class="form-control input-return" id="desinput" name="desinput" type="text" value="(HAN) Hà Nội" placeholder="Hà Nội (HAN)" autocomplete="off"/> 
                           </div>
                           <div id="listDes" class="list-ret" style="display:none;">
-                            <div class="naccs-ret">
+                            <div class="list__ret--wrap">
                               <div class="grid">
 
                                 <div class="gc gc--1-of-4">
@@ -1282,56 +1284,58 @@
           </div>
         </div>
     </div>
+    <!-- END SEARCH -->
+
 
     <!-- Begin slider banner -->
     <div class="image-slider container">
       <div class="image-item">
-        <div class="image">
+        <div class="image__img">
           <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/hochiminh.png" alt="" />
         </div>
-        <h3 class="image-title">Sài Gòn</h3>
+        <h3 class="box-title image-title">Sài Gòn</h3>
       </div>
       <div class="image-item">
-        <div class="image">
+        <div class="image__img">
           <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/hanoi.png" alt="" />
         </div>
-        <h3 class="image-title">Hà Nội</h3>
+        <h3 class="box-title image-title">Hà Nội</h3>
       </div>
       <div class="image-item">
-        <div class="image">
+        <div class="image__img">
           <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/nha-trang.jpg" alt="" />
         </div>
-        <h3 class="image-title">Nha Trang</h3>
+        <h3 class="box-title image-title">Nha Trang</h3>
       </div>
       <div class="image-item">
-        <div class="image">
+        <div class="image__img">
           <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/danang.png" alt="" />
         </div>
-        <h3 class="image-title">Đà Nẵng</h3>
+        <h3 class="box-title image-title">Đà Nẵng</h3>
       </div>
       <div class="image-item">
-        <div class="image">
+        <div class="image__img">
           <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/tuy-hoa.jpg" alt="" />
         </div>
-        <h3 class="image-title">Phú Yên</h3>
+        <h3 class="box-title image-title">Phú Yên</h3>
       </div>
       <div class="image-item">
-        <div class="image">
+        <div class="image__img">
           <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/phan-thiet.png" alt="" />
         </div>
-        <h3 class="image-title">Phan Thiết</h3>
+        <h3 class="box-title image-title">Phan Thiết</h3>
       </div>
       <div class="image-item">
-        <div class="image">
+        <div class="image__img">
           <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/phu-quoc.png" alt="" />
         </div>
-        <h3 class="image-title">Phú Quốc</h3>
+        <h3 class="box-title image-title">Phú Quốc</h3>
       </div>
       <div class="image-item">
-        <div class="image">
+        <div class="image__img">
           <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/can-tho.jpg" alt="" />
         </div>
-        <h3 class="image-title">Cần Thơ</h3>
+        <h3 class="box-title image-title">Cần Thơ</h3>
       </div>
     </div>
     <!-- End slider banner -->
@@ -1782,259 +1786,234 @@
     </div> -->
     <!--End  proposal-->
 
-    <!-- begin Grid mytour -->
-    <div class="grid-destination-wrap">
-      <h2 class="destinations-title section-title">
-        OUR DESTINATIONS
+    <!-- begin Grid -->
+    <div class="destination__inter--wrap">
+      <h2 class="section-title">
+        Du lịch quốc tế
       </h2>
-      <div class="grid__destination container">
-        <div class="grid__destination--item">
-          <div class="grid__destination--title">Amsterdam</div>
-          <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/destination-10.jpg" alt=""
-            class="grid__destination-img" />
-          <div class="grid__destination--hover">
-            <h3 class="grid__hover--heading">Packages</h3>
-            <p class="grid__hover--detail">Berlin</p>
-            <p class="grid__hover--detail">Amsterdam</p>
-            <p class="grid__hover--detail">Tuscany</p>
+      <div class="destination__inter container">
+        <div class="destination__inter--item">
+          <div class="box-title">Vũng Tàu</div>
+          <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/vung-tau.png" alt=""/>
+          <div class="destination__inter--hover">
+            <h3 class="destination__hover--heading">Vũng Tàu</h3>
           </div>
         </div>
-        <div class="grid__destination--item">
-          <div class="grid__destination--title">Amsterdam</div>
-          <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/destination-11.jpg" alt=""
-            class="grid__destination-img" />
-          <div class="grid__destination--hover">
-            <h3 class="grid__hover--heading">Packages</h3>
-            <p class="grid__hover--detail">Berlin</p>
-            <p class="grid__hover--detail">Amsterdam</p>
-            <p class="grid__hover--detail">Tuscany</p>
+        <div class="destination__inter--item">
+          <div class="box-title">Phú Quốc</div>
+          <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/phu-quoc.png" alt=""/>
+          <div class="destination__inter--hover">
+            <h3 class="destination__hover--heading">Phú Quốc</h3>
           </div>
         </div>
-        <div class="grid__destination--item">
-          <div class="grid__destination--title">Amsterdam</div>
-          <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/destination-5.jpg" alt=""
-            class="grid__destination-img" />
-          <div class="grid__destination--hover">
-            <h3 class="grid__hover--heading">Packages</h3>
-            <p class="grid__hover--detail">Berlin</p>
-            <p class="grid__hover--detail">Amsterdam</p>
-            <p class="grid__hover--detail">Tuscany</p>
+        <div class="destination__inter--item">
+          <div class="box-title">Đà Lạt</div>
+          <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/da-lat.png" alt=""/>
+          <div class="destination__inter--hover">
+            <h3 class="destination__hover--heading">Đà Lạt</h3>
           </div>
         </div>
-        <div class="grid__destination--item">
-          <div class="grid__destination--title">Amsterdam</div>
-          <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/destination-8.jpg" alt=""
-            class="grid__destination-img" />
-          <div class="grid__destination--hover">
-            <h3 class="grid__hover--heading">Packages</h3>
-            <p class="grid__hover--detail">Berlin</p>
-            <p class="grid__hover--detail">Amsterdam</p>
-            <p class="grid__hover--detail">Tuscany</p>
+        <div class="destination__inter--item">
+          <div class="box-title">Đà Nẵng</div>
+          <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/danang.png" alt=""/>
+          <div class="destination__inter--hover">
+            <h3 class="destination__hover--heading">Đà Nẵng</h3>
           </div>
         </div>
-        <div class="grid__destination--item">
-          <div class="grid__destination--title">Amsterdam</div>
-          <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/destination-9.jpg" alt=""
-            class="grid__destination-img" />
-          <div class="grid__destination--hover">
-            <h3 class="grid__hover--heading">Packages</h3>
-            <p class="grid__hover--detail">Berlin</p>
-            <p class="grid__hover--detail">Amsterdam</p>
-            <p class="grid__hover--detail">Tuscany</p>
+        <div class="destination__inter--item">
+          <div class="box-title">Tuy Hòa</div>
+          <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/tuy-hoa.jpg" alt=""/>
+          <div class="destination__inter--hover">
+            <h3 class="destination__hover--heading">Tuy Hòa</h3>
           </div>
         </div>
-        <div class="grid__destination--item">
-          <div class="grid__destination--title">Amsterdam</div>
-          <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/destination-1.jpg" alt=""
-            class="grid__destination-img" />
-          <div class="grid__destination--hover">
-            <h3 class="grid__hover--heading">Packages</h3>
-            <p class="grid__hover--detail">Berlin</p>
-            <p class="grid__hover--detail">Amsterdam</p>
-            <p class="grid__hover--detail">Tuscany</p>
+        <div class="destination__inter--item">
+          <div class="box-title">Cần Thơ</div>
+          <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/can-tho.jpg" alt=""/>
+          <div class="destination__inter--hover">
+            <h3 class="destination__hover--heading">Cần Thơ</h3>
           </div>
         </div>
       </div>
     </div>
     <!-- end Grid mytour -->
 
-    <!-- Begin destinations favorite -->
-    <div class="destinations-favorite">
+    <!-- Begin destinations domestic -->
+    <div class="destinations-domestic-wrap">
       <div class="container">
-        <h2 class="favorite-title section-title">
-          OUR DESTINATIONS RECOMMEND
+        <h2 class="section-title">
+          Du lịch trong nước
         </h2>
-        <div class="list-destinations">
-          <div class="destinations__item">
-            <a class="destinations__item--link" href="">
-              <div class="destinations__image">
+        <div class="destinations__domestic">
+          <div class="destinations__domestic--item">
+            <a href="./single.html">
+              <div class="destination__domestic--image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
                   <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/phu-quoc.png" loading="lazy" alt="" />
                 </div>
               </div>
-              <p class="destinations-location">Phú Quốc</p>
+              <p class="box-title destinations__domestic--location">Phú Quốc</p>
             </a>
           </div>
-          <div class="destinations__item">
-            <a class="destinations__item--link" href="">
-              <div class="destinations__image">
+          <div class="destinations__domestic--item">
+            <a href="./single.html">
+              <div class="destination__domestic--image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
                   <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/nha-trang.jpg" loading="lazy"
                     alt="" />
                 </div>
               </div>
-              <p class="destinations-location">Nha Trang</p>
+              <p class="box-title destinations__domestic--location">Nha Trang</p>
             </a>
           </div>
-          <div class="destinations__item">
-            <a class="destinations__item--link" href="">
-              <div class="destinations__image">
+          <div class="destinations__domestic--item">
+            <a href="./single.html">
+              <div class="destination__domestic--image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
                   <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/vung-tau.png" loading="lazy" alt="" />
                 </div>
               </div>
-              <p class="destinations-location">Vũng Tàu</p>
+              <p class="box-title destinations__domestic--location">Vũng Tàu</p>
             </a>
           </div>
-          <div class="destinations__item">
-            <a class="destinations__item--link" href="">
-              <div class="destinations__image">
+          <div class="destinations__domestic--item">
+            <a href="./single.html">
+              <div class="destination__domestic--image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
                   <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/da-lat.png" loading="lazy" alt="" />
                 </div>
               </div>
-              <p class="destinations-location">Đà Lạt</p>
+              <p class="box-title destinations__domestic--location">Đà Lạt</p>
             </a>
           </div>
-          <div class="destinations__item">
-            <a class="destinations__item--link" href="">
-              <div class="destinations__image">
+          <div class="destinations__domestic--item">
+            <a href="./single.html">
+              <div class="destination__domestic--image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
                   <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/hochiminh.png" loading="lazy"
                     alt="" />
                 </div>
               </div>
-              <p class="destinations-location">Hồ Chí Minh</p>
+              <p class="box-title destinations__domestic--location">Hồ Chí Minh</p>
             </a>
           </div>
-          <div class="destinations__item">
-            <a class="destinations__item--link" href="">
-              <div class="destinations__image">
+          <div class="destinations__domestic--item">
+            <a href="./single.html">
+              <div class="destination__domestic--image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
                   <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/sa-pa.png" loading="lazy" alt="" />
                 </div>
               </div>
-              <p class="destinations-location">Sa Pa</p>
+              <p class="box-title destinations__domestic--location">Sa Pa</p>
             </a>
           </div>
-          <div class="destinations__item">
-            <a class="destinations__item--link" href="">
-              <div class="destinations__image">
+          <div class="destinations__domestic--item">
+            <a href="./single.html">
+              <div class="destination__domestic--image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
                   <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/tuy-hoa.jpg" loading="lazy" alt="" />
                 </div>
               </div>
-              <p class="destinations-location">Phú Yên</p>
+              <p class="box-title destinations__domestic--location">Phú Yên</p>
             </a>
           </div>
-          <div class="destinations__item">
-            <a class="destinations__item--link" href="">
-              <div class="destinations__image">
+          <div class="destinations__domestic--item">
+            <a href="./single.html">
+              <div class="destination__domestic--image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
                   <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/ha-long.jpg" loading="lazy" alt="" />
                 </div>
               </div>
-              <p class="destinations-location">Hạ Long</p>
+              <p class="box-title destinations__domestic--location">Hạ Long</p>
             </a>
           </div>
-          <div class="destinations__item">
-            <a class="destinations__item--link" href="">
-              <div class="destinations__image">
+          <div class="destinations__domestic--item">
+            <a href="./single.html">
+              <div class="destination__domestic--image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
                   <img loading="lazy" src="./assets/img/danang.png" loading="lazy" alt="" />
                 </div>
               </div>
-              <p class="destinations-location">Đà Nẵng</p>
+              <p class="box-title destinations__domestic--location">Đà Nẵng</p>
             </a>
           </div>
-          <div class="destinations__item">
-            <a class="destinations__item--link" href="">
-              <div class="destinations__image">
+          <div class="destinations__domestic--item">
+            <a href="./single.html">
+              <div class="destination__domestic--image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
                   <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/hoi-an.png" loading="lazy" alt="" />
                 </div>
               </div>
-              <p class="destinations-location">Hội An</p>
+              <p class="box-title destinations__domestic--location">Hội An</p>
             </a>
           </div>
-          <div class="destinations__item">
-            <a class="destinations__item--link" href="">
-              <div class="destinations__image">
+          <div class="destinations__domestic--item">
+            <a href="./single.html">
+              <div class="destination__domestic--image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
                   <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/hanoi.png" loading="lazy" alt="" />
                 </div>
               </div>
-              <p class="destinations-location">Hà Nội</p>
+              <p class="box-title destinations__domestic--location">Hà Nội</p>
             </a>
           </div>
-          <div class="destinations__item">
-            <a class="destinations__item--link" href="">
-              <div class="destinations__image">
+          <div class="destinations__domestic--item">
+            <a href="./single.html">
+              <div class="destination__domestic--image">
                 <div class="image-boder-50"></div>
                 <div class="image-wrap">
                   <img src="./assets/img/lazy-loading.png" lazy-src="./assets/img/phan-thiet.png" loading="lazy"
                     alt="" />
                 </div>
               </div>
-              <p class="destinations-location">Phan Thiết</p>
+              <p class="box-title destinations__domestic--location">Phan Thiết</p>
             </a>
           </div>
         </div>
       </div>
     </div>
-    <!-- End destination favorites -->
+    <!-- End destination domestic -->
 
     <!--  begin Testimonials -->
     <div class="testimonials-choice-us">
       <div class="container mx-auto mt-5 mb-5 col-12">
-        <h2 class="testimonials-title section-title">
+        <h2 class="section-title">
           VÌ SAO CHỌN SANVEMAYBAYGIARE.NET
         </h2>
         <div class="row testimonial-card">
-          <div class="card-item col-md-3 col-12 ml-2">
-            <div class="card-content">
-              <div class="card-body">
+          <div class="card-item col-md-3">
+            <div class="testimonial__card--content">
+              <div class="testimonial__card--body">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#14b9d5" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="96" y1="56" x2="96" y2="200" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><path d="M24,167.2a7.9,7.9,0,0,1,6.4-7.8,32.1,32.1,0,0,0,0-62.8A7.9,7.9,0,0,1,24,88.8V64a8,8,0,0,1,8-8H224a8,8,0,0,1,8,8V88.8a7.9,7.9,0,0,1-6.4,7.8,32.1,32.1,0,0,0,0,62.8,7.9,7.9,0,0,1,6.4,7.8V192a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8Z" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
-                <div class="shadow"></div>
-                <div class="card-title">Đặt vé dễ dàng</div>
-                <div class="card-subtitle">
+                <div class="testimonial__card--title">Đặt vé dễ dàng</div>
+                <div class="testimonial__card--subtitle">
                   <p>
-                    <small class="text-muted">Dễ dàng và nhanh chóng <br>
+                    <small>Dễ dàng và nhanh chóng <br>
                       Đặt vé chỉ với 3 bước</small>
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card-item col-md-3 col-12 ml-2">
-            <div class="card-content">
-              <div class="card-body">
+          <div class="card-item col-md-3">
+            <div class="testimonial__card--content">
+              <div class="testimonial__card--body">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#14b9d5" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><rect x="16" y="64" width="224" height="128" rx="8" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect><circle cx="128" cy="128" r="32" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><line x1="176" y1="64" x2="240" y2="120" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="176" y1="192" x2="240" y2="136" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="80" y1="64" x2="16" y2="120" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="80" y1="192" x2="16" y2="136" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
-                <div class="card-title">Giá cả</div>
-                <div class="card-subtitle">
+                <div class="testimonial__card--title">Giá cả</div>
+                <div class="testimonial__card--subtitle">
                   <p>
-                    <small class="text-muted">
+                    <small>
                       Luôn có mức giá tốt nhất <br> Bảo đảm giá cả hợp lí
                     </small>
                   </p>
@@ -2042,28 +2021,28 @@
               </div>
             </div>
           </div>
-          <div class="card-item col-md-3 col-12 ml-2">
-            <div class="card-content">
-              <div class="card-body">
+          <div class="card-item col-md-3">
+            <div class="testimonial__card--content">
+              <div class="testimonial__card--body">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#14b9d5" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><rect x="24" y="56" width="208" height="144" rx="8" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect><line x1="168" y1="168" x2="200" y2="168" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="120" y1="168" x2="136" y2="168" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="24" y1="96.9" x2="232" y2="96.9" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
-                <div class="card-title">Thanh toán</div>
-                <div class="card-subtitle">
+                <div class="testimonial__card--title">Thanh toán</div>
+                <div class="testimonial__card--subtitle">
                   <p>
-                    <small class="text-muted">Cam kết an toàn và linh hoạt <br>
+                    <small>Cam kết an toàn và linh hoạt <br>
                       Liên kết với các tổ chức tài chính</small>
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card-item col-md-3 col-12 ml-2">
-            <div class="card-content">
-              <div class="card-body">
+          <div class="card-item col-md-3">
+            <div class="testimonial__card--content">
+              <div class="testimonial__card--body">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#14b9d5" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><circle cx="128" cy="180" r="12"></circle><path d="M128,144v-8a28,28,0,1,0-28-28" fill="none" stroke="#14b9d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
-                <div class="card-title">Hỗ trợ đặt vé</div>
-                <div class="card-subtitle">
+                <div class="testimonial__card--title">Hỗ trợ đặt vé</div>
+                <div class="testimonial__card--subtitle">
                   <p>
-                    <small class="text-muted">Luôn hỗ trợ khách hàng 24/24 tất cả các ngày trong tuần.</small>
+                    <small>Luôn hỗ trợ khách hàng 24/24 tất cả các ngày trong tuần.</small>
                   </p>
                 </div>
               </div>
@@ -2076,20 +2055,18 @@
 
     <!--Begin Footer-->
     <footer class="footer">
-      <div class="new_footer_top">
+      <div class="footer__top">
         <div class="container">
           <div class="row g-0 ps-5">
             <div class="col-md-4">
-              <div class="about_company">
+              <div class="footer__about--company">
                 <h6 class="">Săn vé máy bay giá rẻ</h6>
-                <ul class="list_about_company">
-                  <li>Email : info@travelpass.vn</li>
-                  <li>Call Center: 1900 63 6060</li>
-                  <li>48 Nguyễn Cửu Vân, Q.Bình Thạnh</li>
-                  <li>MST : 0317103646</li>
-                  <a href="./payment.html">
-                    <li>Thanh toans</li>
-                  </a>
+                <ul class="list__about--company">
+                  <li>Tên công ty: Công ty TNHH SVMBGR</li>
+                  <li>Email: info@sanvemaybaygiare.net</li>
+                  <li>Call Center: 1900 636 063</li>
+                  <li>75 Nguyễn Xí, Q. Bình Thạnh, TP.HCM</li>
+                  <li>MST: 0317103646</li>
                 </ul>
               </div>
             </div>
@@ -2174,19 +2151,19 @@
             </div>
           </div>
         </div>
-        <div class="footer_bg">
-          <div class="footer_bg_one"></div>
-          <div class="footer_bg_two"></div>
+        <div class="footer__bg">
+          <div class="footer__bg--one"></div>
+          <div class="footer__bg--two"></div>
         </div>
       </div>
-      <div class="footer_bottom">
+      <div class="footer__bottom">
         <div class="container">
           <div class="row align-items-center">
             <div class="footer-copyright">
               <h6>Copyright © 2022 Công ty TNHH SVMBGR</h6>
               <div class="footer-helps">
                 <a href="#" class="helps__terms">Điều khoản sử dụng</a>
-                -
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
                 <a href="#" class="helps__security">Chính sách bảo mật</a>
               </div>
             </div>

@@ -57,12 +57,26 @@ li.post__social--item img {
   padding: 0 10%;
 }
 
-.post__content p,
-.post__signal p {
+.post__content p {
   font-size: 14px;
   color: var(--text-color);
+  line-height: 30px;
+  text-align: justify;
+}
+
+.post__content p:first-child::first-letter {
+  font-size: 50px;
+  color: var(--saphire-color);
+  float: left;
+
+}
+
+.post__signal p{
+  font-size: 14px;
+  color: var(--saphire-color);
   line-height: 22px;
   text-align: justify;
+  font-weight: 600;
 }
 
 .post__signal {
@@ -206,18 +220,6 @@ li.post__social--item img {
   color: var(--white-color);
 }
 
-.proposal-item__img-icon {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  text-shadow: 0 0 2px rgb(0 0 0 / 25%);
-}
-
-.proposal-item__img-icon img {
-  display: block;
-  width: 40px;
-}
-
 .single__end--wrap{
   display: flex;
   justify-content: space-between;
@@ -254,6 +256,7 @@ li.post__social--item img {
   padding: 10px;
   background: var(--text-color);
   color: var(--white-color);
+  font-size: 12px;
 }
 
 .single__post-relation{

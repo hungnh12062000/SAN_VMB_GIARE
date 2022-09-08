@@ -32,7 +32,7 @@
   width: 15px;
   background-color: #000;
   transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
-  left: 0;
+  left: 30%;
   bottom: -10px;
 }
 
@@ -44,7 +44,7 @@
   width: 90px;
   background-color: #000;
   transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
-  left: 30px;
+  left: 35%;
   bottom: -10px;
 }
 
@@ -86,7 +86,7 @@ textarea {
   outline: 0;
 }
 
-.form__row input::placeholder{
+.form__row input::placeholder, textarea::placeholder{
      font-size: 14px;
 }
 
@@ -102,6 +102,7 @@ textarea {
   text-transform: uppercase;
   padding: 15px 40px;
   border: none;
+  font-size: 14px;
 }
 
 .section__map {

@@ -52,8 +52,8 @@ $(document).ready(function () {
           slidesToScroll: 1,
           // autoplay: true,
           autoplaySpeed: 2000,
-          prevArrow: `<button type='button' class='slick-prev slick-arrow'><ion-icon name="arrow-back-outline"></ion-icon></button>`,
-          nextArrow: `<button type='button' class='slick-next slick-arrow'><ion-icon name="arrow-forward-outline"></ion-icon></button>`,
+          prevArrow: `<button type='button' class='slick-prev slick-arrow'><?xml version="1.0" encoding="UTF-8"?><svg width="20px" height="20px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M18.5 12H6m0 0l6-6m-6 6l6 6" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>`,
+          nextArrow: `<button type='button' class='slick-next slick-arrow'><?xml version="1.0" encoding="UTF-8"?><svg width="20px" height="20px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M6 12h12.5m0 0l-6-6m6 6l-6 6" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>`,
           responsive: [
                {
                     breakpoint: 1025,
