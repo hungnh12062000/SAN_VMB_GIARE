@@ -287,11 +287,9 @@
   border-top: 1px solid var(--border-color);
 }
 
-.infor-price th,td{
+.infor-price th, 
+.infor-price td{
      padding: 7px;
-}
-
-.infor-price td,th{
      text-align: right;
 }
 

@@ -95,7 +95,7 @@
                     </div>
                     <div class="row g-0">
                          <div class="col-md-8">
-                              <form action="">
+                              <form action="" id="frmBookingFlight" >
                                    <!-- THÔNG TIN HÀNH KHÁCH -->
                                    <section class="section-box-passengers section__infor-passengers">
                                         <div class="section__title">
@@ -123,11 +123,11 @@
                                                             </div>
                                                             <div class="name__passenger--title">Người lớn 1</div>
                                                        </div>
-     
+
                                                        <div class="adult-input">
                                                             <div class="adult-input__gender">
                                                                  <label class="title-input" for="">Giới tính <span
-                                                                      class="asterisk">*</span></label>
+                                                                           class="asterisk">*</span></label>
                                                                  <select class="box-select" name="" id="">
                                                                       <option value="">Nam</option>
                                                                       <option value="">Nữ</option>
@@ -140,34 +140,43 @@
                                                                       placeholder="Ví dụ: NGUYEN HAI HUNG">
                                                             </div>
                                                        </div>
-     
+
                                                        <div class="adult-baggage">
                                                             <div class="baggage__dep-wrap">
                                                                  <h6 class="luggage__title">Hành lý lượt đi</h6>
                                                                  <!-- Xách tay -->
                                                                  <div class="luggage-wrap">
                                                                       <h6 class="title-input">Xách tay</h6>
-                                                                      <span class="content__luggage">Mỗi người tối đa 7 Kg.</span>
+                                                                      <span class="content__luggage">Mỗi người tối đa 7
+                                                                           Kg.</span>
                                                                  </div>
-          
+
                                                                  <!-- Ký gửi -->
                                                                  <div class="signed-luggage-wrap">
                                                                       <h6 class="title-input">Ký gửi</h6>
                                                                       <!-- <span class="content__luggage">Mỗi người tối đa 7 Kg.</span> -->
                                                                       <div class="signed-luggage">
-                                                                           <select name="dep_addbaggage[]" class="dep_addbaggage">
-                                                                                <option value="0">Không mang hành lý ký gửi</option>
-                                                                                <option value="180000">15kg hành lý quá khổ (180.000đ/Khách)
+                                                                           <select name="dep_addbaggage[]"
+                                                                                class="dep_addbaggage">
+                                                                                <option value="0">Không mang hành lý ký
+                                                                                     gửi</option>
+                                                                                <option value="180000">15kg hành lý quá
+                                                                                     khổ (180.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="210000">20kg hành lý (210.000đ/Khách)
+                                                                                <option value="210000">20kg hành lý
+                                                                                     (210.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="270000">25kg hành lý (270.000đ/Khách)
+                                                                                <option value="270000">25kg hành lý
+                                                                                     (270.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="380000">30kg hành lý (380.000đ/Khách)
+                                                                                <option value="380000">30kg hành lý
+                                                                                     (380.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="450000">35kg hành lý (450.000đ/Khách)
+                                                                                <option value="450000">35kg hành lý
+                                                                                     (450.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="500000">40kg hành lý (500.000đ/Khách)
+                                                                                <option value="500000">40kg hành lý
+                                                                                     (500.000đ/Khách)
                                                                                 </option>
                                                                            </select>
                                                                            <div class="select-styled"></div>
@@ -179,27 +188,36 @@
                                                                  <!-- Xách tay -->
                                                                  <div class="luggage-wrap">
                                                                       <h6 class="title-input">Xách tay</h6>
-                                                                      <span class="content__luggage">Mỗi người tối đa 7 Kg.</span>
+                                                                      <span class="content__luggage">Mỗi người tối đa 7
+                                                                           Kg.</span>
                                                                  </div>
-          
+
                                                                  <!-- Ký gửi -->
                                                                  <div class="signed-luggage-wrap">
                                                                       <h6 class="title-input">Ký gửi</h6>
                                                                       <!-- <span class="content__luggage">Mỗi người tối đa 7 Kg.</span> -->
                                                                       <div class="signed-luggage">
-                                                                           <select name="dep_addbaggage[]" class="dep_addbaggage">
-                                                                                <option value="0">Không mang hành lý ký gửi</option>
-                                                                                <option value="180000">15kg hành lý quá khổ (180.000đ/Khách)
+                                                                           <select name="dep_addbaggage[]"
+                                                                                class="dep_addbaggage">
+                                                                                <option value="0">Không mang hành lý ký
+                                                                                     gửi</option>
+                                                                                <option value="180000">15kg hành lý quá
+                                                                                     khổ (180.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="210000">20kg hành lý (210.000đ/Khách)
+                                                                                <option value="210000">20kg hành lý
+                                                                                     (210.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="270000">25kg hành lý (270.000đ/Khách)
+                                                                                <option value="270000">25kg hành lý
+                                                                                     (270.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="380000">30kg hành lý (380.000đ/Khách)
+                                                                                <option value="380000">30kg hành lý
+                                                                                     (380.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="450000">35kg hành lý (450.000đ/Khách)
+                                                                                <option value="450000">35kg hành lý
+                                                                                     (450.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="500000">40kg hành lý (500.000đ/Khách)
+                                                                                <option value="500000">40kg hành lý
+                                                                                     (500.000đ/Khách)
                                                                                 </option>
                                                                            </select>
                                                                            <div class="select-styled"></div>
@@ -221,11 +239,11 @@
                                                             </div>
                                                             <div class="name__passenger--title">Trẻ em 1</div>
                                                        </div>
-     
+
                                                        <div class="child-input">
                                                             <div class="child-input__gender">
                                                                  <label class="title-select" for="">Giới tính <span
-                                                                      class="asterisk">*</span></label>
+                                                                           class="asterisk">*</span></label>
                                                                  <select name="" id="" class="box-select">
                                                                       <option value="">Nam</option>
                                                                       <option value="">Nữ</option>
@@ -237,12 +255,88 @@
                                                                  <input type="text" class="input-name box-input"
                                                                       placeholder="Ví dụ: NGUYEN HAI HUNG">
                                                             </div>
-                                                            <div class="child-input__birthday">
+                                                            <div class="input__birthday">
                                                                  <label class="title-input" for="">Ngày sinh <span
                                                                            class="asterisk">*</span></label>
-                                                                 <input type="text" class="input-birthday box-input"
-                                                                      placeholder="11/11/2022">
+                                                                 <ul class="dropdown-box-birthday">
+                                                                      <li>
+                                                                           <select name="passenger_birthday[]"
+                                                                                class="birthday form-control">
+                                                                                <option value="0">Ngày</option>
+                                                                                <option value="1">1</option>
+                                                                                <option value="2">2</option>
+                                                                                <option value="3">3</option>
+                                                                                <option value="4">4</option>
+                                                                                <option value="5">5</option>
+                                                                                <option value="6">6</option>
+                                                                                <option value="7">7</option>
+                                                                                <option value="8">8</option>
+                                                                                <option value="9">9</option>
+                                                                                <option value="10">10</option>
+                                                                                <option value="11">11</option>
+                                                                                <option value="12">12</option>
+                                                                                <option value="13">13</option>
+                                                                                <option value="14">14</option>
+                                                                                <option value="15">15</option>
+                                                                                <option value="16">16</option>
+                                                                                <option value="17">17</option>
+                                                                                <option value="18">18</option>
+                                                                                <option value="19">19</option>
+                                                                                <option value="20">20</option>
+                                                                                <option value="21">21</option>
+                                                                                <option value="22">22</option>
+                                                                                <option value="23">23</option>
+                                                                                <option value="24">24</option>
+                                                                                <option value="25">25</option>
+                                                                                <option value="26">26</option>
+                                                                                <option value="27">27</option>
+                                                                                <option value="28">28</option>
+                                                                                <option value="29">29</option>
+                                                                                <option value="30">30</option>
+                                                                                <option value="31">31</option>
+                                                                           </select>
+                                                                      </li>
+     
+                                                                      <li>
+                                                                           <select name="passenger_birthmonth[]"
+                                                                                class="birthmonth form-control">
+                                                                                <option value="0">Tháng</option>
+                                                                                <option value="1">1</option>
+                                                                                <option value="2">2</option>
+                                                                                <option value="3">3</option>
+                                                                                <option value="4">4</option>
+                                                                                <option value="5">5</option>
+                                                                                <option value="6">6</option>
+                                                                                <option value="7">7</option>
+                                                                                <option value="8">8</option>
+                                                                                <option value="9">9</option>
+                                                                                <option value="10">10</option>
+                                                                                <option value="11">11</option>
+                                                                                <option value="12">12</option>
+                                                                           </select>
+                                                                      </li>
+     
+                                                                      <li>
+                                                                           <select name="passenger_birthyear[]"
+                                                                                class="birthyear form-control">
+                                                                                <option value="0">Năm</option>
+                                                                                <option value="2020">2020</option>
+                                                                                <option value="2019">2019</option>
+                                                                                <option value="2018">2018</option>
+                                                                                <option value="2017">2017</option>
+                                                                                <option value="2016">2016</option>
+                                                                                <option value="2015">2015</option>
+                                                                                <option value="2014">2014</option>
+                                                                                <option value="2013">2013</option>
+                                                                                <option value="2012">2012</option>
+                                                                                <option value="2011">2011</option>
+                                                                           </select>
+                                                                      </li>
+
+                                                                 </ul>
+                                                                 <!-- <div class="error"></div> -->
                                                             </div>
+
                                                        </div>
 
                                                        <div class="child-baggage">
@@ -251,27 +345,36 @@
                                                                  <!-- Xách tay -->
                                                                  <div class="luggage-wrap">
                                                                       <h6 class="title-input">Xách tay</h6>
-                                                                      <span class="content__luggage">Mỗi người tối đa 7 Kg.</span>
+                                                                      <span class="content__luggage">Mỗi người tối đa 7
+                                                                           Kg.</span>
                                                                  </div>
-          
+
                                                                  <!-- Ký gửi -->
                                                                  <div class="signed-luggage-wrap">
                                                                       <h6 class="title-input">Ký gửi</h6>
                                                                       <!-- <span class="content__luggage">Mỗi người tối đa 7 Kg.</span> -->
                                                                       <div class="signed-luggage">
-                                                                           <select name="dep_addbaggage[]" class="dep_addbaggage">
-                                                                                <option value="0">Không mang hành lý ký gửi</option>
-                                                                                <option value="180000">15kg hành lý quá khổ (180.000đ/Khách)
+                                                                           <select name="dep_addbaggage[]"
+                                                                                class="dep_addbaggage">
+                                                                                <option value="0">Không mang hành lý ký
+                                                                                     gửi</option>
+                                                                                <option value="180000">15kg hành lý quá
+                                                                                     khổ (180.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="210000">20kg hành lý (210.000đ/Khách)
+                                                                                <option value="210000">20kg hành lý
+                                                                                     (210.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="270000">25kg hành lý (270.000đ/Khách)
+                                                                                <option value="270000">25kg hành lý
+                                                                                     (270.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="380000">30kg hành lý (380.000đ/Khách)
+                                                                                <option value="380000">30kg hành lý
+                                                                                     (380.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="450000">35kg hành lý (450.000đ/Khách)
+                                                                                <option value="450000">35kg hành lý
+                                                                                     (450.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="500000">40kg hành lý (500.000đ/Khách)
+                                                                                <option value="500000">40kg hành lý
+                                                                                     (500.000đ/Khách)
                                                                                 </option>
                                                                            </select>
                                                                            <div class="select-styled"></div>
@@ -283,27 +386,36 @@
                                                                  <!-- Xách tay -->
                                                                  <div class="luggage-wrap">
                                                                       <h6 class="title-input">Xách tay</h6>
-                                                                      <span class="content__luggage">Mỗi người tối đa 7 Kg.</span>
+                                                                      <span class="content__luggage">Mỗi người tối đa 7
+                                                                           Kg.</span>
                                                                  </div>
-          
+
                                                                  <!-- Ký gửi -->
                                                                  <div class="signed-luggage-wrap">
                                                                       <h6 class="title-input">Ký gửi</h6>
                                                                       <!-- <span class="content__luggage">Mỗi người tối đa 7 Kg.</span> -->
                                                                       <div class="signed-luggage">
-                                                                           <select name="dep_addbaggage[]" class="dep_addbaggage">
-                                                                                <option value="0">Không mang hành lý ký gửi</option>
-                                                                                <option value="180000">15kg hành lý quá khổ (180.000đ/Khách)
+                                                                           <select name="dep_addbaggage[]"
+                                                                                class="dep_addbaggage">
+                                                                                <option value="0">Không mang hành lý ký
+                                                                                     gửi</option>
+                                                                                <option value="180000">15kg hành lý quá
+                                                                                     khổ (180.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="210000">20kg hành lý (210.000đ/Khách)
+                                                                                <option value="210000">20kg hành lý
+                                                                                     (210.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="270000">25kg hành lý (270.000đ/Khách)
+                                                                                <option value="270000">25kg hành lý
+                                                                                     (270.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="380000">30kg hành lý (380.000đ/Khách)
+                                                                                <option value="380000">30kg hành lý
+                                                                                     (380.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="450000">35kg hành lý (450.000đ/Khách)
+                                                                                <option value="450000">35kg hành lý
+                                                                                     (450.000đ/Khách)
                                                                                 </option>
-                                                                                <option value="500000">40kg hành lý (500.000đ/Khách)
+                                                                                <option value="500000">40kg hành lý
+                                                                                     (500.000đ/Khách)
                                                                                 </option>
                                                                            </select>
                                                                            <div class="select-styled"></div>
@@ -326,11 +438,11 @@
                                                             </div>
                                                             <div class="name__passenger--title">Em bé 1</div>
                                                        </div>
-     
+
                                                        <div class="infant-input">
                                                             <div class="infant-input__gender">
                                                                  <label class="title-select" for="">Giới tính <span
-                                                                      class="asterisk">*</span></label>
+                                                                           class="asterisk">*</span></label>
                                                                  <select name="" id="" class="box-select">
                                                                       <option value="">Nam</option>
                                                                       <option value="">Nữ</option>
@@ -342,11 +454,78 @@
                                                                  <input type="text" class="input-name box-input"
                                                                       placeholder="Ví dụ: NGUYEN HAI HUNG">
                                                             </div>
-                                                            <div class="infant-input__birthday">
+                                                            <div class="input__birthday">
                                                                  <label class="title-input" for="">Ngày sinh <span
                                                                            class="asterisk">*</span></label>
-                                                                 <input type="text" class="input-birthday box-input"
-                                                                      placeholder="11/11/2022">
+                                                                           <ul class="dropdown-box-birthday">
+                                                                                <li>
+                                                                                     <select name="passenger_birthday[]"
+                                                                                          class="birthday form-control">
+                                                                                          <option value="0">Ngày</option>
+                                                                                          <option value="1">1</option>
+                                                                                          <option value="2">2</option>
+                                                                                          <option value="3">3</option>
+                                                                                          <option value="4">4</option>
+                                                                                          <option value="5">5</option>
+                                                                                          <option value="6">6</option>
+                                                                                          <option value="7">7</option>
+                                                                                          <option value="8">8</option>
+                                                                                          <option value="9">9</option>
+                                                                                          <option value="10">10</option>
+                                                                                          <option value="11">11</option>
+                                                                                          <option value="12">12</option>
+                                                                                          <option value="13">13</option>
+                                                                                          <option value="14">14</option>
+                                                                                          <option value="15">15</option>
+                                                                                          <option value="16">16</option>
+                                                                                          <option value="17">17</option>
+                                                                                          <option value="18">18</option>
+                                                                                          <option value="19">19</option>
+                                                                                          <option value="20">20</option>
+                                                                                          <option value="21">21</option>
+                                                                                          <option value="22">22</option>
+                                                                                          <option value="23">23</option>
+                                                                                          <option value="24">24</option>
+                                                                                          <option value="25">25</option>
+                                                                                          <option value="26">26</option>
+                                                                                          <option value="27">27</option>
+                                                                                          <option value="28">28</option>
+                                                                                          <option value="29">29</option>
+                                                                                          <option value="30">30</option>
+                                                                                          <option value="31">31</option>
+                                                                                     </select>
+                                                                                </li>
+               
+                                                                                <li>
+                                                                                     <select name="passenger_birthmonth[]"
+                                                                                          class="birthmonth form-control">
+                                                                                          <option value="0">Tháng</option>
+                                                                                          <option value="1">1</option>
+                                                                                          <option value="2">2</option>
+                                                                                          <option value="3">3</option>
+                                                                                          <option value="4">4</option>
+                                                                                          <option value="5">5</option>
+                                                                                          <option value="6">6</option>
+                                                                                          <option value="7">7</option>
+                                                                                          <option value="8">8</option>
+                                                                                          <option value="9">9</option>
+                                                                                          <option value="10">10</option>
+                                                                                          <option value="11">11</option>
+                                                                                          <option value="12">12</option>
+                                                                                     </select>
+                                                                                </li>
+               
+                                                                                <li>
+                                                                                     <select name="passenger_birthyear[]"
+                                                                                          class="birthyear form-control">
+                                                                                          <option value="0">Năm</option>
+                                                                                          <option value="2022">2022</option>
+                                                                                          <option value="2021">2021</option>
+                                                                                          <option value="2020">2020</option>
+                                                                                     </select>
+                                                                                </li>
+          
+                                                                           </ul>
                                                             </div>
                                                        </div>
 
@@ -356,7 +535,8 @@
                                                                  <!-- Ký gửi -->
                                                                  <div class="signed-luggage-wrap">
                                                                       <h6 class="title-input">Ký gửi</h6>
-                                                                      <span class="content__luggage">Mỗi người tối đa 7 Kg.</span>
+                                                                      <span class="content__luggage">Mỗi người tối đa 7
+                                                                           Kg.</span>
                                                                  </div>
                                                             </div>
                                                             <div class="baggage__ret-wrap">
@@ -364,7 +544,8 @@
                                                                  <!-- Ký gửi -->
                                                                  <div class="signed-luggage-wrap">
                                                                       <h6 class="title-input">Ký gửi</h6>
-                                                                      <span class="content__luggage">Mỗi người tối đa 7 Kg.</span>
+                                                                      <span class="content__luggage">Mỗi người tối đa 7
+                                                                           Kg.</span>
                                                                  </div>
                                                             </div>
                                                        </div>
@@ -450,14 +631,16 @@
                                                   class="special-request__textarea"></textarea>
                                         </div>
                                    </section>
+
+                                   <!-- BUTTON SUBMIT -->
+                                   <div class="infor-passengers__submit">
+                                        <!-- <a href="./payment.html"> -->
+                                             <button type="submit" id="sm_bookingflight" name="sm_bookingflight" class="button-gradient instagram continue"><span
+                                                       class="gradient"></span>Tiếp tục</button>
+                                        <!-- </a> -->
+                                   </div>
                               </form>
 
-                              <div class="infor-passengers__submit">
-                                   <a href="./payment.html">
-                                        <button type="submit" class="button-gradient instagram continue"><span
-                                                  class="gradient"></span>Tiếp tục</button>
-                                   </a>
-                              </div>
 
                          </div>
                          <div class="col-md-4">

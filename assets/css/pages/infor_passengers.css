@@ -80,13 +80,14 @@ ul.infor-passenger-wrap li:not(:last-child) {
 .adult-input__name,
 .child-input__name,
 .infant-input__name {
-  width: 50%;
+  width: 40%;
 }
 
-.child-input__birthday,
-.infant-input__birthday {
+.input__birthday {
   flex: 1;
   margin-left: 20px;
+
+  position: relative;
 }
 
 .caption-details,
@@ -109,7 +110,7 @@ ul.infor-passenger-wrap li:not(:last-child) {
   background-color: var(--white-color);
   color: var(--text-color);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border-radius: 0.375rem;
 }
 
 .adult-input__gender,
@@ -294,4 +295,34 @@ ul.infor-passenger-wrap li:not(:last-child) {
 .luggage__title {
   margin-bottom: 12px;
   color: var(--saphire-color);
+}
+
+
+/* ========= NGÀY THÁNG NĂM SINH ========= */
+.dropdown-box-birthday{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.birthday,
+.birthmonth,
+.birthyear{
+  font-size: 14px;
+  color: var(--title-color);
+  width: 100%;
+  cursor: pointer;
+  appearance: menulist;
+
+}
+
+.dropdown-box-birthday li{
+  width: 100%;
+  margin-right: 10px;
+  border-bottom: none !important;
+}
+
+.dropdown-box-birthday li:last-child{
+  margin-right: 0px;
 }
