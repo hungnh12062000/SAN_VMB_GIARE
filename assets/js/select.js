@@ -54,5 +54,30 @@ $(document).ready(function () {
           $(".flight-list .flight-item").show();
      })
 
+     // Toggle accordion
+     $('.toggle-accordion-dep').on('click', function () {
+          $('#OutBound').slideToggle(300);
+     })
+
+     $('.toggle-accordion-ret').on('click', function () {
+          $('#InBound').slideToggle(300);
+     })
+
+     // Click radio "chọn"
+     $('.checkbox-custom-label').on("click", function () {
+          // $(this).parents('table').find('tr').each(function (index, element) {
+          //     $(element).removeClass('marked');
+          // });
+          // $(this).addClass('marked');
+      });
+
+     //  Chọn chuyến bay
+     $(".selectflight").on("click", function () {
+
+          // check 
+          let direction = $(this).closest(".flight-list").attr("id"); //Outbound hay Inbound
+          
+     })
+
 });
 

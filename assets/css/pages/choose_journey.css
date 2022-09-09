@@ -72,6 +72,26 @@
   margin: 25px 25px 0 0;
   border-radius: 8px;
 }
+
+.label-journey{
+  width: 100%;
+  min-height: 50px;
+  background: var(--bgdecs-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  
+}
+
+.label-journey .journey-infor__title{
+  margin-bottom: 0;
+}
+
+.label-journey .journey-infor__title span{
+  color: var(--title-color);
+}
+
 .flight-item {
   box-shadow: 0px 1px 1px rgb(0 0 0 / 5%);
   box-sizing: border-box;
@@ -348,4 +368,25 @@ td.total_amount{
      width: 140%;
      height: 1px;
      background: var(--saphire-color);
+}
+
+.select-flight__dep input[type="radio"]{
+  /* display: none; */
+  cursor: pointer;
+}
+
+label.checkbox-custom-label{
+  display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+
+    padding: 12px 20px;
+    background: linear-gradient(to right, #14b9d5 0%, #14d5b1 100%);
+    cursor: pointer;
+    border-radius: 8px;
+    min-width: 124px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--white-color);
 }
