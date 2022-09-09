@@ -110,8 +110,8 @@ $(document).ready(function () {
      $(document).on('click', ".input-departure", function () {
           $('.list-dep').show();
 
-          let listItemHeight = ($(".naccs-dep ul").find("li:eq(1)").innerHeight()) + 150;
-          $(".naccs-dep ul").height(listItemHeight + "px");
+          let listItemHeight = ($(".list__dep--wrap ul").find("li:eq(1)").innerHeight()) + 150;
+          $(".list__dep--wrap ul").height(listItemHeight + "px");
 
           $('#input_from_root').removeClass('picker--opened picker--focused');     
 
@@ -119,40 +119,40 @@ $(document).ready(function () {
      $(document).on('click', ".input-return", function () {
           $('.list-ret').show();
 
-          let listItemHeight = ($(".naccs-ret ul").find("li:eq(1)").innerHeight()) + 150;
-          $(".naccs-ret ul").height(listItemHeight + "px");
+          let listItemHeight = ($(".list__ret--wrap ul").find("li:eq(1)").innerHeight()) + 150;
+          $(".list__ret--wrap ul").height(listItemHeight + "px");
 
           $('#input_from_root').removeClass('picker--opened picker--focused');     
 
      });
 
-     $(document).on("click", ".naccs-dep .menu div", function () {
+     $(document).on("click", ".list__dep--wrap .menu div", function () {
           let numberIndex = $(this).index();
 
           if (!$(this).is("active")) {
-               $(".naccs-dep .menu div").removeClass("active");
-               $(".naccs-dep ul li").removeClass("active");
+               $(".list__dep--wrap .menu div").removeClass("active");
+               $(".list__dep--wrap ul li").removeClass("active");
 
                $(this).addClass("active");
-               $(".naccs-dep ul").find("li:eq(" + numberIndex + ")").addClass("active");
+               $(".list__dep--wrap ul").find("li:eq(" + numberIndex + ")").addClass("active");
 
-               let listItemHeight = ($(".naccs-dep ul").find("li:eq(" + numberIndex + ")").innerHeight());
-               $(".naccs-dep ul").height(listItemHeight + "px");
+               let listItemHeight = ($(".list__dep--wrap ul").find("li:eq(" + numberIndex + ")").innerHeight());
+               $(".list__dep--wrap ul").height(listItemHeight + "px");
           }
      })
 
-     $(document).on("click", ".naccs-ret .menu div", function () {
+     $(document).on("click", ".list__ret--wrap .menu div", function () {
           let numberIndex = $(this).index();
 
           if (!$(this).is("active")) {
-               $(".naccs-ret .menu div").removeClass("active");
-               $(".naccs-ret ul li").removeClass("active");
+               $(".list__ret--wrap .menu div").removeClass("active");
+               $(".list__ret--wrap ul li").removeClass("active");
 
                $(this).addClass("active");
-               $(".naccs-ret ul").find("li:eq(" + numberIndex + ")").addClass("active");
+               $(".list__ret--wrap ul").find("li:eq(" + numberIndex + ")").addClass("active");
 
-               let listItemHeight = ($(".naccs-ret ul").find("li:eq(" + numberIndex + ")").innerHeight());
-               $(".naccs-ret ul").height(listItemHeight + "px");
+               let listItemHeight = ($(".list__ret--wrap ul").find("li:eq(" + numberIndex + ")").innerHeight());
+               $(".list__ret--wrap ul").height(listItemHeight + "px");
           }
      })
 
