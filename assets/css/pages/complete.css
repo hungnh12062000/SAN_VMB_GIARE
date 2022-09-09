@@ -23,7 +23,7 @@
   flex-wrap: wrap;
   margin-top: 10px;
 }
-z
+
 .infor__adult,
 .infor__child,
 .infor__infant {
@@ -199,6 +199,10 @@ ul.section__decs li p {
   border: 1px solid var(--border-color);
 }
 
+.box-infor h6{
+  margin-bottom: 5px;
+}
+
 .infor__code--order {
      border-color: var(--red-color);
 }
@@ -218,21 +222,13 @@ ul.section__decs li p {
 
 }
 
-
-.infor__order h2 {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 600;
-  margin: 0;
-}
-
 .infor__code--order h2{
      color: #ec2029;
-     font-size: 18px;
 }
 
 .infor__price--order h2{
      color: var(--green-color);
+     font-size: 18px;
 }
 
 .infor__method--payment h2{
@@ -255,7 +251,6 @@ ul.section__decs li p {
 
 .box-infor__contact h2 {
   font-size: 14px;
-  font-weight: 600;
   line-height: 20px;
   color: var(--text-color);
 }

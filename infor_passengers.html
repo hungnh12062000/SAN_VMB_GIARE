@@ -95,7 +95,7 @@
                     </div>
                     <div class="row g-0">
                          <div class="col-md-8">
-                              <form action="" id="frmBookingFlight" >
+                              <form action="./payment.html" id="frmBookingFlight" >
                                    <!-- THÔNG TIN HÀNH KHÁCH -->
                                    <section class="section-box-passengers section__infor-passengers">
                                         <div class="section__title">
@@ -128,16 +128,17 @@
                                                             <div class="adult-input__gender">
                                                                  <label class="title-input" for="">Giới tính <span
                                                                            class="asterisk">*</span></label>
-                                                                 <select class="box-select" name="" id="">
-                                                                      <option value="">Nam</option>
-                                                                      <option value="">Nữ</option>
+                                                                 <select class="box-select" name="passenger_title[]">
+                                                                      <option value="0">Nam</option>
+                                                                      <option value="1">Nữ</option>
                                                                  </select>
+                                                                 <input type="hidden" name="passenger_type[]" value="0">
                                                             </div>
                                                             <div class="adult-input__name">
                                                                  <label class="title-input" for="">Họ và Tên <span
                                                                            class="asterisk">*</span></label>
-                                                                 <input type="text" class="input-name box-input"
-                                                                      placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                                 <input  type="text" name="passenger_name[]" class="passenger_name input-name box-input" placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                                 
                                                             </div>
                                                        </div>
 
@@ -244,16 +245,17 @@
                                                             <div class="child-input__gender">
                                                                  <label class="title-select" for="">Giới tính <span
                                                                            class="asterisk">*</span></label>
-                                                                 <select name="" id="" class="box-select">
-                                                                      <option value="">Nam</option>
-                                                                      <option value="">Nữ</option>
+                                                                 <select name="passenger_title[]" class="box-select">
+                                                                      <option value="0">Nam</option>
+                                                                      <option value="1">Nữ</option>
                                                                  </select>
+                                                                 <input type="hidden" name="passenger_type[]" value="1">
                                                             </div>
                                                             <div class="child-input__name">
                                                                  <label class="title-input" for="">Họ và Tên <span
                                                                            class="asterisk">*</span></label>
-                                                                 <input type="text" class="input-name box-input"
-                                                                      placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                                 <input  type="text" name="passenger_name[]" class="passenger_name input-name box-input" placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                                 
                                                             </div>
                                                             <div class="input__birthday">
                                                                  <label class="title-input" for="">Ngày sinh <span
@@ -334,7 +336,7 @@
                                                                       </li>
 
                                                                  </ul>
-                                                                 <!-- <div class="error"></div> -->
+                                                                 <div class="birthday__error-1"></div>
                                                             </div>
 
                                                        </div>
@@ -443,89 +445,91 @@
                                                             <div class="infant-input__gender">
                                                                  <label class="title-select" for="">Giới tính <span
                                                                            class="asterisk">*</span></label>
-                                                                 <select name="" id="" class="box-select">
-                                                                      <option value="">Nam</option>
-                                                                      <option value="">Nữ</option>
+                                                                 <select name="passenger_title[]" class="box-select">
+                                                                      <option value="0">Nam</option>
+                                                                      <option value="1">Nữ</option>
                                                                  </select>
+                                                                 <input type="hidden" name="passenger_type[]" value="2">
                                                             </div>
                                                             <div class="infant-input__name">
                                                                  <label class="title-input" for="">Họ và Tên <span
                                                                            class="asterisk">*</span></label>
-                                                                 <input type="text" class="input-name box-input"
-                                                                      placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                                 <input  type="text" name="passenger_name[]" class="passenger_name input-name box-input" placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                                 
                                                             </div>
                                                             <div class="input__birthday">
                                                                  <label class="title-input" for="">Ngày sinh <span
                                                                            class="asterisk">*</span></label>
-                                                                           <ul class="dropdown-box-birthday">
-                                                                                <li>
-                                                                                     <select name="passenger_birthday[]"
-                                                                                          class="birthday form-control">
-                                                                                          <option value="0">Ngày</option>
-                                                                                          <option value="1">1</option>
-                                                                                          <option value="2">2</option>
-                                                                                          <option value="3">3</option>
-                                                                                          <option value="4">4</option>
-                                                                                          <option value="5">5</option>
-                                                                                          <option value="6">6</option>
-                                                                                          <option value="7">7</option>
-                                                                                          <option value="8">8</option>
-                                                                                          <option value="9">9</option>
-                                                                                          <option value="10">10</option>
-                                                                                          <option value="11">11</option>
-                                                                                          <option value="12">12</option>
-                                                                                          <option value="13">13</option>
-                                                                                          <option value="14">14</option>
-                                                                                          <option value="15">15</option>
-                                                                                          <option value="16">16</option>
-                                                                                          <option value="17">17</option>
-                                                                                          <option value="18">18</option>
-                                                                                          <option value="19">19</option>
-                                                                                          <option value="20">20</option>
-                                                                                          <option value="21">21</option>
-                                                                                          <option value="22">22</option>
-                                                                                          <option value="23">23</option>
-                                                                                          <option value="24">24</option>
-                                                                                          <option value="25">25</option>
-                                                                                          <option value="26">26</option>
-                                                                                          <option value="27">27</option>
-                                                                                          <option value="28">28</option>
-                                                                                          <option value="29">29</option>
-                                                                                          <option value="30">30</option>
-                                                                                          <option value="31">31</option>
-                                                                                     </select>
-                                                                                </li>
-               
-                                                                                <li>
-                                                                                     <select name="passenger_birthmonth[]"
-                                                                                          class="birthmonth form-control">
-                                                                                          <option value="0">Tháng</option>
-                                                                                          <option value="1">1</option>
-                                                                                          <option value="2">2</option>
-                                                                                          <option value="3">3</option>
-                                                                                          <option value="4">4</option>
-                                                                                          <option value="5">5</option>
-                                                                                          <option value="6">6</option>
-                                                                                          <option value="7">7</option>
-                                                                                          <option value="8">8</option>
-                                                                                          <option value="9">9</option>
-                                                                                          <option value="10">10</option>
-                                                                                          <option value="11">11</option>
-                                                                                          <option value="12">12</option>
-                                                                                     </select>
-                                                                                </li>
-               
-                                                                                <li>
-                                                                                     <select name="passenger_birthyear[]"
-                                                                                          class="birthyear form-control">
-                                                                                          <option value="0">Năm</option>
-                                                                                          <option value="2022">2022</option>
-                                                                                          <option value="2021">2021</option>
-                                                                                          <option value="2020">2020</option>
-                                                                                     </select>
-                                                                                </li>
-          
-                                                                           </ul>
+                                                                 <ul class="dropdown-box-birthday">
+                                                                      <li>
+                                                                           <select name="passenger_birthday[]"
+                                                                                class="birthday form-control">
+                                                                                <option value="0">Ngày</option>
+                                                                                <option value="1">1</option>
+                                                                                <option value="2">2</option>
+                                                                                <option value="3">3</option>
+                                                                                <option value="4">4</option>
+                                                                                <option value="5">5</option>
+                                                                                <option value="6">6</option>
+                                                                                <option value="7">7</option>
+                                                                                <option value="8">8</option>
+                                                                                <option value="9">9</option>
+                                                                                <option value="10">10</option>
+                                                                                <option value="11">11</option>
+                                                                                <option value="12">12</option>
+                                                                                <option value="13">13</option>
+                                                                                <option value="14">14</option>
+                                                                                <option value="15">15</option>
+                                                                                <option value="16">16</option>
+                                                                                <option value="17">17</option>
+                                                                                <option value="18">18</option>
+                                                                                <option value="19">19</option>
+                                                                                <option value="20">20</option>
+                                                                                <option value="21">21</option>
+                                                                                <option value="22">22</option>
+                                                                                <option value="23">23</option>
+                                                                                <option value="24">24</option>
+                                                                                <option value="25">25</option>
+                                                                                <option value="26">26</option>
+                                                                                <option value="27">27</option>
+                                                                                <option value="28">28</option>
+                                                                                <option value="29">29</option>
+                                                                                <option value="30">30</option>
+                                                                                <option value="31">31</option>
+                                                                           </select>
+                                                                      </li>
+     
+                                                                      <li>
+                                                                           <select name="passenger_birthmonth[]"
+                                                                                class="birthmonth form-control">
+                                                                                <option value="0">Tháng</option>
+                                                                                <option value="1">1</option>
+                                                                                <option value="2">2</option>
+                                                                                <option value="3">3</option>
+                                                                                <option value="4">4</option>
+                                                                                <option value="5">5</option>
+                                                                                <option value="6">6</option>
+                                                                                <option value="7">7</option>
+                                                                                <option value="8">8</option>
+                                                                                <option value="9">9</option>
+                                                                                <option value="10">10</option>
+                                                                                <option value="11">11</option>
+                                                                                <option value="12">12</option>
+                                                                           </select>
+                                                                      </li>
+     
+                                                                      <li>
+                                                                           <select name="passenger_birthyear[]"
+                                                                                class="birthyear form-control">
+                                                                                <option value="0">Năm</option>
+                                                                                <option value="2022">2022</option>
+                                                                                <option value="2021">2021</option>
+                                                                                <option value="2020">2020</option>
+                                                                           </select>
+                                                                      </li>
+
+                                                                 </ul>
+                                                                 <div class="birthday__error-1"></div>
                                                             </div>
                                                        </div>
 
@@ -574,10 +578,9 @@
                                                   <div class="contact__input--required">
                                                        <!-- title -->
                                                        <div class="input__contact--title">
-                                                            <span class="title-select" for="">Qúy danh</span>
-                                                            <select name="" id="" class="box-select">
-                                                                 <option value="0">Ông</option>
-                                                                 <option value="1">Bà</option>
+                                                            <label class="title-select" for="contact_title">Qúy danh <span
+                                                                 class="asterisk">*</span></label>
+                                                            <select name="contact_title" id="contact_title" class="box-select">
                                                                  <option value="0">Anh</option>
                                                                  <option value="1">Chị</option>
                                                             </select>
@@ -585,31 +588,33 @@
 
                                                        <!-- name -->
                                                        <div class="input__contact--name">
-                                                            <label class="title-input" for="">Họ và Tên <span
+                                                            <label class="title-input" for="contact_name">Họ và Tên <span
                                                                       class="asterisk">*</span></label>
-                                                            <input type="text" class="contact-name box-input"
+                                                            <input name="contact_name" id="contact_name" type="text" class="contact-name box-input"
                                                                  placeholder="Ví dụ: NGUYEN HAI HUNG">
                                                        </div>
 
                                                        <!-- phone -->
                                                        <div class="input__contact--phone">
-                                                            <label class="title-input" for="">Điện thoại di động <span
+                                                            <label class="title-input" for="contact_phone">Điện thoại di động <span
                                                                       class="asterisk">*</span></label>
-                                                            <input type="text" class="contact-phone box-input">
+                                                            <!-- <input onkeypress="return /[0-9]/i.test(event.key)" name="contact_phone" id="contact_phone" type="text" class="contact-phone box-input"> -->
+                                                            <input name="contact_phone" id="contact_phone" type="text" class="only__numberic contact-phone box-input">
                                                        </div>
                                                   </div>
                                                   <div class="contact__input--optional">
                                                        <!-- email -->
                                                        <div class="input__contact--email">
-                                                            <label class="title-input" for="">Email</label>
-                                                            <input type="text" class="contact-email box-input">
+                                                            <label class="title-input" for="contact_email">Email</label>
+                                                            <input  name="contact_email" id="contact_email" type="text" class="contact-email box-input">
                                                        </div>
                                                        <!-- address -->
                                                        <div class="input__contact--address">
-                                                            <label class="title-input" for="">Địa chỉ</label>
-                                                            <input type="text" class="contact-address box-input">
+                                                            <label class="title-input" for="contact_address">Địa chỉ</label>
+                                                            <input type="text" name="contact_address" id="contact_address" class="contact-address box-input">
                                                        </div>
                                                   </div>
+                                                  <div id="err__contact" class="line_error"></div>
                                              </div>
                                         </div>
                                    </section>
@@ -634,10 +639,8 @@
 
                                    <!-- BUTTON SUBMIT -->
                                    <div class="infor-passengers__submit">
-                                        <!-- <a href="./payment.html"> -->
-                                             <button type="submit" id="sm_bookingflight" name="sm_bookingflight" class="button-gradient instagram continue"><span
-                                                       class="gradient"></span>Tiếp tục</button>
-                                        <!-- </a> -->
+                                        <button type="submit" id="sm_bookingflight" name="sm_bookingflight" class="button-gradient instagram continue"><span
+                                                  class="gradient"></span>Tiếp tục</button>
                                    </div>
                               </form>
 

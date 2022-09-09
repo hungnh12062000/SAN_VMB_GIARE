@@ -326,3 +326,16 @@ ul.infor-passenger-wrap li:not(:last-child) {
 .dropdown-box-birthday li:last-child{
   margin-right: 0px;
 }
+
+#err__contact{
+  color: #ec2029;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+input[class*=passenger_name], input[id*=contact_name]{
+  text-transform: uppercase;
+}

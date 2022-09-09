@@ -667,6 +667,13 @@ a.instagram:hover {
   line-height: 20px;
 }
 
+.box-subheading{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
 .box-heading-h6,
 .thead-title,
 .name__passenger--title,
@@ -684,7 +691,7 @@ a.instagram:hover {
 .caption-birthday{
      color: var(--title-color);
      font-size: 14px;
-     line-height: 17px;
+     line-height: 16px;
      font-weight: 400;
      margin-bottom: 4px;
 }
@@ -729,4 +736,11 @@ li.breadcrumb__item span {
 
 li.breadcrumb__item.current a {
   color: var(--saphire-color);
+}
+
+/* CSS FOR ERR */
+.err__name{
+  margin-top: 5px;
+  font-size: 14px;
+  color: #ec2029;
 }
