@@ -41,7 +41,8 @@ ul {
   justify-content: center;
   align-items: center;
   transition: all 0.2 linear;
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   border-radius: 50%;
 }
 
@@ -415,7 +416,6 @@ ul {
 }
 /* ========== END TABS INTER DOMESTIC ===========*/
 
-
 .destination__inter--wrap {
   padding: 50px 0;
   background: var(--bgsection-color);
@@ -426,7 +426,6 @@ ul {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 200px 200px;
   grid-gap: 20px;
-  padding: 0 0px 30px;
 }
 
 .destination__inter--item img {
@@ -439,6 +438,7 @@ ul {
   overflow: hidden;
   border-radius: 8px;
   position: relative;
+  cursor: pointer;
 }
 
 .destination__inter--hover {
@@ -468,6 +468,11 @@ ul {
   line-height: 2rem;
   font-weight: bold;
   color: var(--white-color);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes downtop {
@@ -492,10 +497,6 @@ ul {
   grid-row: 1/2;
 }
 
-.destination__inter--item:nth-child(3) {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
 
 .destination__inter--item:nth-child(3) {
   grid-column: 3/4;
@@ -526,6 +527,7 @@ ul {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   background: var(--white-color);
+  width: 25%;
 }
 
 .testimonial__card--content {
@@ -625,7 +627,7 @@ ul {
   height: 178px;
 }
 .destinations__domestic--item:nth-child(9) {
-  top:200px;
+  top: 200px;
   width: 176px;
   height: 176px;
   right: 300px;
@@ -667,10 +669,9 @@ ul {
   overflow: hidden;
 }
 
-.image-title{
+.image-title {
   width: 94%;
   margin: 0 10px;
-
 }
 
 .image-boder-50 {
