@@ -264,6 +264,10 @@ Common breakpoints are
   }
 
   /* CHỌN HÀNH TRÌNH */
+  .result-flight{
+    margin: 25px 0 0 0;
+  }
+  
   .flight-infor{
     justify-content: space-between;
   }
@@ -537,9 +541,6 @@ Common breakpoints are
     margin-top: 0px;
   }
 
-  .sidebar-filters{
-    display: none;
-  }
 
   /* THÔNG TIN HÀNH KHÁCH */
   .section-box-passengers{
