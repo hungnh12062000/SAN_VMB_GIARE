@@ -292,6 +292,11 @@ Common breakpoints are
     font-size: 14px;
   }
 
+  /* THÔNG TIN HÀNH KHÁCH */
+  .section-box-passengers{
+    margin: 25px 0 0;
+  }
+
 }
 
 /* For iPads & tablets */
@@ -534,6 +539,29 @@ Common breakpoints are
 
   .sidebar-filters{
     display: none;
+  }
+
+  /* THÔNG TIN HÀNH KHÁCH */
+  .section-box-passengers{
+    margin: 25px 0 0;
+  }
+  .adult-input__gender, .child-input__gender, .infant-input__gender, .input__contact--title, .input__contact--name, .input__contact--email{
+    width: 20%;
+  }
+  .adult-input__name, .child-input__name, .infant-input__name{
+    flex: 1;
+  }
+  .adult-baggage, .child-baggage, .infant-baggage{
+    flex-direction: column;
+  }
+
+  .baggage__dep-wrap, .baggage__ret-wrap{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .baggage__ret-wrap{
+    margin-bottom: 10px;
   }
 
 }
@@ -967,6 +995,16 @@ Common breakpoints are
     height: 40px;
   }
   .box-heading-h6, .thead-title, .name__passenger--title, .luggage__title{
+    font-size: 12px;
+  }
+
+  /* THÔNG TIN HÀNH KHÁCH */
+  .section-box-passengers{
+    margin: 25px 0 0;
+  }
+
+  .select-styled,
+  .seclect__luggage--options li{
     font-size: 12px;
   }
   

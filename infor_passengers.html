@@ -38,47 +38,111 @@
 
      <div class="global-wrap">
           <!-- HEADER -->
-          <section class="header">
-               <div class="container header-wrap">
+    <section class="header">
+     <div class="container header-wrap">
+       <div class="header__logo">
+         <a class="header__logo--link" href="./index.html">
+           <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo--img" />
+         </a>
+       </div>
+       <div class="menu-control__wrap">
+         <ul class="header-nav">
+           <li class="nav__item">
+             <a href="./category.html" class="nav__item--link">VÉ MÁY BAY NỘI ĐỊA</a>
+           </li>
+           <li class="nav__item">
+             <a href="./category.html" class="nav__item--link">VÉ MÁY BAY QUỐC TẾ</a>
+           </li>
+           <li class="nav__item">
+             <a href="./category.html" class="nav__item--link">VÉ RẺ THEO THÁNG</a>
+           </li>
+           <li class="nav__item">
+             <a href="./category.html" class="nav__item--link">TIN TỨC</a>
+           </li>
+           <li class="nav__item">
+             <a href="./contact.html" class="nav__item--link">LIÊN HỆ</a>
+           </li>
+         </ul>
+       </div>
+       <div class="header-phone">
+         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000" viewBox="0 0 256 256">
+           <rect width="256" height="256" fill="none"></rect>
+           <path
+             d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z"
+             fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+         </svg>
+         <p class="phone-number">1900 636 063</p>
+       </div>
+       <!-- MENU FOR TABLET -->
+       <div class="menu-control__tablet-wrap">
+         <input type="checkbox" id="slide-menu" />
+         <label for="slide-menu" class="header-slide-menu__btn">
+           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="68" x2="216" y2="68" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="108" x2="216" y2="108" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="148" x2="216" y2="148" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="188" x2="216" y2="188" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+         </label>
+         <label for="slide-menu" class="header-slide-menu__overlay"></label>
+         <div class="mobile-menu">
+           <label for="slide-menu">
+             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+           </label>
+ 
+           <div class="mobile-menu-wrapper">
+             <ul class="mobile-menu__list">
+               <li class="mobile-menu__item">
+                 <a class="mobile-menu__item-link" href="./category.html">VÉ MÁY BAY NỘI ĐỊA</a>
+               </li>
+ 
+               <li class="mobile-menu__item">
+                 <a class="mobile-menu__item-link" href="./category.html">VÉ MÁY BAY QUỐC TẾ</a>
+               </li>
+ 
+               <li class="mobile-menu__item">
+                 <a class="mobile-menu__item-link" href="./category.html">VÉ MÁY BAY THEO THÁNG</a>
+               </li>
+ 
+               <li class="mobile-menu__item">
+                 <a class="mobile-menu__item-link" href="./category.html">TIN TỨC</a>
+               </li>
+ 
+               <li class="mobile-menu__item">
+                 <a class="mobile-menu__item-link" href="./contact.html">LIÊN HỆ</a>
+               </li>
+             </ul>
+ 
+             <div class="header-phone-mobile">
+               <a href="">
+                 <p class="phone-number-mobile">Hỗ trợ: 1900 636 063</p>
+               </a>
+           </div>
+         </div>
+         </div>
+       </div>
 
-                    <div class="header__logo">
-                         <a class="header__logo--link" href="./index.html">
-                              <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo--img" />
-                         </a>
-                    </div>
-                    <ul class="header-nav">
-                         <li class="nav__item">
-                              <a href="./category.html" class="nav__item--link">VÉ MÁY BAY NỘI ĐỊA</a>
-                         </li>
-                         <li class="nav__item">
-                              <a href="./category.html" class="nav__item--link">VÉ MÁY BAY QUỐC TẾ</a>
-                         </li>
-                         <li class="nav__item">
-                              <a href="./category.html" class="nav__item--link">VÉ RẺ THEO THÁNG</a>
-                         </li>
-                         <li class="nav__item">
-                              <a href="./category.html" class="nav__item--link">TIN TỨC</a>
-                         </li>
-                         <li class="nav__item">
-                              <a href="" class="nav__item--link">LIÊN HỆ</a>
-                         </li>
-                    </ul>
-                    <div class="header-phone">
-                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000"
-                              viewBox="0 0 256 256">
-                              <rect width="256" height="256" fill="none"></rect>
-                              <path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z"
-                                   fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
-                                   stroke-width="16"></path>
-                         </svg>
-                         <p class="phone-number">1900 636 063</p>
-                    </div>
-               </div>
-          </section>
-          <!-- END HEADER -->
+       <!-- MENU FOR MOBILE -->
+       <div class="menu-control__mobile-wrap">
+         <label for="menu-control" class="hamburger">
+           <i class="hamburger__icon"></i>
+           <i class="hamburger__icon"></i>
+           <i class="hamburger__icon"></i>
+         </label>
+         <input type="checkbox" id="menu-control" class="menu-control">
+         <aside class="sidebar">
+           <nav class="sidebar__menu">
+             <a href="./category.html" class="">Vé máy bay giá rẻ</a>
+             <a href="./category.html">Vé máy bay theo tháng</a>
+             <a href="./category.html">Vé máy bay nội địa</a>
+             <a href="./category.html">Vé máy bay quốc tế</a>
+             <a href="./category.html">tin tức</a>
+             <a href="./contact.html">liên hệ</a>
+             <a href="">Hỗ trợ: 1900.636.063</a>
+           </nav>
+           <label for="menu-control" class="sidebar__close"></label>
+         </aside>
+       </div>
+   </section>
+   <!-- END HEADER -->
 
           <div class="section-choose-flight">
-               <div class="container">
+               <div class="container g-0">
                     <div class="row g-0">
                          <ul id="progressbar" class="hidden-xs">
                               <li class="pass">
@@ -94,7 +158,7 @@
                          </ul>
                     </div>
                     <div class="row g-0">
-                         <div class="col-md-8">
+                         <div class="col-lg-8 col-md-12 col-sm-12">
                               <form action="./payment.html" id="frmBookingFlight" >
                                    <!-- THÔNG TIN HÀNH KHÁCH -->
                                    <section class="section-box-passengers section__infor-passengers">
@@ -124,104 +188,118 @@
                                                             <div class="name__passenger--title">Người lớn 1</div>
                                                        </div>
 
-                                                       <div class="adult-input">
-                                                            <div class="adult-input__gender">
-                                                                 <label class="title-input" for="">Giới tính <span
-                                                                           class="asterisk">*</span></label>
-                                                                 <select class="box-select" name="passenger_title[]">
-                                                                      <option value="0">Nam</option>
-                                                                      <option value="1">Nữ</option>
-                                                                 </select>
-                                                                 <input type="hidden" name="passenger_type[]" value="0">
+                                                       <div class="row g-0">
+                                                            <div class="col-4 col-md-2 pe-3">
+                                                                 <div class="form-group">
+                                                                      <label class="title-input" for="">Giới tính <span
+                                                                                class="asterisk">*</span></label>
+                                                                      <select class="box-select" name="passenger_title[]">
+                                                                           <option value="0">Nam</option>
+                                                                           <option value="1">Nữ</option>
+                                                                      </select>
+                                                                      <input type="hidden" name="passenger_type[]" value="0">
+                                                                 </div>
                                                             </div>
-                                                            <div class="adult-input__name">
-                                                                 <label class="title-input" for="">Họ và Tên <span
-                                                                           class="asterisk">*</span></label>
-                                                                 <input  type="text" name="passenger_name[]" class="passenger_name input-name box-input" placeholder="Ví dụ: NGUYEN HAI HUNG">
-                                                                 
+                                                            <div class="col-8 col-md-6">
+                                                                 <div class="form-group">
+                                                                      <label class="title-input" for="">Họ và Tên <span
+                                                                                class="asterisk">*</span></label>
+                                                                      <input  type="text" name="passenger_name[]" class="passenger_name input-name box-input" placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                                 </div>
                                                             </div>
                                                        </div>
 
-                                                       <div class="adult-baggage">
-                                                            <div class="baggage__dep-wrap">
+                                                       <div class="row g-0">
+                                                            <div class="col-12">
                                                                  <h6 class="luggage__title">Hành lý lượt đi</h6>
-                                                                 <!-- Xách tay -->
-                                                                 <div class="luggage-wrap">
-                                                                      <h6 class="title-input">Xách tay</h6>
-                                                                      <span class="content__luggage">Mỗi người tối đa 7
-                                                                           Kg.</span>
+                                                                 <div class="row g-0">
+                                                                      <div class="col-4 col-md-2">
+                                                                           <h6 class="title-input">Xách tay</h6>
+                                                                      </div>
+                                                                      <div class="col-8 col-md-10">
+                                                                           <span class="content__luggage">Mỗi người tối đa 7
+                                                                                Kg.</span>
+                                                                      </div>
                                                                  </div>
-
-                                                                 <!-- Ký gửi -->
-                                                                 <div class="signed-luggage-wrap">
-                                                                      <h6 class="title-input">Ký gửi</h6>
-                                                                      <!-- <span class="content__luggage">Mỗi người tối đa 7 Kg.</span> -->
-                                                                      <div class="signed-luggage">
-                                                                           <select name="dep_addbaggage[]"
-                                                                                class="dep_addbaggage">
-                                                                                <option value="0">Không mang hành lý ký
-                                                                                     gửi</option>
-                                                                                <option value="180000">15kg hành lý quá
-                                                                                     khổ (180.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="210000">20kg hành lý
-                                                                                     (210.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="270000">25kg hành lý
-                                                                                     (270.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="380000">30kg hành lý
-                                                                                     (380.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="450000">35kg hành lý
-                                                                                     (450.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="500000">40kg hành lý
-                                                                                     (500.000đ/Khách)
-                                                                                </option>
-                                                                           </select>
-                                                                           <div class="select-styled"></div>
+                                                                 <div class="row g-0 align-items-center">
+                                                                      <div class="col-4 col-md-2">
+                                                                           <h6 class="title-input">Ký gửi</h6>
+                                                                      </div>
+                                                                      <div class="col-8 col-md-10">
+                                                                           <!-- <span class="content__luggage">Mỗi người tối đa 7 Kg.</span> -->
+                                                                           <div class="signed-luggage">
+                                                                                <select name="dep_addbaggage[]"
+                                                                                     class="dep_addbaggage">
+                                                                                     <option value="0">Không mang hành lý ký
+                                                                                          gửi</option>
+                                                                                     <option value="180000">15kg hành lý quá
+                                                                                          khổ (180.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="210000">20kg hành lý
+                                                                                          (210.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="270000">25kg hành lý
+                                                                                          (270.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="380000">30kg hành lý
+                                                                                          (380.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="450000">35kg hành lý
+                                                                                          (450.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="500000">40kg hành lý
+                                                                                          (500.000đ/Khách)
+                                                                                     </option>
+                                                                                </select>
+                                                                                <div class="select-styled"></div>
+                                                                           </div>
                                                                       </div>
                                                                  </div>
                                                             </div>
-                                                            <div class="baggage__ret-wrap">
+                                                            <div class="col-12 mt-4">
                                                                  <h6 class="luggage__title">Hành lý lượt về</h6>
-                                                                 <!-- Xách tay -->
-                                                                 <div class="luggage-wrap">
-                                                                      <h6 class="title-input">Xách tay</h6>
-                                                                      <span class="content__luggage">Mỗi người tối đa 7
-                                                                           Kg.</span>
-                                                                 </div>
 
-                                                                 <!-- Ký gửi -->
-                                                                 <div class="signed-luggage-wrap">
-                                                                      <h6 class="title-input">Ký gửi</h6>
-                                                                      <!-- <span class="content__luggage">Mỗi người tối đa 7 Kg.</span> -->
-                                                                      <div class="signed-luggage">
-                                                                           <select name="dep_addbaggage[]"
-                                                                                class="dep_addbaggage">
-                                                                                <option value="0">Không mang hành lý ký
-                                                                                     gửi</option>
-                                                                                <option value="180000">15kg hành lý quá
-                                                                                     khổ (180.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="210000">20kg hành lý
-                                                                                     (210.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="270000">25kg hành lý
-                                                                                     (270.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="380000">30kg hành lý
-                                                                                     (380.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="450000">35kg hành lý
-                                                                                     (450.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="500000">40kg hành lý
-                                                                                     (500.000đ/Khách)
-                                                                                </option>
-                                                                           </select>
-                                                                           <div class="select-styled"></div>
+                                                                 <div class="row g-0">
+                                                                      <div class="col-4 col-md-2">
+                                                                           <h6 class="title-input">Xách tay</h6>
+                                                                      </div>
+                                                                      <div class="col-8 col-md-10">
+                                                                           <span class="content__luggage">Mỗi người tối đa 7
+                                                                                Kg.</span>
+                                                                      </div>
+                                                                 </div>
+                                                                 <div class="row g-0 align-items-center">
+                                                                      <div class="col-4 col-md-2">
+                                                                           <h6 class="title-input">Ký gửi</h6>
+                                                                      </div>
+                                                                      <div class="col-8 col-md-10">
+                                                                           <!-- <span class="content__luggage">Mỗi người tối đa 7 Kg.</span> -->
+                                                                           <div class="signed-luggage">
+                                                                                <select name="dep_addbaggage[]"
+                                                                                     class="dep_addbaggage">
+                                                                                     <option value="0">Không mang hành lý ký
+                                                                                          gửi</option>
+                                                                                     <option value="180000">15kg hành lý quá
+                                                                                          khổ (180.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="210000">20kg hành lý
+                                                                                          (210.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="270000">25kg hành lý
+                                                                                          (270.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="380000">30kg hành lý
+                                                                                          (380.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="450000">35kg hành lý
+                                                                                          (450.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="500000">40kg hành lý
+                                                                                          (500.000đ/Khách)
+                                                                                     </option>
+                                                                                </select>
+                                                                                <div class="select-styled"></div>
+                                                                           </div>
                                                                       </div>
                                                                  </div>
                                                             </div>
@@ -241,23 +319,26 @@
                                                             <div class="name__passenger--title">Trẻ em 1</div>
                                                        </div>
 
-                                                       <div class="child-input">
-                                                            <div class="child-input__gender">
-                                                                 <label class="title-select" for="">Giới tính <span
-                                                                           class="asterisk">*</span></label>
-                                                                 <select name="passenger_title[]" class="box-select">
-                                                                      <option value="0">Nam</option>
-                                                                      <option value="1">Nữ</option>
-                                                                 </select>
-                                                                 <input type="hidden" name="passenger_type[]" value="1">
+                                                       <div class="row g-0">
+                                                            <div class="col-4 col-sm-2 col-md-2 pe-3">
+                                                                 <div class="form-group">
+                                                                      <label class="title-select" for="">Giới tính <span
+                                                                                class="asterisk">*</span></label>
+                                                                      <select name="passenger_title[]" class="box-select">
+                                                                           <option value="0">Nam</option>
+                                                                           <option value="1">Nữ</option>
+                                                                      </select>
+                                                                      <input type="hidden" name="passenger_type[]" value="1">
+                                                                 </div>
                                                             </div>
-                                                            <div class="child-input__name">
-                                                                 <label class="title-input" for="">Họ và Tên <span
-                                                                           class="asterisk">*</span></label>
-                                                                 <input  type="text" name="passenger_name[]" class="passenger_name input-name box-input" placeholder="Ví dụ: NGUYEN HAI HUNG">
-                                                                 
+                                                            <div class="col-8 col-sm-6 col-md-5 pe-3">
+                                                                 <div class="form-group">
+                                                                      <label class="title-input" for="">Họ và Tên <span
+                                                                                class="asterisk">*</span></label>
+                                                                      <input  type="text" name="passenger_name[]" class="passenger_name input-name box-input" placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                                 </div>
                                                             </div>
-                                                            <div class="input__birthday">
+                                                            <div class="col-12 col-sm-12 col-md-5">
                                                                  <label class="title-input" for="">Ngày sinh <span
                                                                            class="asterisk">*</span></label>
                                                                  <ul class="dropdown-box-birthday">
@@ -340,87 +421,96 @@
                                                             </div>
 
                                                        </div>
-
-                                                       <div class="child-baggage">
-                                                            <div class="baggage__dep-wrap">
-                                                                 <h6 class="luggage__title">Hành lý lượt đi</h6>
-                                                                 <!-- Xách tay -->
-                                                                 <div class="luggage-wrap">
-                                                                      <h6 class="title-input">Xách tay</h6>
-                                                                      <span class="content__luggage">Mỗi người tối đa 7
-                                                                           Kg.</span>
+                                                       <div class="row g-0 mt-4">
+                                                            <div class="col-12 col-sm-12 col-md-12">
+                                                                 <div class="row g-0">
+                                                                      <h6 class="luggage__title">Hành lý lượt đi</h6>
+                                                                      <div class="col-4 col-md-2">
+                                                                           <h6 class="title-input">Xách tay</h6>
+                                                                      </div>
+                                                                      <div class="col-8 col-md-10">
+                                                                           <span class="content__luggage">Mỗi người tối đa 7
+                                                                                Kg.</span>
+                                                                      </div>
                                                                  </div>
-
-                                                                 <!-- Ký gửi -->
-                                                                 <div class="signed-luggage-wrap">
-                                                                      <h6 class="title-input">Ký gửi</h6>
-                                                                      <!-- <span class="content__luggage">Mỗi người tối đa 7 Kg.</span> -->
-                                                                      <div class="signed-luggage">
-                                                                           <select name="dep_addbaggage[]"
-                                                                                class="dep_addbaggage">
-                                                                                <option value="0">Không mang hành lý ký
-                                                                                     gửi</option>
-                                                                                <option value="180000">15kg hành lý quá
-                                                                                     khổ (180.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="210000">20kg hành lý
-                                                                                     (210.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="270000">25kg hành lý
-                                                                                     (270.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="380000">30kg hành lý
-                                                                                     (380.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="450000">35kg hành lý
-                                                                                     (450.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="500000">40kg hành lý
-                                                                                     (500.000đ/Khách)
-                                                                                </option>
-                                                                           </select>
-                                                                           <div class="select-styled"></div>
+                                                                 <div class="row g-0 align-items-center">
+                                                                      <div class="col-4 col-md-2">
+                                                                           <h6 class="title-input">Ký gửi</h6>
+                                                                      </div>
+                                                                      <div class="col-8 col-md-10">
+                                                                           <!-- <span class="content__luggage">Mỗi người tối đa 7 Kg.</span> -->
+                                                                           <div class="signed-luggage">
+                                                                                <select name="dep_addbaggage[]"
+                                                                                     class="dep_addbaggage">
+                                                                                     <option value="0">Không mang hành lý ký
+                                                                                          gửi</option>
+                                                                                     <option value="180000">15kg hành lý quá
+                                                                                          khổ (180.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="210000">20kg hành lý
+                                                                                          (210.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="270000">25kg hành lý
+                                                                                          (270.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="380000">30kg hành lý
+                                                                                          (380.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="450000">35kg hành lý
+                                                                                          (450.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="500000">40kg hành lý
+                                                                                          (500.000đ/Khách)
+                                                                                     </option>
+                                                                                </select>
+                                                                                <div class="select-styled"></div>
+                                                                           </div>
                                                                       </div>
                                                                  </div>
                                                             </div>
-                                                            <div class="baggage__ret-wrap">
-                                                                 <h6 class="luggage__title">Hành lý lượt về</h6>
-                                                                 <!-- Xách tay -->
-                                                                 <div class="luggage-wrap">
-                                                                      <h6 class="title-input">Xách tay</h6>
-                                                                      <span class="content__luggage">Mỗi người tối đa 7
-                                                                           Kg.</span>
+                                                            <div class="col-12 col-sm-12 col-md-12 mt-4">
+                                                                 <div class="row g-0">
+                                                                      <h6 class="luggage__title">Hành lý lượt về</h6>
+                                                                      <div class="col-4 col-md-2">
+                                                                           <h6 class="title-input">Xách tay</h6>
+                                                                      </div>
+                                                                      <div class="col-8 col-md-10">
+                                                                           <span class="content__luggage">Mỗi người tối đa 7
+                                                                                Kg.</span>
+                                                                      </div>
                                                                  </div>
-
-                                                                 <!-- Ký gửi -->
-                                                                 <div class="signed-luggage-wrap">
-                                                                      <h6 class="title-input">Ký gửi</h6>
-                                                                      <!-- <span class="content__luggage">Mỗi người tối đa 7 Kg.</span> -->
-                                                                      <div class="signed-luggage">
-                                                                           <select name="dep_addbaggage[]"
-                                                                                class="dep_addbaggage">
-                                                                                <option value="0">Không mang hành lý ký
-                                                                                     gửi</option>
-                                                                                <option value="180000">15kg hành lý quá
-                                                                                     khổ (180.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="210000">20kg hành lý
-                                                                                     (210.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="270000">25kg hành lý
-                                                                                     (270.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="380000">30kg hành lý
-                                                                                     (380.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="450000">35kg hành lý
-                                                                                     (450.000đ/Khách)
-                                                                                </option>
-                                                                                <option value="500000">40kg hành lý
-                                                                                     (500.000đ/Khách)
-                                                                                </option>
-                                                                           </select>
-                                                                           <div class="select-styled"></div>
+                                                                 <div class="row g-0 align-items-center">
+                                                                      <div class="col-4 col-md-2">
+                                                                           <h6 class="title-input">Ký gửi</h6>
+                                                                      </div>
+                                                                      <div class="col-8 col-md-10">
+                                                                           <!-- <span class="content__luggage">Mỗi người tối đa 7 Kg.</span> -->
+                                                                           <div class="signed-luggage">
+                                                                                <select name="dep_addbaggage[]"
+                                                                                     class="dep_addbaggage">
+                                                                                     <option value="0">Không mang hành lý ký
+                                                                                          gửi</option>
+                                                                                     <option value="180000">15kg hành lý quá
+                                                                                          khổ (180.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="210000">20kg hành lý
+                                                                                          (210.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="270000">25kg hành lý
+                                                                                          (270.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="380000">30kg hành lý
+                                                                                          (380.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="450000">35kg hành lý
+                                                                                          (450.000đ/Khách)
+                                                                                     </option>
+                                                                                     <option value="500000">40kg hành lý
+                                                                                          (500.000đ/Khách)
+                                                                                     </option>
+                                                                                </select>
+                                                                                <div class="select-styled"></div>
+                                                                           </div>
                                                                       </div>
                                                                  </div>
                                                             </div>
@@ -441,23 +531,25 @@
                                                             <div class="name__passenger--title">Em bé 1</div>
                                                        </div>
 
-                                                       <div class="infant-input">
-                                                            <div class="infant-input__gender">
-                                                                 <label class="title-select" for="">Giới tính <span
-                                                                           class="asterisk">*</span></label>
-                                                                 <select name="passenger_title[]" class="box-select">
-                                                                      <option value="0">Nam</option>
-                                                                      <option value="1">Nữ</option>
-                                                                 </select>
-                                                                 <input type="hidden" name="passenger_type[]" value="2">
+                                                       <div class="row g-0">
+                                                            <div class="col-4 col-sm-2 col-md-2 pe-3">
+                                                                 <div class="form-group">
+                                                                      <label class="title-select" for="">Giới tính <span
+                                                                                class="asterisk">*</span></label>
+                                                                      <select name="passenger_title[]" class="box-select">
+                                                                           <option value="0">Nam</option>
+                                                                           <option value="1">Nữ</option>
+                                                                      </select>
+                                                                      <input type="hidden" name="passenger_type[]" value="2">
+                                                                 </div>
                                                             </div>
-                                                            <div class="infant-input__name">
+                                                            <div class="col-8 col-sm-6 col-md-5 pe-3">
                                                                  <label class="title-input" for="">Họ và Tên <span
                                                                            class="asterisk">*</span></label>
                                                                  <input  type="text" name="passenger_name[]" class="passenger_name input-name box-input" placeholder="Ví dụ: NGUYEN HAI HUNG">
                                                                  
                                                             </div>
-                                                            <div class="input__birthday">
+                                                            <div class="col-12 col-sm-12 col-md-5">
                                                                  <label class="title-input" for="">Ngày sinh <span
                                                                            class="asterisk">*</span></label>
                                                                  <ul class="dropdown-box-birthday">
@@ -533,29 +625,34 @@
                                                             </div>
                                                        </div>
 
-                                                       <div class="infant-baggage">
-                                                            <div class="baggage__dep-wrap">
+                                                       <div class="row g-0 mt-4">
+                                                            <div class="col-12 col-sm-12 col-md-12">
                                                                  <h6 class="luggage__title">Hành lý lượt đi</h6>
                                                                  <!-- Ký gửi -->
-                                                                 <div class="signed-luggage-wrap">
-                                                                      <h6 class="title-input">Ký gửi</h6>
-                                                                      <span class="content__luggage">Mỗi người tối đa 7
-                                                                           Kg.</span>
+                                                                 <div class="row g-0">
+                                                                      <div class="col-4 col-md-2">
+                                                                           <h6 class="title-input">Ký gửi</h6>
+                                                                      </div>
+                                                                      <div class="col-8 col-md-10">
+                                                                           <span class="content__luggage">Mỗi người tối đa 7Kg.</span>
+                                                                      </div>
                                                                  </div>
                                                             </div>
-                                                            <div class="baggage__ret-wrap">
+                                                            <div class="col-12 col-sm-12 col-md-12 mt-4 mb-2">
                                                                  <h6 class="luggage__title">Hành lý lượt về</h6>
                                                                  <!-- Ký gửi -->
-                                                                 <div class="signed-luggage-wrap">
-                                                                      <h6 class="title-input">Ký gửi</h6>
-                                                                      <span class="content__luggage">Mỗi người tối đa 7
-                                                                           Kg.</span>
+                                                                 <div class="row g-0">
+                                                                      <div class="col-4 col-md-2">
+                                                                           <h6 class="title-input">Ký gửi</h6>
+                                                                      </div>
+                                                                      <div class="col-8 col-md-10">
+                                                                           <span class="content__luggage">Mỗi người tối đa 7Kg.</span>
+                                                                      </div>
                                                                  </div>
                                                             </div>
                                                        </div>
                                                   </div>
                                              </li>
-
                                         </ul>
                                    </section>
 
@@ -575,9 +672,9 @@
 
                                         <div class="contact-passenger-wrap">
                                              <div class="contact__input">
-                                                  <div class="contact__input--required">
+                                                  <div class="row g-0">
                                                        <!-- title -->
-                                                       <div class="input__contact--title">
+                                                       <div class="col-4 col-sm-4 col-md-2 pe-3">
                                                             <label class="title-select" for="contact_title">Qúy danh <span
                                                                  class="asterisk">*</span></label>
                                                             <select name="contact_title" id="contact_title" class="box-select">
@@ -587,31 +684,39 @@
                                                        </div>
 
                                                        <!-- name -->
-                                                       <div class="input__contact--name">
-                                                            <label class="title-input" for="contact_name">Họ và Tên <span
-                                                                      class="asterisk">*</span></label>
-                                                            <input name="contact_name" id="contact_name" type="text" class="contact-name box-input"
-                                                                 placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                       <div class="col-8 col-sm-8 col-md-5 pe-3">
+                                                            <div class="form-group">
+                                                                 <label class="title-input" for="contact_name">Họ và Tên <span
+                                                                           class="asterisk">*</span></label>
+                                                                 <input name="contact_name" id="contact_name" type="text" class="contact-name box-input"
+                                                                      placeholder="Ví dụ: NGUYEN HAI HUNG">
+                                                            </div>
                                                        </div>
 
                                                        <!-- phone -->
-                                                       <div class="input__contact--phone">
-                                                            <label class="title-input" for="contact_phone">Điện thoại di động <span
-                                                                      class="asterisk">*</span></label>
-                                                            <!-- <input onkeypress="return /[0-9]/i.test(event.key)" name="contact_phone" id="contact_phone" type="text" class="contact-phone box-input"> -->
-                                                            <input name="contact_phone" id="contact_phone" type="text" class="only__numberic contact-phone box-input">
+                                                       <div class="col-12 col-sm-12 col-md-5">
+                                                            <div class="form-group">
+                                                                 <label class="title-input" for="contact_phone">Điện thoại di động <span
+                                                                           class="asterisk">*</span></label>
+                                                                 <!-- <input onkeypress="return /[0-9]/i.test(event.key)" name="contact_phone" id="contact_phone" type="text" class="contact-phone box-input"> -->
+                                                                 <input name="contact_phone" id="contact_phone" type="text" class="only__numberic contact-phone box-input">
+                                                            </div>
                                                        </div>
                                                   </div>
-                                                  <div class="contact__input--optional">
+                                                  <div class="row g-0">
                                                        <!-- email -->
-                                                       <div class="input__contact--email">
-                                                            <label class="title-input" for="contact_email">Email</label>
-                                                            <input  name="contact_email" id="contact_email" type="text" class="contact-email box-input">
+                                                       <div class="col-12 col-sm-12 col-md-6 pe-3">
+                                                            <div class="form-group">
+                                                                 <label class="title-input" for="contact_email">Email</label>
+                                                                 <input  name="contact_email" id="contact_email" type="text" class="contact-email box-input">
+                                                            </div>
                                                        </div>
                                                        <!-- address -->
-                                                       <div class="input__contact--address">
-                                                            <label class="title-input" for="contact_address">Địa chỉ</label>
-                                                            <input type="text" name="contact_address" id="contact_address" class="contact-address box-input">
+                                                       <div class="col-12 col-sm-12 col-md-6">
+                                                            <div class="form-group">
+                                                                 <label class="title-input" for="contact_address">Địa chỉ</label>
+                                                                 <input type="text" name="contact_address" id="contact_address" class="contact-address box-input">
+                                                            </div>
                                                        </div>
                                                   </div>
                                                   <div id="err__contact" class="line_error"></div>
@@ -646,7 +751,7 @@
 
 
                          </div>
-                         <div class="col-md-4">
+                         <div class="col-lg-4 col-md-12 col-sm-12">
 
                               <!-- JOURNEY -->
                               <div class="sidebar-journey">

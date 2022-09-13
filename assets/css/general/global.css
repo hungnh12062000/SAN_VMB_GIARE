@@ -79,7 +79,7 @@ select::-webkit-scrollbar-track {
 }
 
 select::-webkit-scrollbar-thumb {
-  background: var(--subheading-color);
+  background: #ccc;
   border-radius: 50px;
 }
 
@@ -342,6 +342,9 @@ a {
   flex-wrap: nowrap;
 }
 
+.form-group{
+  margin-bottom: 15px;
+}
 /* =========== TOGGLE SWICHES ======== */
 .toggle-switches {
   display: flex;
@@ -693,7 +696,7 @@ a.instagram:hover {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .box-subheading-span,
@@ -750,6 +753,10 @@ li.breadcrumb__item.current a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.align-items-center{
+  align-items: center !important;
 }
 
 .cursor-pointer {
