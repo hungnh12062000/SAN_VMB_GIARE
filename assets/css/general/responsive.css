@@ -52,14 +52,14 @@ Common breakpoints are
   .section-title {
     font-size: 26px;
   }
-  
+
   .col-12-tablet{
     flex: 0 0 auto;
     width: 100%;
   }
 
   .booking-form .submit-btn {
-    font-size: 16px;
+    font-size: 18px;
   }
   .booking-form .form-btn{
     padding: 0 20px 20px;
@@ -262,6 +262,36 @@ Common breakpoints are
   .container {
     max-width: 820px;
   }
+
+  /* CHỌN HÀNH TRÌNH */
+  .flight-infor{
+    justify-content: space-between;
+  }
+  .infor-duration{
+    align-items: center;
+  }
+
+  .flight-infor-details{
+    flex-direction: column;
+  }
+
+  .infor-details-journey{
+    width: 100%;
+  }
+  .infor-journey-wrap{
+    justify-content: center;
+  }
+  .infor-details__wrap{
+    margin-top: 30px;
+  }
+
+  .sidebar__title, .sidebar__reset{
+    font-size: 14px;
+  }
+  .journey-infor__title span, .infor-ticket-title span{
+    font-size: 14px;
+  }
+
 }
 
 /* For iPads & tablets */
@@ -446,6 +476,66 @@ Common breakpoints are
     width: 49%;
     margin: 0;
   }
+
+  /* CHỌN HÀNH TRÌNH */
+  .header {
+    padding: 0 10px;
+  }
+  .journey-infor__title span, .infor-ticket-title span{
+    font-size: 14px;
+  }
+  .flight-infor{
+    justify-content: space-between;
+  }
+  .infor-duration{
+    align-items: center;
+  }
+
+  .flight-infor-details{
+    flex-direction: column;
+  }
+
+  .infor-details-journey{
+    width: 100%;
+  }
+  .infor-journey-wrap{
+    justify-content: center;
+  }
+  .infor-details__wrap{
+    margin-top: 30px;
+  }
+  .infor-other{
+    padding-right: 10px;
+  }
+  .result-flight{
+    margin: 25px 0 0 0;
+  }
+
+  /* Footer */
+  .contact-menu__item {
+    margin-top: 30px;
+  }
+  .contact-menu__item p {
+    font-size: 14px;
+  }
+
+  .footer__about--company li {
+    font-size: 14px;
+  }
+
+  .contact-menu__item h6,
+  .footer__about--company h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .list__about--company{
+    margin-top: 0px;
+  }
+
+  .sidebar-filters{
+    display: none;
+  }
+
 }
 
 /* For Mobile Portrait View - chiều dọc */
@@ -725,9 +815,14 @@ Common breakpoints are
     font-size: 12px;
   }
   .contact-menu__item,
-  .footer__about--company{
+  .list__about--company{
     margin-top: 30px;
     margin-left: 20px;
+  }
+  .footer__about--company{
+    margin-top: 0px;
+    margin-left: 20px;
+
   }
 
   .list__about--company{
@@ -811,6 +906,70 @@ Common breakpoints are
     width: 90%;
     margin: 0;
   }
+
+  /* CHỌN HÀNH TRÌNH */
+  .header {
+    padding: 0 50px 0 30px;
+  }
+  .journey-infor__title span, .infor-ticket-title span{
+    font-size: 14px;
+  }
+  .flight-infor{
+    justify-content: space-between;
+  }
+  .infor-duration{
+    align-items: center;
+  }
+
+  .flight-infor-details{
+    flex-direction: column;
+  }
+
+  .infor-details-journey{
+    width: 100%;
+  }
+  .infor-journey-wrap{
+    justify-content: center;
+  }
+  .infor-details__wrap{
+    margin-top: 30px;
+  }
+  .infor-other{
+    padding-right: 10px;
+  }
+  .result-flight{
+    margin: 25px 0 0 0;
+  }
+
+  .btn {
+    min-width: 100px;
+    padding: 10px 6px;
+
+  }
+  .flight-details button{
+    font-size: 14px;
+  }
+  #progressbar li{
+    font-size: 12px;
+  }
+  .sidebar-filters{
+    margin-top: 10px;
+    display: none;
+  }
+  .time__depart, .time__destination{
+    font-size: 14px;
+  }
+  .box-subheading-span, .tbody-title {
+    font-size: 12px;
+  }
+  .infor-brand img{
+    width: 40px;
+    height: 40px;
+  }
+  .box-heading-h6, .thead-title, .name__passenger--title, .luggage__title{
+    font-size: 12px;
+  }
+  
 }
 
 /* For Mobile Landscape View - Chiều ngang*/

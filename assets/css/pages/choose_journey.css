@@ -224,15 +224,16 @@
 
 
 .infor-details__wrap{
-  width: 50%;
+  flex: 1;
 }
 
 .infor-details-journey{
-  flex: 1;
+  width: 50%;
 }
 
 .infor-other{
   margin-top: 20px;
+  padding-right: 30px;
 }
 
 .infor-other li{
