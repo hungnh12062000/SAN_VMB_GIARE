@@ -87,8 +87,7 @@
   font-weight: 600;
 }
 
-.header-phone,
-.header-phone-mobile {
+.header-phone {
   color: var(--black-color);
   display: flex;
   font-size: 18px;

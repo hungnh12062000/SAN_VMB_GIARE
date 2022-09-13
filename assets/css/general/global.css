@@ -667,7 +667,7 @@ a.instagram:hover {
   line-height: 20px;
 }
 
-.box-subheading{
+.box-subheading {
   font-size: 16px;
   line-height: 20px;
   font-weight: 600;
@@ -688,12 +688,12 @@ a.instagram:hover {
 .title-input,
 .title-select,
 .caption-details,
-.caption-birthday{
-     color: var(--title-color);
-     font-size: 14px;
-     line-height: 16px;
-     font-weight: 400;
-     margin-bottom: 4px;
+.caption-birthday {
+  color: var(--title-color);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-bottom: 4px;
 }
 
 .box-subheading-span,
@@ -739,72 +739,83 @@ li.breadcrumb__item.current a {
 }
 
 /* CSS FOR ERR */
-.err__name{
+.err__name {
   margin-top: 5px;
   font-size: 14px;
   color: #ec2029;
 }
 
 /* === Position ==== */
-.flex-center{
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
 }
-/* menu mobile & tablet */
-/* nav */
-#slide-menu{
+
+/* =========== menu nav for screen tablet ========== */
+#slide-menu {
   display: none;
 }
 
-.header-slide-menu__btn{
+.header-slide-menu__btn {
   cursor: pointer;
   /* position: relative; */
- display: none;
+  display: none;
 }
 
-.mobile-menu{
+.header-slide-menu__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  background: linear-gradient(to left, rgba(239, 50, 217, 0.4), rgba(137, 255, 253, 0.4));
+  animation: fadeIn linear 0.2s;
+}
+
+.mobile-menu {
   display: flex;
- /* display: none; */
- flex-direction: column;
- position: fixed;
- top: 0;
- right: 0;
- bottom: 0;
- padding: 0 15px;
- width: 285px;
- max-width: 100%;
- overflow-y: scroll;
- background-color: var(--text-color);
- transform: translateX(100%);
- transition: transform ease-out 0.5s;
- overflow: hidden;
- z-index: 2;
+  /* display: none; */
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 15px;
+  width: 285px;
+  max-width: 100%;
+  overflow-y: scroll;
+  background-color: var(--border-color);
+  transform: translateX(100%);
+  transition: transform ease-out 0.5s;
+  overflow: hidden;
+  z-index: 2;
 }
-.mobile-menu-wrapper{
+.mobile-menu-wrapper {
   margin-top: 40px;
- padding-left: 30px;
- padding-right: 30px;
- padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
 }
 
-.mobile-menu svg{
+.mobile-menu svg {
   transform: rotate(45deg);
   position: absolute;
- box-sizing: content-box;
- display: inline-block;
- padding: 10px;
- top: 6px;
- right: 12px;
- color: var(--white-color);
- cursor: pointer;
+  box-sizing: content-box;
+  display: inline-block;
+  padding: 10px;
+  top: 6px;
+  right: 12px;
+  color: var(--white-color);
+  cursor: pointer;
 }
 
-.mobile-menu__title{
+.mobile-menu__title {
   display: block;
   font-size: 2.4rem;
   line-height: 2.4rem;
@@ -813,20 +824,35 @@ li.breadcrumb__item.current a {
   text-decoration: none;
 }
 
-.mobile-menu__list{
-  margin-left: 20px;
+.mobile-menu__list {
   list-style: none;
 }
 
-.mobile-menu__item-link {
- display: block;
- font-size: 1.4rem;
- line-height: 3.5rem;
- letter-spacing: 2px;
- color: var(--white-color);
- text-decoration: none;
+.mobile-menu__item-link,
+.header-phone-mobile a {
+  display: block;
+  font-size: 14px;
+  line-height: 4.5rem;
+  letter-spacing: 2px;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-#slide-menu:checked ~ .mobile-menu{
-  transform:  translateX(0%);
+.mobile-menu__item-link:hover,
+.header-phone-mobile:hover a {
+  color: var(--saphire-color);
+}
+
+#slide-menu:checked ~ .mobile-menu {
+  transform: translateX(0%);
+}
+
+#slide-menu:checked ~ .header-slide-menu__overlay{
+  display: block;
+}
+
+.menu-control__mobile-wrap{
+  display: none;
 }

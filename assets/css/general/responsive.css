@@ -52,10 +52,42 @@ Common breakpoints are
   .section-title {
     font-size: 26px;
   }
+  
+  .col-12-tablet{
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .booking-form .submit-btn {
+    font-size: 16px;
+  }
+  .booking-form .form-btn{
+    padding: 0 20px 20px;
+  }
+
+  .booking-form .form-control{
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .booking-form div.form-control+.select-arrow{
+    top: 30px;
+    right: 20px;
+  }
+
+  .count-passenger{
+    position: unset;
+  }
+
 
   /* nav */
   .header-slide-menu__btn {
     display: block;
+  }
+  .menu-control {
+    display: none;
+  }
+  .sidebar{
+    display: none;
   }
 
   /* header */
@@ -69,6 +101,24 @@ Common breakpoints are
   }
 
   /* form search */
+  .picker {
+    font-size: 14px;
+  }
+
+  .picker, .picker__holder{
+    width: 105%;
+    left: 10px;
+  }
+
+  .picker__weekday {
+    font-size: 16px;
+  }
+
+  .picker__month, .picker__year{
+    font-size: 20px;
+  }
+
+
   .list__dep--wrap .menu div,
   .list__ret--wrap .menu div {
     font-size: 12px;
@@ -90,7 +140,14 @@ Common breakpoints are
   .list__dep--wrap,
   .list__ret--wrap {
     width: 100%;
+    top: 25%;
+    left: 2%;
   }
+  
+  #listDes .list__ret--wrap{
+    left: 2%;
+  }
+
   .list-area {
     padding: 0;
   }
@@ -102,20 +159,14 @@ Common breakpoints are
     width: 150%;
   }
 
-  .booking-form .submit-btn {
-    font-size: 12px;
-  }
-  .booking-form .form-control,
-  .count-passenger {
-    font-size: 12px;
-  }
-
   .dropdown-box-inner {
-    width: 325%;
-    left: -125%;
+    width: 100%;
+    top: 100%;
+    left: 0%;
+    border: 1px solid var(--border-color);
   }
   .title-people {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .toggle-direction {
@@ -215,10 +266,75 @@ Common breakpoints are
 
 /* For iPads & tablets */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  /* genneral  */
+  .search__title {
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+
+  .destination-item{
+    width: 70px;
+    height: 70px;
+
+  }
+  .destination-title{
+    width: 150%;
+    font-size: 12px;
+    line-height: 10px;
+  }
+  
+  .list__dep--wrap .menu div, .list__ret--wrap .menu div{
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .list__dep--wrap .menu div span.light, .list__ret--wrap .menu div span.light{
+    display: none;
+  }
+
+  .list__dep--wrap .menu div.active, .list__ret--wrap .menu div.active{
+    padding: 10px;
+
+  }
+
+  .picker {
+    font-size: 12px;
+  }
+
+  .picker, .picker__holder{
+    width: 105%;
+    left: 10px;
+  }
+
+  .picker__weekday {
+    font-size: 14px;
+  }
+
+  .picker__month, .picker__year{
+    font-size: 18px;
+  }
+
+  .booking-form div.form-control+.select-arrow{
+    top: 40px;
+    right: 20px;
+  }
+
   /* nav */
+  .menu-control {
+    display: none;
+  }
+  .sidebar{
+    display: none;
+  }
+
   .header-slide-menu__btn {
     display: block;
   }
+
+  .booking-form .form-btn{
+    padding: 0 20px 20px;
+  }
+
 
   /* header */
   .header-nav,
@@ -237,19 +353,14 @@ Common breakpoints are
   .booking-form .form-control {
     border-bottom: 1px solid var(--border-color);
   }
-  .booking-form .submit-btn {
-    margin-top: 40px;
+  .count-passenger{
+    position: unset;
   }
 
   .list__dep--wrap {
     top: 17%;
     width: 105%;
     left: 2%;
-  }
-
-  .picker,
-  .picker__holder {
-    left: 18px;
   }
 
   #listDes .list__ret--wrap {
@@ -259,9 +370,9 @@ Common breakpoints are
   }
 
   .dropdown-box-inner {
-    top: 215%;
-    width: 90%;
-    left: 25px;
+    top: 205%;
+    width: 95%;
+    left: 10px;
   }
 
   .box-people {
@@ -339,31 +450,299 @@ Common breakpoints are
 
 /* For Mobile Portrait View - chiều dọc */
 @media screen and (max-width: 480px) and (orientation: portrait) {
-     /* nav */
-  .header-slide-menu__btn {
-    display: block;
+
+  .search__section{
+    margin-top: 0;
   }
+  
+  .booking-form .form-control{
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .count-passenger{
+    position: unset;
+  }
+  
+/* ========= menu for mobile ========== */
+.menu-control__mobile-wrap{
+  display: block;
+}
+
+.hamburger {
+  /* position: absolute; */
+  position: relative;
+  left: 30px;
+  top: 2px;
+  display: flex;
+  height: 18px;
+  width: 24px;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamburger__icon {
+  display: inline-block;
+  height: 2px;
+  width: 24px;
+  background: var(--black-color);
+  border-radius: 2px;
+}
+
+.sidebar {
+  height: 100vh;
+  /* width: 320px; */
+  width: 100vw;
+  background: var(--border-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  transform: translatex(-100%);
+  transition: transform 0.4s ease-in-out;
+}
+.sidebar__close {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  background: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.03);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translatex(-100%);
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out 0.2s;
+}
+.sidebar__close::before,
+.sidebar__close::after {
+  content: "";
+  height: 2px;
+  background: #898989;
+  width: 24px;
+  display: block;
+  position: absolute;
+}
+.sidebar__close::after {
+  transform: rotate(90deg);
+}
+.sidebar__menu {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* justify-content: space-around; */
+  line-height: 50px;
+  font-size: 16px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  color: var(--text-color);
+}
+.sidebar__menu a {
+  /* color: currentcolor; */
+  color: var(--text-color);
+  text-decoration: none;
+  transform: translatex(-80%);
+  transition: transform 0.4s ease-in-out;
+}
+.sidebar__menu a::before {
+  content: "";
+  height: 2px;
+  background: var(--saphire-color);
+  width: 120px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transform: translatex(-50%);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s linear;
+}
+.sidebar__menu a:hover::before {
+  transform: translatex(0);
+  opacity: 1;
+}
+.sidebar__menu a:nth-child(1) {
+  transition-delay: 0.05s;
+}
+.sidebar__menu a:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.sidebar__menu a:nth-child(3) {
+  transition-delay: 0.15s;
+}
+.sidebar__menu a:nth-child(4) {
+  transition-delay: 0.2s;
+}
+.sidebar__menu a:nth-child(5) {
+  transition-delay: 0.25s;
+}
+.sidebar__menu a:nth-child(6) {
+  transition-delay: 0.3s;
+}
+.sidebar__menu a:nth-child(7) {
+  transition-delay: 0.35s;
+}
+.sidebar__menu a:nth-child(8) {
+  transition-delay: 0.4s;
+}
+.sidebar__menu a:nth-child(9) {
+  transition-delay: 0.45s;
+}
+.sidebar__menu a:nth-child(10) {
+  transition-delay: 0.5s;
+}
+.menu-control {
+  display: none;
+}
+.menu-control:checked + .sidebar {
+  transform: translatex(0);
+}
+.menu-control:checked + .sidebar .sidebar__close {
+  transform: translatex(0) rotate(45deg);
+}
+.menu-control:checked + .sidebar .sidebar__menu a {
+  transform: translatex(0);
+}
 
   /* header */
   .header-nav,
   .header-phone {
     display: none;
   }
+  .booking-form .form-btn{
+    padding: 20px;
+  }
+  .booking-form .submit-btn{
+    font-size: 20px;
+  }
 
-  .header-phone-mobile {
-    color: var(--white-color);
+  .booking-form div.form-control+.select-arrow{
+    top: 40px;
+    right: 20px;
+  }
+
+  .dropdown-box-inner {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    top: 80px;
+  }
+
+  .list__dep--wrap {
+    top: 17%;
+    width: 105%;
+    left: 2%;
+  }
+
+  #listDes .list__ret--wrap {
+    top: 35%;
+    width: 105%;
+    left: 2%;
+  }
+  .picker {
+    font-size: 12px;
+  }
+  .picker, .picker__holder{
+    width: 105%;
+  }
+
+  .picker__weekday {
+    font-size: 12px;
+  }
+
+  .picker__month, .picker__year{
+    font-size: 16px;
+  }
+
+  .list__dep--wrap .menu div, .list__ret--wrap .menu div{
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .list__dep--wrap .menu div span.light, .list__ret--wrap .menu div span.light{
+    display: none;
+  }
+
+  .list__dep--wrap .menu div.active, .list__ret--wrap .menu div.active{
+    padding: 10px;
+
+  }
+
+  .column-2-mobile{
+    width: 20%;
+  }
+
+  .column-8-mobile{
+    width: 80%;
+  }
+
+  .list-destination{
+    gap: 5px;
+    justify-content: space-between;
+  }
+
+  .toast-warning{
+    min-width: 250px;
+    max-width: 350px;
+    right: 20px;
+    font-size: 12px;
+  }
+
+  .destination-item {
+    width: 60px;
+    height: 60px;
+  }
+
+  .destination-title{
+    width: 150%;
+    font-size: 10px;
+    line-height: 5px;
+  }
+
+  .scroll-to-top{
+    right: 15px;
+    bottom: 40px;
+    border: 3px solid var(--saphire-color);
+    width: 30px;
+    height: 30px;
   }
 
   /* genneral  */
+  .search__title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
   .section-title {
     font-size: 18px;
   }
   .box-title {
     font-size: 12px;
   }
+  .contact-menu__item,
+  .footer__about--company{
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  .list__about--company{
+    margin-top: 0px;
+  }
+
+  .contact-menu__item h6, .footer__about--company h6{
+    margin-bottom: 15px;
+  }
+
   .destinations__domestic--location {
     padding: 10px 5px;
   }
+
+
   /* destination inter */
   .destination__inter {
     display: grid;
