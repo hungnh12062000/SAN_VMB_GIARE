@@ -45,29 +45,101 @@
             <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo--img" />
           </a>
         </div>
-        <ul class="header-nav">
-          <li class="nav__item">
-            <a href="./category.html" class="nav__item--link">VÉ MÁY BAY NỘI ĐỊA</a>
-          </li>
-          <li class="nav__item">
-            <a href="./category.html" class="nav__item--link">VÉ MÁY BAY QUỐC TẾ</a>
-          </li>
-          <li class="nav__item">
-            <a href="./category.html" class="nav__item--link">VÉ RẺ THEO THÁNG</a>
-          </li>
-          <li class="nav__item">
-            <a href="./category.html" class="nav__item--link">TIN TỨC</a>
-          </li>
-          <li class="nav__item">
-            <a href="./contact.html" class="nav__item--link">LIÊN HỆ</a>
-          </li>
-        </ul>
+        <div class="menu-control__wrap">
+          <ul class="header-nav">
+            <li class="nav__item">
+              <a href="./category.html" class="nav__item--link">VÉ MÁY BAY NỘI ĐỊA</a>
+            </li>
+            <li class="nav__item">
+              <a href="./category.html" class="nav__item--link">VÉ MÁY BAY QUỐC TẾ</a>
+            </li>
+            <li class="nav__item">
+              <a href="./category.html" class="nav__item--link">VÉ RẺ THEO THÁNG</a>
+            </li>
+            <li class="nav__item">
+              <a href="./category.html" class="nav__item--link">TIN TỨC</a>
+            </li>
+            <li class="nav__item">
+              <a href="./contact.html" class="nav__item--link">LIÊN HỆ</a>
+            </li>
+          </ul>
+        </div>
         <div class="header-phone">
-          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000" viewBox="0 0 256 256">
+            <rect width="256" height="256" fill="none"></rect>
+            <path
+              d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z"
+              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+          </svg>
           <p class="phone-number">1900 636 063</p>
         </div>
-      </div>
+        <!-- MENU FOR TABLET -->
+        <div class="menu-control__tablet-wrap">
+          <input type="checkbox" id="slide-menu" />
+          <label for="slide-menu" class="header-slide-menu__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="68" x2="216" y2="68" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="108" x2="216" y2="108" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="148" x2="216" y2="148" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="188" x2="216" y2="188" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+          </label>
+          <label for="slide-menu" class="header-slide-menu__overlay"></label>
+          <div class="mobile-menu">
+            <label for="slide-menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+            </label>
+  
+            <div class="mobile-menu-wrapper">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__item-link" href="./category.html">VÉ MÁY BAY NỘI ĐỊA</a>
+                </li>
+  
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__item-link" href="./category.html">VÉ MÁY BAY QUỐC TẾ</a>
+                </li>
+  
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__item-link" href="./category.html">VÉ MÁY BAY THEO THÁNG</a>
+                </li>
+  
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__item-link" href="./category.html">TIN TỨC</a>
+                </li>
+  
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__item-link" href="./contact.html">LIÊN HỆ</a>
+                </li>
+              </ul>
+  
+              <div class="header-phone-mobile">
+                <a href="">
+                  <p class="phone-number-mobile">Hỗ trợ: 1900 636 063</p>
+                </a>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!-- MENU FOR MOBILE -->
+        <div class="menu-control__mobile-wrap">
+          <label for="menu-control" class="hamburger">
+            <i class="hamburger__icon"></i>
+            <i class="hamburger__icon"></i>
+            <i class="hamburger__icon"></i>
+          </label>
+          <input type="checkbox" id="menu-control" class="menu-control">
+          <aside class="sidebar">
+            <nav class="sidebar__menu">
+              <a href="./category.html" class="">Vé máy bay giá rẻ</a>
+              <a href="./category.html">Vé máy bay theo tháng</a>
+              <a href="./category.html">Vé máy bay nội địa</a>
+              <a href="./category.html">Vé máy bay quốc tế</a>
+              <a href="./category.html">tin tức</a>
+              <a href="./contact.html">liên hệ</a>
+              <a href="">Hỗ trợ: 1900.636.063</a>
+            </nav>
+            <label for="menu-control" class="sidebar__close"></label>
+          </aside>
+        </div>
     </section>
+    <!-- END HEADER -->
 
     <section class="section__category">
       <div class="container-fluid g-0">
@@ -90,15 +162,14 @@
               trigger="hover"
               style="width:32px;height:32px">
             </lord-icon></a>
-            <span>/</span>
-          </li>
+            <span>/</span></li>
             <li class="breadcrumb__item"><a href="#">Page 1</a><span>/</span></li>
             <li class="breadcrumb__item"><a href="#">Page 2</a><span>/</span></li>
             <li class="breadcrumb__item current"><a href="./category.html">ve may bay noi dia</a></li>
           </ul>
         </div>
         <div class="row g-0">
-          <div class="col-md-8">
+          <div class="col-lg-8 col-md-12 col-sm-12 col-12">
             <div class="list-card">
               <div class="blog-card">
                 <div class="meta">
@@ -212,7 +283,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4 col-md-12 col-sm-12 col-12">
             <div class="sidebar-widget">
               <h4>Bài viết xem nhiều</h4>
               <ul class="card-list">
@@ -317,7 +388,7 @@
     <footer class="footer">
       <div class="footer__top">
         <div class="container">
-          <div class="row g-0 ps-5">
+          <div class="row g-0">
             <div class="col-md-4">
               <div class="footer__about--company">
                 <h6 class="">Săn vé máy bay giá rẻ</h6>

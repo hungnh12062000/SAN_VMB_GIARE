@@ -172,10 +172,6 @@ li.post__social--item img {
 }
 
 /*proposal-item*/
-.proposal-item {
-  padding: 15px;
-}
-
 .proposal-item__img {
   position: relative;
   background-color: linear-gradient(
