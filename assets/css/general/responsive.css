@@ -996,7 +996,7 @@ Common breakpoints are
     height: 40px;
   }
   .box-heading-h6, .thead-title, .name__passenger--title, .luggage__title{
-    font-size: 12px;
+    font-size: 14px;
   }
 
   /* THÔNG TIN HÀNH KHÁCH */
@@ -1006,6 +1006,10 @@ Common breakpoints are
 
   .select-styled,
   .seclect__luggage--options li{
+    font-size: 12px;
+  }
+
+  .title-input, .title-select, .caption-details, .caption-birthday{
     font-size: 12px;
   }
   
