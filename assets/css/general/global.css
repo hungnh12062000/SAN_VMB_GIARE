@@ -83,6 +83,20 @@ select::-webkit-scrollbar-thumb {
   border-radius: 50px;
 }
 
+.popup__wrap::-webkit-scrollbar {
+  width: 10px;
+}
+
+.popup__wrap::-webkit-scrollbar-track {
+  background-color: #fafafa;
+  border-radius: 50px;
+}
+
+.popup__wrap::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 50px;
+}
+
 /* ======== scrollbar ========= */
 
 ul {

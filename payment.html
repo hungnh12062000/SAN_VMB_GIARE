@@ -2,353 +2,448 @@
 <html lang="en">
 
 <head>
-     <meta charset="UTF-8" />
-     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>SĂN VÉ MÁY BAY GIÁ RẺ</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SĂN VÉ MÁY BAY GIÁ RẺ</title>
 
-     <!-- slider -->
-     <link rel="stylesheet" href="./assets/libs/slick/slick.css" />
+  <!-- slider -->
+  <link rel="stylesheet" href="./assets/libs/slick/slick.css" />
 
-     <!-- datepicker -->
-     <link rel="stylesheet" href="./assets/libs/datepicker/icomoon/style.css" />
-     <link rel="stylesheet" href="./assets/libs/datepicker/classic.css" />
-     <link rel="stylesheet" href="./assets/libs/datepicker/classic.date.css" />
+  <!-- datepicker -->
+  <link rel="stylesheet" href="./assets/libs/datepicker/icomoon/style.css" />
+  <link rel="stylesheet" href="./assets/libs/datepicker/classic.css" />
+  <link rel="stylesheet" href="./assets/libs/datepicker/classic.date.css" />
 
-     <!-- font - family -->
-     <link rel="stylesheet" href="./assets/fonts/Mt-Bold.otf" />
-     <link rel="stylesheet" href="./assets/fonts/Mt-Regular.otf" />
-     <link rel="stylesheet" href="./assets/fonts/Mt-SemiBold.otf" />
+  <!-- font - family -->
+  <link rel="stylesheet" href="./assets/fonts/Mt-Bold.otf" />
+  <link rel="stylesheet" href="./assets/fonts/Mt-Regular.otf" />
+  <link rel="stylesheet" href="./assets/fonts/Mt-SemiBold.otf" />
 
-     <!-- Main css -->
-     <link rel="stylesheet" href="./assets/css/styles.css" />
+  <!-- Main css -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 
 <body>
-     <div class="global-wrap">
-          <!-- HEADER -->
-          <section class="header">
-               <div class="container header-wrap">
-                 <div class="header__logo">
-                   <a class="header__logo--link" href="./index.html">
-                     <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo--img" />
-                   </a>
-                 </div>
-                 <ul class="header-nav">
-                   <li class="nav__item">
-                     <a href="./category.html" class="nav__item--link">VÉ MÁY BAY NỘI ĐỊA</a>
-                   </li>
-                   <li class="nav__item">
-                     <a href="./category.html" class="nav__item--link">VÉ MÁY BAY QUỐC TẾ</a>
-                   </li>
-                   <li class="nav__item">
-                     <a href="./category.html" class="nav__item--link">VÉ RẺ THEO THÁNG</a>
-                   </li>
-                   <li class="nav__item">
-                     <a href="./category.html" class="nav__item--link">TIN TỨC</a>
-                   </li>
-                   <li class="nav__item">
-                     <a href="./contact.html" class="nav__item--link">LIÊN HỆ</a>
-                   </li>
-                 </ul>
-                 <div class="header-phone">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
-                   <p class="phone-number">1900 636 063</p>
-                 </div>
-               </div>
-             </section>
-          <!-- END HEADER -->
+  <div class="global-wrap">
+    <!-- HEADER -->
+    <section class="header">
+      <div class="container header-wrap">
+        <div class="header__logo">
+          <a class="header__logo--link" href="./index.html">
+            <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo--img" />
+          </a>
+        </div>
+        <div class="menu-control__wrap">
+          <ul class="header-nav">
+            <li class="nav__item">
+              <a href="./category.html" class="nav__item--link">VÉ MÁY BAY NỘI ĐỊA</a>
+            </li>
+            <li class="nav__item">
+              <a href="./category.html" class="nav__item--link">VÉ MÁY BAY QUỐC TẾ</a>
+            </li>
+            <li class="nav__item">
+              <a href="./category.html" class="nav__item--link">VÉ RẺ THEO THÁNG</a>
+            </li>
+            <li class="nav__item">
+              <a href="./category.html" class="nav__item--link">TIN TỨC</a>
+            </li>
+            <li class="nav__item">
+              <a href="./contact.html" class="nav__item--link">LIÊN HỆ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-phone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000" viewBox="0 0 256 256">
+            <rect width="256" height="256" fill="none"></rect>
+            <path
+              d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z"
+              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+          </svg>
+          <p class="phone-number">1900 636 063</p>
+        </div>
+        <!-- MENU FOR TABLET -->
+        <div class="menu-control__tablet-wrap">
+          <input type="checkbox" id="slide-menu" />
+          <label for="slide-menu" class="header-slide-menu__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#000000" viewBox="0 0 256 256">
+              <rect width="256" height="256" fill="none"></rect>
+              <line x1="40" y1="68" x2="216" y2="68" fill="none" stroke="#000000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="16"></line>
+              <line x1="40" y1="108" x2="216" y2="108" fill="none" stroke="#000000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="16"></line>
+              <line x1="40" y1="148" x2="216" y2="148" fill="none" stroke="#000000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="16"></line>
+              <line x1="40" y1="188" x2="216" y2="188" fill="none" stroke="#000000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="16"></line>
+            </svg>
+          </label>
+          <label for="slide-menu" class="header-slide-menu__overlay"></label>
+          <div class="mobile-menu">
+            <label for="slide-menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" viewBox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#fff" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="16"></line>
+                <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="#fff" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="16"></line>
+              </svg>
+            </label>
 
-          <main>
-               <div class="method-payment-wrap">
-                    <div class="container section-payment">
-                         <div class="row g-0">
-                              <ul id="progressbar" class="hidden-xs">
-                                   <li class="pass">
-                                        <span>Chọn hành trình</span>
-                                   </li>
-                                   <li class="pass">
-                                        <span>Thông tin hành khách</span>
-                                   </li>
-                                   <li class="current">
-                                        <span class="">Thanh toán</span>
-                                   </li>
-                                   <li><span class=""> Hoàn tất</span></li>
-                              </ul>
-                         </div>
-                         <div class="row g-0">
-                              <div class="col-md-8">
-                                   <!-- payment method -->
-                                   <section class="section__payment-method">
-                                        <div class="box-heading">Phương thức thanh toán</div>
-                                        <div class="method__decs">Sau khi chọn vui lòng nhấn <strong>"Đặt vé"</strong>. Booker sẽ gọi đến xác thực thông tin book vé. Điều này là cần thiết nhằm tránh sai sót khi ra sân bay.</div>
+            <div class="mobile-menu-wrapper">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__item-link" href="./category.html">VÉ MÁY BAY NỘI ĐỊA</a>
+                </li>
 
-                                        <!-- 1 methods -->
-                                        <div class="methods">
-                                             <div class="methods-header">
-                                                  <input type="radio" name="radio" id="transfer" value="transfer" checked>
-                                                  <label for="transfer" aria-label="">
-                                                       <span></span>
-                                                       Chuyển khoản qua ngân hàng
-     
-                                                       <div class="card card--blue card--sm">
-                                                            <div class="card__chip"></div>
-                                                            <div class="card__content">
-                                                                 <div class="card__text">
-                                                                 <div class="text__row">
-                                                                 <div class="text__loader"></div>
-                                                                 <div class="text__loader"></div>
-                                                                 </div>
-                                                                 <div class="text__row">
-                                                                 <div class="text__loader"></div>
-                                                                 <div class="text__loader"></div>
-                                                                 </div>
-                                                                 </div>
-                                                                 <div class="card__symbol">
-                                                                 <span></span>
-                                                                 <span></span>
-                                                                 </div>
-                                                            </div>
-                                                       </div>
-                                                  </label>
-                                             </div>
-                                             <div class="methods-content" style="display: block;">
-                                                  <p>Đây là hình thức thanh toán tối ưu nhất và không mất phí. Quý khách có thể chọn lựa tài khoản ngân hàng chuyển đến cùng hệ thống với cái đang sử dụng nhằm đảm bảo tiền được chuyển sang nhanh.</p>
-                                                  <p>
-                                                       Khi thực hiện chuyển khoản xin vui lòng ghi rõ mã đơn hàng, tên người liên hệ đặt vé hoặc số di động. Hoàn tất việc chuyển tiền đề nghị nhắn tin để xác thực : <span>1900 636 063</span>
-                                                  </p>
-                                                  <p>
-                                                       Cú pháp tin nhắn: <br>
-                                                       <strong>"Mã đơn hàng, Người liên hệ, Nội dung thanh toán"</strong> <br>
-                                                       Ví dụ: <br>
-                                                       "V4AHC78H54, Nguyen Van An, TT vé máy bay " <br>
-                                                       "V4AHF78H53, Nguyen Van Minh, TT vé máy bay " <br>
-                                                       "V4AHK78H52, Nguyen Van Duong, TT vé máy bay " <br>
-                                                  </p>
-                                             </div>
-                                        </div>
-                                        <div class="methods">
-                                             <div class="methods-header">
-                                                  <input type="radio" name="radio" id="office" value="office">
-                                                  <label for="office" aria-label="">
-                                                       <span></span>
-                                                       
-                                                       Đến văn phòng thanh toán
-                                                       
-                                                       <div class="card card--white card--sm">
-                                                            <div class="card__content card__content-office">
-                                                                 <div class="card__content-icon">
-                                                                      <lord-icon
-                                                                           src="https://cdn.lordicon.com/cowtkyiz.json"
-                                                                           trigger="hover"
-                                                                           style="width:150px;height:150px">
-                                                                           </lord-icon>
-                                                                 </div>
-                                                            </div>
-                                                       </div>
-                                                  </label>
-                                             </div>
-                                             <div class="methods-content">
-                                                  <p>
-                                                       Sau khi đặt hàng thành công, quý khách có thể đến văn phòng ở địa chỉ  <span>48/8 Lam Sơn, P. 6, Q. Bình Thạnh</span> để thanh toán và nhận vé.
-                                                  </p>
-                                             </div>
-                                        </div>
-                                        <div class="methods">
-                                             <div class="methods-header">
-                                                  <input type="radio" name="radio" id="home" value="home">
-                                                  <label for="home" aria-label="">
-                                                       <span></span>
-                                                       
-                                                       Thanh toán tại nhà (Phí 50,000 VND)
-                                                       
-                                                       <div class="card card--blue card--sm">
-                                                            <div class="card__content card__content-home">
-                                                                 <div class="card__content-icon">
-                                                                      <lord-icon
-                                                                           src="https://cdn.lordicon.com/hjbsbdhw.json"
-                                                                           trigger="hover">
-                                                                      </lord-icon>
-                                                                 </div>
-                                                            </div>
-                                                       </div>
-                                                  </label>
-                                             </div>
-                                             <div class="methods-content">
-                                                  <p>
-                                                       Chúng tôi sẽ tiến hành in mặt vé, đi cùng phiếu thu số tiền phải trả của Quý khách. Đội giao vé nhanh sẽ liên hệ quý khách trong thời gian sớm nhất.
-                                                  </p>
-                                                  <p>Thanh toán tại nhà <span>chỉ áp dụng</span> cho các quận huyện trong TP.HCM.</p>
-                                             </div>
-                                        </div>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__item-link" href="./category.html">VÉ MÁY BAY QUỐC TẾ</a>
+                </li>
 
-                                        <div class="methods__confirm">
-                                             <a href="./complete.html">
-                                                  <button type="submit" class="button-gradient instagram continue"><span class="gradient"></span>Tiếp tục</button>
-                                             </a>
-                                             <p class="confirm__term box-subheading-span">Bằng cách nhấn vào nút này, bạn công nhận mình đã đọc và đồng ý với
-                                             </p>
-                                             <p class="confirm__term box-subheading-span"> <span>Điều kiện và Điều khoản</span> của chúng tôi</p>
-                                        </div>
-                                   </section>
-          
-                              </div>
-                              <div class="col-md-4">
-                                   <div class="sidebar">
-                                        <h2 class="sidebar__title"></h2>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-          </main>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__item-link" href="./category.html">VÉ MÁY BAY THEO THÁNG</a>
+                </li>
 
-          <!--Begin Footer-->
-          <footer class="footer">
-               <div class="footer__top">
-                 <div class="container">
-                   <div class="row g-0 ps-5">
-                     <div class="col-md-4">
-                       <div class="footer__about--company">
-                         <h6 class="">Săn vé máy bay giá rẻ</h6>
-                         <ul class="list__about--company">
-                           <li>Tên công ty: Công ty TNHH SVMBGR</li>
-                           <li>Email: info@sanvemaybaygiare.net</li>
-                           <li>Call Center: 1900 636 063</li>
-                           <li>75 Nguyễn Xí, Q. Bình Thạnh, TP.HCM</li>
-                           <li>MST: 0317103646</li>
-                         </ul>
-                       </div>
-                     </div>
-                     <div class="col-md-8">
-                       <div class="row g-0">
-                         <div class="contact-menu__item col-md-4">
-                           <h6>VÉ MÁY BAY NỘI ĐỊA</h6>
-                           <ul class="">
-                             <li>
-                               <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                               <p>Vé máy bay đi Hà Nội</p>
-                             </li>
-                             <li>
-                               <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                               <p>Vé máy bay đi Sài Gòn</p>
-                             </li>
-                             <li>
-                               <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                               <p>Vé máy bay đi Đà Nẵng</p>
-                             </li>
-                             <li>
-                               <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                               <p>Vé máy bay đi Nha Trang</p>
-                             </li>
-                             <li>
-                               <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                               <p>Vé máy bay đi Phú Yên</p>
-                             </li>
-                           </ul>
-                         </div>
-                         <div class="contact-menu__item col-md-4">
-                           <h6>VÉ MÁY BAY TẾT</h6>
-                           <ul>
-                             <li>
-                               <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                               <p>Vé máy bay Tết đi Hà Nội</p>
-                             </li>
-                             <li>
-                               <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                               <p>Vé máy bay Tết đi Hải Phòng</p>
-                             </li>
-                             <li>
-                               <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                               <p>Vé máy bay Tết đi Vinh</p>
-                             </li>
-                             <li>
-                               <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                               <p>Vé máy bay Tết đi Cần Thơ</p>
-                             </li>
-                             <li>
-                               <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                               <p>Vé máy bay Tết đi Thanh Hóa</p>
-                             </li>
-                           </ul>
-                         </div>
-                         <div class="contact-menu__item col-md-4">
-                           <h6>VÉ RẺ THEO THÁNG</h6>
-                           <ul>
-                             <li>
-                               <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                               <p>Săn vé máy bay giá rẻ tháng 8</p>
-                             </li>
-                             <li>
-                               <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                               <p>Săn vé máy bay giá rẻ tháng 9</p>
-                             </li>
-                             <li>
-                               <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                               <p>Săn vé máy bay giá rẻ tháng 10</p>
-                             </li>
-                             <li>
-                               <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                               <p>Săn vé máy bay giá rẻ tháng 11</p>
-                             </li>
-                             <li>
-                               <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                               <p>Săn vé máy bay giá rẻ tháng 12</p>
-                             </li>
-                           </ul>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="footer__bg">
-                   <div class="footer__bg--one"></div>
-                   <div class="footer__bg--two"></div>
-                 </div>
-               </div>
-               <div class="footer__bottom">
-                 <div class="container">
-                   <div class="row align-items-center">
-                     <div class="footer-copyright">
-                       <h6>Copyright © 2022 Công ty TNHH SVMBGR</h6>
-                       <div class="footer-helps">
-                         <a href="#" class="helps__terms">Điều khoản sử dụng</a>
-                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
-                         <a href="#" class="helps__security">Chính sách bảo mật</a>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </footer>
-          <!--End Footer-->
-     </div>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__item-link" href="./category.html">TIN TỨC</a>
+                </li>
 
-     <!-- jquery -->
-     <script src="./assets/libs/jquery/jquery-3.6.0.min.js"></script>
-     <script src="./assets/libs/jquery/jquery-migrate-3.4.0.min.js"></script>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__item-link" href="./contact.html">LIÊN HỆ</a>
+                </li>
+              </ul>
 
-     <!-- boostrap datepicker -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js">
-     </script>
-     <script src="./assets/libs/datepicker/popper.min.js"></script>
-     <script src="./assets/libs/datepicker/picker.js"></script>
-     <script src="./assets/libs/datepicker/picker.date.js"></script>
+              <div class="header-phone-mobile">
+                <a href="">
+                  <p class="phone-number-mobile">Hỗ trợ: 1900 636 063</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-     <!-- slider -->
-     <script src="./assets/libs/slick/slick.min.js"></script>
+        <!-- MENU FOR MOBILE -->
+        <div class="menu-control__mobile-wrap">
+          <label for="menu-control" class="hamburger">
+            <i class="hamburger__icon"></i>
+            <i class="hamburger__icon"></i>
+            <i class="hamburger__icon"></i>
+          </label>
+          <input type="checkbox" id="menu-control" class="menu-control">
+          <aside class="sidebar">
+            <nav class="sidebar__menu">
+              <a href="./category.html" class="">Vé máy bay giá rẻ</a>
+              <a href="./category.html">Vé máy bay theo tháng</a>
+              <a href="./category.html">Vé máy bay nội địa</a>
+              <a href="./category.html">Vé máy bay quốc tế</a>
+              <a href="./category.html">tin tức</a>
+              <a href="./contact.html">liên hệ</a>
+              <a href="">Hỗ trợ: 1900.636.063</a>
+            </nav>
+            <label for="menu-control" class="sidebar__close"></label>
+          </aside>
+        </div>
+    </section>
+    <!-- END HEADER -->
 
-     <!-- Lord icon -->
-     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <main>
+      <div class="method-payment-wrap">
+        <div class="container section-payment">
+          <div class="row g-0">
+            <ul id="progressbar" class="hidden-xs">
+              <li class="pass">
+                <span>Chọn hành trình</span>
+              </li>
+              <li class="pass">
+                <span>Thông tin hành khách</span>
+              </li>
+              <li class="current">
+                <span class="">Thanh toán</span>
+              </li>
+              <li><span class=""> Hoàn tất</span></li>
+            </ul>
+          </div>
+          <div class="row g-0">
+            <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+              <!-- payment method -->
+              <section class="section__payment-method">
+                <div class="box-heading">Phương thức thanh toán</div>
+                <div class="method__decs">Sau khi chọn vui lòng nhấn <strong>"Đặt vé"</strong>. Booker sẽ gọi đến xác
+                  thực thông tin book vé. Điều này là cần thiết nhằm tránh sai sót khi ra sân bay.</div>
 
-     <!-- Calendar -->
-     <script src="./assets/libs/datepicker/popper.min.js"></script>
-     <script src="./assets/libs/bootstrap/bootstrap.min.js"></script>
-     <script src="./assets/libs/datepicker/picker.js"></script>
-     <script src="./assets/libs/datepicker/picker.date.js"></script>
+                <!-- 1 methods -->
+                <div class="methods">
+                  <div class="methods-header">
+                    <input type="radio" name="radio" id="transfer" value="transfer" checked>
+                    <label for="transfer" aria-label="">
+                      <span></span>
+                      Chuyển khoản qua ngân hàng
 
-     <!-- main js -->
-     <script src="./assets/js/payment.js"></script>
+                      <div class="card card--blue card--sm">
+                        <div class="card__chip"></div>
+                        <div class="card__content">
+                          <div class="card__text">
+                            <div class="text__row">
+                              <div class="text__loader"></div>
+                              <div class="text__loader"></div>
+                            </div>
+                            <div class="text__row">
+                              <div class="text__loader"></div>
+                              <div class="text__loader"></div>
+                            </div>
+                          </div>
+                          <div class="card__symbol">
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="methods-content" style="display: block;">
+                    <p>Đây là hình thức thanh toán tối ưu nhất và không mất phí. Quý khách có thể chọn lựa tài khoản
+                      ngân hàng chuyển đến cùng hệ thống với cái đang sử dụng nhằm đảm bảo tiền được chuyển sang nhanh.
+                    </p>
+                    <p>
+                      Khi thực hiện chuyển khoản xin vui lòng ghi rõ mã đơn hàng, tên người liên hệ đặt vé hoặc số di
+                      động. Hoàn tất việc chuyển tiền đề nghị nhắn tin để xác thực : <span>1900 636 063</span>
+                    </p>
+                    <p>
+                      Cú pháp tin nhắn: <br>
+                      <strong>"Mã đơn hàng, Người liên hệ, Nội dung thanh toán"</strong> <br>
+                      Ví dụ: <br>
+                      "V4AHC78H54, Nguyen Van An, TT vé máy bay " <br>
+                      "V4AHF78H53, Nguyen Van Minh, TT vé máy bay " <br>
+                      "V4AHK78H52, Nguyen Van Duong, TT vé máy bay " <br>
+                    </p>
+                  </div>
+                </div>
+                <div class="methods">
+                  <div class="methods-header">
+                    <input type="radio" name="radio" id="office" value="office">
+                    <label for="office" aria-label="">
+                      <span></span>
+
+                      Đến văn phòng thanh toán
+
+                      <div class="card card--white card--sm">
+                        <div class="card__content card__content-office">
+                          <div class="card__content-icon">
+                            <lord-icon src="https://cdn.lordicon.com/cowtkyiz.json" trigger="hover"
+                              style="width:150px;height:150px">
+                            </lord-icon>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="methods-content">
+                    <p>
+                      Sau khi đặt hàng thành công, quý khách có thể đến văn phòng ở địa chỉ <span>48/8 Lam Sơn, P. 6, Q.
+                        Bình Thạnh</span> để thanh toán và nhận vé.
+                    </p>
+                  </div>
+                </div>
+                <div class="methods">
+                  <div class="methods-header">
+                    <input type="radio" name="radio" id="home" value="home">
+                    <label for="home" aria-label="">
+                      <span></span>
+
+                      Thanh toán tại nhà (Phí 50,000 VND)
+
+                      <div class="card card--blue card--sm">
+                        <div class="card__content card__content-home">
+                          <div class="card__content-icon">
+                            <lord-icon src="https://cdn.lordicon.com/hjbsbdhw.json" trigger="hover">
+                            </lord-icon>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="methods-content">
+                    <p>
+                      Chúng tôi sẽ tiến hành in mặt vé, đi cùng phiếu thu số tiền phải trả của Quý khách. Đội giao vé
+                      nhanh sẽ liên hệ quý khách trong thời gian sớm nhất.
+                    </p>
+                    <p>Thanh toán tại nhà <span>chỉ áp dụng</span> cho các quận huyện trong TP.HCM.</p>
+                  </div>
+                </div>
+
+                <div class="methods__confirm">
+                  <a href="./complete.html">
+                    <button type="submit" class="button-gradient instagram continue"><span class="gradient"></span>Tiếp
+                      tục</button>
+                  </a>
+                  <p class="confirm__term box-subheading-span">Bằng cách nhấn vào nút này, bạn công nhận mình đã đọc và
+                    đồng ý với
+                  </p>
+                  <p class="confirm__term box-subheading-span"> <span>Điều kiện và Điều khoản</span> của chúng tôi</p>
+                </div>
+              </section>
+
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+              <div class="sidebar">
+                <h2 class="sidebar__title"></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--Begin Footer-->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="footer__about--company">
+                <h6 class="">Săn vé máy bay giá rẻ</h6>
+                <ul class="list__about--company">
+                  <li>Tên công ty: Công ty TNHH SVMBGR</li>
+                  <li>Email: info@sanvemaybaygiare.net</li>
+                  <li>Call Center: 1900 636 063</li>
+                  <li>75 Nguyễn Xí, Q. Bình Thạnh, TP.HCM</li>
+                  <li>MST: 0317103646</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="row g-0">
+                <div class="contact-menu__item col-md-4">
+                  <h6>VÉ MÁY BAY NỘI ĐỊA</h6>
+                  <ul class="">
+                    <li>
+                      <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                      <p>Vé máy bay đi Hà Nội</p>
+                    </li>
+                    <li>
+                      <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                      <p>Vé máy bay đi Sài Gòn</p>
+                    </li>
+                    <li>
+                      <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                      <p>Vé máy bay đi Đà Nẵng</p>
+                    </li>
+                    <li>
+                      <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                      <p>Vé máy bay đi Nha Trang</p>
+                    </li>
+                    <li>
+                      <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                      <p>Vé máy bay đi Phú Yên</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="contact-menu__item col-md-4">
+                  <h6>VÉ MÁY BAY TẾT</h6>
+                  <ul>
+                    <li>
+                      <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                      <p>Vé máy bay Tết đi Hà Nội</p>
+                    </li>
+                    <li>
+                      <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                      <p>Vé máy bay Tết đi Hải Phòng</p>
+                    </li>
+                    <li>
+                      <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                      <p>Vé máy bay Tết đi Vinh</p>
+                    </li>
+                    <li>
+                      <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                      <p>Vé máy bay Tết đi Cần Thơ</p>
+                    </li>
+                    <li>
+                      <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                      <p>Vé máy bay Tết đi Thanh Hóa</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="contact-menu__item col-md-4">
+                  <h6>VÉ RẺ THEO THÁNG</h6>
+                  <ul>
+                    <li>
+                      <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                      <p>Săn vé máy bay giá rẻ tháng 8</p>
+                    </li>
+                    <li>
+                      <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                      <p>Săn vé máy bay giá rẻ tháng 9</p>
+                    </li>
+                    <li>
+                      <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                      <p>Săn vé máy bay giá rẻ tháng 10</p>
+                    </li>
+                    <li>
+                      <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                      <p>Săn vé máy bay giá rẻ tháng 11</p>
+                    </li>
+                    <li>
+                      <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                      <p>Săn vé máy bay giá rẻ tháng 12</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bg">
+          <div class="footer__bg--one"></div>
+          <div class="footer__bg--two"></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="footer-copyright">
+              <h6>Copyright © 2022 Công ty TNHH SVMBGR</h6>
+              <div class="footer-helps">
+                <a href="#" class="helps__terms">Điều khoản sử dụng</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256">
+                  <rect width="256" height="256" fill="none"></rect>
+                  <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#000000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="16"></line>
+                </svg>
+                <a href="#" class="helps__security">Chính sách bảo mật</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--End Footer-->
+  </div>
+
+  <!-- jquery -->
+  <script src="./assets/libs/jquery/jquery-3.6.0.min.js"></script>
+  <script src="./assets/libs/jquery/jquery-migrate-3.4.0.min.js"></script>
+
+  <!-- boostrap datepicker -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js">
+  </script>
+  <script src="./assets/libs/datepicker/popper.min.js"></script>
+  <script src="./assets/libs/datepicker/picker.js"></script>
+  <script src="./assets/libs/datepicker/picker.date.js"></script>
+
+  <!-- slider -->
+  <script src="./assets/libs/slick/slick.min.js"></script>
+
+  <!-- Lord icon -->
+  <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+  <!-- Calendar -->
+  <script src="./assets/libs/datepicker/popper.min.js"></script>
+  <script src="./assets/libs/bootstrap/bootstrap.min.js"></script>
+  <script src="./assets/libs/datepicker/picker.js"></script>
+  <script src="./assets/libs/datepicker/picker.date.js"></script>
+
+  <!-- main js -->
+  <script src="./assets/js/payment.js"></script>
 </body>
 
 </html>

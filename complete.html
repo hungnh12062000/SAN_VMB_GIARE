@@ -34,23 +34,25 @@
                               <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo--img" />
                          </a>
                     </div>
-                    <ul class="header-nav">
-                         <li class="nav__item">
-                              <a href="./category.html" class="nav__item--link">VÉ MÁY BAY NỘI ĐỊA</a>
-                         </li>
-                         <li class="nav__item">
-                              <a href="./category.html" class="nav__item--link">VÉ MÁY BAY QUỐC TẾ</a>
-                         </li>
-                         <li class="nav__item">
-                              <a href="./category.html" class="nav__item--link">VÉ RẺ THEO THÁNG</a>
-                         </li>
-                         <li class="nav__item">
-                              <a href="./category.html" class="nav__item--link">TIN TỨC</a>
-                         </li>
-                         <li class="nav__item">
-                              <a href="./contact.html" class="nav__item--link">LIÊN HỆ</a>
-                         </li>
-                    </ul>
+                    <div class="menu-control__wrap">
+                         <ul class="header-nav">
+                              <li class="nav__item">
+                                   <a href="./category.html" class="nav__item--link">VÉ MÁY BAY NỘI ĐỊA</a>
+                              </li>
+                              <li class="nav__item">
+                                   <a href="./category.html" class="nav__item--link">VÉ MÁY BAY QUỐC TẾ</a>
+                              </li>
+                              <li class="nav__item">
+                                   <a href="./category.html" class="nav__item--link">VÉ RẺ THEO THÁNG</a>
+                              </li>
+                              <li class="nav__item">
+                                   <a href="./category.html" class="nav__item--link">TIN TỨC</a>
+                              </li>
+                              <li class="nav__item">
+                                   <a href="./contact.html" class="nav__item--link">LIÊN HỆ</a>
+                              </li>
+                         </ul>
+                    </div>
                     <div class="header-phone">
                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000"
                               viewBox="0 0 256 256">
@@ -61,7 +63,92 @@
                          </svg>
                          <p class="phone-number">1900 636 063</p>
                     </div>
-               </div>
+                    <!-- MENU FOR TABLET -->
+                    <div class="menu-control__tablet-wrap">
+                         <input type="checkbox" id="slide-menu" />
+                         <label for="slide-menu" class="header-slide-menu__btn">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#000000"
+                                   viewBox="0 0 256 256">
+                                   <rect width="256" height="256" fill="none"></rect>
+                                   <line x1="40" y1="68" x2="216" y2="68" fill="none" stroke="#000000"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                                   <line x1="40" y1="108" x2="216" y2="108" fill="none" stroke="#000000"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                                   <line x1="40" y1="148" x2="216" y2="148" fill="none" stroke="#000000"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                                   <line x1="40" y1="188" x2="216" y2="188" fill="none" stroke="#000000"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                              </svg>
+                         </label>
+                         <label for="slide-menu" class="header-slide-menu__overlay"></label>
+                         <div class="mobile-menu">
+                              <label for="slide-menu">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff"
+                                        viewBox="0 0 256 256">
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#fff"
+                                             stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                                        <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="#fff"
+                                             stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                                   </svg>
+                              </label>
+
+                              <div class="mobile-menu-wrapper">
+                                   <ul class="mobile-menu__list">
+                                        <li class="mobile-menu__item">
+                                             <a class="mobile-menu__item-link" href="./category.html">VÉ MÁY BAY NỘI
+                                                  ĐỊA</a>
+                                        </li>
+
+                                        <li class="mobile-menu__item">
+                                             <a class="mobile-menu__item-link" href="./category.html">VÉ MÁY BAY QUỐC
+                                                  TẾ</a>
+                                        </li>
+
+                                        <li class="mobile-menu__item">
+                                             <a class="mobile-menu__item-link" href="./category.html">VÉ MÁY BAY THEO
+                                                  THÁNG</a>
+                                        </li>
+
+                                        <li class="mobile-menu__item">
+                                             <a class="mobile-menu__item-link" href="./category.html">TIN TỨC</a>
+                                        </li>
+
+                                        <li class="mobile-menu__item">
+                                             <a class="mobile-menu__item-link" href="./contact.html">LIÊN HỆ</a>
+                                        </li>
+                                   </ul>
+
+                                   <div class="header-phone-mobile">
+                                        <a href="">
+                                             <p class="phone-number-mobile">Hỗ trợ: 1900 636 063</p>
+                                        </a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <!-- MENU FOR MOBILE -->
+                    <div class="menu-control__mobile-wrap">
+                         <label for="menu-control" class="hamburger">
+                              <i class="hamburger__icon"></i>
+                              <i class="hamburger__icon"></i>
+                              <i class="hamburger__icon"></i>
+                         </label>
+                         <input type="checkbox" id="menu-control" class="menu-control">
+                         <aside class="sidebar">
+                              <nav class="sidebar__menu">
+                                   <a href="./category.html" class="">Vé máy bay giá rẻ</a>
+                                   <a href="./category.html">Vé máy bay theo tháng</a>
+                                   <a href="./category.html">Vé máy bay nội địa</a>
+                                   <a href="./category.html">Vé máy bay quốc tế</a>
+                                   <a href="./category.html">tin tức</a>
+                                   <a href="./contact.html">liên hệ</a>
+                                   <a href="">Hỗ trợ: 1900.636.063</a>
+                              </nav>
+                              <label for="menu-control" class="sidebar__close"></label>
+                         </aside>
+                    </div>
           </section>
           <!-- END HEADER -->
 
@@ -84,7 +171,7 @@
                               </ul>
                          </div>
                          <div class="row g-0">
-                              <div class="col-md-8">
+                              <div class="col-lg-8 col-md-12 col-sm-12 col-12">
 
                                    <section class="section__complete--order">
                                         <div class="section__title">
@@ -151,7 +238,7 @@
                                                   </div>
                                                   <div class="popup__content">
                                                        <div class="row g-0">
-                                                            <div class="col-8">
+                                                            <div class="col-lg-8 col-md-12 col-sm-12 col-12">
                                                                  <!-- infor order -->
                                                                  <section class="section__infor--order">
                                                                       <div class="section__title">
@@ -162,8 +249,9 @@
                                                                            </lord-icon>
                                                                            Thông tin đơn hàng
                                                                       </div>
-                                                                      <div class="infor__order row">
-                                                                           <div class="col-md-3">
+                                                                      <div class="infor__order row g-3">
+                                                                           <div
+                                                                                class="col-lg-3 col-md-6 col-sm-6 col-12">
                                                                                 <div
                                                                                      class="box-infor infor__code--order">
                                                                                      <h6 class="box-heading-h6">Mã đơn
@@ -172,7 +260,8 @@
                                                                                           VE2635DA7A</h2>
                                                                                 </div>
                                                                            </div>
-                                                                           <div class="col-md-3">
+                                                                           <div
+                                                                                class="col-lg-3 col-md-6 col-sm-6 col-12">
                                                                                 <div
                                                                                      class="box-infor infor__method--payment">
                                                                                      <h6 class="box-heading-h6">Hình
@@ -181,7 +270,8 @@
                                                                                           khoản</h2>
                                                                                 </div>
                                                                            </div>
-                                                                           <div class="col-md-3">
+                                                                           <div
+                                                                                class="col-lg-3 col-md-6 col-sm-6 col-12">
                                                                                 <div
                                                                                      class="box-infor infor__status--payment">
                                                                                      <h6 class="box-heading-h6">Trạng
@@ -190,7 +280,8 @@
                                                                                           thanh toán</h2>
                                                                                 </div>
                                                                            </div>
-                                                                           <div class="col-md-3">
+                                                                           <div
+                                                                                class="col-lg-3 col-md-6 col-sm-6 col-12">
                                                                                 <div
                                                                                      class="box-infor infor__price--order">
                                                                                      <h6 class="box-heading-h6">Tổng số
@@ -212,8 +303,9 @@
                                                                            </lord-icon>
                                                                            Thông tin hành khách
                                                                       </div>
-                                                                      <div class="infor__passengers">
-                                                                           <div class="infor__adult">
+                                                                      <div class="infor__passengers row g-3">
+                                                                           <div
+                                                                                class="infor__adult col-md-12 col-sm-12 col-12 col-lg-6">
                                                                                 <div class="adult-icon">
                                                                                      <lord-icon
                                                                                           src="https://cdn.lordicon.com/eszyyflr.json"
@@ -222,7 +314,8 @@
                                                                                      </lord-icon>
                                                                                 </div>
                                                                                 <div class="infor__details">
-                                                                                     <span class="name__passenger--title">Người
+                                                                                     <span
+                                                                                          class="name__passenger--title">Người
                                                                                           lớn 1</span>
                                                                                      <span class="caption-details"
                                                                                           style="display: flex; align-items: center">
@@ -246,7 +339,8 @@
                                                                                      </span>
                                                                                 </div>
                                                                            </div>
-                                                                           <div class="infor__adult">
+                                                                           <div
+                                                                                class="infor__adult col-md-12 col-sm-12 col-12 col-lg-6">
                                                                                 <div class="adult-icon">
                                                                                      <lord-icon
                                                                                           src="https://cdn.lordicon.com/eszyyflr.json"
@@ -255,7 +349,8 @@
                                                                                      </lord-icon>
                                                                                 </div>
                                                                                 <div class="infor__details">
-                                                                                     <span class="name__passenger--title">Người
+                                                                                     <span
+                                                                                          class="name__passenger--title">Người
                                                                                           lớn 1</span>
                                                                                      <span class="caption-details"
                                                                                           style="display: flex; align-items: center">
@@ -279,7 +374,8 @@
                                                                                      </span>
                                                                                 </div>
                                                                            </div>
-                                                                           <div class="infor__child">
+                                                                           <div
+                                                                                class="infor__child col-md-12 col-sm-12 col-12 col-lg-6">
                                                                                 <div class="child-icon">
                                                                                      <lord-icon
                                                                                           src="https://cdn.lordicon.com/ssdupzsv.json"
@@ -288,7 +384,9 @@
                                                                                      </lord-icon>
                                                                                 </div>
                                                                                 <div class="infor__details">
-                                                                                     <span class="name__passenger--title">Trẻ em 1
+                                                                                     <span
+                                                                                          class="name__passenger--title">Trẻ
+                                                                                          em 1
                                                                                           <strong>(
                                                                                                2 - 11 tuổi
                                                                                                )</strong></span>
@@ -318,7 +416,8 @@
                                                                                      </span>
                                                                                 </div>
                                                                            </div>
-                                                                           <div class="infor__infant">
+                                                                           <div
+                                                                                class="infor__infant col-md-12 col-sm-12 col-12 col-lg-6">
                                                                                 <div class="infant-icon">
                                                                                      <lord-icon
                                                                                           src="https://cdn.lordicon.com/cuvapfqt.json"
@@ -327,7 +426,9 @@
                                                                                      </lord-icon>
                                                                                 </div>
                                                                                 <div class="infor__details">
-                                                                                     <span class="name__passenger--title">Em bé 1
+                                                                                     <span
+                                                                                          class="name__passenger--title">Em
+                                                                                          bé 1
                                                                                           <strong>(
                                                                                                &lt;2 tuổi
                                                                                                )</strong></span>
@@ -373,33 +474,63 @@
                                                                       <div class="infor__contact">
                                                                            <div
                                                                                 class="box-infor__contact infor__contact--name">
-                                                                                <h6>Họ và Tên:</h6>
-                                                                                <h2>NGUYEN HAI HUNG</h2>
-                                                                           </div>
-                                                                           <div
-                                                                                class="box-infor__contact infor__contact--phone">
-                                                                                <h6>Số điện thoại:</h6>
-                                                                                <h2>0346127873</h2>
-                                                                           </div>
-                                                                           <div
-                                                                                class="box-infor__contact infor__contact--email">
-                                                                                <h6>Email:</h6>
-                                                                                <h2>hungnh.hnh@gmail.com</h2>
-                                                                           </div>
-                                                                           <div
-                                                                                class="box-infor__contact infor__contact--address">
-                                                                                <h6>Địa chỉ:</h6>
-                                                                                <h2>184, Nam Kỳ Khởi Nghĩa, phường Võ
-                                                                                     Thị Sáu, Quận 3, TPHCM</h2>
+                                                                                <div class="row">
+                                                                                     <div
+                                                                                          class="col-md-4 col-sm-4 col-4 col-lg-4">
+                                                                                          <h6>Họ và Tên:</h6>
+                                                                                     </div>
+                                                                                     <div
+                                                                                          class="col-md-8 col-sm-8 col-8 col-lg-8">
+                                                                                          <h2>NGUYEN HAI HUNG</h2>
+
+                                                                                     </div>
+                                                                                </div>
                                                                            </div>
                                                                       </div>
-                                                                 </section>
-
+                                                                      <div
+                                                                           class="box-infor__contact infor__contact--phone">
+                                                                           <div class="row">
+                                                                                <div
+                                                                                     class="col-md-4 col-sm-4 col-4 col-lg-4">
+                                                                                     <h6>Số điện thoại:</h6>
+                                                                                </div>
+                                                                                <div
+                                                                                     class="col-md-8 col-sm-8 col-8 col-lg-8">
+                                                                                     <h2>0346127873</h2>
+                                                                                </div>
+                                                                           </div>
+                                                                      </div>
+                                                                      <div
+                                                                           class="box-infor__contact infor__contact--email">
+                                                                           <div class="row">
+                                                                                <div
+                                                                                     class="col-md-4 col-sm-4 col-4 col-lg-4">
+                                                                                     <h6>Email:</h6>
+                                                                                </div>
+                                                                                <div
+                                                                                     class="col-md-8 col-sm-8 col-8 col-lg-8">
+                                                                                     <h2>hungnh.hnh@gmail.com</h2>
+                                                                                </div>
+                                                                           </div>
+                                                                      </div>
+                                                                      <div
+                                                                           class="box-infor__contact infor__contact--address">
+                                                                           <div class="row">
+                                                                                <div
+                                                                                     class="col-md-4 col-sm-4 col-4 col-lg-4">
+                                                                                     <h6>Địa chỉ:</h6>
+                                                                                </div>
+                                                                                <div
+                                                                                     class="col-md-8 col-sm-8 col-8 col-lg-8">
+                                                                                     <h2>184, Nam Kỳ Khởi Nghĩa, phường
+                                                                                          Võ Thị Sáu, Quận 3, TPHCM</h2>
+                                                                                </div>
+                                                                           </div>
+                                                                      </div>
                                                             </div>
-
-                                                            <div class="col-4">
+                                                            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                                                                  <!-- JOURNEY -->
-                                                                 <div class="sidebar-journey">
+                                                                 <div class="sidebar-journey-popup">
                                                                       <div class="box-heading">
                                                                            <img src="./assets/img/airplane.png" alt=""
                                                                                 style="object-fit: cover; width: 10%;">
@@ -409,113 +540,81 @@
                                                                            <div class="journey-infor">
                                                                                 <div class="journey-infor__title">
                                                                                      <label for="">Chiều đi</label>
-                                                                                     <span>Hồ Chí Minh (SGN) <svg
-                                                                                               width="16" height="17"
-                                                                                               fill="none">
+                                                                                     <span>Hồ Chí Minh (SGN) <svg width="16" height="17" fill="none">
                                                                                                <path d="M3.333 8.5h9.334M10 11.167L12.667 8.5M10 5.833L12.667 8.5"
-                                                                                                    stroke="#1A202C"
-                                                                                                    stroke-width="1.5"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
+                                                                                                    stroke="#1A202C" stroke-width="1.5"
+                                                                                                    stroke-linecap="round" stroke-linejoin="round">
                                                                                                </path>
                                                                                           </svg> Hà Nội (HAN)</span>
                                                                                 </div>
                                                                                 <div class="journey-infor__datetime">Thứ
-                                                                                     4, 14 tháng 09 <svg
-                                                                                          xmlns="http://www.w3.org/2000/svg"
-                                                                                          width="19" height="19"
-                                                                                          fill="#000000"
-                                                                                          viewBox="0 0 256 256">
-                                                                                          <rect width="256" height="256"
-                                                                                               fill="none"></rect>
-                                                                                          <line x1="40" y1="128"
-                                                                                               x2="216" y2="128"
-                                                                                               fill="none"
-                                                                                               stroke="#000000"
-                                                                                               stroke-linecap="round"
-                                                                                               stroke-linejoin="round"
-                                                                                               stroke-width="16"></line>
+                                                                                     4, 14 tháng 09 <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                                                                          height="19" fill="#000000" viewBox="0 0 256 256">
+                                                                                          <rect width="256" height="256" fill="none"></rect>
+                                                                                          <line x1="40" y1="128" x2="216" y2="128" fill="none"
+                                                                                               stroke="#000000" stroke-linecap="round"
+                                                                                               stroke-linejoin="round" stroke-width="16"></line>
                                                                                      </svg> 5 khách</div>
-
+                              
                                                                            </div>
                                                                            <hr class="hr-line-1">
                                                                            <div class="journey-details">
                                                                                 <div class="infor-journey-wrap">
                                                                                      <div class="journey-datetime">
                                                                                           <div class="datetime-depart">
-                                                                                               <h6
-                                                                                                    class="box-heading-h6 time-depart">
+                                                                                               <h6 class="box-heading-h6 time-depart">
                                                                                                     17:45</h6>
                                                                                                <span
                                                                                                     class="box-subheading-span journey-date-depart">14/09/2022</span>
                                                                                           </div>
-                                                                                          <div
-                                                                                               class="datetime-duration">
-                                                                                               <span
-                                                                                                    class="box-subheading-span">2h
+                                                                                          <div class="datetime-duration">
+                                                                                               <span class="box-subheading-span">2h
                                                                                                     10m</span>
                                                                                           </div>
                                                                                           <div class="datetime-arrive">
-                                                                                               <h6
-                                                                                                    class="box-heading-h6 time-arrive">
+                                                                                               <h6 class="box-heading-h6 time-arrive">
                                                                                                     19:55
                                                                                                </h6>
                                                                                                <span
                                                                                                     class="box-subheading-span journey-date-arrive">14/09/2022</span>
                                                                                           </div>
                                                                                      </div>
-
+                              
                                                                                      <div class="journey-timeline">
-                                                                                          <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                               width="23" height="23"
-                                                                                               fill="#14b9d5"
-                                                                                               viewBox="0 0 256 256"
+                                                                                          <svg xmlns="http://www.w3.org/2000/svg" width="23"
+                                                                                               height="23" fill="#14b9d5" viewBox="0 0 256 256"
                                                                                                class="svg-plane">
-                                                                                               <rect width="256"
-                                                                                                    height="256"
-                                                                                                    fill="none"></rect>
+                                                                                               <rect width="256" height="256" fill="none"></rect>
                                                                                                <path d="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z"
-                                                                                                    fill="none"
-                                                                                                    stroke="#14b9d5"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round"
+                                                                                                    fill="none" stroke="#14b9d5"
+                                                                                                    stroke-linecap="round" stroke-linejoin="round"
                                                                                                     stroke-width="16">
                                                                                                </path>
                                                                                           </svg>
                                                                                           <div class="journey-line">
                                                                                           </div>
-                                                                                          <lord-icon
-                                                                                               src="https://cdn.lordicon.com/elzslyvl.json"
-                                                                                               trigger="loop"
-                                                                                               delay="1000"
+                                                                                          <lord-icon src="https://cdn.lordicon.com/elzslyvl.json"
+                                                                                               trigger="loop" delay="1000"
                                                                                                style="width:32px;height:32px">
                                                                                           </lord-icon>
                                                                                      </div>
-
+                              
                                                                                      <div class="journey-citypair">
                                                                                           <div class="citypair-depart">
-                                                                                               <h6
-                                                                                                    class="box-heading-h6">
+                                                                                               <h6 class="box-heading-h6">
                                                                                                     Thành phố Hồ Chí
                                                                                                     Minh (SGN)</h6>
-                                                                                               <span
-                                                                                                    class="box-subheading-span">Tân
+                                                                                               <span class="box-subheading-span">Tân
                                                                                                     Sơn Nhất</span>
                                                                                           </div>
-                                                                                          <div
-                                                                                               class="journey-flight-infor">
-                                                                                               <div
-                                                                                                    class="journey-infor-plane">
-                                                                                                    <div
-                                                                                                         class="infor-brand">
+                                                                                          <div class="journey-flight-infor">
+                                                                                               <div class="journey-infor-plane">
+                                                                                                    <div class="infor-brand">
                                                                                                          <img src="./assets/img/Images-brand/vj.png"
-                                                                                                              alt="VJ"
-                                                                                                              class="infor-brand__link" />
+                                                                                                              alt="VJ" class="infor-brand__link" />
                                                                                                     </div>
-                                                                                                    <div
-                                                                                                         class="infor-plane__name">
-                                                                                                         <h6
-                                                                                                              class="box-heading-h6">
+                                                                                                    <div class="infor-plane__name">
+                                                                                                         <h6 class="box-heading-h6">
                                                                                                               Vietjet
                                                                                                               Air</h6>
                                                                                                          <span
@@ -524,11 +623,9 @@
                                                                                                </div>
                                                                                           </div>
                                                                                           <div class="citypair-arrive">
-                                                                                               <h6
-                                                                                                    class="box-heading-h6">
+                                                                                               <h6 class="box-heading-h6">
                                                                                                     Hà Nội (HAN)</h6>
-                                                                                               <span
-                                                                                                    class="box-subheading-span">Nội
+                                                                                               <span class="box-subheading-span">Nội
                                                                                                     Bài</span>
                                                                                           </div>
                                                                                      </div>
@@ -539,113 +636,82 @@
                                                                            <div class="journey-infor">
                                                                                 <div class="journey-infor__title">
                                                                                      <label for="">Chiều về</label>
-                                                                                     <span>Hà Nội (HAN) <svg width="16"
-                                                                                               height="17" fill="none">
+                                                                                     <span>Hà Nội (HAN) <svg width="16" height="17" fill="none">
                                                                                                <path d="M3.333 8.5h9.334M10 11.167L12.667 8.5M10 5.833L12.667 8.5"
-                                                                                                    stroke="#1A202C"
-                                                                                                    stroke-width="1.5"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
+                                                                                                    stroke="#1A202C" stroke-width="1.5"
+                                                                                                    stroke-linecap="round" stroke-linejoin="round">
                                                                                                </path>
                                                                                           </svg> Hồ CHí Minh
                                                                                           (SGN)</span>
                                                                                 </div>
                                                                                 <div class="journey-infor__datetime">Thứ
-                                                                                     4, 14 tháng 09 <svg
-                                                                                          xmlns="http://www.w3.org/2000/svg"
-                                                                                          width="19" height="19"
-                                                                                          fill="#000000"
-                                                                                          viewBox="0 0 256 256">
-                                                                                          <rect width="256" height="256"
-                                                                                               fill="none"></rect>
-                                                                                          <line x1="40" y1="128"
-                                                                                               x2="216" y2="128"
-                                                                                               fill="none"
-                                                                                               stroke="#000000"
-                                                                                               stroke-linecap="round"
-                                                                                               stroke-linejoin="round"
-                                                                                               stroke-width="16"></line>
+                                                                                     4, 14 tháng 09 <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                                                                          height="19" fill="#000000" viewBox="0 0 256 256">
+                                                                                          <rect width="256" height="256" fill="none"></rect>
+                                                                                          <line x1="40" y1="128" x2="216" y2="128" fill="none"
+                                                                                               stroke="#000000" stroke-linecap="round"
+                                                                                               stroke-linejoin="round" stroke-width="16"></line>
                                                                                      </svg> 5 khách</div>
-
+                              
                                                                            </div>
                                                                            <hr class="hr-line-1">
                                                                            <div class="journey-details">
                                                                                 <div class="infor-journey-wrap">
                                                                                      <div class="journey-datetime">
                                                                                           <div class="datetime-depart">
-                                                                                               <h6
-                                                                                                    class="box-heading-h6 time-depart">
+                                                                                               <h6 class="box-heading-h6 time-depart">
                                                                                                     17:45</h6>
                                                                                                <span
                                                                                                     class="box-subheading-span journey-date-depart">14/09/2022</span>
                                                                                           </div>
-                                                                                          <div
-                                                                                               class="datetime-duration">
-                                                                                               <span
-                                                                                                    class="box-subheading-span">2h
+                                                                                          <div class="datetime-duration">
+                                                                                               <span class="box-subheading-span">2h
                                                                                                     10m</span>
                                                                                           </div>
                                                                                           <div class="datetime-arrive">
-                                                                                               <h6
-                                                                                                    class="box-heading-h6 time-arrive">
+                                                                                               <h6 class="box-heading-h6 time-arrive">
                                                                                                     19:55
                                                                                                </h6>
                                                                                                <span
                                                                                                     class="box-subheading-span journey-date-arrive">14/09/2022</span>
                                                                                           </div>
                                                                                      </div>
-
+                              
                                                                                      <div class="journey-timeline">
-                                                                                          <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                               width="23" height="23"
-                                                                                               fill="#14b9d5"
-                                                                                               viewBox="0 0 256 256"
+                                                                                          <svg xmlns="http://www.w3.org/2000/svg" width="23"
+                                                                                               height="23" fill="#14b9d5" viewBox="0 0 256 256"
                                                                                                class="svg-plane">
-                                                                                               <rect width="256"
-                                                                                                    height="256"
-                                                                                                    fill="none"></rect>
+                                                                                               <rect width="256" height="256" fill="none"></rect>
                                                                                                <path d="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z"
-                                                                                                    fill="none"
-                                                                                                    stroke="#14b9d5"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round"
+                                                                                                    fill="none" stroke="#14b9d5"
+                                                                                                    stroke-linecap="round" stroke-linejoin="round"
                                                                                                     stroke-width="16">
                                                                                                </path>
                                                                                           </svg>
                                                                                           <div class="journey-line">
                                                                                           </div>
-                                                                                          <lord-icon
-                                                                                               src="https://cdn.lordicon.com/elzslyvl.json"
-                                                                                               trigger="loop"
-                                                                                               delay="1000"
+                                                                                          <lord-icon src="https://cdn.lordicon.com/elzslyvl.json"
+                                                                                               trigger="loop" delay="1000"
                                                                                                style="width:32px;height:32px">
                                                                                           </lord-icon>
                                                                                      </div>
-
+                              
                                                                                      <div class="journey-citypair">
                                                                                           <div class="citypair-depart">
-                                                                                               <h6
-                                                                                                    class="box-heading-h6">
+                                                                                               <h6 class="box-heading-h6">
                                                                                                     Thành phố Hồ Chí
                                                                                                     Minh (SGN)</h6>
-                                                                                               <span
-                                                                                                    class="box-subheading-span">Tân
+                                                                                               <span class="box-subheading-span">Tân
                                                                                                     Sơn Nhất</span>
                                                                                           </div>
-                                                                                          <div
-                                                                                               class="journey-flight-infor">
-                                                                                               <div
-                                                                                                    class="journey-infor-plane">
-                                                                                                    <div
-                                                                                                         class="infor-brand">
+                                                                                          <div class="journey-flight-infor">
+                                                                                               <div class="journey-infor-plane">
+                                                                                                    <div class="infor-brand">
                                                                                                          <img src="./assets/img/Images-brand/vj.png"
-                                                                                                              alt="VJ"
-                                                                                                              class="infor-brand__link" />
+                                                                                                              alt="VJ" class="infor-brand__link" />
                                                                                                     </div>
-                                                                                                    <div
-                                                                                                         class="infor-plane__name">
-                                                                                                         <h6
-                                                                                                              class="box-heading-h6">
+                                                                                                    <div class="infor-plane__name">
+                                                                                                         <h6 class="box-heading-h6">
                                                                                                               Vietjet
                                                                                                               Air</h6>
                                                                                                          <span
@@ -654,11 +720,9 @@
                                                                                                </div>
                                                                                           </div>
                                                                                           <div class="citypair-arrive">
-                                                                                               <h6
-                                                                                                    class="box-heading-h6">
+                                                                                               <h6 class="box-heading-h6">
                                                                                                     Hà Nội (HAN)</h6>
-                                                                                               <span
-                                                                                                    class="box-subheading-span">Nội
+                                                                                               <span class="box-subheading-span">Nội
                                                                                                     Bài</span>
                                                                                           </div>
                                                                                      </div>
@@ -671,32 +735,226 @@
                                                   </div>
                                              </div>
                                         </div>
+                                   </section>
 
-                                        <div class="section__order--infor">
-                                             <div class="row">
-                                                  <div class="col-md-6">
-                                                       <div class="box-infor order__code">
-                                                            <h6 class="box-heading-h6">Mã đơn hàng:</h6>
-                                                            <h2>MH2049837HDA</h2>
+                                   <section class="section__order--infor">
+                                        <div class="row">
+                                             <div class="col-sm-12 col-12 col-md-6 col-lg-6">
+                                                  <div class="box-infor order__code">
+                                                       <h6 class="box-heading-h6">Mã đơn hàng:</h6>
+                                                       <h2>MH2049837HDA</h2>
+                                                  </div>
+                                             </div>
+                                             <div class="col-sm-12 col-12 col-md-6 col-lg-6">
+                                                  <div class="box-infor order__status">
+                                                       <h6 class="box-heading-h6">Trạng thái:</h6>
+                                                       <h2>Chưa xác nhận</h2>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </section>
+
+                                   <section class="section__infor--flight">
+                                        <div class="section__title">
+                                             <img src="./assets/img/airplane.png" alt=""
+                                                  style="object-fit: cover; width: 7%;">
+                                             <span>Thông tin chuyến bay</span>
+                                        </div>
+
+                                        <div class="row g-0">
+                                             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                  <div class="journey-infor">
+                                                       <div class="journey-infor__title">
+                                                            <label for="">Chiều đi</label>
+                                                            <span>Hồ Chí Minh (SGN) <svg width="16" height="17"
+                                                                      fill="none">
+                                                                      <path d="M3.333 8.5h9.334M10 11.167L12.667 8.5M10 5.833L12.667 8.5"
+                                                                           stroke="#1A202C" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round"></path>
+                                                                 </svg> Hà Nội (HAN)</span>
+                                                       </div>
+                                                       <div class="journey-infor__datetime">Thứ 4, 14 tháng 09 <svg
+                                                                 xmlns="http://www.w3.org/2000/svg" width="19"
+                                                                 height="19" fill="#000000" viewBox="0 0 256 256">
+                                                                 <rect width="256" height="256" fill="none"></rect>
+                                                                 <line x1="40" y1="128" x2="216" y2="128" fill="none"
+                                                                      stroke="#000000" stroke-linecap="round"
+                                                                      stroke-linejoin="round" stroke-width="16">
+                                                                 </line>
+                                                            </svg> 5 khách</div>
+
+                                                  </div>
+                                                  <hr class="hr-line-1">
+                                                  <div class="journey-details">
+                                                       <div class="infor-journey-wrap">
+                                                            <div class="journey-datetime">
+                                                                 <div class="datetime-depart">
+                                                                      <h6 class="box-heading-h6 time-depart">17:45
+                                                                      </h6>
+                                                                      <span
+                                                                           class="box-subheading-span journey-date-depart">14/09/2022</span>
+                                                                 </div>
+                                                                 <div class="datetime-duration">
+                                                                      <span class="box-subheading-span">2h
+                                                                           10m</span>
+                                                                 </div>
+                                                                 <div class="datetime-arrive">
+                                                                      <h6 class="box-heading-h6 time-arrive">
+                                                                           19:55
+                                                                      </h6>
+                                                                      <span
+                                                                           class="box-subheading-span journey-date-arrive">14/09/2022</span>
+                                                                 </div>
+                                                            </div>
+
+                                                            <div class="journey-timeline">
+                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="23"
+                                                                      height="23" fill="#14b9d5" viewBox="0 0 256 256"
+                                                                      class="svg-plane">
+                                                                      <rect width="256" height="256" fill="none">
+                                                                      </rect>
+                                                                      <path d="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z"
+                                                                           fill="none" stroke="#14b9d5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" stroke-width="16">
+                                                                      </path>
+                                                                 </svg>
+                                                                 <div class="journey-line"></div>
+                                                                 <lord-icon src="https://cdn.lordicon.com/elzslyvl.json"
+                                                                      trigger="loop" delay="1000"
+                                                                      style="width:32px;height:32px">
+                                                                 </lord-icon>
+                                                            </div>
+
+                                                            <div class="journey-citypair">
+                                                                 <div class="citypair-depart">
+                                                                      <h6 class="box-heading-h6">Thành phố Hồ Chí
+                                                                           Minh (SGN)</h6>
+                                                                      <span class="box-subheading-span">Tân Sơn
+                                                                           Nhất</span>
+                                                                 </div>
+                                                                 <div class="journey-flight-infor">
+                                                                      <div class="journey-infor-plane">
+                                                                           <div class="infor-brand">
+                                                                                <img src="./assets/img/Images-brand/vj.png"
+                                                                                     alt="VJ"
+                                                                                     class="infor-brand__link" />
+                                                                           </div>
+                                                                           <div class="infor-plane__name">
+                                                                                <h6 class="box-heading-h6">Vietjet
+                                                                                     Air</h6>
+                                                                                <span
+                                                                                     class="box-subheading-span">VJ166</span>
+                                                                           </div>
+                                                                      </div>
+                                                                 </div>
+                                                                 <div class="citypair-arrive">
+                                                                      <h6 class="box-heading-h6">Hà Nội (HAN)</h6>
+                                                                      <span class="box-subheading-span">Nội
+                                                                           Bài</span>
+                                                                 </div>
+                                                            </div>
                                                        </div>
                                                   </div>
-                                                  <div class="col-md-6">
-                                                       <div class="box-infor order__status">
-                                                            <h6 class="box-heading-h6">Trạng thái:</h6>
-                                                            <h2>Chưa xác nhận</h2>
+                                             </div>
+                                             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                  <div class="journey-infor">
+                                                       <div class="journey-infor__title">
+                                                            <label for="">Chiều về</label>
+                                                            <span>Hà Nội (HAN) <svg width="16" height="17" fill="none">
+                                                                      <path d="M3.333 8.5h9.334M10 11.167L12.667 8.5M10 5.833L12.667 8.5"
+                                                                           stroke="#1A202C" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round"></path>
+                                                                 </svg> Hồ CHí Minh (SGN)</span>
+                                                       </div>
+                                                       <div class="journey-infor__datetime">Thứ 4, 14 tháng 09 <svg
+                                                                 xmlns="http://www.w3.org/2000/svg" width="19"
+                                                                 height="19" fill="#000000" viewBox="0 0 256 256">
+                                                                 <rect width="256" height="256" fill="none"></rect>
+                                                                 <line x1="40" y1="128" x2="216" y2="128" fill="none"
+                                                                      stroke="#000000" stroke-linecap="round"
+                                                                      stroke-linejoin="round" stroke-width="16">
+                                                                 </line>
+                                                            </svg> 5 khách</div>
+
+                                                  </div>
+                                                  <hr class="hr-line-1">
+                                                  <div class="journey-details">
+                                                       <div class="infor-journey-wrap">
+                                                            <div class="journey-datetime">
+                                                                 <div class="datetime-depart">
+                                                                      <h6 class="box-heading-h6 time-depart">17:45
+                                                                      </h6>
+                                                                      <span
+                                                                           class="box-subheading-span journey-date-depart">14/09/2022</span>
+                                                                 </div>
+                                                                 <div class="datetime-duration">
+                                                                      <span class="box-subheading-span">2h
+                                                                           10m</span>
+                                                                 </div>
+                                                                 <div class="datetime-arrive">
+                                                                      <h6 class="box-heading-h6 time-arrive">
+                                                                           19:55
+                                                                      </h6>
+                                                                      <span
+                                                                           class="box-subheading-span journey-date-arrive">14/09/2022</span>
+                                                                 </div>
+                                                            </div>
+
+                                                            <div class="journey-timeline">
+                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="23"
+                                                                      height="23" fill="#14b9d5" viewBox="0 0 256 256"
+                                                                      class="svg-plane">
+                                                                      <rect width="256" height="256" fill="none">
+                                                                      </rect>
+                                                                      <path d="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z"
+                                                                           fill="none" stroke="#14b9d5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" stroke-width="16">
+                                                                      </path>
+                                                                 </svg>
+                                                                 <div class="journey-line"></div>
+                                                                 <lord-icon src="https://cdn.lordicon.com/elzslyvl.json"
+                                                                      trigger="loop" delay="1000"
+                                                                      style="width:32px;height:32px">
+                                                                 </lord-icon>
+                                                            </div>
+
+                                                            <div class="journey-citypair">
+                                                                 <div class="citypair-depart">
+                                                                      <h6 class="box-heading-h6">Thành phố Hồ Chí
+                                                                           Minh (SGN)</h6>
+                                                                      <span class="box-subheading-span">Tân Sơn
+                                                                           Nhất</span>
+                                                                 </div>
+                                                                 <div class="journey-flight-infor">
+                                                                      <div class="journey-infor-plane">
+                                                                           <div class="infor-brand">
+                                                                                <img src="./assets/img/Images-brand/vj.png"
+                                                                                     alt="VJ"
+                                                                                     class="infor-brand__link" />
+                                                                           </div>
+                                                                           <div class="infor-plane__name">
+                                                                                <h6 class="box-heading-h6">Vietjet
+                                                                                     Air</h6>
+                                                                                <span
+                                                                                     class="box-subheading-span">VJ166</span>
+                                                                           </div>
+                                                                      </div>
+                                                                 </div>
+                                                                 <div class="citypair-arrive">
+                                                                      <h6 class="box-heading-h6">Hà Nội (HAN)</h6>
+                                                                      <span class="box-subheading-span">Nội
+                                                                           Bài</span>
+                                                                 </div>
+                                                            </div>
                                                        </div>
                                                   </div>
                                              </div>
                                         </div>
-
-                                        <div class="section__infor--flight">
-                                             <div class="section__title">
-                                                  <img src="./assets/img/airplane.png" alt=""
-                                                       style="object-fit: cover; width: 7%;">
-                                                  <span>Thông tin chuyến bay</span>
-                                             </div>
-
-                                             <div class="section__infor--journey">
+                                        <!-- <div class="section__infor--journey">
                                                   <div class="journey-dep-wrap">
                                                        <div class="journey-infor">
                                                             <div class="journey-infor__title">
@@ -896,22 +1154,20 @@
                                                             </div>
                                                        </div>
                                                   </div>
-                                             </div>
+                                             </div> -->
+                                   </section>
 
+                                   <!-- price -->
+                                   <section class="section__infor--prices">
+                                        <div class="total__price-wrap">
+                                             <div class="total__price-title">
+                                                  <h6>Tổng cộng</h6>
+                                                  <p>Đã bao gồm thuế, phí, VAT</p>
+                                             </div>
+                                             <div class="total__price">
+                                                  100.738.000đ
+                                             </div>
                                         </div>
-
-                                        <!-- price -->
-                                        <section class="section__infor--prices">
-                                             <div class="total__price-wrap">
-                                                  <div class="total__price-title">
-                                                       <h6>Tổng cộng</h6>
-                                                       <p>Đã bao gồm thuế, phí, VAT</p>
-                                                  </div>
-                                                  <div class="total__price">
-                                                       100.738.000đ
-                                                  </div>
-                                             </div>
-                                        </section>
                                    </section>
 
                                    <div class="complete__button">
@@ -922,137 +1178,341 @@
                                         </a>
                                    </div>
                               </div>
-                              <div class="col-md-4"></div>
+
+                              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                                   <!-- JOURNEY -->
+                                   <div class="sidebar-journey">
+                                        <div class="box-heading">
+                                             <img src="./assets/img/airplane.png" alt=""
+                                                  style="object-fit: cover; width: 10%;">
+                                             <span>Thông tin chuyến bay</span>
+                                        </div>
+                                        <div class="journey-dep-wrap">
+                                             <div class="journey-infor">
+                                                  <div class="journey-infor__title">
+                                                       <label for="">Chiều đi</label>
+                                                       <span>Hồ Chí Minh (SGN) <svg width="16" height="17" fill="none">
+                                                                 <path d="M3.333 8.5h9.334M10 11.167L12.667 8.5M10 5.833L12.667 8.5"
+                                                                      stroke="#1A202C" stroke-width="1.5"
+                                                                      stroke-linecap="round" stroke-linejoin="round">
+                                                                 </path>
+                                                            </svg> Hà Nội (HAN)</span>
+                                                  </div>
+                                                  <div class="journey-infor__datetime">Thứ
+                                                       4, 14 tháng 09 <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                                            height="19" fill="#000000" viewBox="0 0 256 256">
+                                                            <rect width="256" height="256" fill="none"></rect>
+                                                            <line x1="40" y1="128" x2="216" y2="128" fill="none"
+                                                                 stroke="#000000" stroke-linecap="round"
+                                                                 stroke-linejoin="round" stroke-width="16"></line>
+                                                       </svg> 5 khách</div>
+
+                                             </div>
+                                             <hr class="hr-line-1">
+                                             <div class="journey-details">
+                                                  <div class="infor-journey-wrap">
+                                                       <div class="journey-datetime">
+                                                            <div class="datetime-depart">
+                                                                 <h6 class="box-heading-h6 time-depart">
+                                                                      17:45</h6>
+                                                                 <span
+                                                                      class="box-subheading-span journey-date-depart">14/09/2022</span>
+                                                            </div>
+                                                            <div class="datetime-duration">
+                                                                 <span class="box-subheading-span">2h
+                                                                      10m</span>
+                                                            </div>
+                                                            <div class="datetime-arrive">
+                                                                 <h6 class="box-heading-h6 time-arrive">
+                                                                      19:55
+                                                                 </h6>
+                                                                 <span
+                                                                      class="box-subheading-span journey-date-arrive">14/09/2022</span>
+                                                            </div>
+                                                       </div>
+
+                                                       <div class="journey-timeline">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="23"
+                                                                 height="23" fill="#14b9d5" viewBox="0 0 256 256"
+                                                                 class="svg-plane">
+                                                                 <rect width="256" height="256" fill="none"></rect>
+                                                                 <path d="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z"
+                                                                      fill="none" stroke="#14b9d5"
+                                                                      stroke-linecap="round" stroke-linejoin="round"
+                                                                      stroke-width="16">
+                                                                 </path>
+                                                            </svg>
+                                                            <div class="journey-line">
+                                                            </div>
+                                                            <lord-icon src="https://cdn.lordicon.com/elzslyvl.json"
+                                                                 trigger="loop" delay="1000"
+                                                                 style="width:32px;height:32px">
+                                                            </lord-icon>
+                                                       </div>
+
+                                                       <div class="journey-citypair">
+                                                            <div class="citypair-depart">
+                                                                 <h6 class="box-heading-h6">
+                                                                      Thành phố Hồ Chí
+                                                                      Minh (SGN)</h6>
+                                                                 <span class="box-subheading-span">Tân
+                                                                      Sơn Nhất</span>
+                                                            </div>
+                                                            <div class="journey-flight-infor">
+                                                                 <div class="journey-infor-plane">
+                                                                      <div class="infor-brand">
+                                                                           <img src="./assets/img/Images-brand/vj.png"
+                                                                                alt="VJ" class="infor-brand__link" />
+                                                                      </div>
+                                                                      <div class="infor-plane__name">
+                                                                           <h6 class="box-heading-h6">
+                                                                                Vietjet
+                                                                                Air</h6>
+                                                                           <span
+                                                                                class="box-subheading-span">VJ166</span>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="citypair-arrive">
+                                                                 <h6 class="box-heading-h6">
+                                                                      Hà Nội (HAN)</h6>
+                                                                 <span class="box-subheading-span">Nội
+                                                                      Bài</span>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="journey-ret-wrap">
+                                             <div class="journey-infor">
+                                                  <div class="journey-infor__title">
+                                                       <label for="">Chiều về</label>
+                                                       <span>Hà Nội (HAN) <svg width="16" height="17" fill="none">
+                                                                 <path d="M3.333 8.5h9.334M10 11.167L12.667 8.5M10 5.833L12.667 8.5"
+                                                                      stroke="#1A202C" stroke-width="1.5"
+                                                                      stroke-linecap="round" stroke-linejoin="round">
+                                                                 </path>
+                                                            </svg> Hồ CHí Minh
+                                                            (SGN)</span>
+                                                  </div>
+                                                  <div class="journey-infor__datetime">Thứ
+                                                       4, 14 tháng 09 <svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                                            height="19" fill="#000000" viewBox="0 0 256 256">
+                                                            <rect width="256" height="256" fill="none"></rect>
+                                                            <line x1="40" y1="128" x2="216" y2="128" fill="none"
+                                                                 stroke="#000000" stroke-linecap="round"
+                                                                 stroke-linejoin="round" stroke-width="16"></line>
+                                                       </svg> 5 khách</div>
+
+                                             </div>
+                                             <hr class="hr-line-1">
+                                             <div class="journey-details">
+                                                  <div class="infor-journey-wrap">
+                                                       <div class="journey-datetime">
+                                                            <div class="datetime-depart">
+                                                                 <h6 class="box-heading-h6 time-depart">
+                                                                      17:45</h6>
+                                                                 <span
+                                                                      class="box-subheading-span journey-date-depart">14/09/2022</span>
+                                                            </div>
+                                                            <div class="datetime-duration">
+                                                                 <span class="box-subheading-span">2h
+                                                                      10m</span>
+                                                            </div>
+                                                            <div class="datetime-arrive">
+                                                                 <h6 class="box-heading-h6 time-arrive">
+                                                                      19:55
+                                                                 </h6>
+                                                                 <span
+                                                                      class="box-subheading-span journey-date-arrive">14/09/2022</span>
+                                                            </div>
+                                                       </div>
+
+                                                       <div class="journey-timeline">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="23"
+                                                                 height="23" fill="#14b9d5" viewBox="0 0 256 256"
+                                                                 class="svg-plane">
+                                                                 <rect width="256" height="256" fill="none"></rect>
+                                                                 <path d="M128,216,88,232V200l16-16V152L24,168V136l80-40V48a24,24,0,0,1,48,0V96l80,40v32l-80-16v32L168,200v32Z"
+                                                                      fill="none" stroke="#14b9d5"
+                                                                      stroke-linecap="round" stroke-linejoin="round"
+                                                                      stroke-width="16">
+                                                                 </path>
+                                                            </svg>
+                                                            <div class="journey-line">
+                                                            </div>
+                                                            <lord-icon src="https://cdn.lordicon.com/elzslyvl.json"
+                                                                 trigger="loop" delay="1000"
+                                                                 style="width:32px;height:32px">
+                                                            </lord-icon>
+                                                       </div>
+
+                                                       <div class="journey-citypair">
+                                                            <div class="citypair-depart">
+                                                                 <h6 class="box-heading-h6">
+                                                                      Thành phố Hồ Chí
+                                                                      Minh (SGN)</h6>
+                                                                 <span class="box-subheading-span">Tân
+                                                                      Sơn Nhất</span>
+                                                            </div>
+                                                            <div class="journey-flight-infor">
+                                                                 <div class="journey-infor-plane">
+                                                                      <div class="infor-brand">
+                                                                           <img src="./assets/img/Images-brand/vj.png"
+                                                                                alt="VJ" class="infor-brand__link" />
+                                                                      </div>
+                                                                      <div class="infor-plane__name">
+                                                                           <h6 class="box-heading-h6">
+                                                                                Vietjet
+                                                                                Air</h6>
+                                                                           <span
+                                                                                class="box-subheading-span">VJ166</span>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="citypair-arrive">
+                                                                 <h6 class="box-heading-h6">
+                                                                      Hà Nội (HAN)</h6>
+                                                                 <span class="box-subheading-span">Nội
+                                                                      Bài</span>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
                          </div>
                     </div>
                </div>
           </main>
+     </div>
 
-          <!--Begin Footer-->
-          <footer class="footer">
-               <div class="footer__top">
-                    <div class="container">
-                         <div class="row g-0 ps-5">
-                              <div class="col-md-4">
-                                   <div class="footer__about--company">
-                                        <h6 class="">Săn vé máy bay giá rẻ</h6>
-                                        <ul class="list__about--company">
-                                             <li>Tên công ty: Công ty TNHH SVMBGR</li>
-                                             <li>Email: info@sanvemaybaygiare.net</li>
-                                             <li>Call Center: 1900 636 063</li>
-                                             <li>75 Nguyễn Xí, Q. Bình Thạnh, TP.HCM</li>
-                                             <li>MST: 0317103646</li>
+     <!--Begin Footer-->
+     <footer class="footer">
+          <div class="footer__top">
+               <div class="container">
+                    <div class="row g-0">
+                         <div class="col-md-4">
+                              <div class="footer__about--company">
+                                   <h6 class="">Săn vé máy bay giá rẻ</h6>
+                                   <ul class="list__about--company">
+                                        <li>Tên công ty: Công ty TNHH SVMBGR</li>
+                                        <li>Email: info@sanvemaybaygiare.net</li>
+                                        <li>Call Center: 1900 636 063</li>
+                                        <li>75 Nguyễn Xí, Q. Bình Thạnh, TP.HCM</li>
+                                        <li>MST: 0317103646</li>
+                                   </ul>
+                              </div>
+                         </div>
+                         <div class="col-md-8">
+                              <div class="row g-0">
+                                   <div class="contact-menu__item col-md-4">
+                                        <h6>VÉ MÁY BAY NỘI ĐỊA</h6>
+                                        <ul class="">
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay đi Hà Nội</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay đi Sài Gòn</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay đi Đà Nẵng</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay đi Nha Trang</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay đi Phú Yên</p>
+                                             </li>
+                                        </ul>
+                                   </div>
+                                   <div class="contact-menu__item col-md-4">
+                                        <h6>VÉ MÁY BAY TẾT</h6>
+                                        <ul>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay Tết đi Hà Nội</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay Tết đi Hải Phòng</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay Tết đi Vinh</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay Tết đi Cần Thơ</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Vé máy bay Tết đi Thanh Hóa</p>
+                                             </li>
+                                        </ul>
+                                   </div>
+                                   <div class="contact-menu__item col-md-4">
+                                        <h6>VÉ RẺ THEO THÁNG</h6>
+                                        <ul>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Săn vé máy bay giá rẻ tháng 8</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Săn vé máy bay giá rẻ tháng 9</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Săn vé máy bay giá rẻ tháng 10</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Săn vé máy bay giá rẻ tháng 11</p>
+                                             </li>
+                                             <li>
+                                                  <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                  <p>Săn vé máy bay giá rẻ tháng 12</p>
+                                             </li>
                                         </ul>
                                    </div>
                               </div>
-                              <div class="col-md-8">
-                                   <div class="row g-0">
-                                        <div class="contact-menu__item col-md-4">
-                                             <h6>VÉ MÁY BAY NỘI ĐỊA</h6>
-                                             <ul class="">
-                                                  <li>
-                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                                                       <p>Vé máy bay đi Hà Nội</p>
-                                                  </li>
-                                                  <li>
-                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                                                       <p>Vé máy bay đi Sài Gòn</p>
-                                                  </li>
-                                                  <li>
-                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                                                       <p>Vé máy bay đi Đà Nẵng</p>
-                                                  </li>
-                                                  <li>
-                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                                                       <p>Vé máy bay đi Nha Trang</p>
-                                                  </li>
-                                                  <li>
-                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                                                       <p>Vé máy bay đi Phú Yên</p>
-                                                  </li>
-                                             </ul>
-                                        </div>
-                                        <div class="contact-menu__item col-md-4">
-                                             <h6>VÉ MÁY BAY TẾT</h6>
-                                             <ul>
-                                                  <li>
-                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                                                       <p>Vé máy bay Tết đi Hà Nội</p>
-                                                  </li>
-                                                  <li>
-                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                                                       <p>Vé máy bay Tết đi Hải Phòng</p>
-                                                  </li>
-                                                  <li>
-                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                                                       <p>Vé máy bay Tết đi Vinh</p>
-                                                  </li>
-                                                  <li>
-                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                                                       <p>Vé máy bay Tết đi Cần Thơ</p>
-                                                  </li>
-                                                  <li>
-                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                                                       <p>Vé máy bay Tết đi Thanh Hóa</p>
-                                                  </li>
-                                             </ul>
-                                        </div>
-                                        <div class="contact-menu__item col-md-4">
-                                             <h6>VÉ RẺ THEO THÁNG</h6>
-                                             <ul>
-                                                  <li>
-                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                                                       <p>Săn vé máy bay giá rẻ tháng 8</p>
-                                                  </li>
-                                                  <li>
-                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                                                       <p>Săn vé máy bay giá rẻ tháng 9</p>
-                                                  </li>
-                                                  <li>
-                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                                                       <p>Săn vé máy bay giá rẻ tháng 10</p>
-                                                  </li>
-                                                  <li>
-                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                                                       <p>Săn vé máy bay giá rẻ tháng 11</p>
-                                                  </li>
-                                                  <li>
-                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
-                                                       <p>Săn vé máy bay giá rẻ tháng 12</p>
-                                                  </li>
-                                             </ul>
-                                        </div>
-                                   </div>
-                              </div>
                          </div>
                     </div>
-                    <div class="footer__bg">
-                         <div class="footer__bg--one"></div>
-                         <div class="footer__bg--two"></div>
-                    </div>
                </div>
-               <div class="footer__bottom">
-                    <div class="container">
-                         <div class="row align-items-center">
-                              <div class="footer-copyright">
-                                   <h6>Copyright © 2022 Công ty TNHH SVMBGR</h6>
-                                   <div class="footer-helps">
-                                        <a href="#" class="helps__terms">Điều khoản sử dụng</a>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000"
-                                             viewBox="0 0 256 256">
-                                             <rect width="256" height="256" fill="none"></rect>
-                                             <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#000000"
-                                                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
-                                             </line>
-                                        </svg>
-                                        <a href="#" class="helps__security">Chính sách bảo mật</a>
-                                   </div>
+               <div class="footer__bg">
+                    <div class="footer__bg--one"></div>
+                    <div class="footer__bg--two"></div>
+               </div>
+          </div>
+          <div class="footer__bottom">
+               <div class="container">
+                    <div class="row align-items-center">
+                         <div class="footer-copyright">
+                              <h6>Copyright © 2022 Công ty TNHH SVMBGR</h6>
+                              <div class="footer-helps">
+                                   <a href="#" class="helps__terms">Điều khoản sử dụng</a>
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000"
+                                        viewBox="0 0 256 256">
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#000000"
+                                             stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
+                                        </line>
+                                   </svg>
+                                   <a href="#" class="helps__security">Chính sách bảo mật</a>
                               </div>
                          </div>
                     </div>
                </div>
-          </footer>
-          <!--End Footer-->
+          </div>
+     </footer>
+     <!--End Footer-->
      </div>
 
      <!-- jquery -->

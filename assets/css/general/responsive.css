@@ -301,6 +301,38 @@ Common breakpoints are
     margin: 25px 0 0;
   }
 
+  /* HOÀN TẤT ĐƠN HÀNG */
+  .section__complete--order{
+    margin: 25px 0 0 0;
+  }
+  .section__complete--order{
+    margin: 15px 0 0 0;
+  }
+  .order__code, .order__status{
+    margin: 5px 0;
+  }
+
+  .journey-details{
+    margin-bottom: 30px;
+  }
+  .complete__button button{
+    font-size: 16px;
+  }
+
+  .section__infor--passengers, .section__complete--order, .section__infor--order, .section__infor--contact,
+  .section__order--infor, .section__infor--flight, .section__infor--prices{
+    margin: 15px 15px 0 0;
+  }
+
+  .popup__content {
+    padding: 10px 20px 20px;
+  }
+
+  .popup__wrap {
+    height: calc(100vh - 30px);
+    width: calc(100vw - 60px);
+  }
+
 }
 
 /* For iPads & tablets */
@@ -563,6 +595,50 @@ Common breakpoints are
 
   .baggage__ret-wrap{
     margin-bottom: 10px;
+  }
+
+  /* HOÀN TẤT ĐƠN HÀNG */
+  .section__complete--order{
+    margin: 25px 0 0 0;
+  }
+  .section__infor--passengers, .section__complete--order, .section__infor--order, .section__infor--contact{
+    margin: 25px 0 0 0;
+  }
+  .section__complete--order{
+    margin: 15px 0 0 0;
+  }
+  .order__code, .order__status{
+    margin: 5px 0;
+  }
+
+  .journey-details{
+    margin-bottom: 30px;
+  }
+  .complete__button button{
+    font-size: 16px;
+  }
+  .box-heading-h6, .thead-title, .name__passenger--title, .luggage__title{
+    font-size: 14px;
+  }
+  .section__title {
+    font-size: 16px;
+  }
+  .sidebar-journey{
+    display: none;
+  }
+
+  .section__infor--passengers, .section__complete--order, .section__infor--order, .section__infor--contact,
+  .section__order--infor, .section__infor--flight, .section__infor--prices{
+    margin: 25px 0 0 0;
+  }
+
+  .popup__content {
+    padding: 10px 20px 20px;
+  }
+
+  .popup__wrap {
+    height: 100vh;
+    width: 100vw;
   }
 
 }
@@ -995,9 +1071,6 @@ Common breakpoints are
     width: 40px;
     height: 40px;
   }
-  .box-heading-h6, .thead-title, .name__passenger--title, .luggage__title{
-    font-size: 14px;
-  }
 
   /* THÔNG TIN HÀNH KHÁCH */
   .section-box-passengers{
@@ -1009,9 +1082,51 @@ Common breakpoints are
     font-size: 12px;
   }
 
-  .title-input, .title-select, .caption-details, .caption-birthday{
+  /* PAYMENT */
+  .section__payment-method label{
     font-size: 12px;
   }
+
+  /* HOÀN TẤT ĐƠN HÀNG */
+  .section__complete--order{
+    margin: 15px 0 0 0;
+  }
+  .order__code, .order__status{
+    margin: 5px 0;
+  }
+
+  .journey-details{
+    margin-bottom: 30px;
+  }
+  .complete__button button{
+    font-size: 16px;
+  }
+
+  ul.section__decs{
+    line-height: 30px;
+  }
+
+
+  .section__decs li lord-icon{
+    display: none;
+  }
+
+  .sidebar-journey{
+    display: none;
+  }
+  .popup__wrap {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .section__infor--passengers, .section__complete--order, .section__infor--order, .section__infor--contact{
+    margin: 25px 0 0 0;
+  }
+
+  .popup__content {
+    padding: 10px 20px 40px;
+  }
+  
   
 }
 
