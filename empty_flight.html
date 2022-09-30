@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>SĂN VÉ MÁY BAY GIÁ RẺ - Chọn hành trình</title>
+
+     <!-- slider -->
+     <link rel="stylesheet" href="./assets/libs/slick/slick.css" />
+
+     <!-- datepicker -->
+     <link rel="stylesheet" href="./assets/libs/datepicker/icomoon/style.css" />
+     <link rel="stylesheet" href="./assets/libs/datepicker/classic.css" />
+     <link rel="stylesheet" href="./assets/libs/datepicker/classic.date.css" />
+
+     <!-- font - family -->
+     <link rel="stylesheet" href="./assets/fonts/Mt-Bold.otf" />
+     <link rel="stylesheet" href="./assets/fonts/Mt-Regular.otf" />
+     <link rel="stylesheet" href="./assets/fonts/Mt-SemiBold.otf" />
+
+     <!-- Main css -->
+     <link rel="stylesheet" href="./assets/css/styles.css" />
+     <style>
+          .empty_flight {
+               background: var(--white-color);
+               margin: 25px 25px 0 0;
+               padding: 20px;
+               border-radius: 0.375rem;
+          }
+
+          .empty_flight img {
+               width: 100%;
+          }
+
+          .empty_flight .section__infor--contact {
+               margin: 10px 0 0;
+               padding: 0;
+          }
+
+          .contant_box_404{
+               margin-top: 60px;
+          }
+
+          .contant_box_404 h3 {
+               font-size: 20px;
+               font-weight: 600;
+               margin-top: -50px;
+               color: #ec2029;
+               text-align: center;
+               margin-bottom: 20px;
+          }
+
+          .contant_box_404 p{
+               font-size: 14px;
+               text-align: justify;
+          }
+          .contant_box_404 .button-gradient.instagram{
+               width: 250px;
+               padding: 8px;
+               margin: 0 auto;
+               font-size: 16px;
+               border-radius: 0.375rem;
+          }
+          .box-infor__contact input.btn-empty{
+               color: var(--white-color);
+               padding: 12px;
+               width: 250px;
+               margin: 0 auto;
+               font-size: 16px;
+               font-weight: 600;
+          }
+
+          .box-infor__contact input.btn-empty:hover{
+               background: linear-gradient(to right, #14d5b1 0%, #14b9d5 100%);;
+          }
+
+          .box-infor__contact input {
+               width: 100%;
+               padding: 8px 10px;
+               outline: none;
+               border: 1px solid var(--border-color);
+               border-radius: 0.375rem;
+               font-size: 14px;
+               color: var(--text-color);
+          }
+
+          #content_request{
+               height: 125px;
+               width: 100%;
+          }
+     </style>
+</head>
+
+<body>
+     <!-- scroll -->
+     <div class="scroll-to-top">
+          <a href="javascript:" id="return-to-top">
+               <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#14b9d5" viewBox="0 0 256 256">
+                    <rect width="256" height="256" fill="none"></rect>
+                    <polyline points="48 160 128 80 208 160" fill="none" stroke="#14b9d5" stroke-linecap="round"
+                         stroke-linejoin="round" stroke-width="16"></polyline>
+               </svg>
+          </a>
+     </div>
+
+     <div class="global-wrap">
+          <!-- HEADER -->
+          <section class="header">
+               <div class="container header-wrap">
+                    <div class="header__logo">
+                         <a class="header__logo--link" href="./index.html">
+                              <img src="./assets/img/logo_1.png" alt="Travel" class="header__logo--img" />
+                         </a>
+                    </div>
+                    <div class="menu-control__wrap">
+                         <ul class="header-nav">
+                              <li class="nav__item">
+                                   <a href="./category.html" class="nav__item--link">VÉ MÁY BAY NỘI ĐỊA</a>
+                              </li>
+                              <li class="nav__item">
+                                   <a href="./category.html" class="nav__item--link">VÉ MÁY BAY QUỐC TẾ</a>
+                              </li>
+                              <li class="nav__item">
+                                   <a href="./category.html" class="nav__item--link">VÉ RẺ THEO THÁNG</a>
+                              </li>
+                              <li class="nav__item">
+                                   <a href="./category.html" class="nav__item--link">TIN TỨC</a>
+                              </li>
+                              <li class="nav__item">
+                                   <a href="./contact.html" class="nav__item--link">LIÊN HỆ</a>
+                              </li>
+                         </ul>
+                    </div>
+                    <div class="header-phone">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#000000"
+                              viewBox="0 0 256 256">
+                              <rect width="256" height="256" fill="none"></rect>
+                              <path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z"
+                                   fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                                   stroke-width="16"></path>
+                         </svg>
+                         <p class="phone-number">1900 636 063</p>
+                    </div>
+                    <!-- MENU FOR TABLET -->
+                    <div class="menu-control__tablet-wrap">
+                         <input type="checkbox" id="slide-menu" />
+                         <label for="slide-menu" class="header-slide-menu__btn">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#000000"
+                                   viewBox="0 0 256 256">
+                                   <rect width="256" height="256" fill="none"></rect>
+                                   <line x1="40" y1="68" x2="216" y2="68" fill="none" stroke="#000000"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                                   <line x1="40" y1="108" x2="216" y2="108" fill="none" stroke="#000000"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                                   <line x1="40" y1="148" x2="216" y2="148" fill="none" stroke="#000000"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                                   <line x1="40" y1="188" x2="216" y2="188" fill="none" stroke="#000000"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                              </svg>
+                         </label>
+                         <label for="slide-menu" class="header-slide-menu__overlay"></label>
+                         <div class="mobile-menu">
+                              <label for="slide-menu">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff"
+                                        viewBox="0 0 256 256">
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#fff"
+                                             stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                                        <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="#fff"
+                                             stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                                   </svg>
+                              </label>
+
+                              <div class="mobile-menu-wrapper">
+                                   <ul class="mobile-menu__list">
+                                        <li class="mobile-menu__item">
+                                             <a class="mobile-menu__item-link" href="./category.html">VÉ MÁY BAY NỘI
+                                                  ĐỊA</a>
+                                        </li>
+
+                                        <li class="mobile-menu__item">
+                                             <a class="mobile-menu__item-link" href="./category.html">VÉ MÁY BAY QUỐC
+                                                  TẾ</a>
+                                        </li>
+
+                                        <li class="mobile-menu__item">
+                                             <a class="mobile-menu__item-link" href="./category.html">VÉ MÁY BAY THEO
+                                                  THÁNG</a>
+                                        </li>
+
+                                        <li class="mobile-menu__item">
+                                             <a class="mobile-menu__item-link" href="./category.html">TIN TỨC</a>
+                                        </li>
+
+                                        <li class="mobile-menu__item">
+                                             <a class="mobile-menu__item-link" href="./contact.html">LIÊN HỆ</a>
+                                        </li>
+                                   </ul>
+
+                                   <div class="header-phone-mobile">
+                                        <a href="">
+                                             <p class="phone-number-mobile">Hỗ trợ: 1900 636 063</p>
+                                        </a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <!-- MENU FOR MOBILE -->
+                    <div class="menu-control__mobile-wrap">
+                         <label for="menu-control" class="hamburger">
+                              <i class="hamburger__icon"></i>
+                              <i class="hamburger__icon"></i>
+                              <i class="hamburger__icon"></i>
+                         </label>
+                         <input type="checkbox" id="menu-control" class="menu-control">
+                         <aside class="sidebar">
+                              <nav class="sidebar__menu">
+                                   <a href="./category.html" class="">Vé máy bay giá rẻ</a>
+                                   <a href="./category.html">Vé máy bay theo tháng</a>
+                                   <a href="./category.html">Vé máy bay nội địa</a>
+                                   <a href="./category.html">Vé máy bay quốc tế</a>
+                                   <a href="./category.html">tin tức</a>
+                                   <a href="./contact.html">liên hệ</a>
+                                   <a href="">Hỗ trợ: 1900.636.063</a>
+                              </nav>
+                              <label for="menu-control" class="sidebar__close"></label>
+                         </aside>
+                    </div>
+          </section>
+          <!-- END HEADER -->
+
+          <div class="section-choose-flight">
+               <div class="container">
+                    <div class="row g-0" style="position: relative;">
+                         <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                              <section class="empty_flight">
+                                   <div class="container">
+                                        <div class="row">
+                                             <div class="col-sm-12">
+                                                  <div class="contant_box_404">
+                                                       <h3>
+                                                            Chuyến bay bạn yêu cầu hiện tại đã hết!
+                                                       </h3>
+
+                                                       <p><strong>Thông báo:</strong> chuyến bay khởi hành từ <strong><?=$GLOBALS['CODECITY'][$condition['source']]?></strong> đi <strong><?=$GLOBALS['CODECITY'][$condition['destination']]?></strong> trong ngày <strong><?= $condition['depart']?></strong> của các hãng hàng không trên hệ thông đặt vé online đã hết.</p>
+                                                       <p>Bạn có thể thay đổi <strong>ngày đi</strong>, hoặc <strong>ngày về</strong> để tìm chuyến bay khác.</p>
+                                                       <p>Nếu bạn muốn <strong>đặt vé máy bay theo yêu cầu</strong> trên, bạn có thể gửi yêu cầu theo <strong>biểu mẫu bên dưới</strong> hoặc gọi tới số điện thoại <strong style="font-size:16px;color:#Ec2029;"><?= get_option('opt_phone'); ?></strong>. Nhân viên của chúng tôi sẽ <strong>tìm vé máy bay theo yêu cầu</strong> của bạn.</p>
+                                                  </div>
+                                             </div>
+                                             <div class="col-sm-12">
+                                                  <div class="request_block">
+                                                       <form method="post" action="" id="frm_requestflight">
+                                                           <section class="section__infor--contact">
+                                                                 <div class="section__title">
+                                                                      <lord-icon
+                                                                           src="https://cdn.lordicon.com/uukerzzv.json"
+                                                                           trigger="loop"
+                                                                           delay="2000"
+                                                                           style="width:50px;height:50px">
+                                                                      </lord-icon>
+                                                                      ĐẶT VÉ THEO YÊU CẦU
+                                                                 </div>
+                                                                 <div class="infor__contact">
+                                                                      <div class="box-infor__contact infor__contact--name">
+                                                                           <div class="row mb-3">
+                                                                                <div class="col-md-4 col-sm-4 col-4 col-lg-4">
+                                                                                     <h6><label for="fullname">Họ và tên:</label></h6>
+                                                                                </div>
+                                                                                <div class="col-md-8 col-sm-8 col-8 col-lg-8">
+                                                                                     <input type="text" name="fullname" id="fullname" />
+                                                                                </div>
+                                                                           </div>
+                                                                      </div>
+                                                                 </div>
+                                                                 <div class="box-infor__contact infor__contact--phone">
+                                                                      <div class="row mb-3">
+                                                                           <div class="col-md-4 col-sm-4 col-4 col-lg-4">
+                                                                                <h6><label for="phone">Điện thoại:</label></h6>
+                                                                           </div>
+                                                                           <div class="col-md-8 col-sm-8 col-8 col-lg-8">
+                                                                                <input type="text" name="phone" id="phone" />
+                                                                           </div>
+                                                                      </div>
+                                                                 </div>
+                                                                 <div
+                                                                      class="box-infor__contact infor__contact--email">
+                                                                      <div class="row mb-3">
+                                                                           <div class="col-md-4 col-sm-4 col-4 col-lg-4">
+                                                                                <h6><label for="content_request">Nội dung:</label></h6>
+                                                                           </div>
+                                                                           <div class="col-md-8 col-sm-8 col-8 col-lg-8">
+                                                                                <textarea name="content_request" id="content_request">Tôi muốn tìm vé cho chuyến bay từ <?=$GLOBALS['CODECITY'][$condition['source']]?> đi <?=$GLOBALS['CODECITY'][$condition['destination']]?> vào ngày <?=$condition['depart']?> cho <?=$condition['adult']?> người lớn<?php echo $qty_children.$qty_infants ?> </textarea>
+                                                                           </div>
+                                                                      </div>
+                                                                 </div>
+                                                                 <div class="box-infor__contact infor__contact--address">
+                                                                      <div class="row mb-3">
+                                                                           <div class="col-md-4 col-sm-4 col-4 col-lg-4">
+                                                                                <h6><label for="requests">Xác nhận: </label></h6>
+                                                                           </div>
+                                                                           <div class="col-md-8 col-sm-8 col-8 col-lg-8">
+                                                                                <div id="requests" style="transform:scale(0.9);transform-origin:0 0"></div>
+                                                                           </div>
+                                                                      </div>
+                                                                 </div>
+                                                                 <div class="box-infor__contact">
+                                                                      <div class="row mb-3">
+                                                                           <input type="submit" name="sm_request" id="sm_request" value="Gửi" class="btn-empty btn btn-blue-sky-g"/>
+                                                                      </div>
+                                                                 </div>
+                                                            </section>
+                                                       </form>
+                                                   </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </section>
+                         </div>
+                         <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                              <!-- https://www.w3schools.com/howto/tryit.asp?filename=tgit sryhow_css_sidenav_fixed2 -->
+                              <div class="sidebar-filters">
+                                   <div class="sidebar-filters-wrap">
+                                        <h2 class="sidebar__title">Bộ lọc</h2>
+                                        <h2 class="sidebar__reset">Xóa lọc</h2>
+                                   </div>
+
+                                   <!-- Lọc theo brand airline -->
+                                   <div class="filter-flight__airline">
+                                        <h6 class="filter-flight__title">Hãng Bay</h6>
+
+                                        <ul id="filter-options__airline">
+                                             <li class="options__airline--item">
+                                                  <input type="checkbox" value="vna" id="vna" />
+                                                  <label for="vna">
+                                                       <img src="./assets/img/Images-brand/vna.png" alt="" />
+                                                       Vietnam Airlines
+                                                  </label>
+                                             </li>
+                                             <li class="options__airline--item">
+                                                  <input type="checkbox" value="ph" id="ph" />
+                                                  <label for="ph">
+                                                       <img src="./assets/img/Images-brand/ph.png" alt="" />
+                                                       Bamboo Airways
+                                                  </label>
+                                             </li>
+                                             <li class="options__airline--item">
+                                                  <input type="checkbox" value="pl" id="pl" />
+                                                  <label for="pl">
+                                                       <img src="./assets/img/Images-brand/pcf.png" alt="" />
+                                                       Pacific Airlines
+                                                  </label>
+                                             </li>
+                                             <li class="options__airline--item">
+                                                  <input type="checkbox" value="vj" id="vj" />
+                                                  <label for="vj">
+                                                       <img src="./assets/img/Images-brand/vj.png" alt="" />
+                                                       Vietjet Air
+                                                  </label>
+                                             </li>
+                                             <li class="options__airline--item">
+                                                  <input type="checkbox" value="vu" id="vu" />
+                                                  <label for="vu">
+                                                       <img src="./assets/img/Images-brand/vu.png" alt="" />
+                                                       Vietravel Airlines
+                                                  </label>
+                                             </li>
+                                        </ul>
+                                   </div>
+
+                                   <!-- Lọc theo Điểm dừng -->
+                                   <div class="filter-flight__transit">
+                                        <h6 class="filter-flight__title">Điểm dừng</h6>
+
+                                        <ul id="filter-options__transit">
+                                             <li class="options__transit--item">
+                                                  <input type="checkbox" value="flight-transit-0"
+                                                       id="flight-straight" />
+                                                  <label for="flight-straight">Bay thẳng</label>
+                                             </li>
+                                             <li class="options__transit--item">
+                                                  <input type="checkbox" value="flight-transit-1"
+                                                       id="flight-straight-1" />
+                                                  <label for="flight-straight-1">1 Điểm dừng</label>
+                                             </li>
+                                             <li class="options__transit--item">
+                                                  <input type="checkbox" value="flight-transit-2"
+                                                       id="flight-straight-2" />
+                                                  <label for="flight-straight-2">2 Điểm dừng</label>
+                                             </li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!--begin Footer-->
+          <footer class="footer">
+               <div class="footer__top">
+                    <div class="container">
+                         <div class="row g-0">
+                              <div class="col-md-4">
+                                   <div class="footer__about--company">
+                                        <h6 class="">Săn vé máy bay giá rẻ</h6>
+                                        <ul class="list__about--company">
+                                             <li>Tên công ty: Công ty TNHH SVMBGR</li>
+                                             <li>Email: info@sanvemaybaygiare.net</li>
+                                             <li>Call Center: 1900 636 063</li>
+                                             <li>75 Nguyễn Xí, Q. Bình Thạnh, TP.HCM</li>
+                                             <li>MST: 0317103646</li>
+                                        </ul>
+                                   </div>
+                              </div>
+                              <div class="col-md-8">
+                                   <div class="row g-0">
+                                        <div class="contact-menu__item col-md-4">
+                                             <h6>VÉ MÁY BAY NỘI ĐỊA</h6>
+                                             <ul class="">
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay đi Hà Nội</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay đi Sài Gòn</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay đi Đà Nẵng</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay đi Nha Trang</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay đi Phú Yên</p>
+                                                  </li>
+                                             </ul>
+                                        </div>
+                                        <div class="contact-menu__item col-md-4">
+                                             <h6>VÉ MÁY BAY TẾT</h6>
+                                             <ul>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay Tết đi Hà Nội</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay Tết đi Hải Phòng</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay Tết đi Vinh</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay Tết đi Cần Thơ</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Vé máy bay Tết đi Thanh Hóa</p>
+                                                  </li>
+                                             </ul>
+                                        </div>
+                                        <div class="contact-menu__item col-md-4">
+                                             <h6>VÉ RẺ THEO THÁNG</h6>
+                                             <ul>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Săn vé máy bay giá rẻ tháng 8</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Săn vé máy bay giá rẻ tháng 9</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Săn vé máy bay giá rẻ tháng 10</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Săn vé máy bay giá rẻ tháng 11</p>
+                                                  </li>
+                                                  <li>
+                                                       <img loading="lazy" src="./assets/img/right-arrow.png" alt="" />
+                                                       <p>Săn vé máy bay giá rẻ tháng 12</p>
+                                                  </li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="footer__bg">
+                         <div class="footer__bg--one"></div>
+                         <div class="footer__bg--two"></div>
+                    </div>
+               </div>
+               <div class="footer__bottom">
+                    <div class="container">
+                         <div class="row align-items-center">
+                              <div class="footer-copyright">
+                                   <h6>Copyright © 2022 Công ty TNHH SVMBGR</h6>
+                                   <div class="footer-helps">
+                                        <a href="#" class="helps__terms">Điều khoản sử dụng</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000"
+                                             viewBox="0 0 256 256">
+                                             <rect width="256" height="256" fill="none"></rect>
+                                             <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#000000"
+                                                  stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
+                                             </line>
+                                        </svg>
+                                        <a href="#" class="helps__security">Chính sách bảo mật</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </footer>
+          <!--End Footer-->
+     </div>
+
+     <!-- jquery -->
+     <script src="./assets/libs/jquery/jquery-3.6.0.min.js"></script>
+     <!-- <script src="./assets/libs/jquery/jquery-3.3.1.min.js"></script> -->
+     <script src="./assets/libs/jquery/jquery-migrate-3.4.0.min.js"></script>
+
+     <!-- range price -->
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+     <link rel="stylesheet" type="text/css"
+          href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.css" />
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script>
+
+     <!-- boostrap datepicker -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js">
+     </script>
+     <script src="./assets/libs/datepicker/popper.min.js"></script>
+     <script src="./assets/libs/datepicker/picker.js"></script>
+     <script src="./assets/libs/datepicker/picker.date.js"></script>
+
+     <!-- slider -->
+     <script src="./assets/libs/slick/slick.min.js"></script>
+
+     <!-- lord icon -->
+     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+     <!-- Calendar -->
+     <script src="./assets/libs/datepicker/popper.min.js"></script>
+     <script src="./assets/libs/bootstrap/bootstrap.min.js"></script>
+     <script src="./assets/libs/datepicker/picker.js"></script>
+     <script src="./assets/libs/datepicker/picker.date.js"></script>
+
+     <!-- main js -->
+     <script src="./assets/js/select.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* =========== menu nav for screen tablet ========== */
+      .menu-control__tablet-wrap {
+        display: block;
+      }
+
+      #slide-menu {
+        display: none;
+      }
+
+      .header-slide-menu__btn {
+        cursor: pointer;
+      }
+
+      .header-slide-menu__overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        background: linear-gradient(
+          to left,
+          rgba(239, 50, 217, 0.4),
+          rgba(137, 255, 253, 0.4)
+        );
+        animation: fadeIn linear 0.2s;
+      }
+
+      .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 15px;
+        width: 285px;
+        max-width: 100%;
+        overflow-y: scroll;
+        background-color: #ccc;
+        transform: translateX(100%);
+        transition: transform ease-out 0.5s;
+        overflow: hidden;
+        z-index: 2;
+      }
+      .mobile-menu-wrapper {
+        margin-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+      }
+
+      .mobile-menu img {
+        position: absolute;
+        display: inline-block;
+        top: 10px;
+        right: 15px;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+      }
+
+      .mobile-menu__title {
+        display: block;
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .mobile-menu__list {
+        list-style: none;
+      }
+
+      .mobile-menu__item--link,
+      .header-phone-mobile {
+        display: block;
+        font-size: 14px;
+        line-height: 4.5rem;
+        letter-spacing: 2px;
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .header-phone-mobile {
+        display: flex;
+        align-items: center;
+      }
+
+      .header-phone-mobile p {
+        color: var(--text-color);
+        margin: 0 0 0 10px;
+      }
+
+      .mobile-menu__item--link:hover,
+      .header-phone-mobile:hover p {
+        color: var(--saphire-color);
+      }
+
+      #slide-menu:checked ~ .mobile-menu {
+        transform: translateX(0%);
+      }
+
+      #slide-menu:checked ~ .header-slide-menu__overlay {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- MENU FOR TABLET -->
+    <div class="menu-control__tablet-wrap">
+      <input type="checkbox" id="slide-menu" />
+      <label for="slide-menu" class="header-slide-menu__btn">
+        <svg
+          width="35px"
+          height="35px"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          color="#000"
+        >
+          <path
+            d="M3 5h18M3 12h18M3 19h18"
+            stroke="#000"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+      </label>
+
+      <label for="slide-menu" class="header-slide-menu__overlay"></label>
+
+      <div class="mobile-menu">
+        <label for="slide-menu">
+          <img
+            src="./assets/img/images-icon/close-outline.svg"
+            alt=""
+          />
+        </label>
+        <div class="mobile-menu-wrapper">
+          <ul class="test">
+               <li>a</li>
+               <li>a</li>
+               <li>a</li>
+               <li>a</li>
+               <li>a</li>
+               <li>a</li>
+          </ul>
+          <a
+            class="header-phone-mobile"
+            href="tel:<?php echo preg_replace('/\D/', '', ot_get_option('phone_office')); ?>"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="23"
+              height="23"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <path
+                d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z"
+                fill="none"
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></path>
+            </svg>
+            <p class="phone-number-mobile">
+              124446345
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

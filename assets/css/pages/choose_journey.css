@@ -200,6 +200,13 @@
 .infor-duration {
   display: flex;
   flex-direction: column;
+  flex: 20%;
+}
+
+.infor-price{
+  flex: 20%;
+  font-size: 18px;
+  justify-content: flex-end;
 }
 
 /* ============== Xem chi tiết từng chuyến bay ========== */
@@ -322,7 +329,8 @@
      color: var(--black-color);
 }
 
-td.total_amount{
+td.total_amount,
+.infor-price{
      color: #ec2029;
      font-weight: 600;
      font-size: 16px;
@@ -391,3 +399,4 @@ label.checkbox-custom-label{
     font-size: 14px;
     color: var(--white-color);
 }
+

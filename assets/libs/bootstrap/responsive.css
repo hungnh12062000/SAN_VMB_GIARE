@@ -1,0 +1,1468 @@
+/* 
+Common breakpoints are 
+     + 320px — 480px for mobile devices, 
+     + 481px — 768px for iPads & tablets, 
+     + 769px — 1024px for small screens like laptop, 
+     + 1025px — 1200px for large screens like Desktops, 
+     + and 1201px and above for extra large screens like TV.
+
+     Boostrap 5.0
+     + Extra small (xs)- <576px - .col-
+     + Small (sm) - ≥576px - .col-sm-
+     + Medium (md) - ≥768px - .col-md-
+     + Large (lg) - ≥992px - .col-lg-
+     + Extra large (xl) - ≥1200px - .col-xl-
+     + Extra extra large (xxl) - ≥1400px - .col-xxl-
+
+     $grid-breakpoints: (
+          xs: 0,
+          sm: 480px,
+          md: 768px,
+          lg: 1024px
+     );
+*/
+
+/* For small screens */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  /* =========== menu nav for screen tablet ========== */
+  .menu-control__tablet-wrap{
+    display: block;
+  }
+
+  #slide-menu {
+    display: none;
+  }
+
+  .header-slide-menu__btn {
+    cursor: pointer;
+    /* position: relative; */
+    display: none;
+  }
+
+  .header-slide-menu__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background: linear-gradient(
+      to left,
+      rgba(239, 50, 217, 0.4),
+      rgba(137, 255, 253, 0.4)
+    );
+    animation: fadeIn linear 0.2s;
+  }
+
+  .mobile-menu {
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 15px;
+    width: 285px;
+    max-width: 100%;
+    overflow-y: scroll;
+    background-color: var(--border-color);
+    transform: translateX(100%);
+    transition: transform ease-out 0.5s;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .mobile-menu-wrapper {
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+
+  .mobile-menu img {
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+  }
+
+  .mobile-menu__title {
+    display: block;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    color: var(--white-color);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .mobile-menu__list {
+    list-style: none;
+  }
+
+  .mobile-menu__item--link,
+  .header-phone-mobile{
+    display: block;
+    font-size: 14px;
+    line-height: 4.5rem;
+    letter-spacing: 2px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .header-phone-mobile{
+    display: flex;
+    align-items: center;
+  }
+
+  .header-phone-mobile p{
+    color: var(--text-color);
+    margin: 0 0 0 10px;
+  }
+
+  .mobile-menu__item--link:hover,
+  .header-phone-mobile:hover p {
+    color: var(--saphire-color);
+  }
+
+  #slide-menu:checked ~ .mobile-menu {
+    transform: translateX(0%);
+  }
+
+  #slide-menu:checked ~ .header-slide-menu__overlay {
+    display: block;
+  }
+
+  .menu-control__mobile-wrap {
+    display: none;
+  }
+
+  /* genneral */
+  .section-title {
+    font-size: 26px;
+  }
+
+  .col-12-tablet {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .booking-form .submit-btn {
+    font-size: 18px;
+  }
+  .booking-form .form-btn {
+    padding: 0 20px 20px;
+  }
+
+  .booking-form .form-control {
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .booking-form div.form-control + .select-arrow {
+    top: 30px;
+    right: 20px;
+  }
+
+  .count-passenger {
+    position: unset;
+  }
+
+  /* nav */
+  .header-slide-menu__btn {
+    display: block;
+  }
+  .menu-control {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+
+  /* header */
+  .header-nav,
+  .header-phone {
+    display: none;
+  }
+
+  .header-phone-mobile {
+    color: var(--white-color);
+  }
+
+  /* form search */
+  .picker {
+    font-size: 14px;
+  }
+
+  .picker,
+  .picker__holder {
+    width: 105%;
+    left: 10px;
+  }
+
+  .picker__weekday {
+    font-size: 16px;
+  }
+
+  .picker__month,
+  .picker__year {
+    font-size: 20px;
+  }
+
+  .list__dep--wrap .menu div,
+  .list__ret--wrap .menu div {
+    font-size: 12px;
+  }
+  .list__dep--wrap .menu div span.light,
+  .list__ret--wrap .menu div span.light {
+    height: 7px;
+    width: 7px;
+  }
+
+  .column-3-tb {
+    width: 25%;
+  }
+  .column-6-tb {
+    width: 75%;
+    padding-left: 30px;
+  }
+
+  .list__dep--wrap,
+  .list__ret--wrap {
+    width: 100%;
+    top: 25%;
+    left: 2%;
+  }
+
+  #listDes .list__ret--wrap {
+    left: 2%;
+  }
+
+  .list-area {
+    padding: 0;
+  }
+  .destination-item {
+    width: 85px;
+    height: 85px;
+  }
+  .destination-title {
+    width: 150%;
+  }
+
+  .dropdown-box-inner {
+    width: 100%;
+    top: 100%;
+    left: 0%;
+    border: 1px solid var(--border-color);
+  }
+  .title-people {
+    font-size: 14px;
+  }
+
+  .toggle-direction {
+    width: 25px;
+  }
+
+  .toggle-direction:before {
+    width: 25px;
+    height: 10px;
+  }
+
+  .toggle-direction span {
+    width: 16px;
+    height: 16px;
+  }
+
+  .btn-value {
+    width: 35px;
+  }
+
+  /* destinations inter - home */
+  .destination__inter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px;
+    grid-gap: 15px;
+  }
+
+  .destination__inter--item:first-child {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .destination__inter--item:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .destination__inter--item:nth-child(3) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  /* destinations domestic - home*/
+  .destinations__domestic {
+    display: flex;
+    justify-content: space-between;
+    position: unset;
+    flex-wrap: wrap;
+    height: unset;
+  }
+
+  .destinations__domestic--item {
+    position: relative;
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  /* Testimonial */
+  .testimonial-card {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .card-item {
+    width: 49%;
+    margin: 0;
+  }
+
+  /* Footer */
+  .contact-menu__item p {
+    font-size: 12px;
+  }
+
+  .contact-menu__item img {
+    display: none;
+  }
+
+  .footer__about--company li {
+    font-size: 12px;
+  }
+
+  .contact-menu__item h6,
+  .footer__about--company h6 {
+    font-size: 14px;
+  }
+
+  .container {
+    max-width: 820px;
+  }
+
+  /* CHỌN HÀNH TRÌNH */
+  .result-flight {
+    margin: 25px 0 0 0;
+  }
+
+  .flight-infor {
+    justify-content: space-between;
+  }
+  .infor-duration {
+    align-items: center;
+  }
+
+  .flight-infor-details {
+    flex-direction: column;
+  }
+
+  .infor-details-journey {
+    width: 100%;
+  }
+  .infor-journey-wrap {
+    justify-content: center;
+  }
+  .infor-details__wrap {
+    margin-top: 30px;
+  }
+
+  .sidebar__title,
+  .sidebar__reset {
+    font-size: 14px;
+  }
+  .journey-infor__title span,
+  .infor-ticket-title span {
+    font-size: 14px;
+  }
+
+  /* THÔNG TIN HÀNH KHÁCH */
+  .section-box-passengers {
+    margin: 25px 0 0;
+  }
+
+  /* HOÀN TẤT ĐƠN HÀNG */
+  .section__complete--order {
+    margin: 25px 0 0 0;
+  }
+  .section__complete--order {
+    margin: 15px 0 0 0;
+  }
+  .order__code,
+  .order__status {
+    margin: 5px 0;
+  }
+
+  .journey-details {
+    margin-bottom: 30px;
+  }
+  .complete__button button {
+    font-size: 16px;
+  }
+
+  .section__infor--passengers,
+  .section__complete--order,
+  .section__infor--order,
+  .section__infor--contact,
+  .section__order--infor,
+  .section__infor--flight,
+  .section__infor--prices {
+    margin: 15px 15px 0 0;
+  }
+
+  .popup__content {
+    padding: 10px 20px 20px;
+  }
+
+  .popup__wrap {
+    height: calc(100vh - 30px);
+    width: calc(100vw - 60px);
+  }
+
+  /* CATEGORY */
+  .image-data {
+    flex-basis: 20%;
+  }
+}
+
+/* For iPads & tablets */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  /* =========== menu nav for screen tablet ========== */
+  .menu-control__tablet-wrap{
+    display: block;
+  }
+
+  #slide-menu {
+    display: none;
+  }
+
+  .header-slide-menu__btn {
+    cursor: pointer;
+    /* position: relative; */
+    display: none;
+  }
+
+  .header-slide-menu__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background: linear-gradient(
+      to left,
+      rgba(239, 50, 217, 0.4),
+      rgba(137, 255, 253, 0.4)
+    );
+    animation: fadeIn linear 0.2s;
+  }
+
+  .mobile-menu {
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 15px;
+    width: 285px;
+    max-width: 100%;
+    overflow-y: scroll;
+    background-color: var(--border-color);
+    transform: translateX(100%);
+    transition: transform ease-out 0.5s;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .mobile-menu-wrapper {
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+
+  .mobile-menu img {
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+  }
+
+  .mobile-menu__title {
+    display: block;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    color: var(--white-color);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .mobile-menu__list {
+    list-style: none;
+  }
+
+  .mobile-menu__item--link,
+  .header-phone-mobile{
+    display: block;
+    font-size: 14px;
+    line-height: 4.5rem;
+    letter-spacing: 2px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .header-phone-mobile{
+    display: flex;
+    align-items: center;
+  }
+
+  .header-phone-mobile p{
+    color: var(--text-color);
+    margin: 0 0 0 10px;
+  }
+
+  .mobile-menu__item--link:hover,
+  .header-phone-mobile:hover p {
+    color: var(--saphire-color);
+  }
+
+  #slide-menu:checked ~ .mobile-menu {
+    transform: translateX(0%);
+  }
+
+  #slide-menu:checked ~ .header-slide-menu__overlay {
+    display: block;
+  }
+
+  .menu-control__mobile-wrap {
+    display: none;
+  }
+
+  .mobile-menu__list li{
+    position: relative;
+  }
+  .mobile-menu__list li::before {
+    content: "";
+    height: 2px;
+    background: var(--saphire-color);
+    width: 120px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: translatex(-50%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s linear;
+  }
+
+  .mobile-menu__list li:hover::before{
+    transform: translatex(0);
+    opacity: 1;
+  }
+
+
+  /* genneral  */
+  .search__title {
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+
+  .destination-item {
+    width: 70px;
+    height: 70px;
+  }
+  .destination-title {
+    width: 150%;
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  .list__dep--wrap .menu div,
+  .list__ret--wrap .menu div {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .list__dep--wrap .menu div span.light,
+  .list__ret--wrap .menu div span.light {
+    display: none;
+  }
+
+  .list__dep--wrap .menu div.active,
+  .list__ret--wrap .menu div.active {
+    padding: 10px;
+  }
+
+  .picker {
+    font-size: 12px;
+  }
+
+  .picker,
+  .picker__holder {
+    width: 105%;
+    left: 10px;
+  }
+
+  .picker__weekday {
+    font-size: 14px;
+  }
+
+  .picker__month,
+  .picker__year {
+    font-size: 18px;
+  }
+
+  .booking-form div.form-control + .select-arrow {
+    top: 40px;
+    right: 20px;
+  }
+
+  /* nav */
+  .menu-control {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+
+  .header-slide-menu__btn {
+    display: block;
+  }
+
+  .booking-form .form-btn {
+    padding: 0 20px 20px;
+  }
+
+  /* header */
+  .header-nav,
+  .header-phone {
+    display: none;
+  }
+
+  .header-phone-mobile {
+    color: var(--white-color);
+  }
+  /* header */
+  .header-nav {
+    display: none;
+  }
+  /* search */
+  .booking-form .form-control {
+    border-bottom: 1px solid var(--border-color);
+  }
+  .count-passenger {
+    position: unset;
+  }
+
+  .list__dep--wrap {
+    top: 17%;
+    width: 105%;
+    left: 2%;
+  }
+
+  #listDes .list__ret--wrap {
+    top: 35%;
+    width: 105%;
+    left: 2%;
+  }
+
+  .dropdown-box-inner {
+    top: 205%;
+    width: 95%;
+    left: 10px;
+  }
+
+  .box-people {
+    margin-top: 10px;
+  }
+  .title-people {
+    font-size: 16px;
+  }
+
+  /* destination inter */
+  .destination__inter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px;
+    grid-gap: 10px;
+  }
+
+  .destination__inter--item:first-child {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .destination__inter--item:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .destination__inter--item:nth-child(3) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .box-title {
+    font-size: 16px;
+  }
+
+  .destination__hover--heading {
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* destinations domestic - home*/
+  .destinations__domestic {
+    display: flex;
+    justify-content: space-between;
+    position: unset;
+    flex-wrap: wrap;
+    height: unset;
+  }
+
+  .destinations__domestic--item {
+    position: relative;
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  /* Testimonial */
+  .testimonial-card {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .card-item {
+    width: 49%;
+    margin: 0;
+  }
+
+  /* CHỌN HÀNH TRÌNH */
+  .header {
+    padding: 0 10px;
+  }
+  .journey-infor__title span,
+  .infor-ticket-title span {
+    font-size: 14px;
+  }
+  .flight-infor {
+    justify-content: space-between;
+  }
+  .infor-duration {
+    align-items: center;
+  }
+
+  .flight-infor-details {
+    flex-direction: column;
+  }
+
+  .infor-details-journey {
+    width: 100%;
+  }
+  .infor-journey-wrap {
+    justify-content: center;
+  }
+  .infor-details__wrap {
+    margin-top: 30px;
+  }
+  .infor-other {
+    padding-right: 10px;
+  }
+  .result-flight {
+    margin: 25px 0 0 0;
+  }
+
+  /* Footer */
+  .contact-menu__item {
+    margin-top: 30px;
+  }
+  .contact-menu__item p {
+    font-size: 14px;
+  }
+
+  .footer__about--company li {
+    font-size: 14px;
+  }
+
+  .contact-menu__item h6,
+  .footer__about--company h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .list__about--company {
+    margin-top: 0px;
+  }
+
+  /* THÔNG TIN HÀNH KHÁCH */
+  .section-box-passengers {
+    margin: 25px 0 0;
+  }
+  .adult-input__gender,
+  .child-input__gender,
+  .infant-input__gender,
+  .input__contact--title,
+  .input__contact--name,
+  .input__contact--email {
+    width: 20%;
+  }
+  .adult-input__name,
+  .child-input__name,
+  .infant-input__name {
+    flex: 1;
+  }
+  .adult-baggage,
+  .child-baggage,
+  .infant-baggage {
+    flex-direction: column;
+  }
+
+  .baggage__dep-wrap,
+  .baggage__ret-wrap {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .baggage__ret-wrap {
+    margin-bottom: 10px;
+  }
+
+  /* HOÀN TẤT ĐƠN HÀNG */
+  .section__complete--order {
+    margin: 25px 0 0 0;
+  }
+  .section__infor--passengers,
+  .section__complete--order,
+  .section__infor--order,
+  .section__infor--contact {
+    margin: 25px 0 0 0;
+  }
+  .section__complete--order {
+    margin: 15px 0 0 0;
+  }
+  .order__code,
+  .order__status {
+    margin: 5px 0;
+  }
+
+  .journey-details {
+    margin-bottom: 30px;
+  }
+  .complete__button button {
+    font-size: 16px;
+  }
+  .box-heading-h6,
+  .thead-title,
+  .name__passenger--title,
+  .luggage__title {
+    font-size: 14px;
+  }
+  .section__title {
+    font-size: 16px;
+  }
+  .sidebar-journey {
+    display: none;
+  }
+
+  .section__infor--passengers,
+  .section__complete--order,
+  .section__infor--order,
+  .section__infor--contact,
+  .section__order--infor,
+  .section__infor--flight,
+  .section__infor--prices,
+  .list-card {
+    margin: 25px 0 0 0;
+  }
+
+  .popup__content {
+    padding: 10px 20px 20px;
+  }
+
+  .popup__wrap {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  /* single */
+  .single__end--wrap {
+    flex-wrap: wrap;
+  }
+  .single__social--wrap {
+    margin-top: 20px;
+  }
+
+  .content__post-wrap .container {
+    max-width: 820px;
+  }
+  .proposal-item__img-heading {
+    font-size: 14px;
+    left: 0px;
+    text-align: center;
+  }
+
+  .search__section {
+    margin-top: 0px;
+  }
+}
+
+/* For Mobile Portrait View - chiều dọc */
+@media screen and (max-width: 575px) and (orientation: portrait) {
+  .search__section {
+    margin-top: 0;
+  }
+
+  .booking-form .form-control {
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .count-passenger {
+    position: unset;
+  }
+
+  /* ========= menu for mobile ========== */
+  .menu-control__mobile-wrap {
+    display: block;
+  }
+
+  .menu-mobile {
+    /* position: absolute; */
+    position: relative;
+    left: 30px;
+    top: 2px;
+    display: flex;
+    height: 18px;
+    width: 24px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .menu-mobile__icon {
+    display: inline-block;
+    height: 2px;
+    width: 24px;
+    background: var(--black-color);
+    border-radius: 2px;
+  }
+
+  .sidebar__menu--wrap {
+    height: 100vh;
+    /* width: 320px; */
+    width: 100vw;
+    background: var(--border-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    transform: translatex(-100%);
+    transition: transform 0.4s ease-in-out;
+  }
+  .sidebar__close {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    background: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.03);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translatex(-100%);
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out 0.2s;
+  }
+  .sidebar__close::before,
+  .sidebar__close::after {
+    content: "";
+    height: 2px;
+    background: #898989;
+    width: 24px;
+    display: block;
+    position: absolute;
+  }
+  .sidebar__close::after {
+    transform: rotate(90deg);
+  }
+  .sidebar__menu {
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    font-size: 16px;
+    margin-top: 80px;
+    color: var(--text-color);
+  }
+  .sidebar__menu li a {
+    /* color: currentcolor; */
+    color: var(--text-color);
+    text-decoration: none;
+    transform: translatex(-80%);
+    transition: transform 0.4s ease-in-out;
+  }
+  .sidebar__menu li:hover a{
+    color: var(--saphire-color);
+  }
+
+  .sidebar__menu li{
+    position: relative;
+    cursor: pointer;
+  }
+  .sidebar__menu li::before {
+    content: "";
+    height: 2px;
+    background: var(--text-color);
+    width: 100px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: translatex(-50%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s linear;
+  }
+
+  .sidebar__menu li:hover::before{
+    transform: translatex(0);
+    opacity: 1;
+  }
+
+  .menu-control {
+    display: none;
+  }
+  .menu-control:checked + .sidebar__menu--wrap {
+    transform: translatex(0);
+  }
+  .menu-control:checked + .sidebar__menu--wrap .sidebar__close {
+    transform: translatex(0) rotate(45deg);
+  }
+  .menu-control:checked + .sidebar__menu--wrap .sidebar__menu a {
+    transform: translatex(0);
+  }
+
+  .header-phone-mobile{
+    display: block;
+    font-size: 14px;
+    line-height: 4.5rem;
+    letter-spacing: 2px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .header-phone-mobile{
+    display: flex;
+    align-items: center;
+  }
+
+  .header-phone-mobile p{
+    color: var(--text-color);
+    margin: 0 0 0 10px;
+  }
+  .header-phone-mobile:hover p {
+    color: var(--saphire-color);
+  }
+
+  /* header */
+  .header-nav,
+  .header-phone {
+    display: none;
+  }
+  .booking-form .form-btn {
+    padding: 20px;
+  }
+  .booking-form .submit-btn {
+    font-size: 20px;
+  }
+
+  .booking-form div.form-control + .select-arrow {
+    top: 40px;
+    right: 20px;
+  }
+
+  .dropdown-box-inner {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    top: 80px;
+  }
+
+  .list__dep--wrap {
+    top: 17%;
+    width: 105%;
+    left: 2%;
+  }
+
+  #listDes .list__ret--wrap {
+    top: 35%;
+    width: 105%;
+    left: 2%;
+  }
+  .picker {
+    font-size: 12px;
+  }
+  .picker,
+  .picker__holder {
+    width: 105%;
+  }
+
+  .picker__weekday {
+    font-size: 12px;
+  }
+
+  .picker__month,
+  .picker__year {
+    font-size: 16px;
+  }
+
+  .list__dep--wrap .menu div,
+  .list__ret--wrap .menu div {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .list__dep--wrap .menu div span.light,
+  .list__ret--wrap .menu div span.light {
+    display: none;
+  }
+
+  .list__dep--wrap .menu div.active,
+  .list__ret--wrap .menu div.active {
+    padding: 10px;
+  }
+
+  .column-2-mobile {
+    width: 20%;
+  }
+
+  .column-8-mobile {
+    width: 80%;
+  }
+
+  .list-destination {
+    gap: 5px;
+    justify-content: space-between;
+  }
+
+  .toast-warning {
+    min-width: 250px;
+    max-width: 350px;
+    right: 20px;
+    font-size: 12px;
+  }
+
+  .destination-item {
+    width: 60px;
+    height: 60px;
+  }
+
+  .destination-title {
+    width: 150%;
+    font-size: 10px;
+    line-height: 5px;
+  }
+
+  .scroll-to-top {
+    right: 15px;
+    bottom: 40px;
+    border: 3px solid var(--saphire-color);
+    width: 30px;
+    height: 30px;
+  }
+
+  /* genneral  */
+  .search__title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .section-title {
+    font-size: 18px;
+  }
+  .box-title {
+    font-size: 16px;
+  }
+  .contact-menu__item,
+  .list__about--company {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .footer__about--company {
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .list__about--company {
+    margin-top: 0px;
+  }
+
+  .contact-menu__item h6,
+  .footer__about--company h6 {
+    margin-bottom: 15px;
+  }
+
+  .destinations__domestic--location {
+    padding: 10px 5px;
+  }
+
+  /* destination inter */
+  .destination__inter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 150px 150px;
+    grid-gap: 10px;
+  }
+
+  .destination__inter--item:first-child {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .destination__inter--item:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .destination__inter--item:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .destination__hover--heading {
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* destinations domestic - home*/
+  .destinations__domestic {
+    display: flex;
+    justify-content: space-between;
+    position: unset;
+    flex-wrap: wrap;
+    height: unset;
+  }
+
+  .destinations__domestic--item {
+    width: 110px !important;
+    height: 110px !important;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  /* testimonial */
+  .testimonial-card {
+    flex-wrap: wrap;
+    margin: 0 20px;
+  }
+
+  /* Testimonial */
+  .testimonial-card {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .card-item {
+    width: 90%;
+    margin: 0;
+  }
+
+  /* CHỌN HÀNH TRÌNH */
+  .header {
+    padding: 0 50px 0 30px;
+  }
+  .journey-infor__title span,
+  .infor-ticket-title span {
+    font-size: 14px;
+  }
+  .flight-infor {
+    justify-content: space-between;
+  }
+  .infor-duration {
+    align-items: center;
+  }
+
+  .flight-infor-details {
+    flex-direction: column;
+  }
+
+  .infor-details-journey {
+    width: 100%;
+  }
+  .infor-journey-wrap {
+    justify-content: center;
+  }
+  .infor-details__wrap {
+    margin-top: 30px;
+  }
+  .infor-other {
+    padding-right: 10px;
+  }
+  .result-flight {
+    margin: 25px 0 0 0;
+  }
+
+  .btn {
+    min-width: 100px;
+    padding: 10px 6px;
+  }
+  .flight-details button {
+    font-size: 14px;
+  }
+  #progressbar li {
+    font-size: 12px;
+  }
+  .sidebar-filters {
+    margin-top: 10px;
+    display: none;
+  }
+  .time__depart,
+  .time__destination {
+    font-size: 14px;
+  }
+  .box-subheading-span,
+  .tbody-title {
+    font-size: 12px;
+  }
+  .infor-brand img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* THÔNG TIN HÀNH KHÁCH */
+  .section-box-passengers {
+    margin: 25px 0 0;
+  }
+
+  .select-styled,
+  .seclect__luggage--options li {
+    font-size: 12px;
+  }
+
+  /* PAYMENT */
+  .section__payment-method label {
+    font-size: 12px;
+  }
+
+  /* HOÀN TẤT ĐƠN HÀNG */
+  .section__complete--order {
+    margin: 15px 0 0 0;
+  }
+  .order__code,
+  .order__status {
+    margin: 5px 0;
+  }
+
+  .journey-details {
+    margin-bottom: 30px;
+  }
+  .complete__button button {
+    font-size: 16px;
+  }
+
+  ul.section__decs {
+    line-height: 30px;
+  }
+
+  .section__decs li lord-icon {
+    display: none;
+  }
+
+  .sidebar-journey {
+    display: none;
+  }
+  .popup__wrap {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .section__infor--passengers,
+  .section__complete--order,
+  .section__infor--order,
+  .section__infor--contact,
+  .list-card {
+    margin: 25px 0 0 0;
+  }
+
+  .popup__content {
+    padding: 10px 20px 40px;
+  }
+
+  /* CATEGORY */
+  .blog-card p {
+    font-size: 12px;
+  }
+  .blog-card .description h1 {
+    font-size: 16px;
+  }
+  .blog-card .meta {
+    flex-basis: 40%;
+  }
+  .blog-card .description {
+    flex-basis: 60%;
+    padding: 1.5rem;
+  }
+
+  .button_cat {
+    font-size: 12px;
+  }
+  .category__title {
+    font-size: 20px;
+  }
+  .block-infor {
+    margin: 0 5px;
+  }
+  .block-infor span {
+    font-size: 12px;
+  }
+  .single__end--wrap {
+    flex-wrap: wrap;
+  }
+  .single__social--wrap {
+    margin-top: 20px;
+  }
+
+  .single__tags {
+    display: none;
+  }
+}

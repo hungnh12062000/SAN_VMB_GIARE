@@ -105,7 +105,8 @@
   vertical-align: baseline;
 }
 
-.contact-menu__item p{
+.contact-menu__item p,
+.contact-menu__item a{
   margin-left: 4px;
   display: inline-block;
   font-size: 1.4rem;

@@ -818,22 +818,22 @@ li.breadcrumb__item.current a {
   z-index: 2;
 }
 .mobile-menu-wrapper {
-  margin-top: 40px;
+  margin-top: 50px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 20px;
 }
 
-.mobile-menu svg {
-  transform: rotate(45deg);
+.mobile-menu img {
   position: absolute;
-  box-sizing: content-box;
   display: inline-block;
-  padding: 10px;
-  top: 6px;
-  right: 12px;
-  color: var(--white-color);
+  top: 10px;
+  right: 15px;
   cursor: pointer;
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+
 }
 
 .mobile-menu__title {
